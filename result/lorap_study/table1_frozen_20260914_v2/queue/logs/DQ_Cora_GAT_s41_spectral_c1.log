@@ -1,0 +1,9 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:0", "--cells", "DQ_Cora_GAT", "--seed", "41", "--methods", "spectral", "--candidate", "1"]
+DQ_Cora_GAT s41 spectral/c1 adapter 1/200 val=0.95975 metric=76.800
+DQ_Cora_GAT s41 spectral/c1 adapter 25/200 val=0.92162 metric=75.200
+DQ_Cora_GAT s41 spectral/c1 adapter 50/200 val=0.86626 metric=75.400
+DQ_Cora_GAT s41 spectral/c1 adapter 75/200 val=0.79214 metric=76.800
+DQ_Cora_GAT s41 spectral/c1 adapter 100/200 val=0.76920 metric=77.200
+DQ_Cora_GAT s41 spectral/c1 adapter 125/200 val=0.75280 metric=77.000
+DQ_Cora_GAT s41 spectral/c1 adapter 150/200 val=0.77430 metric=77.000

@@ -1,0 +1,324 @@
+{
+  "job": {
+    "cell": "QAT_CIFAR10_GCN",
+    "candidate": "r02",
+    "seed": 41,
+    "config": {
+      "cell": "QAT_CIFAR10_GCN",
+      "dataset": "CIFAR10",
+      "architecture": "GCN",
+      "framework": "QAT",
+      "data_root": "/data/cyliu/dataset/gnn-cifar10",
+      "node": false,
+      "regression": false,
+      "width": 146,
+      "heads": 8,
+      "layers": 4,
+      "bit": 4,
+      "num_deg": 1000,
+      "batch_size": 128,
+      "paper_none": 38.5,
+      "paper_none_sd": 1.3,
+      "paper_gpf_lorap": 43.6,
+      "metric": "accuracy_percent",
+      "baseline_epochs": 200,
+      "adapter_epochs": 100,
+      "seeds": [
+        41,
+        42,
+        43
+      ],
+      "lr": 0.00075,
+      "weight_decay": 4e-05,
+      "dropout": 0.0,
+      "init": "norm",
+      "lr_feature": 0.01,
+      "lr_message": 0.01,
+      "lr_weight": 0.001,
+      "lr_bit": 0.001,
+      "lr_attention": 0.001,
+      "lr_edge": 0.1,
+      "a_loss": 0.0,
+      "a_storage": 0.1,
+      "bit_bounds": [
+        1.0,
+        16.0
+      ],
+      "stop_patience": 30,
+      "min_epochs": 20,
+      "aggregation_implementation": "stable_csr_v2",
+      "optimizer_recipe": "native_groups_v2",
+      "dq_low": 0.1,
+      "dq_change": 0.1,
+      "percentile": null,
+      "use_ste": true,
+      "use_momentum": true
+    },
+    "hyperparameters": {
+      "rank": 2,
+      "num_prompts": 20,
+      "prompt_lr": 0.001,
+      "prompt_weight_decay": 0.0,
+      "sharing": "score_per_width_factors_per_layer",
+      "insertion": "before_native_update",
+      "training_cuda_rng_offset": 930000,
+      "input_scale": 1.0,
+      "aggregation_scale": 1.0,
+      "zero_init": true,
+      "lr_scheduler": {
+        "name": "plateau",
+        "patience": 10,
+        "factor": 0.5
+      }
+    },
+    "epochs": 200,
+    "screen_epochs": 80,
+    "directory": "QAT_CIFAR10_GCN/candidate_r02/seed_41",
+    "reference": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/QAT_CIFAR10_GCN/seed_41/baseline",
+      "config": {
+        "cell": "QAT_CIFAR10_GCN",
+        "dataset": "CIFAR10",
+        "architecture": "GCN",
+        "framework": "QAT",
+        "data_root": "/data/cyliu/dataset/gnn-cifar10",
+        "node": false,
+        "regression": false,
+        "width": 146,
+        "heads": 8,
+        "layers": 4,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 38.5,
+        "paper_none_sd": 1.3,
+        "paper_gpf_lorap": 43.6,
+        "metric": "accuracy_percent",
+        "baseline_epochs": 200,
+        "adapter_epochs": 100,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.001,
+        "weight_decay": 4e-05,
+        "dropout": 0.0,
+        "init": "norm",
+        "lr_feature": 0.01,
+        "lr_message": 0.01,
+        "lr_weight": 0.001,
+        "lr_bit": 0.001,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 0.0,
+        "a_storage": 0.1,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 20,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2",
+        "dq_low": 0.1,
+        "dq_change": 0.1,
+        "percentile": null,
+        "use_ste": true,
+        "use_momentum": true,
+        "seed": 41,
+        "subset_limit": null,
+        "stage": "baseline"
+      },
+      "done": {
+        "cell": "QAT_CIFAR10_GCN",
+        "seed": 41,
+        "config_hash": "63c6f9b49a944918cac513629be0184325ca390b21932875967c10eb428ba37d",
+        "initial_sha256": "da1f0e6df97e1bd07ce10ebef08b5246a6e880ae804e5562c014529293b293ed",
+        "selected_epoch": 157,
+        "validation": {
+          "loss": 1.5586505685806273,
+          "metric": 38.940000000000005,
+          "storage_proxy": 0.0,
+          "examples": 5000
+        },
+        "backbone_sha256": "6c4b25cbcf76c91d7430a3851da6a300ada2f468e74f747b6722c638ad497b75",
+        "test_evaluations": 0,
+        "full_split": true,
+        "seconds": 2024.260775687173
+      },
+      "test": {
+        "cell": "QAT_CIFAR10_GCN",
+        "seed": 41,
+        "method": "none",
+        "loss": 1.5722553026199342,
+        "metric": 38.84,
+        "examples": 10000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "158ac837158c46e2b9d56256c9186d3982c6e99895e44b2b7b9b88123f3c6a3e",
+        "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+      },
+      "checkpoint_file_sha256": "158ac837158c46e2b9d56256c9186d3982c6e99895e44b2b7b9b88123f3c6a3e"
+    },
+    "graphlora_reference": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/QAT_CIFAR10_GCN/seed_41",
+      "test": {
+        "cell": "QAT_CIFAR10_GCN",
+        "seed": 41,
+        "method": "graphlora",
+        "loss": 1.4827350839614868,
+        "metric": 44.62,
+        "examples": 10000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "bcfa9afd57de36e255b800df0c44365ecc222001a111c8ee4782816429f754f7",
+        "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+      },
+      "checkpoint_file_sha256": "bcfa9afd57de36e255b800df0c44365ecc222001a111c8ee4782816429f754f7",
+      "test_file_sha256": "6c1d22c5269a1fd1f18695d0de4532ee10c8ddc9a65cbdef406e39f0ffb283ff"
+    },
+    "previous_gpf": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_refine_3seeds_20261011_v1/QAT_CIFAR10_GCN/candidate_r05/seed_41",
+      "done": {
+        "cell": "QAT_CIFAR10_GCN",
+        "candidate": "r05",
+        "seed": 41,
+        "config_hash": "387a898e86aa77835113bdab41dc1f3650e879517778b9b709681aa53f47a11e",
+        "selected_epoch": 106,
+        "validation": {
+          "loss": 1.5473249765396118,
+          "metric": 41.339999999999996,
+          "storage_proxy": 0.0,
+          "examples": 5000
+        },
+        "test_evaluations": 0,
+        "full_split": true,
+        "common_backbone_sha256": "da1f0e6df97e1bd07ce10ebef08b5246a6e880ae804e5562c014529293b293ed",
+        "state_sha256": "b5b3c12041c1b17447d38db5209ba0a5a955d42035daf40cbff9cd001483f2e6",
+        "checkpoint_file_sha256": "43ada3b5020c52ab5558ee97a9375b93e90d99edc523bdd9748fb63ac3d149b2",
+        "training_seconds": 2233.439124861732,
+        "peak_cuda_memory_bytes": 441803264,
+        "device": "cuda:0",
+        "gpu_name": "NVIDIA GeForce RTX 4090",
+        "total_parameters": 115312,
+        "trainable_parameters": 115312,
+        "adapter_parameters": 4488,
+        "prompt_parameters": 4488,
+        "input_prompt_parameters": 220,
+        "aggregation_prompt_parameters": 4268,
+        "adapter_fp32_bytes": 17952,
+        "adapter_buffer_bytes": 0,
+        "sites": [
+          {
+            "name": "convs.0",
+            "insertion": "before_native_update",
+            "width": 146
+          },
+          {
+            "name": "convs.1",
+            "insertion": "before_native_update",
+            "width": 146
+          },
+          {
+            "name": "convs.2",
+            "insertion": "before_native_update",
+            "width": 146
+          },
+          {
+            "name": "convs.3",
+            "insertion": "before_native_update",
+            "width": 146
+          }
+        ],
+        "input_site": {
+          "width": 5,
+          "insertion": "before_input_projection"
+        },
+        "input_scale": 1.0,
+        "aggregation_scale": 1.0,
+        "zero_init": true
+      },
+      "test": {
+        "cell": "QAT_CIFAR10_GCN",
+        "seed": 41,
+        "method": "gpf_lorap_tuned",
+        "loss": 1.5550206439971923,
+        "metric": 41.07,
+        "examples": 10000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "43ada3b5020c52ab5558ee97a9375b93e90d99edc523bdd9748fb63ac3d149b2",
+        "test_lock_sha256": "8a61eb2e7668c3c8a4f3b40440278388f4d026a6f96806016297bd74812b9834"
+      }
+    },
+    "original_gpf": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_rerun_3seeds_20261001_v1/QAT_CIFAR10_GCN/seed_41",
+      "done": {
+        "cell": "QAT_CIFAR10_GCN",
+        "seed": 41,
+        "config_hash": "20521627b827fcc5d2bf5e18056dc216f958d4dfb9fad43e2ac8bbd0bb749edf",
+        "selected_epoch": 156,
+        "validation": {
+          "loss": 1.5346543363571168,
+          "metric": 38.879999999999995,
+          "storage_proxy": 0.0,
+          "examples": 5000
+        },
+        "test_evaluations": 0,
+        "full_split": true,
+        "common_backbone_sha256": "da1f0e6df97e1bd07ce10ebef08b5246a6e880ae804e5562c014529293b293ed",
+        "state_sha256": "f7e846cbd199dd4c52abb6d0c8eebbce448d83a675cc02923dbf79eec00af456",
+        "checkpoint_file_sha256": "c1c270bf0f8f2336e1abb060ff41d17a65d7526a1940bfdba13152bd544baa00",
+        "training_seconds": 2188.6800933144987,
+        "peak_cuda_memory_bytes": 442184704,
+        "device": "cuda:1",
+        "gpu_name": "NVIDIA GeForce RTX 4090",
+        "total_parameters": 115312,
+        "trainable_parameters": 115312,
+        "adapter_parameters": 4488,
+        "prompt_parameters": 4488,
+        "input_prompt_parameters": 220,
+        "aggregation_prompt_parameters": 4268,
+        "adapter_fp32_bytes": 17952,
+        "adapter_buffer_bytes": 0,
+        "sites": [
+          {
+            "name": "convs.0",
+            "insertion": "before_native_update",
+            "width": 146
+          },
+          {
+            "name": "convs.1",
+            "insertion": "before_native_update",
+            "width": 146
+          },
+          {
+            "name": "convs.2",
+            "insertion": "before_native_update",
+            "width": 146
+          },
+          {
+            "name": "convs.3",
+            "insertion": "before_native_update",
+            "width": 146
+          }
+        ],
+        "input_site": {
+          "width": 5,
+          "insertion": "before_input_projection"
+        }
+      },
+      "test": {
+        "cell": "QAT_CIFAR10_GCN",
+        "seed": 41,
+        "method": "gpf_lorap",
+        "loss": 1.5621017833709716,
+        "metric": 38.84,
+        "examples": 10000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "c1c270bf0f8f2336e1abb060ff41d17a65d7526a1940bfdba13152bd544baa00",
+        "test_lock_sha256": "5fe7738304bcbc2f64f9b7c745e363c7fdc94033a3a16b4b9a1040d7a86336fb"
+      }
+    }
+  },
+  "subset_limit": null,
+  "protocol": "joint"
+}

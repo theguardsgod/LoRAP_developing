@@ -1,0 +1,247 @@
+{
+  "job": {
+    "cell": "DQ_MNIST_GAT",
+    "candidate": "c00",
+    "seed": 43,
+    "config": {
+      "cell": "DQ_MNIST_GAT",
+      "dataset": "MNIST",
+      "architecture": "GAT",
+      "framework": "DQ",
+      "data_root": "/data/cyliu/dataset/gnn-mnist",
+      "node": false,
+      "regression": false,
+      "width": 19,
+      "heads": 8,
+      "layers": 4,
+      "bit": 4,
+      "num_deg": 1000,
+      "batch_size": 128,
+      "paper_none": 90.3,
+      "paper_none_sd": 0.5,
+      "paper_gpf_lorap": 94.0,
+      "metric": "accuracy_percent",
+      "baseline_epochs": 200,
+      "adapter_epochs": 100,
+      "seeds": [
+        41,
+        42,
+        43
+      ],
+      "lr": 0.001,
+      "weight_decay": 4e-05,
+      "dropout": 0.0,
+      "init": "norm",
+      "lr_feature": 0.01,
+      "lr_message": 0.01,
+      "lr_weight": 0.001,
+      "lr_bit": 0.001,
+      "lr_attention": 0.001,
+      "lr_edge": 0.1,
+      "a_loss": 0.0,
+      "a_storage": 0.1,
+      "bit_bounds": [
+        1.0,
+        16.0
+      ],
+      "stop_patience": 30,
+      "min_epochs": 20,
+      "aggregation_implementation": "stable_csr_v2",
+      "optimizer_recipe": "native_groups_v2",
+      "dq_low": 0.1,
+      "dq_change": 0.1,
+      "percentile": 0.01,
+      "use_ste": false,
+      "use_momentum": false
+    },
+    "hyperparameters": {
+      "rank": 2,
+      "num_prompts": 20,
+      "prompt_lr": 0.0001,
+      "prompt_weight_decay": 0.0,
+      "sharing": "score_per_width_factors_per_layer",
+      "insertion": "before_native_update",
+      "training_cuda_rng_offset": 930000,
+      "prompt_lr_multiplier": 0.1,
+      "input_scale": 0.1,
+      "aggregation_scale": 0.1,
+      "zero_init": true
+    },
+    "epochs": 2,
+    "screen_epochs": 1,
+    "directory": "DQ_MNIST_GAT/candidate_c00/seed_43",
+    "reference": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/DQ_MNIST_GAT/seed_43/baseline",
+      "config": {
+        "cell": "DQ_MNIST_GAT",
+        "dataset": "MNIST",
+        "architecture": "GAT",
+        "framework": "DQ",
+        "data_root": "/data/cyliu/dataset/gnn-mnist",
+        "node": false,
+        "regression": false,
+        "width": 19,
+        "heads": 8,
+        "layers": 4,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 90.3,
+        "paper_none_sd": 0.5,
+        "paper_gpf_lorap": 94.0,
+        "metric": "accuracy_percent",
+        "baseline_epochs": 200,
+        "adapter_epochs": 100,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.001,
+        "weight_decay": 4e-05,
+        "dropout": 0.0,
+        "init": "norm",
+        "lr_feature": 0.01,
+        "lr_message": 0.01,
+        "lr_weight": 0.001,
+        "lr_bit": 0.001,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 0.0,
+        "a_storage": 0.1,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 20,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2",
+        "dq_low": 0.1,
+        "dq_change": 0.1,
+        "percentile": 0.01,
+        "use_ste": false,
+        "use_momentum": false,
+        "seed": 43,
+        "subset_limit": null,
+        "stage": "baseline"
+      },
+      "done": {
+        "cell": "DQ_MNIST_GAT",
+        "seed": 43,
+        "config_hash": "1e69ee2ce9df6e248860d76a7a8680514366513c2741aec58a2979e58ba69765",
+        "initial_sha256": "fd3f58a444a64c4786ca603bba1114316f298a2cd574f140d68e9cbe8d337696",
+        "selected_epoch": 149,
+        "validation": {
+          "loss": 0.17420554864406584,
+          "metric": 94.46,
+          "storage_proxy": 0.0,
+          "examples": 5000
+        },
+        "backbone_sha256": "80f459d548635839118002dd62b109d96422965322fa9691894ba942dd2a3fae",
+        "test_evaluations": 0,
+        "full_split": true,
+        "seconds": 62390.49477731809
+      },
+      "test": {
+        "cell": "DQ_MNIST_GAT",
+        "seed": 43,
+        "method": "none",
+        "loss": 0.19318885768800975,
+        "metric": 94.04,
+        "examples": 10000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "a1de56bbcee2e43cf3a1558eeda48106d56a2748c4ca68e8bbdc602cbbe71f66",
+        "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+      },
+      "checkpoint_file_sha256": "a1de56bbcee2e43cf3a1558eeda48106d56a2748c4ca68e8bbdc602cbbe71f66"
+    },
+    "graphlora_reference": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/DQ_MNIST_GAT/seed_43",
+      "test": {
+        "cell": "DQ_MNIST_GAT",
+        "seed": 43,
+        "method": "graphlora",
+        "loss": 0.18599218943044543,
+        "metric": 95.13000000000001,
+        "examples": 10000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "d0298aab8d24c85c782385bd7b9bae5b1111ecefe78b036f26f8cf52c1104c9c",
+        "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+      },
+      "checkpoint_file_sha256": "d0298aab8d24c85c782385bd7b9bae5b1111ecefe78b036f26f8cf52c1104c9c",
+      "test_file_sha256": "6627744a0d5c74292af5856d03999a065c4c2c7226bf95353bf7602dbd136dc0"
+    },
+    "previous_gpf": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_rerun_3seeds_20261001_v1/DQ_MNIST_GAT/seed_43",
+      "done": {
+        "cell": "DQ_MNIST_GAT",
+        "seed": 43,
+        "config_hash": "6b82bfbc4bf2ef364911c7c781df326d4c2a14d868ea2cc6d77f7aecf39b90aa",
+        "selected_epoch": 133,
+        "validation": {
+          "loss": 0.1445223817139864,
+          "metric": 94.88,
+          "storage_proxy": 0.0,
+          "examples": 5000
+        },
+        "test_evaluations": 0,
+        "full_split": true,
+        "common_backbone_sha256": "fd3f58a444a64c4786ca603bba1114316f298a2cd574f140d68e9cbe8d337696",
+        "state_sha256": "4876b28f95393ece21ee23026de929f4fa7a3de7651d6b1e7a947f8ea22e37e2",
+        "checkpoint_file_sha256": "5f70f231798cfa1b4407ef76b5cd43bedb893f57f01af3ee533b92b20a60982d",
+        "training_seconds": 50210.915909158066,
+        "peak_cuda_memory_bytes": 1247180288,
+        "device": "cuda:0",
+        "gpu_name": "NVIDIA GeForce RTX 4090",
+        "total_parameters": 125426,
+        "trainable_parameters": 125426,
+        "adapter_parameters": 4576,
+        "prompt_parameters": 4576,
+        "input_prompt_parameters": 140,
+        "aggregation_prompt_parameters": 4436,
+        "adapter_fp32_bytes": 18304,
+        "adapter_buffer_bytes": 0,
+        "sites": [
+          {
+            "name": "convs.0",
+            "insertion": "before_native_update",
+            "width": 152
+          },
+          {
+            "name": "convs.1",
+            "insertion": "before_native_update",
+            "width": 152
+          },
+          {
+            "name": "convs.2",
+            "insertion": "before_native_update",
+            "width": 152
+          },
+          {
+            "name": "convs.3",
+            "insertion": "before_native_update",
+            "width": 152
+          }
+        ],
+        "input_site": {
+          "width": 3,
+          "insertion": "before_input_projection"
+        }
+      },
+      "test": {
+        "cell": "DQ_MNIST_GAT",
+        "seed": 43,
+        "method": "gpf_lorap",
+        "loss": 0.1721386603847146,
+        "metric": 94.47,
+        "examples": 10000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "5f70f231798cfa1b4407ef76b5cd43bedb893f57f01af3ee533b92b20a60982d",
+        "test_lock_sha256": "5fe7738304bcbc2f64f9b7c745e363c7fdc94033a3a16b4b9a1040d7a86336fb"
+      }
+    }
+  },
+  "subset_limit": 8,
+  "protocol": "joint"
+}

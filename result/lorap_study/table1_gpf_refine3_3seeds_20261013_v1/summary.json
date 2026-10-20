@@ -1,0 +1,264 @@
+[
+  {
+    "cell": "QAT_CIFAR10_GCN",
+    "new_screened": 12,
+    "selected_candidate": "r12",
+    "selection": {
+      "candidate": "r12",
+      "validation_loss": 1.5245332009633383,
+      "per_seed_validation": [
+        {
+          "seed": 41,
+          "loss": 1.5218245609283447
+        },
+        {
+          "seed": 42,
+          "loss": 1.5331277717590333
+        },
+        {
+          "seed": 43,
+          "loss": 1.5186472702026368
+        }
+      ],
+      "ranking": [
+        {
+          "candidate": "r12",
+          "validation_loss": 1.5245332009633383,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 1.5218245609283447
+            },
+            {
+              "seed": 42,
+              "loss": 1.5331277717590333
+            },
+            {
+              "seed": 43,
+              "loss": 1.5186472702026368
+            }
+          ]
+        },
+        {
+          "candidate": "r00",
+          "validation_loss": 1.5268228004455566,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 1.5473249765396118
+            },
+            {
+              "seed": 42,
+              "loss": 1.5053604881286622
+            },
+            {
+              "seed": 43,
+              "loss": 1.527782936668396
+            }
+          ]
+        },
+        {
+          "candidate": "r11",
+          "validation_loss": 1.5309765567143758,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 1.4929390865325927
+            },
+            {
+              "seed": 42,
+              "loss": 1.53534504737854
+            },
+            {
+              "seed": 43,
+              "loss": 1.5646455362319946
+            }
+          ]
+        },
+        {
+          "candidate": "r09",
+          "validation_loss": 1.5326549584706624,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 1.5342418535232545
+            },
+            {
+              "seed": 42,
+              "loss": 1.5419081861495971
+            },
+            {
+              "seed": 43,
+              "loss": 1.5218148357391357
+            }
+          ]
+        }
+      ],
+      "rejected": [],
+      "selection_seeds": [
+        41,
+        42,
+        43
+      ],
+      "criterion": "mean three-seed validation loss"
+    },
+    "validation_fits": 12,
+    "tests": 3,
+    "test": {
+      "mean": 42.29333333333334,
+      "sd": 0.6916887546673929,
+      "n": 3
+    },
+    "graphlora": {
+      "mean": 43.623333333333335,
+      "sd": 0.9154416056381371,
+      "n": 3
+    },
+    "previous_gpf": {
+      "mean": 41.79333333333334,
+      "sd": 0.810945949699075,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": -1.3299999999999983,
+      "sd": 1.5508707231745602,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 40.57333333333333,
+      "sd": 1.5076250639112245,
+      "n": 3
+    }
+  },
+  {
+    "cell": "DQ_ZINC_GCN",
+    "new_screened": 12,
+    "selected_candidate": "r08",
+    "selection": {
+      "candidate": "r08",
+      "validation_loss": 0.5356222110589345,
+      "per_seed_validation": [
+        {
+          "seed": 41,
+          "loss": 0.5354083647727966
+        },
+        {
+          "seed": 42,
+          "loss": 0.5422729742527008
+        },
+        {
+          "seed": 43,
+          "loss": 0.5291852941513061
+        }
+      ],
+      "ranking": [
+        {
+          "candidate": "r08",
+          "validation_loss": 0.5356222110589345,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 0.5354083647727966
+            },
+            {
+              "seed": 42,
+              "loss": 0.5422729742527008
+            },
+            {
+              "seed": 43,
+              "loss": 0.5291852941513061
+            }
+          ]
+        },
+        {
+          "candidate": "r07",
+          "validation_loss": 0.5367957723140717,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 0.5317625896930694
+            },
+            {
+              "seed": 42,
+              "loss": 0.5454688386917115
+            },
+            {
+              "seed": 43,
+              "loss": 0.5331558885574341
+            }
+          ]
+        },
+        {
+          "candidate": "r06",
+          "validation_loss": 0.5440608361562093,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 0.5479053196907043
+            },
+            {
+              "seed": 42,
+              "loss": 0.5468896708488464
+            },
+            {
+              "seed": 43,
+              "loss": 0.5373875179290771
+            }
+          ]
+        },
+        {
+          "candidate": "r00",
+          "validation_loss": 0.5443420926729838,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 0.5372305116653442
+            },
+            {
+              "seed": 42,
+              "loss": 0.5552588534355164
+            },
+            {
+              "seed": 43,
+              "loss": 0.5405369129180908
+            }
+          ]
+        }
+      ],
+      "rejected": [],
+      "selection_seeds": [
+        41,
+        42,
+        43
+      ],
+      "criterion": "mean three-seed validation loss"
+    },
+    "validation_fits": 12,
+    "tests": 3,
+    "test": {
+      "mean": 0.5669770240783691,
+      "sd": 0.009047335957104122,
+      "n": 3
+    },
+    "graphlora": {
+      "mean": 0.5676439221700033,
+      "sd": 0.009692356233306899,
+      "n": 3
+    },
+    "previous_gpf": {
+      "mean": 0.5786177546183268,
+      "sd": 0.009816184164455143,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": 0.0006668980916341161,
+      "sd": 0.018027179146962266,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 0.5994541409810384,
+      "sd": 0.0024911785836981204,
+      "n": 3
+    }
+  }
+]

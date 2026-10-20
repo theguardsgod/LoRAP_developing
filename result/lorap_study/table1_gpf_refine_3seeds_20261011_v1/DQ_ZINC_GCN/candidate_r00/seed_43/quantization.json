@@ -1,0 +1,279 @@
+{
+  "quantizers": [
+    {
+      "name": "convs.0.mp_quantizers.message_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -3.448420763015747,
+      "max_val": 5.17263126373291
+    },
+    {
+      "name": "convs.0.mp_quantizers.update_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -10.420040130615234,
+      "max_val": 15.087669372558594
+    },
+    {
+      "name": "convs.0.mp_quantizers.aggregate_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -10.345261573791504,
+      "max_val": 14.943155288696289
+    },
+    {
+      "name": "convs.0.layer_quantizers.weights_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -0.14985598623752594,
+      "max_val": 0.1412869542837143
+    },
+    {
+      "name": "convs.0.layer_quantizers.inputs_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -2.5945329666137695,
+      "max_val": 2.2173409461975098
+    },
+    {
+      "name": "convs.0.layer_quantizers.features_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -10.269182205200195,
+      "max_val": 15.593977928161621
+    },
+    {
+      "name": "convs.0.layer_quantizers.norm_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": 0.19999997317790985,
+      "max_val": 0.49999991059303284
+    },
+    {
+      "name": "convs.1.mp_quantizers.message_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -2.501131296157837,
+      "max_val": 3.0969178676605225
+    },
+    {
+      "name": "convs.1.mp_quantizers.update_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -7.114041328430176,
+      "max_val": 7.947545528411865
+    },
+    {
+      "name": "convs.1.mp_quantizers.aggregate_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -6.968373775482178,
+      "max_val": 7.909233093261719
+    },
+    {
+      "name": "convs.1.layer_quantizers.weights_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -0.15192069113254547,
+      "max_val": 0.14068934321403503
+    },
+    {
+      "name": "convs.1.layer_quantizers.inputs_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -2.5396761894226074,
+      "max_val": 3.4110515117645264
+    },
+    {
+      "name": "convs.1.layer_quantizers.features_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -7.754335403442383,
+      "max_val": 9.665830612182617
+    },
+    {
+      "name": "convs.1.layer_quantizers.norm_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": 0.19999997317790985,
+      "max_val": 0.49999991059303284
+    },
+    {
+      "name": "convs.2.mp_quantizers.message_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -2.168808698654175,
+      "max_val": 1.9493942260742188
+    },
+    {
+      "name": "convs.2.mp_quantizers.update_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -5.939847469329834,
+      "max_val": 4.9701457023620605
+    },
+    {
+      "name": "convs.2.mp_quantizers.aggregate_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -6.0400309562683105,
+      "max_val": 5.063965797424316
+    },
+    {
+      "name": "convs.2.layer_quantizers.weights_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -0.14963290095329285,
+      "max_val": 0.14076867699623108
+    },
+    {
+      "name": "convs.2.layer_quantizers.inputs_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -2.495718240737915,
+      "max_val": 4.358994483947754
+    },
+    {
+      "name": "convs.2.layer_quantizers.features_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -6.798933982849121,
+      "max_val": 5.875924110412598
+    },
+    {
+      "name": "convs.2.layer_quantizers.norm_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": 0.19999997317790985,
+      "max_val": 0.49999991059303284
+    },
+    {
+      "name": "convs.3.mp_quantizers.message_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -2.5045084953308105,
+      "max_val": 2.631171703338623
+    },
+    {
+      "name": "convs.3.mp_quantizers.update_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -6.559273719787598,
+      "max_val": 7.6362104415893555
+    },
+    {
+      "name": "convs.3.mp_quantizers.aggregate_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -6.505195140838623,
+      "max_val": 7.799962997436523
+    },
+    {
+      "name": "convs.3.layer_quantizers.weights_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -0.14094026386737823,
+      "max_val": 0.14684487879276276
+    },
+    {
+      "name": "convs.3.layer_quantizers.inputs_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -2.275846481323242,
+      "max_val": 5.551571846008301
+    },
+    {
+      "name": "convs.3.layer_quantizers.features_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -7.7064290046691895,
+      "max_val": 8.3939847946167
+    },
+    {
+      "name": "convs.3.layer_quantizers.norm_low",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": 0.19999997317790985,
+      "max_val": 0.49999991059303284
+    },
+    {
+      "name": "lin1.layer_quant.inputs",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -1.0889906883239746,
+      "max_val": 4.4473700523376465
+    },
+    {
+      "name": "lin1.layer_quant.features",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -9.809903144836426,
+      "max_val": 7.864398002624512
+    },
+    {
+      "name": "lin1.layer_quant.weights",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -0.10270968824625015,
+      "max_val": 0.09311792254447937
+    },
+    {
+      "name": "lin2.layer_quant.inputs",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": false,
+      "min_val": 0.0,
+      "max_val": 13.772967338562012
+    },
+    {
+      "name": "lin2.layer_quant.features",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -9.60158634185791,
+      "max_val": 3.9940898418426514
+    },
+    {
+      "name": "lin2.layer_quant.weights",
+      "kind": "affine_INT4",
+      "bits": 4,
+      "signed": true,
+      "min_val": -0.12408535927534103,
+      "max_val": 0.07318828999996185
+    }
+  ],
+  "statistic": "rounded codebook bits by quantizer parameter entry; unused graph clusters are not traffic weighted",
+  "storage_note": "fake quantization checkpoints contain FP32 tensors; no claim of packed INT4 artifact size",
+  "checkpoint_tensor_bytes": 449808
+}

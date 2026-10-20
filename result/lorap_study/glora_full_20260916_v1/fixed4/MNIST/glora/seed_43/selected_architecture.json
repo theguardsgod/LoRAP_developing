@@ -1,0 +1,102 @@
+{
+  "architecture": [
+    170,
+    22,
+    4,
+    21,
+    333,
+    322,
+    137,
+    342,
+    260,
+    396,
+    60
+  ],
+  "paths": {
+    "embedding": {
+      "A": "vector",
+      "B": "constant",
+      "C": "lora",
+      "D": "vector",
+      "E": "vector"
+    },
+    "convs.0.mlp.linear1": {
+      "A": "lora",
+      "B": "lora",
+      "C": "none",
+      "D": "none",
+      "E": "none"
+    },
+    "convs.0.mlp.linear2": {
+      "A": "lora",
+      "B": "lora",
+      "C": "lora",
+      "D": "none",
+      "E": "none"
+    },
+    "convs.1.mlp.linear1": {
+      "A": "lora",
+      "B": "lora",
+      "C": "none",
+      "D": "none",
+      "E": "constant"
+    },
+    "convs.1.mlp.linear2": {
+      "A": "none",
+      "B": "lora",
+      "C": "vector",
+      "D": "constant",
+      "E": "constant"
+    },
+    "convs.2.mlp.linear1": {
+      "A": "constant",
+      "B": "none",
+      "C": "none",
+      "D": "vector",
+      "E": "none"
+    },
+    "convs.2.mlp.linear2": {
+      "A": "vector",
+      "B": "vector",
+      "C": "lora",
+      "D": "constant",
+      "E": "vector"
+    },
+    "convs.3.mlp.linear1": {
+      "A": "none",
+      "B": "lora",
+      "C": "none",
+      "D": "constant",
+      "E": "constant"
+    },
+    "convs.3.mlp.linear2": {
+      "A": "constant",
+      "B": "vector",
+      "C": "vector",
+      "D": "vector",
+      "E": "vector"
+    },
+    "lin1": {
+      "A": "none",
+      "B": "constant",
+      "C": "none",
+      "D": "constant",
+      "E": "constant"
+    },
+    "lin2": {
+      "A": "lora",
+      "B": "constant",
+      "C": "lora",
+      "D": "vector",
+      "E": "constant"
+    }
+  },
+  "validation": {
+    "loss": 0.4149760608673096,
+    "accuracy": 0.8628,
+    "examples": 5000,
+    "legacy_budget_proxy": 70.96748046875
+  },
+  "active_parameters": 5778,
+  "search_evaluated": 1000
+}

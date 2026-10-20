@@ -1,0 +1,302 @@
+{
+  "job": {
+    "cell": "DQ_CiteSeer_GAT",
+    "candidate": "r10",
+    "seed": 43,
+    "config": {
+      "cell": "DQ_CiteSeer_GAT",
+      "dataset": "CiteSeer",
+      "architecture": "GAT",
+      "framework": "DQ",
+      "data_root": "/data/cyliu/dataset/CiteSeer",
+      "node": true,
+      "regression": false,
+      "width": 8,
+      "heads": 8,
+      "layers": 2,
+      "bit": 4,
+      "num_deg": 1000,
+      "batch_size": 128,
+      "paper_none": 41.9,
+      "paper_none_sd": 5.9,
+      "paper_gpf_lorap": 54.4,
+      "metric": "accuracy_percent",
+      "baseline_epochs": 250,
+      "adapter_epochs": 200,
+      "seeds": [
+        41,
+        42,
+        43
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "dropout": 0.5,
+      "init": "norm",
+      "lr_feature": 0.01,
+      "lr_message": 0.01,
+      "lr_weight": 0.001,
+      "lr_bit": 0.001,
+      "lr_attention": 0.001,
+      "lr_edge": 0.1,
+      "a_loss": 0.0,
+      "a_storage": 5.0,
+      "bit_bounds": [
+        1.0,
+        16.0
+      ],
+      "stop_patience": 30,
+      "min_epochs": 50,
+      "aggregation_implementation": "stable_csr_v2",
+      "optimizer_recipe": "native_groups_v2",
+      "dq_low": 0.1,
+      "dq_change": 0.1,
+      "percentile": 0.01,
+      "use_ste": false,
+      "use_momentum": false
+    },
+    "hyperparameters": {
+      "rank": 4,
+      "num_prompts": 20,
+      "prompt_lr": 0.003,
+      "prompt_weight_decay": 0.0,
+      "sharing": "score_per_width_factors_per_layer",
+      "insertion": "before_native_update",
+      "training_cuda_rng_offset": 930000,
+      "input_scale": 0.1,
+      "aggregation_scale": 1.0,
+      "zero_init": true,
+      "lr_scheduler": {
+        "name": "native"
+      }
+    },
+    "epochs": 250,
+    "screen_epochs": 250,
+    "directory": "DQ_CiteSeer_GAT/candidate_r10/seed_43",
+    "reference": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/DQ_CiteSeer_GAT/seed_43/baseline",
+      "config": {
+        "cell": "DQ_CiteSeer_GAT",
+        "dataset": "CiteSeer",
+        "architecture": "GAT",
+        "framework": "DQ",
+        "data_root": "/data/cyliu/dataset/CiteSeer",
+        "node": true,
+        "regression": false,
+        "width": 8,
+        "heads": 8,
+        "layers": 2,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 41.9,
+        "paper_none_sd": 5.9,
+        "paper_gpf_lorap": 54.4,
+        "metric": "accuracy_percent",
+        "baseline_epochs": 250,
+        "adapter_epochs": 200,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.001,
+        "weight_decay": 4e-05,
+        "dropout": 0.5,
+        "init": "norm",
+        "lr_feature": 0.01,
+        "lr_message": 0.01,
+        "lr_weight": 0.001,
+        "lr_bit": 0.001,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 0.0,
+        "a_storage": 5.0,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 50,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2",
+        "dq_low": 0.1,
+        "dq_change": 0.1,
+        "percentile": 0.01,
+        "use_ste": false,
+        "use_momentum": false,
+        "seed": 43,
+        "subset_limit": null,
+        "stage": "baseline"
+      },
+      "done": {
+        "cell": "DQ_CiteSeer_GAT",
+        "seed": 43,
+        "config_hash": "8bda16457432c5796bb2a0bd58e7deba27f26a3638ca5e27b8e056d3fab6203f",
+        "initial_sha256": "055937448a0e0897d649a99112fe0313a2e6645a36857a55c170805777ba8f38",
+        "selected_epoch": 169,
+        "validation": {
+          "loss": 1.1030354499816895,
+          "metric": 61.4,
+          "storage_proxy": 0.0,
+          "examples": 500
+        },
+        "backbone_sha256": "664bc2522602e48de4c99fcaa45455b4ed569068b4f244659859a3b03e47c910",
+        "test_evaluations": 0,
+        "full_split": true,
+        "seconds": 62.16550756059587
+      },
+      "test": {
+        "cell": "DQ_CiteSeer_GAT",
+        "seed": 43,
+        "method": "none",
+        "loss": 1.1279149055480957,
+        "metric": 63.0,
+        "examples": 1000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "6aafb6593185a75edc8a5223bbb695af3c6b385d44eff5741c127a62fa29d722",
+        "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+      },
+      "checkpoint_file_sha256": "6aafb6593185a75edc8a5223bbb695af3c6b385d44eff5741c127a62fa29d722"
+    },
+    "graphlora_reference": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/DQ_CiteSeer_GAT/seed_43",
+      "test": {
+        "cell": "DQ_CiteSeer_GAT",
+        "seed": 43,
+        "method": "graphlora",
+        "loss": 1.308855414390564,
+        "metric": 59.4,
+        "examples": 1000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "e68b0ea330d581cb8eac17747e81fd91d4d484ff4139ef01a2d9b1885bfd6559",
+        "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+      },
+      "checkpoint_file_sha256": "e68b0ea330d581cb8eac17747e81fd91d4d484ff4139ef01a2d9b1885bfd6559",
+      "test_file_sha256": "fa065d2f16b68815980ffdac7b1959541c20a229accf9a46ab565c119ff39dfd"
+    },
+    "previous_gpf": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_search_3seeds_20261007_v1/DQ_CiteSeer_GAT/candidate_c05/seed_43",
+      "done": {
+        "cell": "DQ_CiteSeer_GAT",
+        "candidate": "c05",
+        "seed": 43,
+        "config_hash": "2865060db2a7068e26fad09b68970f4df3e5746ced0e6d3f73588a2115c5b0ea",
+        "selected_epoch": 87,
+        "validation": {
+          "loss": 1.0822556018829346,
+          "metric": 61.199999999999996,
+          "storage_proxy": 0.0,
+          "examples": 500
+        },
+        "test_evaluations": 0,
+        "full_split": true,
+        "common_backbone_sha256": "055937448a0e0897d649a99112fe0313a2e6645a36857a55c170805777ba8f38",
+        "state_sha256": "64b0ff9316b920544b055e5895f5d423090816989cd29feae853619b04c67d84",
+        "checkpoint_file_sha256": "341bc5646b0440272ef8f4e79b59f279cf38959375ca99e109bfa627131f372d",
+        "training_seconds": 39.78480988368392,
+        "peak_cuda_memory_bytes": 311763456,
+        "device": "cuda:1",
+        "gpu_name": "NVIDIA GeForce RTX 4090",
+        "total_parameters": 388046,
+        "trainable_parameters": 388046,
+        "adapter_parameters": 150460,
+        "prompt_parameters": 150460,
+        "input_prompt_parameters": 148140,
+        "aggregation_prompt_parameters": 2320,
+        "adapter_fp32_bytes": 601840,
+        "adapter_buffer_bytes": 0,
+        "sites": [
+          {
+            "name": "convs.0",
+            "insertion": "before_native_update",
+            "width": 64
+          },
+          {
+            "name": "convs.1",
+            "insertion": "before_native_update",
+            "width": 6
+          }
+        ],
+        "input_site": {
+          "width": 3703,
+          "insertion": "before_input_projection"
+        },
+        "input_scale": 0.1,
+        "aggregation_scale": 1.0,
+        "zero_init": true
+      },
+      "test": {
+        "cell": "DQ_CiteSeer_GAT",
+        "seed": 43,
+        "method": "gpf_lorap_tuned",
+        "loss": 1.1255321502685547,
+        "metric": 60.9,
+        "examples": 1000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "341bc5646b0440272ef8f4e79b59f279cf38959375ca99e109bfa627131f372d",
+        "test_lock_sha256": "957bfc17c9a5a2ac3d8fd0e2ae159e50ec0c78b08a93d7052ef5836e210c879c"
+      }
+    },
+    "original_gpf": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_rerun_3seeds_20261001_v1/DQ_CiteSeer_GAT/seed_43",
+      "done": {
+        "cell": "DQ_CiteSeer_GAT",
+        "seed": 43,
+        "config_hash": "a8fae39e388460d0d58f8a39a3a886d020982d898774b20bad20274871ff0c12",
+        "selected_epoch": 104,
+        "validation": {
+          "loss": 1.0919724702835083,
+          "metric": 60.0,
+          "storage_proxy": 0.0,
+          "examples": 500
+        },
+        "test_evaluations": 0,
+        "full_split": true,
+        "common_backbone_sha256": "055937448a0e0897d649a99112fe0313a2e6645a36857a55c170805777ba8f38",
+        "state_sha256": "a567d2574d781fc15bd483129eb7bd1574a2e450a38f0144ce4a52705f358829",
+        "checkpoint_file_sha256": "194ced406ab9c6bc8826d5c606d7a74cdc1aba64eb779ac41bfaaf092382ab17",
+        "training_seconds": 37.562485879287124,
+        "peak_cuda_memory_bytes": 302083584,
+        "device": "cuda:2",
+        "gpu_name": "NVIDIA GeForce RTX 4090",
+        "total_parameters": 387386,
+        "trainable_parameters": 387386,
+        "adapter_parameters": 149800,
+        "prompt_parameters": 149800,
+        "input_prompt_parameters": 148140,
+        "aggregation_prompt_parameters": 1660,
+        "adapter_fp32_bytes": 599200,
+        "adapter_buffer_bytes": 0,
+        "sites": [
+          {
+            "name": "convs.0",
+            "insertion": "before_native_update",
+            "width": 64
+          },
+          {
+            "name": "convs.1",
+            "insertion": "before_native_update",
+            "width": 6
+          }
+        ],
+        "input_site": {
+          "width": 3703,
+          "insertion": "before_input_projection"
+        }
+      },
+      "test": {
+        "cell": "DQ_CiteSeer_GAT",
+        "seed": 43,
+        "method": "gpf_lorap",
+        "loss": 1.125042200088501,
+        "metric": 59.9,
+        "examples": 1000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "194ced406ab9c6bc8826d5c606d7a74cdc1aba64eb779ac41bfaaf092382ab17",
+        "test_lock_sha256": "5fe7738304bcbc2f64f9b7c745e363c7fdc94033a3a16b4b9a1040d7a86336fb"
+      }
+    }
+  },
+  "subset_limit": null,
+  "protocol": "joint"
+}

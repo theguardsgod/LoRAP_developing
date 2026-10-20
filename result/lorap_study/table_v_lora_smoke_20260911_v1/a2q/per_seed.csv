@@ -1,0 +1,2 @@
+dataset,variant,seed,epochs,best_epoch,validation_CE,validation_accuracy,test_CE,test_accuracy,total_parameters,trainable_parameters,prompt_parameters,lora_parameters,prompt_fp32_bytes,lora_fp32_bytes,prompt_buffer_bytes,activation_effective_bits,legacy_budget_proxy,training_seconds,peak_cuda_memory_bytes,device,gpu
+MNIST,lora,41,2,2,2.3043956756591797,0.09375,,,142730,141180,0,4426,0,17704,0,4.0,56.288902282714844,0.1482118908315897,360076288,cuda:0,NVIDIA GeForce RTX 4090

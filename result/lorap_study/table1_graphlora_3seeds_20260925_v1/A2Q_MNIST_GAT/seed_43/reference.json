@@ -1,0 +1,81 @@
+{
+  "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/A2Q_MNIST_GAT/seed_43/baseline",
+  "config": {
+    "cell": "A2Q_MNIST_GAT",
+    "dataset": "MNIST",
+    "architecture": "GAT",
+    "framework": "A2Q",
+    "data_root": "/data/cyliu/dataset/gnn-mnist",
+    "node": false,
+    "regression": false,
+    "width": 19,
+    "heads": 8,
+    "layers": 4,
+    "bit": 4,
+    "num_deg": 1000,
+    "batch_size": 128,
+    "paper_none": 92.5,
+    "paper_none_sd": 0.6,
+    "paper_gpf_lorap": 93.1,
+    "metric": "accuracy_percent",
+    "baseline_epochs": 200,
+    "adapter_epochs": 100,
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "dropout": 0.0,
+    "init": "uniform",
+    "lr_feature": 0.01,
+    "lr_message": 0.01,
+    "lr_weight": 0.0001,
+    "lr_bit": 0.01,
+    "lr_attention": 0.0001,
+    "lr_edge": 0.05,
+    "a_loss": 0.0002,
+    "a_storage": 0.1,
+    "bit_bounds": [
+      1.0,
+      16.0
+    ],
+    "stop_patience": 30,
+    "min_epochs": 20,
+    "aggregation_implementation": "stable_csr_v2",
+    "optimizer_recipe": "native_groups_v2",
+    "seed": 43,
+    "subset_limit": null,
+    "stage": "baseline"
+  },
+  "done": {
+    "cell": "A2Q_MNIST_GAT",
+    "seed": 43,
+    "config_hash": "d0e2c94e1b59231f8cfcccfa325201fba9813482b07938796649890c053b7cc1",
+    "initial_sha256": "9d2c86b7f8532f01d4df292977fa17bba81af6e51ebb8a4765bff92b6ea72888",
+    "selected_epoch": 1,
+    "validation": {
+      "loss": 1.137761901473999,
+      "metric": 61.4,
+      "storage_proxy": 34.83002128601074,
+      "examples": 5000
+    },
+    "backbone_sha256": "f2dc617d6b1801e4cbfab6d77dd1b65184320b3a7983de0067f2b690be01c1ab",
+    "test_evaluations": 0,
+    "full_split": true,
+    "seconds": 13522.228716464713
+  },
+  "test": {
+    "cell": "A2Q_MNIST_GAT",
+    "seed": 43,
+    "method": "none",
+    "loss": 1.138318525123596,
+    "metric": 60.47,
+    "examples": 10000,
+    "completed_test_evaluations": 1,
+    "checkpoint_file_sha256": "392fd6a265f0300fa0becdafc29e237c862e605ebbc6b7d3fe4f05da180031e5",
+    "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+  },
+  "checkpoint_file_sha256": "392fd6a265f0300fa0becdafc29e237c862e605ebbc6b7d3fe4f05da180031e5"
+}

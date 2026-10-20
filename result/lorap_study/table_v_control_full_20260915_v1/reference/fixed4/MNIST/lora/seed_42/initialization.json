@@ -1,0 +1,24 @@
+{
+  "common_backbone_sha256": "6b473f31c34485f366e653641b126ac6bd90a6fa0590b2bf9f9b53cbaa2f0a53",
+  "initial_state_sha256": "08faf68c07e1e5253c50e6c623c17f7bf73412076d692957349aadd204e99a0c",
+  "total_parameters": 142730,
+  "trainable_parameters": 130180,
+  "lora_parameters": 4426,
+  "prompt_parameters": 0,
+  "lora_fp32_bytes": 17704,
+  "prompt_fp32_bytes": 0,
+  "prompt_buffer_bytes": 0,
+  "lora_targets": [
+    "embedding",
+    "convs.0.mlp.linear1",
+    "convs.0.mlp.linear2",
+    "convs.1.mlp.linear1",
+    "convs.1.mlp.linear2",
+    "convs.2.mlp.linear1",
+    "convs.2.mlp.linear2",
+    "convs.3.mlp.linear1",
+    "convs.3.mlp.linear2",
+    "lin1",
+    "lin2"
+  ]
+}

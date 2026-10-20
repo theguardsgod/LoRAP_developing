@@ -1,0 +1,454 @@
+[
+  {
+    "cell": "DQ_CiteSeer_GAT",
+    "new_screened": 12,
+    "selected_candidate": "r10",
+    "selection": {
+      "candidate": "r10",
+      "validation_loss": 1.0905792315800984,
+      "per_seed_validation": [
+        {
+          "seed": 41,
+          "loss": 1.1220324039459229
+        },
+        {
+          "seed": 42,
+          "loss": 1.057229995727539
+        },
+        {
+          "seed": 43,
+          "loss": 1.0924752950668335
+        }
+      ],
+      "ranking": [
+        {
+          "candidate": "r10",
+          "validation_loss": 1.0905792315800984,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 1.1220324039459229
+            },
+            {
+              "seed": 42,
+              "loss": 1.057229995727539
+            },
+            {
+              "seed": 43,
+              "loss": 1.0924752950668335
+            }
+          ]
+        },
+        {
+          "candidate": "r03",
+          "validation_loss": 1.0935261646906536,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 1.1251142024993896
+            },
+            {
+              "seed": 42,
+              "loss": 1.0751889944076538
+            },
+            {
+              "seed": 43,
+              "loss": 1.080275297164917
+            }
+          ]
+        },
+        {
+          "candidate": "r00",
+          "validation_loss": 1.096248745918274,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 1.14542818069458
+            },
+            {
+              "seed": 42,
+              "loss": 1.0610624551773071
+            },
+            {
+              "seed": 43,
+              "loss": 1.0822556018829346
+            }
+          ]
+        }
+      ],
+      "rejected": [],
+      "selection_seeds": [
+        41,
+        42,
+        43
+      ],
+      "criterion": "mean three-seed validation loss"
+    },
+    "validation_fits": 9,
+    "tests": 3,
+    "test": {
+      "mean": 63.2,
+      "sd": 0.9539392014169428,
+      "n": 3
+    },
+    "graphlora": {
+      "mean": 63.16666666666667,
+      "sd": 3.3261589458913945,
+      "n": 3
+    },
+    "previous_gpf": {
+      "mean": 61.6,
+      "sd": 0.7549834435270749,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": 0.03333333333333144,
+      "sd": 3.2020826556060906,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 64.03333333333333,
+      "sd": 1.1676186592091309,
+      "n": 3
+    }
+  },
+  {
+    "cell": "QAT_CIFAR10_GCN",
+    "new_screened": 12,
+    "selected_candidate": "r05",
+    "selection": {
+      "candidate": "r05",
+      "validation_loss": 1.5268228004455566,
+      "per_seed_validation": [
+        {
+          "seed": 41,
+          "loss": 1.5473249765396118
+        },
+        {
+          "seed": 42,
+          "loss": 1.5053604881286622
+        },
+        {
+          "seed": 43,
+          "loss": 1.527782936668396
+        }
+      ],
+      "ranking": [
+        {
+          "candidate": "r05",
+          "validation_loss": 1.5268228004455566,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 1.5473249765396118
+            },
+            {
+              "seed": 42,
+              "loss": 1.5053604881286622
+            },
+            {
+              "seed": 43,
+              "loss": 1.527782936668396
+            }
+          ]
+        },
+        {
+          "candidate": "r00",
+          "validation_loss": 1.5585375118255616,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 1.5276237768173218
+            },
+            {
+              "seed": 42,
+              "loss": 1.604106075668335
+            },
+            {
+              "seed": 43,
+              "loss": 1.543882682991028
+            }
+          ]
+        },
+        {
+          "candidate": "r04",
+          "validation_loss": 1.5622237080256145,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 1.554406643295288
+            },
+            {
+              "seed": 42,
+              "loss": 1.5633746168136597
+            },
+            {
+              "seed": 43,
+              "loss": 1.5688898639678954
+            }
+          ]
+        }
+      ],
+      "rejected": [],
+      "selection_seeds": [
+        41,
+        42,
+        43
+      ],
+      "criterion": "mean three-seed validation loss"
+    },
+    "validation_fits": 9,
+    "tests": 3,
+    "test": {
+      "mean": 41.79333333333334,
+      "sd": 0.810945949699075,
+      "n": 3
+    },
+    "graphlora": {
+      "mean": 43.623333333333335,
+      "sd": 0.9154416056381371,
+      "n": 3
+    },
+    "previous_gpf": {
+      "mean": 40.28666666666667,
+      "sd": 1.6995391532216428,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": -1.8299999999999983,
+      "sd": 1.700352904546582,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 40.57333333333333,
+      "sd": 1.5076250639112245,
+      "n": 3
+    }
+  },
+  {
+    "cell": "DQ_ZINC_GCN",
+    "new_screened": 12,
+    "selected_candidate": "r02",
+    "selection": {
+      "candidate": "r02",
+      "validation_loss": 0.5443420926729838,
+      "per_seed_validation": [
+        {
+          "seed": 41,
+          "loss": 0.5372305116653442
+        },
+        {
+          "seed": 42,
+          "loss": 0.5552588534355164
+        },
+        {
+          "seed": 43,
+          "loss": 0.5405369129180908
+        }
+      ],
+      "ranking": [
+        {
+          "candidate": "r02",
+          "validation_loss": 0.5443420926729838,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 0.5372305116653442
+            },
+            {
+              "seed": 42,
+              "loss": 0.5552588534355164
+            },
+            {
+              "seed": 43,
+              "loss": 0.5405369129180908
+            }
+          ]
+        },
+        {
+          "candidate": "r10",
+          "validation_loss": 0.5452510555585225,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 0.5518858366012573
+            },
+            {
+              "seed": 42,
+              "loss": 0.5502635502815246
+            },
+            {
+              "seed": 43,
+              "loss": 0.5336037797927856
+            }
+          ]
+        },
+        {
+          "candidate": "r00",
+          "validation_loss": 0.5519436976114909,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 0.5493915758132935
+            },
+            {
+              "seed": 42,
+              "loss": 0.5632230954170228
+            },
+            {
+              "seed": 43,
+              "loss": 0.5432164216041565
+            }
+          ]
+        }
+      ],
+      "rejected": [],
+      "selection_seeds": [
+        41,
+        42,
+        43
+      ],
+      "criterion": "mean three-seed validation loss"
+    },
+    "validation_fits": 9,
+    "tests": 3,
+    "test": {
+      "mean": 0.5786177546183268,
+      "sd": 0.009816184164455143,
+      "n": 3
+    },
+    "graphlora": {
+      "mean": 0.5676439221700033,
+      "sd": 0.009692356233306899,
+      "n": 3
+    },
+    "previous_gpf": {
+      "mean": 0.5883391558329264,
+      "sd": 0.0135846769644396,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": -0.010973832448323543,
+      "sd": 0.018011177978402446,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 0.5994541409810384,
+      "sd": 0.0024911785836981204,
+      "n": 3
+    }
+  },
+  {
+    "cell": "A2Q_ZINC_GAT",
+    "new_screened": 12,
+    "selected_candidate": "r11",
+    "selection": {
+      "candidate": "r11",
+      "validation_loss": 0.5256537492275238,
+      "per_seed_validation": [
+        {
+          "seed": 41,
+          "loss": 0.531519136428833
+        },
+        {
+          "seed": 42,
+          "loss": 0.5278843524456024
+        },
+        {
+          "seed": 43,
+          "loss": 0.517557758808136
+        }
+      ],
+      "ranking": [
+        {
+          "candidate": "r11",
+          "validation_loss": 0.5256537492275238,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 0.531519136428833
+            },
+            {
+              "seed": 42,
+              "loss": 0.5278843524456024
+            },
+            {
+              "seed": 43,
+              "loss": 0.517557758808136
+            }
+          ]
+        },
+        {
+          "candidate": "r04",
+          "validation_loss": 0.5453144106864929,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 0.5782536234855652
+            },
+            {
+              "seed": 42,
+              "loss": 0.5407312741279602
+            },
+            {
+              "seed": 43,
+              "loss": 0.5169583344459534
+            }
+          ]
+        },
+        {
+          "candidate": "r00",
+          "validation_loss": 0.5614597118695577,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 0.6128872537612915
+            },
+            {
+              "seed": 42,
+              "loss": 0.5377190842628479
+            },
+            {
+              "seed": 43,
+              "loss": 0.5337727975845337
+            }
+          ]
+        }
+      ],
+      "rejected": [],
+      "selection_seeds": [
+        41,
+        42,
+        43
+      ],
+      "criterion": "mean three-seed validation loss"
+    },
+    "validation_fits": 9,
+    "tests": 3,
+    "test": {
+      "mean": 0.5469538065592447,
+      "sd": 0.0074865580645345434,
+      "n": 3
+    },
+    "graphlora": {
+      "mean": 0.5807082583109537,
+      "sd": 0.022518713029043517,
+      "n": 3
+    },
+    "previous_gpf": {
+      "mean": 0.594750929514567,
+      "sd": 0.05941246987618321,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": 0.03375445175170899,
+      "sd": 0.020173902884203895,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 0.6808013966878255,
+      "sd": 0.020789184424859507,
+      "n": 3
+    }
+  }
+]

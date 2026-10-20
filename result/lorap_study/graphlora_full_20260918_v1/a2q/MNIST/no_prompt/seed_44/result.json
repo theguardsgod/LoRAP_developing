@@ -1,0 +1,41 @@
+{
+  "dataset": "MNIST",
+  "variant": "no_prompt",
+  "seed": 44,
+  "epochs": 200,
+  "config_sha256": "8499cae48da1501d8541230199669a1f30898b9bf7125fc9eb852345886f855a",
+  "best_epoch": 108,
+  "validation": {
+    "loss": 0.14629844312667847,
+    "accuracy": 0.9576,
+    "examples": 5000,
+    "legacy_budget_proxy": 32.10662727355957
+  },
+  "validation_reproduction": {
+    "selected_loss": 0.14629844312667847,
+    "replay_loss": 0.14629844312667847,
+    "delta": 0.0,
+    "absolute_tolerance": 0.0005
+  },
+  "test": {
+    "loss": 0.1573931865889579,
+    "accuracy": 0.9534,
+    "examples": 10000,
+    "legacy_budget_proxy": 32.38093648982954
+  },
+  "test_evaluations": 1,
+  "training_seconds": 20293.949992479756,
+  "peak_cuda_memory_bytes": 373850112,
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "physical_gpu": null,
+  "mean_activation_effective_bits": 3.991956296994531,
+  "common_backbone_sha256": "b6d5a55f6da22a1aef4ca020945a091192744f7427fd6dc62e839ef8419b40ae",
+  "initial_state_sha256": "b6d5a55f6da22a1aef4ca020945a091192744f7427fd6dc62e839ef8419b40ae",
+  "total_parameters": 138304,
+  "trainable_parameters": 136754,
+  "adapter_parameters": 0,
+  "adapter_fp32_bytes": 0,
+  "adapter_buffer_bytes": 0,
+  "prompt_parameters": 0
+}

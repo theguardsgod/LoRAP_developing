@@ -1,0 +1,63 @@
+{
+  "profile": {
+    "reference": "table_v_lora_fixed4",
+    "glora": "glora_joint_qat"
+  },
+  "epochs": {
+    "reference": 200,
+    "glora": 2
+  },
+  "seeds": {
+    "reference": [
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "glora": [
+      41
+    ]
+  },
+  "subset_sizes": {
+    "reference": null,
+    "glora": {
+      "train": 128,
+      "val": 64,
+      "test": 64
+    }
+  },
+  "variants": {
+    "reference": [
+      "no_prompt"
+    ],
+    "glora": [
+      "glora"
+    ]
+  },
+  "glora_rank": {
+    "reference": null,
+    "glora": 2
+  },
+  "search_population": {
+    "reference": null,
+    "glora": 4
+  },
+  "search_generations": {
+    "reference": null,
+    "glora": 2
+  },
+  "search_elite": {
+    "reference": null,
+    "glora": 2
+  },
+  "search_mutation": {
+    "reference": null,
+    "glora": 0.2
+  }
+}

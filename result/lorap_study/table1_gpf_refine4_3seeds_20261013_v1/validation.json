@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "tests": 21,
+  "test_modules": [
+    "runs.lorap_study.table1_gpf_search.test_expanded",
+    "runs.lorap_study.table1_gpf_search.test_refine",
+    "runs.lorap_study.table1_gpf_search.test_pipeline",
+    "runs.lorap_study.table1_frozen.test_core"
+  ],
+  "core_test_cells": [
+    "QAT_CIFAR10_GCN",
+    "DQ_CIFAR10_GCN"
+  ],
+  "smoke_root": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_refine4_smoke_20261013_v1",
+  "smoke_status": {
+    "complete": true,
+    "new_screened": 24,
+    "new_screens_expected": 24,
+    "reused_incumbent_fits": 0,
+    "validation_fits": 15,
+    "validation_fits_expected": 15,
+    "selected_cells": 1,
+    "cells_expected": 1,
+    "tests": 0,
+    "tests_expected": 0,
+    "new_test_evaluations": 0,
+    "reused_test_results": 0,
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "running": [],
+    "failures": [],
+    "blocking_failures": [],
+    "smoke": true
+  },
+  "reused_model_audit": "reused_model_audit.json",
+  "estimated_wall_hours": [
+    4,
+    6
+  ]
+}

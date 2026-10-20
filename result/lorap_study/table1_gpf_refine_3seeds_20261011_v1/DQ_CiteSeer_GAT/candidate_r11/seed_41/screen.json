@@ -1,0 +1,42 @@
+{
+  "config_hash": "bb140ca85189c295334c97752a9041e12e47e5bd57fb3f63e233f0619c479fb6",
+  "epochs": 250,
+  "validation": {
+    "loss": 1.1344817876815796,
+    "metric": 62.4,
+    "storage_proxy": 0.0,
+    "examples": 500
+  },
+  "selected_epoch": 108,
+  "checkpoint_file_sha256": "d43740366230ac58ef9527aa1f427597e07bc04f29da9aad93b212695ed326c4",
+  "training_seconds": 40.6507432628423,
+  "peak_cuda_memory_bytes": 304373248,
+  "device": "cuda:1",
+  "total_parameters": 537946,
+  "trainable_parameters": 537946,
+  "adapter_parameters": 300360,
+  "prompt_parameters": 300360,
+  "input_prompt_parameters": 296280,
+  "aggregation_prompt_parameters": 4080,
+  "adapter_fp32_bytes": 1201440,
+  "adapter_buffer_bytes": 0,
+  "sites": [
+    {
+      "name": "convs.0",
+      "insertion": "before_native_update",
+      "width": 64
+    },
+    {
+      "name": "convs.1",
+      "insertion": "before_native_update",
+      "width": 6
+    }
+  ],
+  "input_site": {
+    "width": 3703,
+    "insertion": "before_input_projection"
+  },
+  "input_scale": 0.1,
+  "aggregation_scale": 1.0,
+  "zero_init": true
+}

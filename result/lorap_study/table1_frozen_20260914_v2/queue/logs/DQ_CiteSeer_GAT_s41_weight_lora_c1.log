@@ -1,0 +1,5 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:0", "--cells", "DQ_CiteSeer_GAT", "--seed", "41", "--methods", "weight_lora", "--candidate", "1"]
+DQ_CiteSeer_GAT s41 weight_lora/c1 adapter 1/200 val=1.08871 metric=64.400
+DQ_CiteSeer_GAT s41 weight_lora/c1 adapter 25/200 val=1.11358 metric=62.800
+DQ_CiteSeer_GAT s41 weight_lora/c1 adapter 50/200 val=1.20609 metric=62.200

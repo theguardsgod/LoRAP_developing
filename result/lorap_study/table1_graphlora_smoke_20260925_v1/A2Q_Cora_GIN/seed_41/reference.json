@@ -1,0 +1,81 @@
+{
+  "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/A2Q_Cora_GIN/seed_41/baseline",
+  "config": {
+    "cell": "A2Q_Cora_GIN",
+    "dataset": "Cora",
+    "architecture": "GIN",
+    "framework": "A2Q",
+    "data_root": "/data/cyliu/dataset/Cora",
+    "node": true,
+    "regression": false,
+    "width": 16,
+    "heads": 8,
+    "layers": 2,
+    "bit": 4,
+    "num_deg": 1000,
+    "batch_size": 128,
+    "paper_none": 77.4,
+    "paper_none_sd": 0.9,
+    "paper_gpf_lorap": 78.5,
+    "metric": "accuracy_percent",
+    "baseline_epochs": 200,
+    "adapter_epochs": 200,
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "lr": 0.01,
+    "weight_decay": 0.2,
+    "dropout": 0.5,
+    "init": "uniform",
+    "lr_feature": 0.05,
+    "lr_message": 0.005,
+    "lr_weight": 0.005,
+    "lr_bit": 0.02,
+    "lr_attention": 0.001,
+    "lr_edge": 0.1,
+    "a_loss": 2.0,
+    "a_storage": 5.0,
+    "bit_bounds": [
+      1.0,
+      16.0
+    ],
+    "stop_patience": 30,
+    "min_epochs": 50,
+    "aggregation_implementation": "stable_csr_v2",
+    "optimizer_recipe": "native_groups_v2",
+    "seed": 41,
+    "subset_limit": null,
+    "stage": "baseline"
+  },
+  "done": {
+    "cell": "A2Q_Cora_GIN",
+    "seed": 41,
+    "config_hash": "3aac0c29953777321fd76b23af4c52451fb8cd3b8ea9729f3db5a3741c50313e",
+    "initial_sha256": "3dc63c5f3315f5dde698e7ee482fb9cd5757a7ae2053feea16e6efd10d74174a",
+    "selected_epoch": 196,
+    "validation": {
+      "loss": 0.8075019717216492,
+      "metric": 73.8,
+      "storage_proxy": 29.584184646606445,
+      "examples": 500
+    },
+    "backbone_sha256": "0c7c9289682644abef5ed1286e39da2635b7a8f70bfe3259258a3bbbf275c4b5",
+    "test_evaluations": 0,
+    "full_split": true,
+    "seconds": 5.116685641929507
+  },
+  "test": {
+    "cell": "A2Q_Cora_GIN",
+    "seed": 41,
+    "method": "none",
+    "loss": 0.7677070498466492,
+    "metric": 75.5,
+    "examples": 1000,
+    "completed_test_evaluations": 1,
+    "checkpoint_file_sha256": "f1f474ba42671f697c683b16e81dd5b2edd1e84a8bebe45140967bc957632b6e",
+    "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+  },
+  "checkpoint_file_sha256": "f1f474ba42671f697c683b16e81dd5b2edd1e84a8bebe45140967bc957632b6e"
+}

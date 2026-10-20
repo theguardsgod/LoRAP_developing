@@ -1,0 +1,28 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.train", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:3", "--cells", "A2Q_CiteSeer_GAT", "--seeds", "42"]
+A2Q_CiteSeer_GAT seed=42 baseline 1/250 val_loss=1.76829 val_metric=27.600
+A2Q_CiteSeer_GAT seed=42 baseline 10/250 val_loss=1.39293 val_metric=65.800
+A2Q_CiteSeer_GAT seed=42 baseline 20/250 val_loss=1.05860 val_metric=70.200
+A2Q_CiteSeer_GAT seed=42 baseline 30/250 val_loss=0.95499 val_metric=69.200
+A2Q_CiteSeer_GAT seed=42 baseline 40/250 val_loss=0.95760 val_metric=69.000
+A2Q_CiteSeer_GAT seed=42 baseline 50/250 val_loss=1.00140 val_metric=71.000
+A2Q_CiteSeer_GAT seed=42 baseline 60/250 val_loss=1.10922 val_metric=68.200
+A2Q_CiteSeer_GAT seed=42 baseline 70/250 val_loss=1.17963 val_metric=68.800
+A2Q_CiteSeer_GAT seed=42 baseline 80/250 val_loss=1.16972 val_metric=68.400
+A2Q_CiteSeer_GAT seed=42 baseline 90/250 val_loss=1.15623 val_metric=68.400
+A2Q_CiteSeer_GAT seed=42 baseline 100/250 val_loss=1.14056 val_metric=68.600
+A2Q_CiteSeer_GAT seed=42 baseline 110/250 val_loss=1.10422 val_metric=68.600
+A2Q_CiteSeer_GAT seed=42 baseline 120/250 val_loss=1.19103 val_metric=67.800
+A2Q_CiteSeer_GAT seed=42 baseline 130/250 val_loss=1.16862 val_metric=68.400
+A2Q_CiteSeer_GAT seed=42 baseline 140/250 val_loss=1.19090 val_metric=66.800
+A2Q_CiteSeer_GAT seed=42 baseline 150/250 val_loss=1.21423 val_metric=68.600
+A2Q_CiteSeer_GAT seed=42 baseline 160/250 val_loss=1.16431 val_metric=69.200
+A2Q_CiteSeer_GAT seed=42 baseline 170/250 val_loss=1.18251 val_metric=68.800
+A2Q_CiteSeer_GAT seed=42 baseline 180/250 val_loss=1.18906 val_metric=66.200
+A2Q_CiteSeer_GAT seed=42 baseline 190/250 val_loss=1.19860 val_metric=66.600
+A2Q_CiteSeer_GAT seed=42 baseline 200/250 val_loss=1.21929 val_metric=67.000
+A2Q_CiteSeer_GAT seed=42 baseline 210/250 val_loss=1.23460 val_metric=66.200
+A2Q_CiteSeer_GAT seed=42 baseline 220/250 val_loss=1.24508 val_metric=65.400
+A2Q_CiteSeer_GAT seed=42 baseline 230/250 val_loss=1.26495 val_metric=66.200
+A2Q_CiteSeer_GAT seed=42 baseline 240/250 val_loss=1.30045 val_metric=67.000
+A2Q_CiteSeer_GAT seed=42 baseline 250/250 val_loss=1.27208 val_metric=67.800

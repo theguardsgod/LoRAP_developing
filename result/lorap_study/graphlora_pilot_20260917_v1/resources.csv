@@ -1,0 +1,5 @@
+mode,variant,seed,epochs,best_epoch,total_parameters,trainable_parameters,adapter_parameters,adapter_fp32_bytes,adapter_buffer_bytes,mean_activation_effective_bits,training_seconds,peak_cuda_memory_bytes,device,gpu_name
+fixed4,no_prompt,41,30,24,138304,125754,0,0,0,4.0,763.1126189175993,372982272,cuda:0,NVIDIA GeForce RTX 4090
+fixed4,graphlora,41,30,24,142708,130158,4404,17616,3552,4.0,880.5452850237489,419512320,cuda:0,NVIDIA GeForce RTX 4090
+a2q,no_prompt,41,30,28,138304,136754,0,0,0,3.9988734539851265,848.6521363798529,373666304,cuda:0,NVIDIA GeForce RTX 4090
+a2q,graphlora,41,30,25,142708,141158,4404,17616,3552,3.998994214079317,991.9593065548688,420196352,cuda:0,NVIDIA GeForce RTX 4090

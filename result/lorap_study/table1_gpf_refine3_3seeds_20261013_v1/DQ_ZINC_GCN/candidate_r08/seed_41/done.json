@@ -1,0 +1,59 @@
+{
+  "cell": "DQ_ZINC_GCN",
+  "candidate": "r08",
+  "seed": 41,
+  "config_hash": "2051e3a6fd05b48e002cc0fd04a6f8749a8803c4af1fc776418ede8a85777f64",
+  "selected_epoch": 187,
+  "validation": {
+    "loss": 0.5354083647727966,
+    "metric": 0.5354083633422851,
+    "storage_proxy": 0.0,
+    "examples": 1000
+  },
+  "test_evaluations": 0,
+  "full_split": true,
+  "common_backbone_sha256": "36dc60228caa796532267f25469a7aba6d5ec2ba97efa4754b0999baf1eef532",
+  "state_sha256": "470c36d701af2c0f04f7736c5d1a62d3591772fbe7046d105f32c9fcd1dda0f6",
+  "checkpoint_file_sha256": "752f7a7345b933c01ac775ee582c1d5b3d9a22f38f9a5809ec0468d3dbb04d95",
+  "training_seconds": 2202.103358387947,
+  "peak_cuda_memory_bytes": 125653504,
+  "device": "cuda:2",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "total_parameters": 131656,
+  "trainable_parameters": 131656,
+  "adapter_parameters": 20440,
+  "prompt_parameters": 20440,
+  "input_prompt_parameters": 11640,
+  "aggregation_prompt_parameters": 8800,
+  "adapter_fp32_bytes": 81760,
+  "adapter_buffer_bytes": 0,
+  "sites": [
+    {
+      "name": "convs.0",
+      "insertion": "before_native_update",
+      "width": 145
+    },
+    {
+      "name": "convs.1",
+      "insertion": "before_native_update",
+      "width": 145
+    },
+    {
+      "name": "convs.2",
+      "insertion": "before_native_update",
+      "width": 145
+    },
+    {
+      "name": "convs.3",
+      "insertion": "before_native_update",
+      "width": 145
+    }
+  ],
+  "input_site": {
+    "width": 145,
+    "insertion": "after_embedding"
+  },
+  "input_scale": 1.0,
+  "aggregation_scale": 1.0,
+  "zero_init": true
+}

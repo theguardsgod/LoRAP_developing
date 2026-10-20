@@ -1,0 +1,34 @@
+{
+  "profile": {
+    "reference": "table_v_lora_fixed4",
+    "glora": "glora_joint_qat"
+  },
+  "variants": {
+    "reference": [
+      "no_prompt"
+    ],
+    "glora": [
+      "glora"
+    ]
+  },
+  "glora_rank": {
+    "reference": null,
+    "glora": 2
+  },
+  "search_population": {
+    "reference": null,
+    "glora": 50
+  },
+  "search_generations": {
+    "reference": null,
+    "glora": 20
+  },
+  "search_elite": {
+    "reference": null,
+    "glora": 10
+  },
+  "search_mutation": {
+    "reference": null,
+    "glora": 0.2
+  }
+}

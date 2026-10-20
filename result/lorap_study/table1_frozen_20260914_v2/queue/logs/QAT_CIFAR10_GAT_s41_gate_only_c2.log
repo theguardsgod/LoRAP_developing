@@ -1,0 +1,6 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:3", "--cells", "QAT_CIFAR10_GAT", "--seed", "41", "--methods", "gate_only", "--candidate", "2"]
+QAT_CIFAR10_GAT s41 gate_only/c2 predictor_warmup 1/20 val=2.06384 metric=23.060
+QAT_CIFAR10_GAT s41 gate_only/c2 adapter 1/100 val=1.94261 metric=26.020
+QAT_CIFAR10_GAT s41 gate_only/c2 adapter 25/100 val=1.71410 metric=33.120
+QAT_CIFAR10_GAT s41 gate_only/c2 adapter 50/100 val=1.71437 metric=33.280

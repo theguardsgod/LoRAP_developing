@@ -1,0 +1,2167 @@
+{
+  "version": 1,
+  "method": "GPF-LoRAP joint rerun",
+  "protocol": "joint",
+  "seeds": [
+    41
+  ],
+  "cells": [
+    "QAT_CiteSeer_GIN",
+    "QAT_MNIST_GIN",
+    "DQ_Cora_GIN",
+    "DQ_MNIST_GIN",
+    "QAT_CIFAR10_GCN",
+    "DQ_ZINC_GCN",
+    "DQ_CiteSeer_GAT",
+    "DQ_MNIST_GAT",
+    "DQ_CIFAR10_GAT",
+    "A2Q_ZINC_GAT"
+  ],
+  "hyperparameters": {
+    "rank": 2,
+    "num_prompts": 20,
+    "prompt_lr": "backbone_lr",
+    "prompt_weight_decay": 0.0,
+    "sharing": "score_per_width_factors_per_layer",
+    "insertion": "before_native_update",
+    "training_cuda_rng_offset": 930000
+  },
+  "jobs": [
+    {
+      "cell": "QAT_CiteSeer_GIN",
+      "seed": 41,
+      "config": {
+        "cell": "QAT_CiteSeer_GIN",
+        "dataset": "CiteSeer",
+        "architecture": "GIN",
+        "framework": "QAT",
+        "data_root": "/data/cyliu/dataset/CiteSeer",
+        "node": true,
+        "regression": false,
+        "width": 16,
+        "heads": 8,
+        "layers": 2,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 18.7,
+        "paper_none_sd": 3.7,
+        "paper_gpf_lorap": 22.8,
+        "metric": "accuracy_percent",
+        "baseline_epochs": 200,
+        "adapter_epochs": 200,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.001,
+        "weight_decay": 4e-05,
+        "dropout": 0.5,
+        "init": "norm",
+        "lr_feature": 0.01,
+        "lr_message": 0.01,
+        "lr_weight": 0.001,
+        "lr_bit": 0.001,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 0.0,
+        "a_storage": 5.0,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 50,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2",
+        "dq_low": 0.1,
+        "dq_change": 0.1,
+        "percentile": null,
+        "use_ste": true,
+        "use_momentum": true
+      },
+      "epochs": 2,
+      "directory": "QAT_CiteSeer_GIN/seed_41",
+      "reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/QAT_CiteSeer_GIN/seed_41/baseline",
+        "config": {
+          "cell": "QAT_CiteSeer_GIN",
+          "dataset": "CiteSeer",
+          "architecture": "GIN",
+          "framework": "QAT",
+          "data_root": "/data/cyliu/dataset/CiteSeer",
+          "node": true,
+          "regression": false,
+          "width": 16,
+          "heads": 8,
+          "layers": 2,
+          "bit": 4,
+          "num_deg": 1000,
+          "batch_size": 128,
+          "paper_none": 18.7,
+          "paper_none_sd": 3.7,
+          "paper_gpf_lorap": 22.8,
+          "metric": "accuracy_percent",
+          "baseline_epochs": 200,
+          "adapter_epochs": 200,
+          "seeds": [
+            41,
+            42,
+            43
+          ],
+          "lr": 0.001,
+          "weight_decay": 4e-05,
+          "dropout": 0.5,
+          "init": "norm",
+          "lr_feature": 0.01,
+          "lr_message": 0.01,
+          "lr_weight": 0.001,
+          "lr_bit": 0.001,
+          "lr_attention": 0.001,
+          "lr_edge": 0.1,
+          "a_loss": 0.0,
+          "a_storage": 5.0,
+          "bit_bounds": [
+            1.0,
+            16.0
+          ],
+          "stop_patience": 30,
+          "min_epochs": 50,
+          "aggregation_implementation": "stable_csr_v2",
+          "optimizer_recipe": "native_groups_v2",
+          "dq_low": 0.1,
+          "dq_change": 0.1,
+          "percentile": null,
+          "use_ste": true,
+          "use_momentum": true,
+          "seed": 41,
+          "subset_limit": null,
+          "stage": "baseline"
+        },
+        "done": {
+          "cell": "QAT_CiteSeer_GIN",
+          "seed": 41,
+          "config_hash": "45e1def0361c415966bae21558f15aa9053893c9df5a584f9af362df8bc3e1f6",
+          "initial_sha256": "853a0676f33449ac54a4f8916f24eea2163f3764b804273314b20691eee140c7",
+          "selected_epoch": 53,
+          "validation": {
+            "loss": 1.5063185691833496,
+            "metric": 31.4,
+            "storage_proxy": 0.0,
+            "examples": 500
+          },
+          "backbone_sha256": "aa47bc25bc98820203eb2bf7c1fe67109e5e6c30871605e6b979baddccdf5428",
+          "test_evaluations": 0,
+          "full_split": true,
+          "seconds": 9.707134215161204
+        },
+        "test": {
+          "cell": "QAT_CiteSeer_GIN",
+          "seed": 41,
+          "method": "none",
+          "loss": 1.548330545425415,
+          "metric": 30.9,
+          "examples": 1000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "369470490f60123085c2d1f35cbe673819a5cd285a36281e4a060124576f741b",
+          "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+        },
+        "checkpoint_file_sha256": "369470490f60123085c2d1f35cbe673819a5cd285a36281e4a060124576f741b"
+      },
+      "graphlora_reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/QAT_CiteSeer_GIN/seed_41",
+        "test": {
+          "cell": "QAT_CiteSeer_GIN",
+          "seed": 41,
+          "method": "graphlora",
+          "loss": 1.673519253730774,
+          "metric": 30.5,
+          "examples": 1000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "3dc0bb781dd4c5c7bab8d736b26ea66a5e819a4d6760de9827d26e7070df3165",
+          "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+        },
+        "checkpoint_file_sha256": "3dc0bb781dd4c5c7bab8d736b26ea66a5e819a4d6760de9827d26e7070df3165",
+        "test_file_sha256": "421a9d78f16a3397182dd1f01fac61ef4b8cd73d8c5c24ff4607c60d3b90d8f6"
+      }
+    },
+    {
+      "cell": "QAT_MNIST_GIN",
+      "seed": 41,
+      "config": {
+        "cell": "QAT_MNIST_GIN",
+        "dataset": "MNIST",
+        "architecture": "GIN",
+        "framework": "QAT",
+        "data_root": "/data/cyliu/dataset/gnn-mnist",
+        "node": false,
+        "regression": false,
+        "width": 110,
+        "heads": 8,
+        "layers": 4,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 91.0,
+        "paper_none_sd": 0.5,
+        "paper_gpf_lorap": 91.8,
+        "metric": "accuracy_percent",
+        "baseline_epochs": 200,
+        "adapter_epochs": 100,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.005,
+        "weight_decay": 4e-05,
+        "dropout": 0.0,
+        "init": "norm",
+        "lr_feature": 0.01,
+        "lr_message": 0.01,
+        "lr_weight": 0.001,
+        "lr_bit": 0.001,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 0.0,
+        "a_storage": 0.1,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 20,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2",
+        "dq_low": 0.1,
+        "dq_change": 0.1,
+        "percentile": null,
+        "use_ste": true,
+        "use_momentum": true
+      },
+      "epochs": 2,
+      "directory": "QAT_MNIST_GIN/seed_41",
+      "reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/QAT_MNIST_GIN/seed_41/baseline",
+        "config": {
+          "cell": "QAT_MNIST_GIN",
+          "dataset": "MNIST",
+          "architecture": "GIN",
+          "framework": "QAT",
+          "data_root": "/data/cyliu/dataset/gnn-mnist",
+          "node": false,
+          "regression": false,
+          "width": 110,
+          "heads": 8,
+          "layers": 4,
+          "bit": 4,
+          "num_deg": 1000,
+          "batch_size": 128,
+          "paper_none": 91.0,
+          "paper_none_sd": 0.5,
+          "paper_gpf_lorap": 91.8,
+          "metric": "accuracy_percent",
+          "baseline_epochs": 200,
+          "adapter_epochs": 100,
+          "seeds": [
+            41,
+            42,
+            43
+          ],
+          "lr": 0.005,
+          "weight_decay": 4e-05,
+          "dropout": 0.0,
+          "init": "norm",
+          "lr_feature": 0.01,
+          "lr_message": 0.01,
+          "lr_weight": 0.001,
+          "lr_bit": 0.001,
+          "lr_attention": 0.001,
+          "lr_edge": 0.1,
+          "a_loss": 0.0,
+          "a_storage": 0.1,
+          "bit_bounds": [
+            1.0,
+            16.0
+          ],
+          "stop_patience": 30,
+          "min_epochs": 20,
+          "aggregation_implementation": "stable_csr_v2",
+          "optimizer_recipe": "native_groups_v2",
+          "dq_low": 0.1,
+          "dq_change": 0.1,
+          "percentile": null,
+          "use_ste": true,
+          "use_momentum": true,
+          "seed": 41,
+          "subset_limit": null,
+          "stage": "baseline"
+        },
+        "done": {
+          "cell": "QAT_MNIST_GIN",
+          "seed": 41,
+          "config_hash": "9a2d7fafe4b5e60b6b13f30788c7dd3f9353e73e6863e4cbb156b9853004f52b",
+          "initial_sha256": "17885b26907215ac0863a22b17ae31cf6d41177562881e09a114dabb6b9ec663",
+          "selected_epoch": 181,
+          "validation": {
+            "loss": 0.10305791498422623,
+            "metric": 96.86,
+            "storage_proxy": 0.0,
+            "examples": 5000
+          },
+          "backbone_sha256": "06dfbe0d70d42f2f9bec318a0c93e61a72a4af245322c5814940155894952a73",
+          "test_evaluations": 0,
+          "full_split": true,
+          "seconds": 1412.8880736418068
+        },
+        "test": {
+          "cell": "QAT_MNIST_GIN",
+          "seed": 41,
+          "method": "none",
+          "loss": 0.12162642173413188,
+          "metric": 96.65,
+          "examples": 10000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "e2fbc01d8af2076a94377d85f8daa5b4531cc53fb4eb48573ee7e85cba92eb63",
+          "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+        },
+        "checkpoint_file_sha256": "e2fbc01d8af2076a94377d85f8daa5b4531cc53fb4eb48573ee7e85cba92eb63"
+      },
+      "graphlora_reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/QAT_MNIST_GIN/seed_41",
+        "test": {
+          "cell": "QAT_MNIST_GIN",
+          "seed": 41,
+          "method": "graphlora",
+          "loss": 0.13343586777597666,
+          "metric": 96.02000000000001,
+          "examples": 10000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "137d6db466fa1a1e45aa10871973c108a7766b73372db358d2fea3e2b5655eb6",
+          "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+        },
+        "checkpoint_file_sha256": "137d6db466fa1a1e45aa10871973c108a7766b73372db358d2fea3e2b5655eb6",
+        "test_file_sha256": "ce1bb1f5e58efa3af095acea5af62ce8b09ac0ce071b9b03ac5afa70b7c016fc"
+      }
+    },
+    {
+      "cell": "DQ_Cora_GIN",
+      "seed": 41,
+      "config": {
+        "cell": "DQ_Cora_GIN",
+        "dataset": "Cora",
+        "architecture": "GIN",
+        "framework": "DQ",
+        "data_root": "/data/cyliu/dataset/Cora",
+        "node": true,
+        "regression": false,
+        "width": 16,
+        "heads": 8,
+        "layers": 2,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 61.0,
+        "paper_none_sd": 6.9,
+        "paper_gpf_lorap": 68.8,
+        "metric": "accuracy_percent",
+        "baseline_epochs": 200,
+        "adapter_epochs": 200,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.001,
+        "weight_decay": 4e-05,
+        "dropout": 0.5,
+        "init": "norm",
+        "lr_feature": 0.01,
+        "lr_message": 0.01,
+        "lr_weight": 0.001,
+        "lr_bit": 0.001,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 0.0,
+        "a_storage": 5.0,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 50,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2",
+        "dq_low": 0.1,
+        "dq_change": 0.1,
+        "percentile": 0.01,
+        "use_ste": false,
+        "use_momentum": false
+      },
+      "epochs": 2,
+      "directory": "DQ_Cora_GIN/seed_41",
+      "reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/DQ_Cora_GIN/seed_41/baseline",
+        "config": {
+          "cell": "DQ_Cora_GIN",
+          "dataset": "Cora",
+          "architecture": "GIN",
+          "framework": "DQ",
+          "data_root": "/data/cyliu/dataset/Cora",
+          "node": true,
+          "regression": false,
+          "width": 16,
+          "heads": 8,
+          "layers": 2,
+          "bit": 4,
+          "num_deg": 1000,
+          "batch_size": 128,
+          "paper_none": 61.0,
+          "paper_none_sd": 6.9,
+          "paper_gpf_lorap": 68.8,
+          "metric": "accuracy_percent",
+          "baseline_epochs": 200,
+          "adapter_epochs": 200,
+          "seeds": [
+            41,
+            42,
+            43
+          ],
+          "lr": 0.001,
+          "weight_decay": 4e-05,
+          "dropout": 0.5,
+          "init": "norm",
+          "lr_feature": 0.01,
+          "lr_message": 0.01,
+          "lr_weight": 0.001,
+          "lr_bit": 0.001,
+          "lr_attention": 0.001,
+          "lr_edge": 0.1,
+          "a_loss": 0.0,
+          "a_storage": 5.0,
+          "bit_bounds": [
+            1.0,
+            16.0
+          ],
+          "stop_patience": 30,
+          "min_epochs": 50,
+          "aggregation_implementation": "stable_csr_v2",
+          "optimizer_recipe": "native_groups_v2",
+          "dq_low": 0.1,
+          "dq_change": 0.1,
+          "percentile": 0.01,
+          "use_ste": false,
+          "use_momentum": false,
+          "seed": 41,
+          "subset_limit": null,
+          "stage": "baseline"
+        },
+        "done": {
+          "cell": "DQ_Cora_GIN",
+          "seed": 41,
+          "config_hash": "2ca7ec50bda916c3498f6a7a41034c4f6d1b10064d44dd9e335b349680ab177d",
+          "initial_sha256": "3d3669c3a1f0e396ab5572814ded39b0e5204485cbf9aad9a3cfc69f3dcd7be9",
+          "selected_epoch": 125,
+          "validation": {
+            "loss": 0.8566258549690247,
+            "metric": 72.39999999999999,
+            "storage_proxy": 0.0,
+            "examples": 500
+          },
+          "backbone_sha256": "9095aceff957b916de62ac07958242606734cd526b86f852cebbaab0585c42c6",
+          "test_evaluations": 0,
+          "full_split": true,
+          "seconds": 36.48588368855417
+        },
+        "test": {
+          "cell": "DQ_Cora_GIN",
+          "seed": 41,
+          "method": "none",
+          "loss": 0.783779501914978,
+          "metric": 74.4,
+          "examples": 1000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "f1441f1dc9edea431262efc5116908ea34acab65e976fe32e3d94f45763b82b6",
+          "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+        },
+        "checkpoint_file_sha256": "f1441f1dc9edea431262efc5116908ea34acab65e976fe32e3d94f45763b82b6"
+      },
+      "graphlora_reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/DQ_Cora_GIN/seed_41",
+        "test": {
+          "cell": "DQ_Cora_GIN",
+          "seed": 41,
+          "method": "graphlora",
+          "loss": 0.9100005030632019,
+          "metric": 71.39999999999999,
+          "examples": 1000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "644b53d80d2b5afad1f7052d841fe15a86aa3a04f641ec8ce8457d9c7820e679",
+          "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+        },
+        "checkpoint_file_sha256": "644b53d80d2b5afad1f7052d841fe15a86aa3a04f641ec8ce8457d9c7820e679",
+        "test_file_sha256": "4257f9744c889c57aa8f4df8792d03adf036e78bbe56b3920bd369a9f36df2fa"
+      }
+    },
+    {
+      "cell": "DQ_MNIST_GIN",
+      "seed": 41,
+      "config": {
+        "cell": "DQ_MNIST_GIN",
+        "dataset": "MNIST",
+        "architecture": "GIN",
+        "framework": "DQ",
+        "data_root": "/data/cyliu/dataset/gnn-mnist",
+        "node": false,
+        "regression": false,
+        "width": 110,
+        "heads": 8,
+        "layers": 4,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 92.4,
+        "paper_none_sd": 0.4,
+        "paper_gpf_lorap": 92.9,
+        "metric": "accuracy_percent",
+        "baseline_epochs": 200,
+        "adapter_epochs": 100,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.001,
+        "weight_decay": 4e-05,
+        "dropout": 0.0,
+        "init": "norm",
+        "lr_feature": 0.01,
+        "lr_message": 0.01,
+        "lr_weight": 0.001,
+        "lr_bit": 0.001,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 0.0,
+        "a_storage": 0.1,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 20,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2",
+        "dq_low": 0.1,
+        "dq_change": 0.1,
+        "percentile": 0.01,
+        "use_ste": false,
+        "use_momentum": false
+      },
+      "epochs": 2,
+      "directory": "DQ_MNIST_GIN/seed_41",
+      "reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/DQ_MNIST_GIN/seed_41/baseline",
+        "config": {
+          "cell": "DQ_MNIST_GIN",
+          "dataset": "MNIST",
+          "architecture": "GIN",
+          "framework": "DQ",
+          "data_root": "/data/cyliu/dataset/gnn-mnist",
+          "node": false,
+          "regression": false,
+          "width": 110,
+          "heads": 8,
+          "layers": 4,
+          "bit": 4,
+          "num_deg": 1000,
+          "batch_size": 128,
+          "paper_none": 92.4,
+          "paper_none_sd": 0.4,
+          "paper_gpf_lorap": 92.9,
+          "metric": "accuracy_percent",
+          "baseline_epochs": 200,
+          "adapter_epochs": 100,
+          "seeds": [
+            41,
+            42,
+            43
+          ],
+          "lr": 0.001,
+          "weight_decay": 4e-05,
+          "dropout": 0.0,
+          "init": "norm",
+          "lr_feature": 0.01,
+          "lr_message": 0.01,
+          "lr_weight": 0.001,
+          "lr_bit": 0.001,
+          "lr_attention": 0.001,
+          "lr_edge": 0.1,
+          "a_loss": 0.0,
+          "a_storage": 0.1,
+          "bit_bounds": [
+            1.0,
+            16.0
+          ],
+          "stop_patience": 30,
+          "min_epochs": 20,
+          "aggregation_implementation": "stable_csr_v2",
+          "optimizer_recipe": "native_groups_v2",
+          "dq_low": 0.1,
+          "dq_change": 0.1,
+          "percentile": 0.01,
+          "use_ste": false,
+          "use_momentum": false,
+          "seed": 41,
+          "subset_limit": null,
+          "stage": "baseline"
+        },
+        "done": {
+          "cell": "DQ_MNIST_GIN",
+          "seed": 41,
+          "config_hash": "8783bc45d1bbc1b2b6b8c9ecbecf15ad7cf3b6f9083fbaea2a1254a23d9fd218",
+          "initial_sha256": "a3bcc910d4bfc194bb37f6b7f7328a00a6b0f950693676cdbf6fd70c4459290b",
+          "selected_epoch": 194,
+          "validation": {
+            "loss": 0.21886168241500856,
+            "metric": 93.06,
+            "storage_proxy": 0.0,
+            "examples": 5000
+          },
+          "backbone_sha256": "3098804b6a733f68f7180ea6e30d87b9b00bc7fefb8efc126e7070cc2901cf09",
+          "test_evaluations": 0,
+          "full_split": true,
+          "seconds": 40635.66057693772
+        },
+        "test": {
+          "cell": "DQ_MNIST_GIN",
+          "seed": 41,
+          "method": "none",
+          "loss": 0.22740636766552924,
+          "metric": 92.47,
+          "examples": 10000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "ee81c68be6280fb0cd248ee22960e1695d44b5a39d38ea2722018215733a5a80",
+          "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+        },
+        "checkpoint_file_sha256": "ee81c68be6280fb0cd248ee22960e1695d44b5a39d38ea2722018215733a5a80"
+      },
+      "graphlora_reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/DQ_MNIST_GIN/seed_41",
+        "test": {
+          "cell": "DQ_MNIST_GIN",
+          "seed": 41,
+          "method": "graphlora",
+          "loss": 0.19588963128626347,
+          "metric": 93.53,
+          "examples": 10000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "20fcd2d9d65ee8c63aefc22928885735161ab2259eb228ed7a4a10010c0a2bb4",
+          "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+        },
+        "checkpoint_file_sha256": "20fcd2d9d65ee8c63aefc22928885735161ab2259eb228ed7a4a10010c0a2bb4",
+        "test_file_sha256": "36a1a43dcf76d30fbbd7684d88232e84a6625c5227e5868a9cd29d95fac76b46"
+      }
+    },
+    {
+      "cell": "QAT_CIFAR10_GCN",
+      "seed": 41,
+      "config": {
+        "cell": "QAT_CIFAR10_GCN",
+        "dataset": "CIFAR10",
+        "architecture": "GCN",
+        "framework": "QAT",
+        "data_root": "/data/cyliu/dataset/gnn-cifar10",
+        "node": false,
+        "regression": false,
+        "width": 146,
+        "heads": 8,
+        "layers": 4,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 38.5,
+        "paper_none_sd": 1.3,
+        "paper_gpf_lorap": 43.6,
+        "metric": "accuracy_percent",
+        "baseline_epochs": 200,
+        "adapter_epochs": 100,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.001,
+        "weight_decay": 4e-05,
+        "dropout": 0.0,
+        "init": "norm",
+        "lr_feature": 0.01,
+        "lr_message": 0.01,
+        "lr_weight": 0.001,
+        "lr_bit": 0.001,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 0.0,
+        "a_storage": 0.1,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 20,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2",
+        "dq_low": 0.1,
+        "dq_change": 0.1,
+        "percentile": null,
+        "use_ste": true,
+        "use_momentum": true
+      },
+      "epochs": 2,
+      "directory": "QAT_CIFAR10_GCN/seed_41",
+      "reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/QAT_CIFAR10_GCN/seed_41/baseline",
+        "config": {
+          "cell": "QAT_CIFAR10_GCN",
+          "dataset": "CIFAR10",
+          "architecture": "GCN",
+          "framework": "QAT",
+          "data_root": "/data/cyliu/dataset/gnn-cifar10",
+          "node": false,
+          "regression": false,
+          "width": 146,
+          "heads": 8,
+          "layers": 4,
+          "bit": 4,
+          "num_deg": 1000,
+          "batch_size": 128,
+          "paper_none": 38.5,
+          "paper_none_sd": 1.3,
+          "paper_gpf_lorap": 43.6,
+          "metric": "accuracy_percent",
+          "baseline_epochs": 200,
+          "adapter_epochs": 100,
+          "seeds": [
+            41,
+            42,
+            43
+          ],
+          "lr": 0.001,
+          "weight_decay": 4e-05,
+          "dropout": 0.0,
+          "init": "norm",
+          "lr_feature": 0.01,
+          "lr_message": 0.01,
+          "lr_weight": 0.001,
+          "lr_bit": 0.001,
+          "lr_attention": 0.001,
+          "lr_edge": 0.1,
+          "a_loss": 0.0,
+          "a_storage": 0.1,
+          "bit_bounds": [
+            1.0,
+            16.0
+          ],
+          "stop_patience": 30,
+          "min_epochs": 20,
+          "aggregation_implementation": "stable_csr_v2",
+          "optimizer_recipe": "native_groups_v2",
+          "dq_low": 0.1,
+          "dq_change": 0.1,
+          "percentile": null,
+          "use_ste": true,
+          "use_momentum": true,
+          "seed": 41,
+          "subset_limit": null,
+          "stage": "baseline"
+        },
+        "done": {
+          "cell": "QAT_CIFAR10_GCN",
+          "seed": 41,
+          "config_hash": "63c6f9b49a944918cac513629be0184325ca390b21932875967c10eb428ba37d",
+          "initial_sha256": "da1f0e6df97e1bd07ce10ebef08b5246a6e880ae804e5562c014529293b293ed",
+          "selected_epoch": 157,
+          "validation": {
+            "loss": 1.5586505685806273,
+            "metric": 38.940000000000005,
+            "storage_proxy": 0.0,
+            "examples": 5000
+          },
+          "backbone_sha256": "6c4b25cbcf76c91d7430a3851da6a300ada2f468e74f747b6722c638ad497b75",
+          "test_evaluations": 0,
+          "full_split": true,
+          "seconds": 2024.260775687173
+        },
+        "test": {
+          "cell": "QAT_CIFAR10_GCN",
+          "seed": 41,
+          "method": "none",
+          "loss": 1.5722553026199342,
+          "metric": 38.84,
+          "examples": 10000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "158ac837158c46e2b9d56256c9186d3982c6e99895e44b2b7b9b88123f3c6a3e",
+          "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+        },
+        "checkpoint_file_sha256": "158ac837158c46e2b9d56256c9186d3982c6e99895e44b2b7b9b88123f3c6a3e"
+      },
+      "graphlora_reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/QAT_CIFAR10_GCN/seed_41",
+        "test": {
+          "cell": "QAT_CIFAR10_GCN",
+          "seed": 41,
+          "method": "graphlora",
+          "loss": 1.4827350839614868,
+          "metric": 44.62,
+          "examples": 10000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "bcfa9afd57de36e255b800df0c44365ecc222001a111c8ee4782816429f754f7",
+          "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+        },
+        "checkpoint_file_sha256": "bcfa9afd57de36e255b800df0c44365ecc222001a111c8ee4782816429f754f7",
+        "test_file_sha256": "6c1d22c5269a1fd1f18695d0de4532ee10c8ddc9a65cbdef406e39f0ffb283ff"
+      }
+    },
+    {
+      "cell": "DQ_ZINC_GCN",
+      "seed": 41,
+      "config": {
+        "cell": "DQ_ZINC_GCN",
+        "dataset": "ZINC",
+        "architecture": "GCN",
+        "framework": "DQ",
+        "data_root": "/data/cyliu/dataset/zinc",
+        "node": false,
+        "regression": true,
+        "width": 145,
+        "heads": 8,
+        "layers": 4,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 0.657,
+        "paper_none_sd": 0.032,
+        "paper_gpf_lorap": 0.57,
+        "metric": "mae",
+        "baseline_epochs": 200,
+        "adapter_epochs": 100,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.001,
+        "weight_decay": 4e-05,
+        "dropout": 0.0,
+        "init": "norm",
+        "lr_feature": 0.01,
+        "lr_message": 0.01,
+        "lr_weight": 0.001,
+        "lr_bit": 0.001,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 0.0,
+        "a_storage": 0.1,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 20,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2",
+        "dq_low": 0.1,
+        "dq_change": 0.1,
+        "percentile": 0.01,
+        "use_ste": false,
+        "use_momentum": false
+      },
+      "epochs": 2,
+      "directory": "DQ_ZINC_GCN/seed_41",
+      "reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/DQ_ZINC_GCN/seed_41/baseline",
+        "config": {
+          "cell": "DQ_ZINC_GCN",
+          "dataset": "ZINC",
+          "architecture": "GCN",
+          "framework": "DQ",
+          "data_root": "/data/cyliu/dataset/zinc",
+          "node": false,
+          "regression": true,
+          "width": 145,
+          "heads": 8,
+          "layers": 4,
+          "bit": 4,
+          "num_deg": 1000,
+          "batch_size": 128,
+          "paper_none": 0.657,
+          "paper_none_sd": 0.032,
+          "paper_gpf_lorap": 0.57,
+          "metric": "mae",
+          "baseline_epochs": 200,
+          "adapter_epochs": 100,
+          "seeds": [
+            41,
+            42,
+            43
+          ],
+          "lr": 0.001,
+          "weight_decay": 4e-05,
+          "dropout": 0.0,
+          "init": "norm",
+          "lr_feature": 0.01,
+          "lr_message": 0.01,
+          "lr_weight": 0.001,
+          "lr_bit": 0.001,
+          "lr_attention": 0.001,
+          "lr_edge": 0.1,
+          "a_loss": 0.0,
+          "a_storage": 0.1,
+          "bit_bounds": [
+            1.0,
+            16.0
+          ],
+          "stop_patience": 30,
+          "min_epochs": 20,
+          "aggregation_implementation": "stable_csr_v2",
+          "optimizer_recipe": "native_groups_v2",
+          "dq_low": 0.1,
+          "dq_change": 0.1,
+          "percentile": 0.01,
+          "use_ste": false,
+          "use_momentum": false,
+          "seed": 41,
+          "subset_limit": null,
+          "stage": "baseline"
+        },
+        "done": {
+          "cell": "DQ_ZINC_GCN",
+          "seed": 41,
+          "config_hash": "cedffaf90b3bdf9bc68cee7b28f748462cc03eb8d0099f93a476835bdeaa46eb",
+          "initial_sha256": "36dc60228caa796532267f25469a7aba6d5ec2ba97efa4754b0999baf1eef532",
+          "selected_epoch": 144,
+          "validation": {
+            "loss": 0.5490406548976898,
+            "metric": 0.5490406532287597,
+            "storage_proxy": 0.0,
+            "examples": 1000
+          },
+          "backbone_sha256": "8db053851cb3f30d17cb39e867216110d9f4166893abd201a02c5fa33ff11e6a",
+          "test_evaluations": 0,
+          "full_split": true,
+          "seconds": 2161.9789196178317
+        },
+        "test": {
+          "cell": "DQ_ZINC_GCN",
+          "seed": 41,
+          "method": "none",
+          "loss": 0.6003742337226867,
+          "metric": 0.6003742332458496,
+          "examples": 1000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "36cd4a9049e93f17b56cb5a2bbf972958e8ff8bbd7ce2d66cead0c97df311c96",
+          "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+        },
+        "checkpoint_file_sha256": "36cd4a9049e93f17b56cb5a2bbf972958e8ff8bbd7ce2d66cead0c97df311c96"
+      },
+      "graphlora_reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/DQ_ZINC_GCN/seed_41",
+        "test": {
+          "cell": "DQ_ZINC_GCN",
+          "seed": 41,
+          "method": "graphlora",
+          "loss": 0.5718663659095764,
+          "metric": 0.5718663635253907,
+          "examples": 1000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "5d05246b64f5bbe635abbcd0b19fc6842fb5ffee924f173949d0271326f7f0d0",
+          "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+        },
+        "checkpoint_file_sha256": "5d05246b64f5bbe635abbcd0b19fc6842fb5ffee924f173949d0271326f7f0d0",
+        "test_file_sha256": "16032a3f28f7c379f270ac66ff0d2714eabd653136e5ab2a9881ca4728eadae9"
+      }
+    },
+    {
+      "cell": "DQ_CiteSeer_GAT",
+      "seed": 41,
+      "config": {
+        "cell": "DQ_CiteSeer_GAT",
+        "dataset": "CiteSeer",
+        "architecture": "GAT",
+        "framework": "DQ",
+        "data_root": "/data/cyliu/dataset/CiteSeer",
+        "node": true,
+        "regression": false,
+        "width": 8,
+        "heads": 8,
+        "layers": 2,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 41.9,
+        "paper_none_sd": 5.9,
+        "paper_gpf_lorap": 54.4,
+        "metric": "accuracy_percent",
+        "baseline_epochs": 250,
+        "adapter_epochs": 200,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.001,
+        "weight_decay": 4e-05,
+        "dropout": 0.5,
+        "init": "norm",
+        "lr_feature": 0.01,
+        "lr_message": 0.01,
+        "lr_weight": 0.001,
+        "lr_bit": 0.001,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 0.0,
+        "a_storage": 5.0,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 50,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2",
+        "dq_low": 0.1,
+        "dq_change": 0.1,
+        "percentile": 0.01,
+        "use_ste": false,
+        "use_momentum": false
+      },
+      "epochs": 2,
+      "directory": "DQ_CiteSeer_GAT/seed_41",
+      "reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/DQ_CiteSeer_GAT/seed_41/baseline",
+        "config": {
+          "cell": "DQ_CiteSeer_GAT",
+          "dataset": "CiteSeer",
+          "architecture": "GAT",
+          "framework": "DQ",
+          "data_root": "/data/cyliu/dataset/CiteSeer",
+          "node": true,
+          "regression": false,
+          "width": 8,
+          "heads": 8,
+          "layers": 2,
+          "bit": 4,
+          "num_deg": 1000,
+          "batch_size": 128,
+          "paper_none": 41.9,
+          "paper_none_sd": 5.9,
+          "paper_gpf_lorap": 54.4,
+          "metric": "accuracy_percent",
+          "baseline_epochs": 250,
+          "adapter_epochs": 200,
+          "seeds": [
+            41,
+            42,
+            43
+          ],
+          "lr": 0.001,
+          "weight_decay": 4e-05,
+          "dropout": 0.5,
+          "init": "norm",
+          "lr_feature": 0.01,
+          "lr_message": 0.01,
+          "lr_weight": 0.001,
+          "lr_bit": 0.001,
+          "lr_attention": 0.001,
+          "lr_edge": 0.1,
+          "a_loss": 0.0,
+          "a_storage": 5.0,
+          "bit_bounds": [
+            1.0,
+            16.0
+          ],
+          "stop_patience": 30,
+          "min_epochs": 50,
+          "aggregation_implementation": "stable_csr_v2",
+          "optimizer_recipe": "native_groups_v2",
+          "dq_low": 0.1,
+          "dq_change": 0.1,
+          "percentile": 0.01,
+          "use_ste": false,
+          "use_momentum": false,
+          "seed": 41,
+          "subset_limit": null,
+          "stage": "baseline"
+        },
+        "done": {
+          "cell": "DQ_CiteSeer_GAT",
+          "seed": 41,
+          "config_hash": "82f2aa47cf446acb46be9bdff1b161f2ca7426d1d081b4628f86b43fca52ef26",
+          "initial_sha256": "f7340a11bedb8e959a66b922a8409fcd40944b50f8069e33d59a2b7a35973e51",
+          "selected_epoch": 207,
+          "validation": {
+            "loss": 1.089165210723877,
+            "metric": 64.4,
+            "storage_proxy": 0.0,
+            "examples": 500
+          },
+          "backbone_sha256": "22eea76c9722e11709bbf3951ce8d50b7aad7c527c6d32381f50a34f86f9fedb",
+          "test_evaluations": 0,
+          "full_split": true,
+          "seconds": 39.83444917015731
+        },
+        "test": {
+          "cell": "DQ_CiteSeer_GAT",
+          "seed": 41,
+          "method": "none",
+          "loss": 1.094515085220337,
+          "metric": 63.800000000000004,
+          "examples": 1000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "c9dcc1d963cb7b7fc511fce74ff4868d0b31d5cf67b65cf511213d14bf7b1831",
+          "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+        },
+        "checkpoint_file_sha256": "c9dcc1d963cb7b7fc511fce74ff4868d0b31d5cf67b65cf511213d14bf7b1831"
+      },
+      "graphlora_reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/DQ_CiteSeer_GAT/seed_41",
+        "test": {
+          "cell": "DQ_CiteSeer_GAT",
+          "seed": 41,
+          "method": "graphlora",
+          "loss": 1.1015998125076294,
+          "metric": 64.4,
+          "examples": 1000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "88af3b7a85bb326e13515f4f3349ac339ddb40c3aeb379c08dc0d294d6fc38fe",
+          "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+        },
+        "checkpoint_file_sha256": "88af3b7a85bb326e13515f4f3349ac339ddb40c3aeb379c08dc0d294d6fc38fe",
+        "test_file_sha256": "9073f17ad02ecf8688eea04034aeee21ccf2110968857f811bb981bdc6a61087"
+      }
+    },
+    {
+      "cell": "DQ_MNIST_GAT",
+      "seed": 41,
+      "config": {
+        "cell": "DQ_MNIST_GAT",
+        "dataset": "MNIST",
+        "architecture": "GAT",
+        "framework": "DQ",
+        "data_root": "/data/cyliu/dataset/gnn-mnist",
+        "node": false,
+        "regression": false,
+        "width": 19,
+        "heads": 8,
+        "layers": 4,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 90.3,
+        "paper_none_sd": 0.5,
+        "paper_gpf_lorap": 94.0,
+        "metric": "accuracy_percent",
+        "baseline_epochs": 200,
+        "adapter_epochs": 100,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.001,
+        "weight_decay": 4e-05,
+        "dropout": 0.0,
+        "init": "norm",
+        "lr_feature": 0.01,
+        "lr_message": 0.01,
+        "lr_weight": 0.001,
+        "lr_bit": 0.001,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 0.0,
+        "a_storage": 0.1,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 20,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2",
+        "dq_low": 0.1,
+        "dq_change": 0.1,
+        "percentile": 0.01,
+        "use_ste": false,
+        "use_momentum": false
+      },
+      "epochs": 2,
+      "directory": "DQ_MNIST_GAT/seed_41",
+      "reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/DQ_MNIST_GAT/seed_41/baseline",
+        "config": {
+          "cell": "DQ_MNIST_GAT",
+          "dataset": "MNIST",
+          "architecture": "GAT",
+          "framework": "DQ",
+          "data_root": "/data/cyliu/dataset/gnn-mnist",
+          "node": false,
+          "regression": false,
+          "width": 19,
+          "heads": 8,
+          "layers": 4,
+          "bit": 4,
+          "num_deg": 1000,
+          "batch_size": 128,
+          "paper_none": 90.3,
+          "paper_none_sd": 0.5,
+          "paper_gpf_lorap": 94.0,
+          "metric": "accuracy_percent",
+          "baseline_epochs": 200,
+          "adapter_epochs": 100,
+          "seeds": [
+            41,
+            42,
+            43
+          ],
+          "lr": 0.001,
+          "weight_decay": 4e-05,
+          "dropout": 0.0,
+          "init": "norm",
+          "lr_feature": 0.01,
+          "lr_message": 0.01,
+          "lr_weight": 0.001,
+          "lr_bit": 0.001,
+          "lr_attention": 0.001,
+          "lr_edge": 0.1,
+          "a_loss": 0.0,
+          "a_storage": 0.1,
+          "bit_bounds": [
+            1.0,
+            16.0
+          ],
+          "stop_patience": 30,
+          "min_epochs": 20,
+          "aggregation_implementation": "stable_csr_v2",
+          "optimizer_recipe": "native_groups_v2",
+          "dq_low": 0.1,
+          "dq_change": 0.1,
+          "percentile": 0.01,
+          "use_ste": false,
+          "use_momentum": false,
+          "seed": 41,
+          "subset_limit": null,
+          "stage": "baseline"
+        },
+        "done": {
+          "cell": "DQ_MNIST_GAT",
+          "seed": 41,
+          "config_hash": "28b99b183e40253594dc66963b2f517e79bf1edcaa97feb75352a653f6249ec1",
+          "initial_sha256": "7cbd12618cc6620514cbcd8cb810478cb0add1e1a04aa2516eb27db6c28fab42",
+          "selected_epoch": 198,
+          "validation": {
+            "loss": 0.16351352510452272,
+            "metric": 94.39999999999999,
+            "storage_proxy": 0.0,
+            "examples": 5000
+          },
+          "backbone_sha256": "8f3db8a0993da4cc6328d488a06ab93d3164b2b6dbef70ce326eb1aabbe76a84",
+          "test_evaluations": 0,
+          "full_split": true,
+          "seconds": 50467.04442793317
+        },
+        "test": {
+          "cell": "DQ_MNIST_GAT",
+          "seed": 41,
+          "method": "none",
+          "loss": 0.1718332374870777,
+          "metric": 94.58,
+          "examples": 10000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "f4215caaa57fdc8944789f8f8e127c608aef46a523e1a18be8d097fa72eed1be",
+          "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+        },
+        "checkpoint_file_sha256": "f4215caaa57fdc8944789f8f8e127c608aef46a523e1a18be8d097fa72eed1be"
+      },
+      "graphlora_reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/DQ_MNIST_GAT/seed_41",
+        "test": {
+          "cell": "DQ_MNIST_GAT",
+          "seed": 41,
+          "method": "graphlora",
+          "loss": 0.18579760305136442,
+          "metric": 94.48,
+          "examples": 10000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "703c3cbc555603758b4e4177b63312b21883365033534d5e0288e435997ca3e3",
+          "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+        },
+        "checkpoint_file_sha256": "703c3cbc555603758b4e4177b63312b21883365033534d5e0288e435997ca3e3",
+        "test_file_sha256": "038170e45659c3bea5b53916671c96a4718235756008c7e1b95c038f4a59bbbb"
+      }
+    },
+    {
+      "cell": "DQ_CIFAR10_GAT",
+      "seed": 41,
+      "config": {
+        "cell": "DQ_CIFAR10_GAT",
+        "dataset": "CIFAR10",
+        "architecture": "GAT",
+        "framework": "DQ",
+        "data_root": "/data/cyliu/dataset/gnn-cifar10",
+        "node": false,
+        "regression": false,
+        "width": 19,
+        "heads": 8,
+        "layers": 4,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 54.2,
+        "paper_none_sd": 0.5,
+        "paper_gpf_lorap": 57.5,
+        "metric": "accuracy_percent",
+        "baseline_epochs": 200,
+        "adapter_epochs": 100,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.001,
+        "weight_decay": 4e-05,
+        "dropout": 0.0,
+        "init": "norm",
+        "lr_feature": 0.01,
+        "lr_message": 0.01,
+        "lr_weight": 0.001,
+        "lr_bit": 0.001,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 0.0,
+        "a_storage": 0.1,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 20,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2",
+        "dq_low": 0.1,
+        "dq_change": 0.1,
+        "percentile": 0.01,
+        "use_ste": false,
+        "use_momentum": false
+      },
+      "epochs": 2,
+      "directory": "DQ_CIFAR10_GAT/seed_41",
+      "reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/DQ_CIFAR10_GAT/seed_41/baseline",
+        "config": {
+          "cell": "DQ_CIFAR10_GAT",
+          "dataset": "CIFAR10",
+          "architecture": "GAT",
+          "framework": "DQ",
+          "data_root": "/data/cyliu/dataset/gnn-cifar10",
+          "node": false,
+          "regression": false,
+          "width": 19,
+          "heads": 8,
+          "layers": 4,
+          "bit": 4,
+          "num_deg": 1000,
+          "batch_size": 128,
+          "paper_none": 54.2,
+          "paper_none_sd": 0.5,
+          "paper_gpf_lorap": 57.5,
+          "metric": "accuracy_percent",
+          "baseline_epochs": 200,
+          "adapter_epochs": 100,
+          "seeds": [
+            41,
+            42,
+            43
+          ],
+          "lr": 0.001,
+          "weight_decay": 4e-05,
+          "dropout": 0.0,
+          "init": "norm",
+          "lr_feature": 0.01,
+          "lr_message": 0.01,
+          "lr_weight": 0.001,
+          "lr_bit": 0.001,
+          "lr_attention": 0.001,
+          "lr_edge": 0.1,
+          "a_loss": 0.0,
+          "a_storage": 0.1,
+          "bit_bounds": [
+            1.0,
+            16.0
+          ],
+          "stop_patience": 30,
+          "min_epochs": 20,
+          "aggregation_implementation": "stable_csr_v2",
+          "optimizer_recipe": "native_groups_v2",
+          "dq_low": 0.1,
+          "dq_change": 0.1,
+          "percentile": 0.01,
+          "use_ste": false,
+          "use_momentum": false,
+          "seed": 41,
+          "subset_limit": null,
+          "stage": "baseline"
+        },
+        "done": {
+          "cell": "DQ_CIFAR10_GAT",
+          "seed": 41,
+          "config_hash": "f313f6d1386639105c53f498060fa2e883a11f5b65afd08de296c261fa81427f",
+          "initial_sha256": "dd1f70575c6667949d495b21e0f9f2f75da8f9dcbcbd6c9dafe6bb75a66d2c1b",
+          "selected_epoch": 198,
+          "validation": {
+            "loss": 1.070300643157959,
+            "metric": 58.81999999999999,
+            "storage_proxy": 0.0,
+            "examples": 5000
+          },
+          "backbone_sha256": "e85fc2245a977de91dae3cb3a75fb59636e50beb44f05ac98642df98621cc673",
+          "test_evaluations": 0,
+          "full_split": true,
+          "seconds": 65603.91740751266
+        },
+        "test": {
+          "cell": "DQ_CIFAR10_GAT",
+          "seed": 41,
+          "method": "none",
+          "loss": 1.1103152876853943,
+          "metric": 57.26,
+          "examples": 10000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "8acfa01ada5fbd4552a78baf36604fe42e9b097e9c30603622c02461d5b363cc",
+          "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+        },
+        "checkpoint_file_sha256": "8acfa01ada5fbd4552a78baf36604fe42e9b097e9c30603622c02461d5b363cc"
+      },
+      "graphlora_reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/DQ_CIFAR10_GAT/seed_41",
+        "test": {
+          "cell": "DQ_CIFAR10_GAT",
+          "seed": 41,
+          "method": "graphlora",
+          "loss": 1.12866992521286,
+          "metric": 59.56,
+          "examples": 10000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "fd0de9ea45cca9c74a4995b3c1d5d6049a25b008136376a2ccc1b6024901fbe9",
+          "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+        },
+        "checkpoint_file_sha256": "fd0de9ea45cca9c74a4995b3c1d5d6049a25b008136376a2ccc1b6024901fbe9",
+        "test_file_sha256": "6aca4f6dbc69294bfafae5502d354923accc50eed19e7f515d0a8c4b64464695"
+      }
+    },
+    {
+      "cell": "A2Q_ZINC_GAT",
+      "seed": 41,
+      "config": {
+        "cell": "A2Q_ZINC_GAT",
+        "dataset": "ZINC",
+        "architecture": "GAT",
+        "framework": "A2Q",
+        "data_root": "/data/cyliu/dataset/zinc",
+        "node": false,
+        "regression": true,
+        "width": 18,
+        "heads": 8,
+        "layers": 4,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 0.674,
+        "paper_none_sd": 0.007,
+        "paper_gpf_lorap": 0.628,
+        "metric": "mae",
+        "baseline_epochs": 200,
+        "adapter_epochs": 100,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "dropout": 0.0,
+        "init": "uniform",
+        "lr_feature": 0.01,
+        "lr_message": 0.05,
+        "lr_weight": 0.001,
+        "lr_bit": 0.0005,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 2e-05,
+        "a_storage": 1e-05,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 20,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2"
+      },
+      "epochs": 2,
+      "directory": "A2Q_ZINC_GAT/seed_41",
+      "reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/A2Q_ZINC_GAT/seed_41/baseline",
+        "config": {
+          "cell": "A2Q_ZINC_GAT",
+          "dataset": "ZINC",
+          "architecture": "GAT",
+          "framework": "A2Q",
+          "data_root": "/data/cyliu/dataset/zinc",
+          "node": false,
+          "regression": true,
+          "width": 18,
+          "heads": 8,
+          "layers": 4,
+          "bit": 4,
+          "num_deg": 1000,
+          "batch_size": 128,
+          "paper_none": 0.674,
+          "paper_none_sd": 0.007,
+          "paper_gpf_lorap": 0.628,
+          "metric": "mae",
+          "baseline_epochs": 200,
+          "adapter_epochs": 100,
+          "seeds": [
+            41,
+            42,
+            43
+          ],
+          "lr": 0.001,
+          "weight_decay": 0.0,
+          "dropout": 0.0,
+          "init": "uniform",
+          "lr_feature": 0.01,
+          "lr_message": 0.05,
+          "lr_weight": 0.001,
+          "lr_bit": 0.0005,
+          "lr_attention": 0.001,
+          "lr_edge": 0.1,
+          "a_loss": 2e-05,
+          "a_storage": 1e-05,
+          "bit_bounds": [
+            1.0,
+            16.0
+          ],
+          "stop_patience": 30,
+          "min_epochs": 20,
+          "aggregation_implementation": "stable_csr_v2",
+          "optimizer_recipe": "native_groups_v2",
+          "seed": 41,
+          "subset_limit": null,
+          "stage": "baseline"
+        },
+        "done": {
+          "cell": "A2Q_ZINC_GAT",
+          "seed": 41,
+          "config_hash": "1afa4503d8c773e4240a30b1db625a46dfd0e691fe4b1a52f53700dab95c7e2a",
+          "initial_sha256": "575c7ba981da22dd6cfa20cec77b6e4ec9f4be0403a0122463249136be4d63dc",
+          "selected_epoch": 3,
+          "validation": {
+            "loss": 0.6265134696960449,
+            "metric": 0.6265134696960449,
+            "storage_proxy": 63.402480125427246,
+            "examples": 1000
+          },
+          "backbone_sha256": "33dc45d611fb3d9661a9d2f06ead8cd7460b239f5a7e3a9b86d6675f83a47b5b",
+          "test_evaluations": 0,
+          "full_split": true,
+          "seconds": 3597.6603013072163
+        },
+        "test": {
+          "cell": "A2Q_ZINC_GAT",
+          "seed": 41,
+          "method": "none",
+          "loss": 0.6702369885444641,
+          "metric": 0.6702369842529297,
+          "examples": 1000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "9985762b601af9aacb2cdfcc3b1ad5adf758d41f7f0527c74f4a30ab1a44db2d",
+          "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+        },
+        "checkpoint_file_sha256": "9985762b601af9aacb2cdfcc3b1ad5adf758d41f7f0527c74f4a30ab1a44db2d"
+      },
+      "graphlora_reference": {
+        "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/A2Q_ZINC_GAT/seed_41",
+        "test": {
+          "cell": "A2Q_ZINC_GAT",
+          "seed": 41,
+          "method": "graphlora",
+          "loss": 0.578104118347168,
+          "metric": 0.578104118347168,
+          "examples": 1000,
+          "completed_test_evaluations": 1,
+          "checkpoint_file_sha256": "a58c2679d0b92c627d656443dcfefcb85913acde0439c597bcf4f69ac374b7e8",
+          "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+        },
+        "checkpoint_file_sha256": "a58c2679d0b92c627d656443dcfefcb85913acde0439c597bcf4f69ac374b7e8",
+        "test_file_sha256": "d66275c14d93caf28ac1be089625a9e7a39a661b4fc49ec849036fae3301b4b2"
+      }
+    }
+  ],
+  "training_jobs": 10,
+  "smoke": true,
+  "subset_limit": 8,
+  "test_policy": "all registered fits complete before one test per selected model",
+  "controls_reused": true,
+  "tuning_candidates_per_cell": 1,
+  "created_unix": 1790849744.7134328,
+  "torch_version": "2.7.0+cu118",
+  "selection_reason": "Supplied table: GPF-LoRAP mean worse than GraphLoRA; accuracy higher / MAE lower",
+  "source_table_sha256": "32c4810ee1777fa26eb216a14b74fdd44cfac6e863866206a9704b9afe7f5288",
+  "source_table": "/home/cyliu/.codex/attachments/69da72cb-f63e-4316-a5d2-a0312eed1159/已粘贴的文本.txt",
+  "historical_table": {
+    "QAT_Cora_GIN": {
+      "gpf_lorap": {
+        "mean": 45.1,
+        "sd": 2.8,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 25.7,
+        "sd": 11.26,
+        "decimals": 2
+      }
+    },
+    "QAT_CiteSeer_GIN": {
+      "gpf_lorap": {
+        "mean": 22.8,
+        "sd": 4.8,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 25.73,
+        "sd": 4.52,
+        "decimals": 2
+      }
+    },
+    "QAT_MNIST_GIN": {
+      "gpf_lorap": {
+        "mean": 91.8,
+        "sd": 0.4,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 95.61,
+        "sd": 0.67,
+        "decimals": 2
+      }
+    },
+    "QAT_CIFAR10_GIN": {
+      "gpf_lorap": {
+        "mean": 55.8,
+        "sd": 0.5,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 51.75,
+        "sd": 4.18,
+        "decimals": 2
+      }
+    },
+    "QAT_ZINC_GIN": {
+      "gpf_lorap": {
+        "mean": 0.528,
+        "sd": 0.017,
+        "decimals": 3
+      },
+      "graphlora": {
+        "mean": 1.5362,
+        "sd": 0.0234,
+        "decimals": 4
+      }
+    },
+    "DQ_Cora_GIN": {
+      "gpf_lorap": {
+        "mean": 68.8,
+        "sd": 4.3,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 72.77,
+        "sd": 1.8,
+        "decimals": 2
+      }
+    },
+    "DQ_CiteSeer_GIN": {
+      "gpf_lorap": {
+        "mean": 64.6,
+        "sd": 2.3,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 58.5,
+        "sd": 3.38,
+        "decimals": 2
+      }
+    },
+    "DQ_MNIST_GIN": {
+      "gpf_lorap": {
+        "mean": 92.9,
+        "sd": 0.3,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 93.07,
+        "sd": 0.73,
+        "decimals": 2
+      }
+    },
+    "DQ_CIFAR10_GIN": {
+      "gpf_lorap": {
+        "mean": 53.0,
+        "sd": 0.9,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 51.7,
+        "sd": 0.8,
+        "decimals": 2
+      }
+    },
+    "DQ_ZINC_GIN": {
+      "gpf_lorap": {
+        "mean": 0.512,
+        "sd": 0.008,
+        "decimals": 3
+      },
+      "graphlora": {
+        "mean": 0.5385,
+        "sd": 0.007,
+        "decimals": 4
+      }
+    },
+    "A2Q_Cora_GIN": {
+      "gpf_lorap": {
+        "mean": 78.5,
+        "sd": 1.0,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 66.8,
+        "sd": 1.65,
+        "decimals": 2
+      }
+    },
+    "A2Q_CiteSeer_GIN": {
+      "gpf_lorap": {
+        "mean": 70.7,
+        "sd": 0.6,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 38.3,
+        "sd": 2.91,
+        "decimals": 2
+      }
+    },
+    "A2Q_MNIST_GIN": {
+      "gpf_lorap": {
+        "mean": 96.4,
+        "sd": 0.2,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 95.44,
+        "sd": 0.11,
+        "decimals": 2
+      }
+    },
+    "A2Q_CIFAR10_GIN": {
+      "gpf_lorap": {
+        "mean": 57.4,
+        "sd": 1.4,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 54.05,
+        "sd": 1.42,
+        "decimals": 2
+      }
+    },
+    "A2Q_ZINC_GIN": {
+      "gpf_lorap": {
+        "mean": 0.361,
+        "sd": 0.01,
+        "decimals": 3
+      },
+      "graphlora": {
+        "mean": 0.4617,
+        "sd": 0.0092,
+        "decimals": 4
+      }
+    },
+    "QAT_Cora_GCN": {
+      "gpf_lorap": {
+        "mean": 71.3,
+        "sd": 8.3,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 23.63,
+        "sd": 10.27,
+        "decimals": 2
+      }
+    },
+    "QAT_CiteSeer_GCN": {
+      "gpf_lorap": {
+        "mean": 63.9,
+        "sd": 2.2,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 23.63,
+        "sd": 13.31,
+        "decimals": 2
+      }
+    },
+    "QAT_MNIST_GCN": {
+      "gpf_lorap": {
+        "mean": 73.6,
+        "sd": 1.2,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 40.3,
+        "sd": 1.69,
+        "decimals": 2
+      }
+    },
+    "QAT_CIFAR10_GCN": {
+      "gpf_lorap": {
+        "mean": 43.6,
+        "sd": 1.3,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 43.62,
+        "sd": 0.92,
+        "decimals": 2
+      }
+    },
+    "QAT_ZINC_GCN": {
+      "gpf_lorap": {
+        "mean": 0.69,
+        "sd": 0.021,
+        "decimals": 3
+      },
+      "graphlora": {
+        "mean": 1.3207,
+        "sd": 0.1299,
+        "decimals": 4
+      }
+    },
+    "DQ_Cora_GCN": {
+      "gpf_lorap": {
+        "mean": 78.0,
+        "sd": 2.5,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 54.97,
+        "sd": 11.61,
+        "decimals": 2
+      }
+    },
+    "DQ_CiteSeer_GCN": {
+      "gpf_lorap": {
+        "mean": 71.0,
+        "sd": 2.9,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 52.1,
+        "sd": 4.68,
+        "decimals": 2
+      }
+    },
+    "DQ_MNIST_GCN": {
+      "gpf_lorap": {
+        "mean": 92.4,
+        "sd": 0.5,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 87.51,
+        "sd": 1.08,
+        "decimals": 2
+      }
+    },
+    "DQ_CIFAR10_GCN": {
+      "gpf_lorap": {
+        "mean": 53.4,
+        "sd": 0.5,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 44.9,
+        "sd": 0.96,
+        "decimals": 2
+      }
+    },
+    "DQ_ZINC_GCN": {
+      "gpf_lorap": {
+        "mean": 0.57,
+        "sd": 0.012,
+        "decimals": 3
+      },
+      "graphlora": {
+        "mean": 0.5676,
+        "sd": 0.0097,
+        "decimals": 4
+      }
+    },
+    "A2Q_Cora_GCN": {
+      "gpf_lorap": {
+        "mean": 79.1,
+        "sd": 0.1,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 51.5,
+        "sd": 6.68,
+        "decimals": 2
+      }
+    },
+    "A2Q_CiteSeer_GCN": {
+      "gpf_lorap": {
+        "mean": 71.8,
+        "sd": 0.7,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 38.5,
+        "sd": 7.51,
+        "decimals": 2
+      }
+    },
+    "A2Q_MNIST_GCN": {
+      "gpf_lorap": {
+        "mean": 91.8,
+        "sd": 0.6,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 89.89,
+        "sd": 0.21,
+        "decimals": 2
+      }
+    },
+    "A2Q_CIFAR10_GCN": {
+      "gpf_lorap": {
+        "mean": 53.5,
+        "sd": 1.2,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 49.93,
+        "sd": 0.45,
+        "decimals": 2
+      }
+    },
+    "A2Q_ZINC_GCN": {
+      "gpf_lorap": {
+        "mean": 0.482,
+        "sd": 0.011,
+        "decimals": 3
+      },
+      "graphlora": {
+        "mean": 0.5208,
+        "sd": 0.0075,
+        "decimals": 4
+      }
+    },
+    "QAT_Cora_GAT": {
+      "gpf_lorap": {
+        "mean": 66.8,
+        "sd": 1.6,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 23.4,
+        "sd": 10.37,
+        "decimals": 2
+      }
+    },
+    "QAT_CiteSeer_GAT": {
+      "gpf_lorap": {
+        "mean": 40.6,
+        "sd": 7.3,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 20.37,
+        "sd": 7.58,
+        "decimals": 2
+      }
+    },
+    "QAT_MNIST_GAT": {
+      "gpf_lorap": {
+        "mean": 78.2,
+        "sd": 1.1,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 32.04,
+        "sd": 5.77,
+        "decimals": 2
+      }
+    },
+    "QAT_CIFAR10_GAT": {
+      "gpf_lorap": {
+        "mean": 43.8,
+        "sd": 0.7,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 22.44,
+        "sd": 1.16,
+        "decimals": 2
+      }
+    },
+    "QAT_ZINC_GAT": {
+      "gpf_lorap": {
+        "mean": 0.685,
+        "sd": 0.016,
+        "decimals": 3
+      },
+      "graphlora": {
+        "mean": 1.5094,
+        "sd": 0.0674,
+        "decimals": 4
+      }
+    },
+    "DQ_Cora_GAT": {
+      "gpf_lorap": {
+        "mean": 72.5,
+        "sd": 2.3,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 69.5,
+        "sd": 8.03,
+        "decimals": 2
+      }
+    },
+    "DQ_CiteSeer_GAT": {
+      "gpf_lorap": {
+        "mean": 54.4,
+        "sd": 4.6,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 63.17,
+        "sd": 3.33,
+        "decimals": 2
+      }
+    },
+    "DQ_MNIST_GAT": {
+      "gpf_lorap": {
+        "mean": 94.0,
+        "sd": 0.6,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 94.66,
+        "sd": 0.41,
+        "decimals": 2
+      }
+    },
+    "DQ_CIFAR10_GAT": {
+      "gpf_lorap": {
+        "mean": 57.5,
+        "sd": 1.4,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 58.64,
+        "sd": 1.0,
+        "decimals": 2
+      }
+    },
+    "DQ_ZINC_GAT": {
+      "gpf_lorap": {
+        "mean": 0.508,
+        "sd": 0.023,
+        "decimals": 3
+      },
+      "graphlora": {
+        "mean": 0.583,
+        "sd": 0.0164,
+        "decimals": 4
+      }
+    },
+    "A2Q_Cora_GAT": {
+      "gpf_lorap": {
+        "mean": 83.6,
+        "sd": 0.6,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 79.33,
+        "sd": 2.38,
+        "decimals": 2
+      }
+    },
+    "A2Q_CiteSeer_GAT": {
+      "gpf_lorap": {
+        "mean": 72.5,
+        "sd": 0.8,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 67.23,
+        "sd": 1.76,
+        "decimals": 2
+      }
+    },
+    "A2Q_MNIST_GAT": {
+      "gpf_lorap": {
+        "mean": 93.1,
+        "sd": 0.7,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 62.8,
+        "sd": 22.72,
+        "decimals": 2
+      }
+    },
+    "A2Q_CIFAR10_GAT": {
+      "gpf_lorap": {
+        "mean": 62.9,
+        "sd": 1.0,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 42.84,
+        "sd": 0.86,
+        "decimals": 2
+      }
+    },
+    "A2Q_ZINC_GAT": {
+      "gpf_lorap": {
+        "mean": 0.628,
+        "sd": 0.01,
+        "decimals": 3
+      },
+      "graphlora": {
+        "mean": 0.5807,
+        "sd": 0.0225,
+        "decimals": 4
+      }
+    }
+  },
+  "graphlora_reference": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1",
+  "selection_after_observing_historical_test_results": true,
+  "historical_recipe_not_reconstructed": true
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "gpu": 2,
+    "pid": 3040960,
+    "command": [
+      "/home/cyliu/anaconda3/envs/ProG/bin/python",
+      "-B",
+      "-m",
+      "runs.lorap_study.table1_frozen.suite",
+      "worker",
+      "--root",
+      "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2",
+      "--device",
+      "cuda:2"
+    ]
+  },
+  {
+    "gpu": 3,
+    "pid": 3040961,
+    "command": [
+      "/home/cyliu/anaconda3/envs/ProG/bin/python",
+      "-B",
+      "-m",
+      "runs.lorap_study.table1_frozen.suite",
+      "worker",
+      "--root",
+      "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2",
+      "--device",
+      "cuda:3"
+    ]
+  }
+]

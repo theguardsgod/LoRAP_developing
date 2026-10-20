@@ -1,0 +1,318 @@
+{
+  "job": {
+    "cell": "A2Q_ZINC_GAT",
+    "candidate": "r00",
+    "seed": 42,
+    "config": {
+      "cell": "A2Q_ZINC_GAT",
+      "dataset": "ZINC",
+      "architecture": "GAT",
+      "framework": "A2Q",
+      "data_root": "/data/cyliu/dataset/zinc",
+      "node": false,
+      "regression": true,
+      "width": 18,
+      "heads": 8,
+      "layers": 4,
+      "bit": 4,
+      "num_deg": 1000,
+      "batch_size": 128,
+      "paper_none": 0.674,
+      "paper_none_sd": 0.007,
+      "paper_gpf_lorap": 0.628,
+      "metric": "mae",
+      "baseline_epochs": 200,
+      "adapter_epochs": 100,
+      "seeds": [
+        41,
+        42,
+        43
+      ],
+      "lr": 0.0005,
+      "weight_decay": 0.0,
+      "dropout": 0.0,
+      "init": "uniform",
+      "lr_feature": 0.001,
+      "lr_message": 0.005000000000000001,
+      "lr_weight": 0.0001,
+      "lr_bit": 5e-05,
+      "lr_attention": 0.0001,
+      "lr_edge": 0.010000000000000002,
+      "a_loss": 2e-05,
+      "a_storage": 1e-05,
+      "bit_bounds": [
+        1.0,
+        16.0
+      ],
+      "stop_patience": 30,
+      "min_epochs": 20,
+      "aggregation_implementation": "stable_csr_v2",
+      "optimizer_recipe": "native_groups_v2"
+    },
+    "hyperparameters": {
+      "rank": 4,
+      "num_prompts": 10,
+      "prompt_lr": 0.0003,
+      "prompt_weight_decay": 0.0,
+      "sharing": "score_per_width_factors_per_layer",
+      "insertion": "before_native_update",
+      "training_cuda_rng_offset": 930000,
+      "input_scale": 0.1,
+      "aggregation_scale": 1.0,
+      "zero_init": true,
+      "lr_scheduler": {
+        "name": "native"
+      }
+    },
+    "epochs": 200,
+    "screen_epochs": 200,
+    "directory": "A2Q_ZINC_GAT/candidate_r00/seed_42",
+    "reference": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/A2Q_ZINC_GAT/seed_42/baseline",
+      "config": {
+        "cell": "A2Q_ZINC_GAT",
+        "dataset": "ZINC",
+        "architecture": "GAT",
+        "framework": "A2Q",
+        "data_root": "/data/cyliu/dataset/zinc",
+        "node": false,
+        "regression": true,
+        "width": 18,
+        "heads": 8,
+        "layers": 4,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 0.674,
+        "paper_none_sd": 0.007,
+        "paper_gpf_lorap": 0.628,
+        "metric": "mae",
+        "baseline_epochs": 200,
+        "adapter_epochs": 100,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "dropout": 0.0,
+        "init": "uniform",
+        "lr_feature": 0.01,
+        "lr_message": 0.05,
+        "lr_weight": 0.001,
+        "lr_bit": 0.0005,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 2e-05,
+        "a_storage": 1e-05,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 20,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2",
+        "seed": 42,
+        "subset_limit": null,
+        "stage": "baseline"
+      },
+      "done": {
+        "cell": "A2Q_ZINC_GAT",
+        "seed": 42,
+        "config_hash": "3bb57364262eb7ac208eae5f8cb3078721944dd0a245efa0cc13cb0beafa81c9",
+        "initial_sha256": "d43f499851a57dd76f8d74ecef2b32746dbfa01c6927b1e5358aab8ee79cefd2",
+        "selected_epoch": 3,
+        "validation": {
+          "loss": 0.6535273337364197,
+          "metric": 0.653527328491211,
+          "storage_proxy": 57.89387226104736,
+          "examples": 1000
+        },
+        "backbone_sha256": "726b0abc6632e57a4e49309fae2c9222686310285b100046c1ebfbca4569d8db",
+        "test_evaluations": 0,
+        "full_split": true,
+        "seconds": 2517.3897911943495
+      },
+      "test": {
+        "cell": "A2Q_ZINC_GAT",
+        "seed": 42,
+        "method": "none",
+        "loss": 0.7047513585090637,
+        "metric": 0.7047513580322265,
+        "examples": 1000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "c44817958a08fb141ea8dac178b3fd562fe0a9e23791c0b62ca1540738ccf706",
+        "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+      },
+      "checkpoint_file_sha256": "c44817958a08fb141ea8dac178b3fd562fe0a9e23791c0b62ca1540738ccf706"
+    },
+    "graphlora_reference": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/A2Q_ZINC_GAT/seed_42",
+      "test": {
+        "cell": "A2Q_ZINC_GAT",
+        "seed": 42,
+        "method": "graphlora",
+        "loss": 0.6044158282279968,
+        "metric": 0.6044158248901367,
+        "examples": 1000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "bd62ebbd8ae10d254d02bce349c666c8d5b6cb199cab7e3920aaf8a118c407fa",
+        "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+      },
+      "checkpoint_file_sha256": "bd62ebbd8ae10d254d02bce349c666c8d5b6cb199cab7e3920aaf8a118c407fa",
+      "test_file_sha256": "a47b96c5dbd7832c65db18fa9d2750f26ca3c87a3152c47326b7a6f3b7046218"
+    },
+    "previous_gpf": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_search_3seeds_20261007_v1/A2Q_ZINC_GAT/candidate_c07/seed_42",
+      "done": {
+        "cell": "A2Q_ZINC_GAT",
+        "candidate": "c07",
+        "seed": 42,
+        "config_hash": "2d89fe1f519c50db5d86b37c7245b2e1f10352a9859324aec8f49297bb577738",
+        "selected_epoch": 181,
+        "validation": {
+          "loss": 0.5377190842628479,
+          "metric": 0.5377190818786621,
+          "storage_proxy": 55.748676776885986,
+          "examples": 1000
+        },
+        "test_evaluations": 0,
+        "full_split": true,
+        "common_backbone_sha256": "d43f499851a57dd76f8d74ecef2b32746dbfa01c6927b1e5358aab8ee79cefd2",
+        "state_sha256": "8801002c79d6e99e619ac3d73cd973201871af559d74e09c9a3ec8ed822f56f7",
+        "checkpoint_file_sha256": "640930c66395791f9f4a80b7addb7e0b7543610354e80cd2d8d45a776ad5f9fa",
+        "training_seconds": 687.5508179720491,
+        "peak_cuda_memory_bytes": 223072768,
+        "device": "cuda:1",
+        "gpu_name": "NVIDIA GeForce RTX 4090",
+        "total_parameters": 230697,
+        "trainable_parameters": 139007,
+        "adapter_parameters": 6804,
+        "prompt_parameters": 6804,
+        "input_prompt_parameters": 2890,
+        "aggregation_prompt_parameters": 3914,
+        "adapter_fp32_bytes": 27216,
+        "adapter_buffer_bytes": 0,
+        "sites": [
+          {
+            "name": "convs.0.conv",
+            "insertion": "before_native_update",
+            "width": 144
+          },
+          {
+            "name": "convs.1.conv",
+            "insertion": "before_native_update",
+            "width": 144
+          },
+          {
+            "name": "convs.2.conv",
+            "insertion": "before_native_update",
+            "width": 144
+          },
+          {
+            "name": "convs.3.conv",
+            "insertion": "before_native_update",
+            "width": 144
+          }
+        ],
+        "input_site": {
+          "width": 144,
+          "insertion": "after_embedding"
+        },
+        "input_scale": 0.1,
+        "aggregation_scale": 1.0,
+        "zero_init": true
+      },
+      "test": {
+        "cell": "A2Q_ZINC_GAT",
+        "seed": 42,
+        "method": "gpf_lorap_tuned",
+        "loss": 0.5616996846199036,
+        "metric": 0.5616996841430664,
+        "examples": 1000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "640930c66395791f9f4a80b7addb7e0b7543610354e80cd2d8d45a776ad5f9fa",
+        "test_lock_sha256": "957bfc17c9a5a2ac3d8fd0e2ae159e50ec0c78b08a93d7052ef5836e210c879c"
+      }
+    },
+    "original_gpf": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_rerun_3seeds_20261001_v1/A2Q_ZINC_GAT/seed_42",
+      "done": {
+        "cell": "A2Q_ZINC_GAT",
+        "seed": 42,
+        "config_hash": "e13da7dcfceb5e74b1a71b3b9036b388a4f740f0d9a6ca98c473036d8aa3ae1b",
+        "selected_epoch": 6,
+        "validation": {
+          "loss": 0.6069899415969848,
+          "metric": 0.6069899406433106,
+          "storage_proxy": 50.792601108551025,
+          "examples": 1000
+        },
+        "test_evaluations": 0,
+        "full_split": true,
+        "common_backbone_sha256": "d43f499851a57dd76f8d74ecef2b32746dbfa01c6927b1e5358aab8ee79cefd2",
+        "state_sha256": "a303810b2217157337658999fd576da06d6c7b9f2e1c14d4daf2300de852242f",
+        "checkpoint_file_sha256": "7224ec6ca0c6abea603feea72beff65ca9a7c64fa364f9db689f1f7d7fdc1ca2",
+        "training_seconds": 661.9937020987272,
+        "peak_cuda_memory_bytes": 223120896,
+        "device": "cuda:2",
+        "gpu_name": "NVIDIA GeForce RTX 4090",
+        "total_parameters": 233885,
+        "trainable_parameters": 142195,
+        "adapter_parameters": 9992,
+        "prompt_parameters": 9992,
+        "input_prompt_parameters": 5780,
+        "aggregation_prompt_parameters": 4212,
+        "adapter_fp32_bytes": 39968,
+        "adapter_buffer_bytes": 0,
+        "sites": [
+          {
+            "name": "convs.0.conv",
+            "insertion": "before_native_update",
+            "width": 144
+          },
+          {
+            "name": "convs.1.conv",
+            "insertion": "before_native_update",
+            "width": 144
+          },
+          {
+            "name": "convs.2.conv",
+            "insertion": "before_native_update",
+            "width": 144
+          },
+          {
+            "name": "convs.3.conv",
+            "insertion": "before_native_update",
+            "width": 144
+          }
+        ],
+        "input_site": {
+          "width": 144,
+          "insertion": "after_embedding"
+        }
+      },
+      "test": {
+        "cell": "A2Q_ZINC_GAT",
+        "seed": 42,
+        "method": "gpf_lorap",
+        "loss": 0.6395158996582031,
+        "metric": 0.6395158996582031,
+        "examples": 1000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "7224ec6ca0c6abea603feea72beff65ca9a7c64fa364f9db689f1f7d7fdc1ca2",
+        "test_lock_sha256": "5fe7738304bcbc2f64f9b7c745e363c7fdc94033a3a16b4b9a1040d7a86336fb"
+      }
+    },
+    "reuse_from": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_search_3seeds_20261007_v1/A2Q_ZINC_GAT/candidate_c07/seed_42",
+      "checkpoint_file_sha256": "640930c66395791f9f4a80b7addb7e0b7543610354e80cd2d8d45a776ad5f9fa",
+      "source_config_hash": "2d89fe1f519c50db5d86b37c7245b2e1f10352a9859324aec8f49297bb577738",
+      "test_file_sha256": "cf8e8a94e3a6de94e5bf42041148b21784b422b998b88ff0c2f412ee88f6fd6b"
+    }
+  },
+  "subset_limit": null,
+  "protocol": "joint"
+}

@@ -1,0 +1,5 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:3", "--cells", "A2Q_CiteSeer_GIN", "--seed", "42", "--methods", "lorap"]
+A2Q_CiteSeer_GIN s42 lorap/c0 adapter 1/200 val=1.04702 metric=66.000
+A2Q_CiteSeer_GIN s42 lorap/c0 adapter 25/200 val=1.05203 metric=66.000
+A2Q_CiteSeer_GIN s42 lorap/c0 adapter 50/200 val=1.05876 metric=66.000

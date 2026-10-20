@@ -1,0 +1,4752 @@
+[
+  {
+    "epoch": 1,
+    "train": {
+      "loss": 1.8000284433364868,
+      "contrast": 3.562072992324829,
+      "structure": 1.3919786214828491,
+      "storage": 0.0,
+      "objective": 2.295433521270752,
+      "metric": 15.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.7862420082092285,
+      "metric": 25.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.177590474486351
+  },
+  {
+    "epoch": 2,
+    "train": {
+      "loss": 1.7742412090301514,
+      "contrast": 3.357243537902832,
+      "structure": 1.391950249671936,
+      "storage": 0.0,
+      "objective": 2.2491605281829834,
+      "metric": 27.500000000000004,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.7715028524398804,
+      "metric": 32.800000000000004,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16703414358198643
+  },
+  {
+    "epoch": 3,
+    "train": {
+      "loss": 1.7333341836929321,
+      "contrast": 3.1752724647521973,
+      "structure": 1.3919012546539307,
+      "storage": 0.0,
+      "objective": 2.190051555633545,
+      "metric": 49.166666666666664,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.7581902742385864,
+      "metric": 40.6,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.174758804962039
+  },
+  {
+    "epoch": 4,
+    "train": {
+      "loss": 1.7109370231628418,
+      "contrast": 3.108011245727539,
+      "structure": 1.391845464706421,
+      "storage": 0.0,
+      "objective": 2.1609225273132324,
+      "metric": 57.49999999999999,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.7468945980072021,
+      "metric": 41.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16764727979898453
+  },
+  {
+    "epoch": 5,
+    "train": {
+      "loss": 1.678033471107483,
+      "contrast": 3.015712261199951,
+      "structure": 1.3917253017425537,
+      "storage": 0.0,
+      "objective": 2.118777275085449,
+      "metric": 68.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.7301360368728638,
+      "metric": 50.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17886072769761086
+  },
+  {
+    "epoch": 6,
+    "train": {
+      "loss": 1.6571060419082642,
+      "contrast": 3.0111403465270996,
+      "structure": 1.3916192054748535,
+      "storage": 0.0,
+      "objective": 2.097382068634033,
+      "metric": 70.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.7184149026870728,
+      "metric": 52.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16617045179009438
+  },
+  {
+    "epoch": 7,
+    "train": {
+      "loss": 1.6310596466064453,
+      "contrast": 2.936549663543701,
+      "structure": 1.391519546508789,
+      "storage": 0.0,
+      "objective": 2.06386661529541,
+      "metric": 81.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.7088724374771118,
+      "metric": 54.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17857280746102333
+  },
+  {
+    "epoch": 8,
+    "train": {
+      "loss": 1.6147098541259766,
+      "contrast": 2.9150538444519043,
+      "structure": 1.3913851976394653,
+      "storage": 0.0,
+      "objective": 2.045353651046753,
+      "metric": 82.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.6959962844848633,
+      "metric": 55.800000000000004,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1669245883822441
+  },
+  {
+    "epoch": 9,
+    "train": {
+      "loss": 1.577652096748352,
+      "contrast": 2.871469020843506,
+      "structure": 1.3912733793258667,
+      "storage": 0.0,
+      "objective": 2.0039262771606445,
+      "metric": 86.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.6856809854507446,
+      "metric": 56.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17406938411295414
+  },
+  {
+    "epoch": 10,
+    "train": {
+      "loss": 1.5593823194503784,
+      "contrast": 2.8308773040771484,
+      "structure": 1.3911188840866089,
+      "storage": 0.0,
+      "objective": 1.9815819263458252,
+      "metric": 89.16666666666666,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.6806666851043701,
+      "metric": 60.6,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16493087261915207
+  },
+  {
+    "epoch": 11,
+    "train": {
+      "loss": 1.5366963148117065,
+      "contrast": 2.877788782119751,
+      "structure": 1.3908185958862305,
+      "storage": 0.0,
+      "objective": 1.9635570049285889,
+      "metric": 87.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.6473392248153687,
+      "metric": 61.6,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16795886680483818
+  },
+  {
+    "epoch": 12,
+    "train": {
+      "loss": 1.5260734558105469,
+      "contrast": 2.8383026123046875,
+      "structure": 1.390596628189087,
+      "storage": 0.0,
+      "objective": 1.9489634037017822,
+      "metric": 91.66666666666666,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.63971745967865,
+      "metric": 62.6,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17684954591095448
+  },
+  {
+    "epoch": 13,
+    "train": {
+      "loss": 1.470143437385559,
+      "contrast": 2.8231990337371826,
+      "structure": 1.3901017904281616,
+      "storage": 0.0,
+      "objective": 1.8914735317230225,
+      "metric": 93.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.6259188652038574,
+      "metric": 63.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16759795509278774
+  },
+  {
+    "epoch": 14,
+    "train": {
+      "loss": 1.435584545135498,
+      "contrast": 2.82383394241333,
+      "structure": 1.389923334121704,
+      "storage": 0.0,
+      "objective": 1.8569602966308594,
+      "metric": 94.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.6090075969696045,
+      "metric": 63.800000000000004,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17817483469843864
+  },
+  {
+    "epoch": 15,
+    "train": {
+      "loss": 1.4091591835021973,
+      "contrast": 2.8398265838623047,
+      "structure": 1.389404058456421,
+      "storage": 0.0,
+      "objective": 1.8320822715759277,
+      "metric": 93.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.5912748575210571,
+      "metric": 63.800000000000004,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16806020960211754
+  },
+  {
+    "epoch": 16,
+    "train": {
+      "loss": 1.3966833353042603,
+      "contrast": 2.844606637954712,
+      "structure": 1.3890721797943115,
+      "storage": 0.0,
+      "objective": 1.8200511932373047,
+      "metric": 95.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.577217936515808,
+      "metric": 64.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17644283175468445
+  },
+  {
+    "epoch": 17,
+    "train": {
+      "loss": 1.3663603067398071,
+      "contrast": 2.8560264110565186,
+      "structure": 1.3883893489837646,
+      "storage": 0.0,
+      "objective": 1.7908018827438354,
+      "metric": 93.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.5587128400802612,
+      "metric": 64.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1636428963392973
+  },
+  {
+    "epoch": 18,
+    "train": {
+      "loss": 1.3527308702468872,
+      "contrast": 2.872559070587158,
+      "structure": 1.3880356550216675,
+      "storage": 0.0,
+      "objective": 1.7787903547286987,
+      "metric": 93.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.545400857925415,
+      "metric": 63.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17547486163675785
+  },
+  {
+    "epoch": 19,
+    "train": {
+      "loss": 1.3352004289627075,
+      "contrast": 2.8667216300964355,
+      "structure": 1.3874982595443726,
+      "storage": 0.0,
+      "objective": 1.760622501373291,
+      "metric": 91.66666666666666,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.5318868160247803,
+      "metric": 63.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16177979856729507
+  },
+  {
+    "epoch": 20,
+    "train": {
+      "loss": 1.3009332418441772,
+      "contrast": 2.919948101043701,
+      "structure": 1.3866171836853027,
+      "storage": 0.0,
+      "objective": 1.7315897941589355,
+      "metric": 94.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.5161728858947754,
+      "metric": 64.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17987247370183468
+  },
+  {
+    "epoch": 21,
+    "train": {
+      "loss": 1.264264464378357,
+      "contrast": 2.900334119796753,
+      "structure": 1.3860033750534058,
+      "storage": 0.0,
+      "objective": 1.6928982734680176,
+      "metric": 93.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.50521981716156,
+      "metric": 63.800000000000004,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16714509204030037
+  },
+  {
+    "epoch": 22,
+    "train": {
+      "loss": 1.219931721687317,
+      "contrast": 2.9098525047302246,
+      "structure": 1.3851814270019531,
+      "storage": 0.0,
+      "objective": 1.649435043334961,
+      "metric": 95.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.4953407049179077,
+      "metric": 63.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17916233278810978
+  },
+  {
+    "epoch": 23,
+    "train": {
+      "loss": 1.2111092805862427,
+      "contrast": 2.897620677947998,
+      "structure": 1.3847911357879639,
+      "storage": 0.0,
+      "objective": 1.6393505334854126,
+      "metric": 95.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.4901639223098755,
+      "metric": 65.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1710723713040352
+  },
+  {
+    "epoch": 24,
+    "train": {
+      "loss": 1.1434801816940308,
+      "contrast": 2.889798641204834,
+      "structure": 1.383122444152832,
+      "storage": 0.0,
+      "objective": 1.5707722902297974,
+      "metric": 95.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.4747148752212524,
+      "metric": 64.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16779595986008644
+  },
+  {
+    "epoch": 25,
+    "train": {
+      "loss": 1.1767497062683105,
+      "contrast": 2.9512109756469727,
+      "structure": 1.3829972743988037,
+      "storage": 0.0,
+      "objective": 1.6101704835891724,
+      "metric": 93.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.4662415981292725,
+      "metric": 64.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17250613495707512
+  },
+  {
+    "epoch": 26,
+    "train": {
+      "loss": 1.1178069114685059,
+      "contrast": 2.917095184326172,
+      "structure": 1.3815199136734009,
+      "storage": 0.0,
+      "objective": 1.54766845703125,
+      "metric": 95.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.4486916065216064,
+      "metric": 65.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1684211641550064
+  },
+  {
+    "epoch": 27,
+    "train": {
+      "loss": 1.1202584505081177,
+      "contrast": 2.9629292488098145,
+      "structure": 1.3810690641403198,
+      "storage": 0.0,
+      "objective": 1.55465829372406,
+      "metric": 95.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.4480546712875366,
+      "metric": 65.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17828647047281265
+  },
+  {
+    "epoch": 28,
+    "train": {
+      "loss": 1.0787451267242432,
+      "contrast": 2.9689340591430664,
+      "structure": 1.3800289630889893,
+      "storage": 0.0,
+      "objective": 1.513641357421875,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.4343538284301758,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16707657650113106
+  },
+  {
+    "epoch": 29,
+    "train": {
+      "loss": 1.0409733057022095,
+      "contrast": 3.0008044242858887,
+      "structure": 1.3777134418487549,
+      "storage": 0.0,
+      "objective": 1.4788250923156738,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.3720287084579468,
+      "metric": 64.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17945975065231323
+  },
+  {
+    "epoch": 30,
+    "train": {
+      "loss": 1.0012043714523315,
+      "contrast": 2.9815478324890137,
+      "structure": 1.3769372701644897,
+      "storage": 0.0,
+      "objective": 1.4370529651641846,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.3672629594802856,
+      "metric": 66.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16622949950397015
+  },
+  {
+    "epoch": 31,
+    "train": {
+      "loss": 0.9931080937385559,
+      "contrast": 3.025942325592041,
+      "structure": 1.3748952150344849,
+      "storage": 0.0,
+      "objective": 1.4331918954849243,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.3606113195419312,
+      "metric": 65.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17962965555489063
+  },
+  {
+    "epoch": 32,
+    "train": {
+      "loss": 0.9519835710525513,
+      "contrast": 3.0195703506469727,
+      "structure": 1.3734421730041504,
+      "storage": 0.0,
+      "objective": 1.3912848234176636,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.3467153310775757,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16739361360669136
+  },
+  {
+    "epoch": 33,
+    "train": {
+      "loss": 0.8895109295845032,
+      "contrast": 3.0152828693389893,
+      "structure": 1.3720505237579346,
+      "storage": 0.0,
+      "objective": 1.3282442092895508,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.3366538286209106,
+      "metric": 64.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1791422124952078
+  },
+  {
+    "epoch": 34,
+    "train": {
+      "loss": 0.8696284890174866,
+      "contrast": 3.021446943283081,
+      "structure": 1.3705614805221558,
+      "storage": 0.0,
+      "objective": 1.3088293075561523,
+      "metric": 95.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.3238000869750977,
+      "metric": 66.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17505189217627048
+  },
+  {
+    "epoch": 35,
+    "train": {
+      "loss": 0.8636963367462158,
+      "contrast": 3.030968427658081,
+      "structure": 1.3689252138137817,
+      "storage": 0.0,
+      "objective": 1.3036857843399048,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.3042809963226318,
+      "metric": 66.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1648191399872303
+  },
+  {
+    "epoch": 36,
+    "train": {
+      "loss": 0.8552486300468445,
+      "contrast": 3.074583053588867,
+      "structure": 1.3666863441467285,
+      "storage": 0.0,
+      "objective": 1.2993756532669067,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.2762954235076904,
+      "metric": 65.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17850248701870441
+  },
+  {
+    "epoch": 37,
+    "train": {
+      "loss": 0.8361365795135498,
+      "contrast": 3.1050941944122314,
+      "structure": 1.3642234802246094,
+      "storage": 0.0,
+      "objective": 1.2830684185028076,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.2713195085525513,
+      "metric": 66.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16488786414265633
+  },
+  {
+    "epoch": 38,
+    "train": {
+      "loss": 0.8026700615882874,
+      "contrast": 3.116004467010498,
+      "structure": 1.3631792068481445,
+      "storage": 0.0,
+      "objective": 1.2505884170532227,
+      "metric": 95.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.265116572380066,
+      "metric": 65.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1755461972206831
+  },
+  {
+    "epoch": 39,
+    "train": {
+      "loss": 0.7942951321601868,
+      "contrast": 3.112452983856201,
+      "structure": 1.363006591796875,
+      "storage": 0.0,
+      "objective": 1.2418410778045654,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.2643413543701172,
+      "metric": 66.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1648679729551077
+  },
+  {
+    "epoch": 40,
+    "train": {
+      "loss": 0.766180157661438,
+      "contrast": 3.1225786209106445,
+      "structure": 1.3598734140396118,
+      "storage": 0.0,
+      "objective": 1.2144253253936768,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.2422324419021606,
+      "metric": 65.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1815922763198614
+  },
+  {
+    "epoch": 41,
+    "train": {
+      "loss": 0.7655073404312134,
+      "contrast": 3.146294116973877,
+      "structure": 1.3576651811599731,
+      "storage": 0.0,
+      "objective": 1.2159032821655273,
+      "metric": 94.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.2298572063446045,
+      "metric": 65.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16739890724420547
+  },
+  {
+    "epoch": 42,
+    "train": {
+      "loss": 0.7541047930717468,
+      "contrast": 3.1269736289978027,
+      "structure": 1.3556766510009766,
+      "storage": 0.0,
+      "objective": 1.2023698091506958,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.2171320915222168,
+      "metric": 65.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.18246497213840485
+  },
+  {
+    "epoch": 43,
+    "train": {
+      "loss": 0.7258435487747192,
+      "contrast": 3.129506826400757,
+      "structure": 1.352589726448059,
+      "storage": 0.0,
+      "objective": 1.1740531921386719,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.20238196849823,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17295686341822147
+  },
+  {
+    "epoch": 44,
+    "train": {
+      "loss": 0.7129088044166565,
+      "contrast": 3.1635801792144775,
+      "structure": 1.3525687456130981,
+      "storage": 0.0,
+      "objective": 1.164523720741272,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.2022526264190674,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.18715572357177734
+  },
+  {
+    "epoch": 45,
+    "train": {
+      "loss": 0.6943095922470093,
+      "contrast": 3.1628546714782715,
+      "structure": 1.3499773740768433,
+      "storage": 0.0,
+      "objective": 1.1455928087234497,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.1983295679092407,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1730454731732607
+  },
+  {
+    "epoch": 46,
+    "train": {
+      "loss": 0.7033616304397583,
+      "contrast": 3.168480396270752,
+      "structure": 1.3490097522735596,
+      "storage": 0.0,
+      "objective": 1.1551105976104736,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.1899945735931396,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.18668094836175442
+  },
+  {
+    "epoch": 47,
+    "train": {
+      "loss": 0.6209443211555481,
+      "contrast": 3.159027099609375,
+      "structure": 1.345668077468872,
+      "storage": 0.0,
+      "objective": 1.0714138746261597,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.1781691312789917,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17892410978674889
+  },
+  {
+    "epoch": 48,
+    "train": {
+      "loss": 0.6189121603965759,
+      "contrast": 3.2072064876556396,
+      "structure": 1.343988299369812,
+      "storage": 0.0,
+      "objective": 1.0740315914154053,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.1669095754623413,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.172074593603611
+  },
+  {
+    "epoch": 49,
+    "train": {
+      "loss": 0.6072415709495544,
+      "contrast": 3.164578437805176,
+      "structure": 1.3419548273086548,
+      "storage": 0.0,
+      "objective": 1.0578948259353638,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.1640416383743286,
+      "metric": 68.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17844773270189762
+  },
+  {
+    "epoch": 50,
+    "train": {
+      "loss": 0.5791332721710205,
+      "contrast": 3.1572108268737793,
+      "structure": 1.3419852256774902,
+      "storage": 0.0,
+      "objective": 1.0290528535842896,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.1498773097991943,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16798553429543972
+  },
+  {
+    "epoch": 51,
+    "train": {
+      "loss": 0.5954190492630005,
+      "contrast": 3.1761908531188965,
+      "structure": 1.339330792427063,
+      "storage": 0.0,
+      "objective": 1.0469712018966675,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.1390293836593628,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.18123583495616913
+  },
+  {
+    "epoch": 52,
+    "train": {
+      "loss": 0.5565925240516663,
+      "contrast": 3.2024683952331543,
+      "structure": 1.334814190864563,
+      "storage": 0.0,
+      "objective": 1.010320782661438,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.1173638105392456,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16821050085127354
+  },
+  {
+    "epoch": 53,
+    "train": {
+      "loss": 0.5257464647293091,
+      "contrast": 3.211010217666626,
+      "structure": 1.3364543914794922,
+      "storage": 0.0,
+      "objective": 0.9804929494857788,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.124871850013733,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17736094444990158
+  },
+  {
+    "epoch": 54,
+    "train": {
+      "loss": 0.4919649660587311,
+      "contrast": 3.1651101112365723,
+      "structure": 1.332453727722168,
+      "storage": 0.0,
+      "objective": 0.9417213201522827,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.1284650564193726,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16354969330132008
+  },
+  {
+    "epoch": 55,
+    "train": {
+      "loss": 0.5171037316322327,
+      "contrast": 3.1926398277282715,
+      "structure": 1.3325392007827759,
+      "storage": 0.0,
+      "objective": 0.9696216583251953,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.1205185651779175,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1675737015902996
+  },
+  {
+    "epoch": 56,
+    "train": {
+      "loss": 0.5454422235488892,
+      "contrast": 3.20810604095459,
+      "structure": 1.3306710720062256,
+      "storage": 0.0,
+      "objective": 0.9993199706077576,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.1128987073898315,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.167189110070467
+  },
+  {
+    "epoch": 57,
+    "train": {
+      "loss": 0.5357996821403503,
+      "contrast": 3.231048822402954,
+      "structure": 1.3266370296478271,
+      "storage": 0.0,
+      "objective": 0.9915683269500732,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.1122734546661377,
+      "metric": 66.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16848378255963326
+  },
+  {
+    "epoch": 58,
+    "train": {
+      "loss": 0.4850252568721771,
+      "contrast": 3.2142951488494873,
+      "structure": 1.3283746242523193,
+      "storage": 0.0,
+      "objective": 0.9392922520637512,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.113582968711853,
+      "metric": 66.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16540600173175335
+  },
+  {
+    "epoch": 59,
+    "train": {
+      "loss": 0.4936028718948364,
+      "contrast": 3.221649169921875,
+      "structure": 1.3278632164001465,
+      "storage": 0.0,
+      "objective": 0.9485540986061096,
+      "metric": 94.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.1101329326629639,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16687808372080326
+  },
+  {
+    "epoch": 60,
+    "train": {
+      "loss": 0.4767785370349884,
+      "contrast": 3.2134170532226562,
+      "structure": 1.3244686126708984,
+      "storage": 0.0,
+      "objective": 0.9305671453475952,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.098901391029358,
+      "metric": 66.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1842333134263754
+  },
+  {
+    "epoch": 61,
+    "train": {
+      "loss": 0.47562411427497864,
+      "contrast": 3.2486395835876465,
+      "structure": 1.3273591995239258,
+      "storage": 0.0,
+      "objective": 0.9332240223884583,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.1091405153274536,
+      "metric": 66.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17136196419596672
+  },
+  {
+    "epoch": 62,
+    "train": {
+      "loss": 0.5344356298446655,
+      "contrast": 3.2336835861206055,
+      "structure": 1.3243510723114014,
+      "storage": 0.0,
+      "objective": 0.990239143371582,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.1089115142822266,
+      "metric": 65.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.18111684545874596
+  },
+  {
+    "epoch": 63,
+    "train": {
+      "loss": 0.4557114243507385,
+      "contrast": 3.242377281188965,
+      "structure": 1.3249168395996094,
+      "storage": 0.0,
+      "objective": 0.9124408960342407,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0837596654891968,
+      "metric": 66.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1752462424337864
+  },
+  {
+    "epoch": 64,
+    "train": {
+      "loss": 0.509040117263794,
+      "contrast": 3.2573089599609375,
+      "structure": 1.3196213245391846,
+      "storage": 0.0,
+      "objective": 0.9667331576347351,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0908812284469604,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17864414304494858
+  },
+  {
+    "epoch": 65,
+    "train": {
+      "loss": 0.461490660905838,
+      "contrast": 3.254596710205078,
+      "structure": 1.3202608823776245,
+      "storage": 0.0,
+      "objective": 0.9189764261245728,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0866206884384155,
+      "metric": 66.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16510003991425037
+  },
+  {
+    "epoch": 66,
+    "train": {
+      "loss": 0.464380145072937,
+      "contrast": 3.264073133468628,
+      "structure": 1.3209381103515625,
+      "storage": 0.0,
+      "objective": 0.9228812456130981,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0874524116516113,
+      "metric": 66.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.168745880946517
+  },
+  {
+    "epoch": 67,
+    "train": {
+      "loss": 0.4552202820777893,
+      "contrast": 3.2529478073120117,
+      "structure": 1.3216806650161743,
+      "storage": 0.0,
+      "objective": 0.9126831293106079,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0846748352050781,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17905272170901299
+  },
+  {
+    "epoch": 68,
+    "train": {
+      "loss": 0.4707646667957306,
+      "contrast": 3.254448652267456,
+      "structure": 1.3202965259552002,
+      "storage": 0.0,
+      "objective": 0.9282392263412476,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0832968950271606,
+      "metric": 66.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1647960115224123
+  },
+  {
+    "epoch": 69,
+    "train": {
+      "loss": 0.4568534195423126,
+      "contrast": 3.275679349899292,
+      "structure": 1.3213294744491577,
+      "storage": 0.0,
+      "objective": 0.9165542721748352,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0785590410232544,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17933405563235283
+  },
+  {
+    "epoch": 70,
+    "train": {
+      "loss": 0.45963984727859497,
+      "contrast": 3.2687764167785645,
+      "structure": 1.3202732801437378,
+      "storage": 0.0,
+      "objective": 0.9185448288917542,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0744651556015015,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1677690241485834
+  },
+  {
+    "epoch": 71,
+    "train": {
+      "loss": 0.47466039657592773,
+      "contrast": 3.2800347805023193,
+      "structure": 1.3180468082427979,
+      "storage": 0.0,
+      "objective": 0.9344686269760132,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.067432165145874,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.18215631321072578
+  },
+  {
+    "epoch": 72,
+    "train": {
+      "loss": 0.408542662858963,
+      "contrast": 3.265089273452759,
+      "structure": 1.3159812688827515,
+      "storage": 0.0,
+      "objective": 0.8666497468948364,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0693131685256958,
+      "metric": 66.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1645243614912033
+  },
+  {
+    "epoch": 73,
+    "train": {
+      "loss": 0.4381313621997833,
+      "contrast": 3.257197618484497,
+      "structure": 1.3160228729248047,
+      "storage": 0.0,
+      "objective": 0.8954534530639648,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0647268295288086,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1732718925923109
+  },
+  {
+    "epoch": 74,
+    "train": {
+      "loss": 0.43506309390068054,
+      "contrast": 3.2690365314483643,
+      "structure": 1.31808340549469,
+      "storage": 0.0,
+      "objective": 0.8937751054763794,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0745652914047241,
+      "metric": 66.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16795217990875244
+  },
+  {
+    "epoch": 75,
+    "train": {
+      "loss": 0.4015410542488098,
+      "contrast": 3.282766103744507,
+      "structure": 1.3164211511611938,
+      "storage": 0.0,
+      "objective": 0.8614597320556641,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.070766568183899,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16459364257752895
+  },
+  {
+    "epoch": 76,
+    "train": {
+      "loss": 0.4812774956226349,
+      "contrast": 3.2615456581115723,
+      "structure": 1.3138073682785034,
+      "storage": 0.0,
+      "objective": 0.938812792301178,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.07194185256958,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17076562345027924
+  },
+  {
+    "epoch": 77,
+    "train": {
+      "loss": 0.4264668822288513,
+      "contrast": 3.279186248779297,
+      "structure": 1.3132966756820679,
+      "storage": 0.0,
+      "objective": 0.885715126991272,
+      "metric": 95.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0786195993423462,
+      "metric": 66.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16372998245060444
+  },
+  {
+    "epoch": 78,
+    "train": {
+      "loss": 0.3714631199836731,
+      "contrast": 3.2717533111572266,
+      "structure": 1.3130699396133423,
+      "storage": 0.0,
+      "objective": 0.82994544506073,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0673801898956299,
+      "metric": 66.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17136988416314125
+  },
+  {
+    "epoch": 79,
+    "train": {
+      "loss": 0.42174652218818665,
+      "contrast": 3.2698755264282227,
+      "structure": 1.315948247909546,
+      "storage": 0.0,
+      "objective": 0.8803289532661438,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.066975712776184,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16527734510600567
+  },
+  {
+    "epoch": 80,
+    "train": {
+      "loss": 0.4149314761161804,
+      "contrast": 3.285813331604004,
+      "structure": 1.310760498046875,
+      "storage": 0.0,
+      "objective": 0.8745888471603394,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0628504753112793,
+      "metric": 66.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16657570376992226
+  },
+  {
+    "epoch": 81,
+    "train": {
+      "loss": 0.42705661058425903,
+      "contrast": 3.289614200592041,
+      "structure": 1.3126329183578491,
+      "storage": 0.0,
+      "objective": 0.8872813582420349,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0596544742584229,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16301571391522884
+  },
+  {
+    "epoch": 82,
+    "train": {
+      "loss": 0.4289919435977936,
+      "contrast": 3.265298366546631,
+      "structure": 1.3111215829849243,
+      "storage": 0.0,
+      "objective": 0.8866339325904846,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0648937225341797,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.165280532091856
+  },
+  {
+    "epoch": 83,
+    "train": {
+      "loss": 0.37021663784980774,
+      "contrast": 3.2623019218444824,
+      "structure": 1.3078488111495972,
+      "storage": 0.0,
+      "objective": 0.8272317051887512,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0653685331344604,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.15681822784245014
+  },
+  {
+    "epoch": 84,
+    "train": {
+      "loss": 0.4015601575374603,
+      "contrast": 3.2945640087127686,
+      "structure": 1.3079559803009033,
+      "storage": 0.0,
+      "objective": 0.861812174320221,
+      "metric": 94.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.05862295627594,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16923551261425018
+  },
+  {
+    "epoch": 85,
+    "train": {
+      "loss": 0.4076288640499115,
+      "contrast": 3.2850615978240967,
+      "structure": 1.3081523180007935,
+      "storage": 0.0,
+      "objective": 0.866950273513794,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0580110549926758,
+      "metric": 66.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1601787470281124
+  },
+  {
+    "epoch": 86,
+    "train": {
+      "loss": 0.381914347410202,
+      "contrast": 3.302431583404541,
+      "structure": 1.307395339012146,
+      "storage": 0.0,
+      "objective": 0.8428970575332642,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0541757345199585,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16653941944241524
+  },
+  {
+    "epoch": 87,
+    "train": {
+      "loss": 0.3582080602645874,
+      "contrast": 3.270498752593994,
+      "structure": 1.3056044578552246,
+      "storage": 0.0,
+      "objective": 0.8158183693885803,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0523183345794678,
+      "metric": 66.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16382203996181488
+  },
+  {
+    "epoch": 88,
+    "train": {
+      "loss": 0.38570576906204224,
+      "contrast": 3.2828454971313477,
+      "structure": 1.3054919242858887,
+      "storage": 0.0,
+      "objective": 0.8445395231246948,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0519903898239136,
+      "metric": 66.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1736317239701748
+  },
+  {
+    "epoch": 89,
+    "train": {
+      "loss": 0.3712760806083679,
+      "contrast": 3.2716856002807617,
+      "structure": 1.3053228855133057,
+      "storage": 0.0,
+      "objective": 0.8289768695831299,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0574251413345337,
+      "metric": 66.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16562538966536522
+  },
+  {
+    "epoch": 90,
+    "train": {
+      "loss": 0.37531742453575134,
+      "contrast": 3.293792724609375,
+      "structure": 1.3055580854415894,
+      "storage": 0.0,
+      "objective": 0.8352525234222412,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.05649995803833,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.2614360824227333
+  },
+  {
+    "epoch": 91,
+    "train": {
+      "loss": 0.3567119538784027,
+      "contrast": 3.282548427581787,
+      "structure": 1.3050003051757812,
+      "storage": 0.0,
+      "objective": 0.8154668211936951,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.069766640663147,
+      "metric": 66.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.25286212004721165
+  },
+  {
+    "epoch": 92,
+    "train": {
+      "loss": 0.3862110674381256,
+      "contrast": 3.281893730163574,
+      "structure": 1.3023622035980225,
+      "storage": 0.0,
+      "objective": 0.8446366190910339,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.063544750213623,
+      "metric": 66.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.261621929705143
+  },
+  {
+    "epoch": 93,
+    "train": {
+      "loss": 0.37106049060821533,
+      "contrast": 3.3084845542907715,
+      "structure": 1.305694341659546,
+      "storage": 0.0,
+      "objective": 0.832478404045105,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.057468295097351,
+      "metric": 66.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.25499700009822845
+  },
+  {
+    "epoch": 94,
+    "train": {
+      "loss": 0.35088473558425903,
+      "contrast": 3.278107166290283,
+      "structure": 1.304689645767212,
+      "storage": 0.0,
+      "objective": 0.8091644048690796,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0609750747680664,
+      "metric": 66.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.21460948139429092
+  },
+  {
+    "epoch": 95,
+    "train": {
+      "loss": 0.3715992569923401,
+      "contrast": 3.2886548042297363,
+      "structure": 1.3039844036102295,
+      "storage": 0.0,
+      "objective": 0.8308631777763367,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0521104335784912,
+      "metric": 68.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16196338459849358
+  },
+  {
+    "epoch": 96,
+    "train": {
+      "loss": 0.3578140437602997,
+      "contrast": 3.308718204498291,
+      "structure": 1.3029577732086182,
+      "storage": 0.0,
+      "objective": 0.8189816474914551,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0481210947036743,
+      "metric": 68.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17307469993829727
+  },
+  {
+    "epoch": 97,
+    "train": {
+      "loss": 0.3328847587108612,
+      "contrast": 3.277596950531006,
+      "structure": 1.3015551567077637,
+      "storage": 0.0,
+      "objective": 0.7907999753952026,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0489650964736938,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16302138194441795
+  },
+  {
+    "epoch": 98,
+    "train": {
+      "loss": 0.3531329035758972,
+      "contrast": 3.289425849914551,
+      "structure": 1.2983593940734863,
+      "storage": 0.0,
+      "objective": 0.8119114637374878,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0436179637908936,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1722632274031639
+  },
+  {
+    "epoch": 99,
+    "train": {
+      "loss": 0.33178141713142395,
+      "contrast": 3.281818389892578,
+      "structure": 1.2990912199020386,
+      "storage": 0.0,
+      "objective": 0.789872407913208,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0412671566009521,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16518046893179417
+  },
+  {
+    "epoch": 100,
+    "train": {
+      "loss": 0.3599430322647095,
+      "contrast": 3.2632570266723633,
+      "structure": 1.2997840642929077,
+      "storage": 0.0,
+      "objective": 0.8162471652030945,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0390535593032837,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17386262118816376
+  },
+  {
+    "epoch": 101,
+    "train": {
+      "loss": 0.3431779444217682,
+      "contrast": 3.2679924964904785,
+      "structure": 1.2994295358657837,
+      "storage": 0.0,
+      "objective": 0.7999201416969299,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.033740758895874,
+      "metric": 68.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16559056378901005
+  },
+  {
+    "epoch": 102,
+    "train": {
+      "loss": 0.3445965647697449,
+      "contrast": 3.2855064868927,
+      "structure": 1.3016351461410522,
+      "storage": 0.0,
+      "objective": 0.803310751914978,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0329384803771973,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17469847947359085
+  },
+  {
+    "epoch": 103,
+    "train": {
+      "loss": 0.3756825625896454,
+      "contrast": 3.301558494567871,
+      "structure": 1.3020614385604858,
+      "storage": 0.0,
+      "objective": 0.8360446095466614,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0349006652832031,
+      "metric": 66.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1614829134196043
+  },
+  {
+    "epoch": 104,
+    "train": {
+      "loss": 0.3672092854976654,
+      "contrast": 3.2920150756835938,
+      "structure": 1.2989922761917114,
+      "storage": 0.0,
+      "objective": 0.8263100385665894,
+      "metric": 95.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0367546081542969,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1698779407888651
+  },
+  {
+    "epoch": 105,
+    "train": {
+      "loss": 0.3476320803165436,
+      "contrast": 3.2675604820251465,
+      "structure": 1.2987672090530396,
+      "storage": 0.0,
+      "objective": 0.8042649030685425,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.027877926826477,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16774062626063824
+  },
+  {
+    "epoch": 106,
+    "train": {
+      "loss": 0.3497047424316406,
+      "contrast": 3.3024275302886963,
+      "structure": 1.2984871864318848,
+      "storage": 0.0,
+      "objective": 0.8097962141036987,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0295910835266113,
+      "metric": 66.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.2424176950007677
+  },
+  {
+    "epoch": 107,
+    "train": {
+      "loss": 0.3347325325012207,
+      "contrast": 3.299156665802002,
+      "structure": 1.2997660636901855,
+      "storage": 0.0,
+      "objective": 0.7946248054504395,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0311068296432495,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.2413070611655712
+  },
+  {
+    "epoch": 108,
+    "train": {
+      "loss": 0.3398704528808594,
+      "contrast": 3.2648568153381348,
+      "structure": 1.2983952760696411,
+      "storage": 0.0,
+      "objective": 0.7961956858634949,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.032602071762085,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.2331278659403324
+  },
+  {
+    "epoch": 109,
+    "train": {
+      "loss": 0.35232242941856384,
+      "contrast": 3.2994322776794434,
+      "structure": 1.296679973602295,
+      "storage": 0.0,
+      "objective": 0.8119336366653442,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0303901433944702,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.26682523638010025
+  },
+  {
+    "epoch": 110,
+    "train": {
+      "loss": 0.3329382836818695,
+      "contrast": 3.265859603881836,
+      "structure": 1.2956931591033936,
+      "storage": 0.0,
+      "objective": 0.7890936136245728,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0280308723449707,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.26587069407105446
+  },
+  {
+    "epoch": 111,
+    "train": {
+      "loss": 0.33754757046699524,
+      "contrast": 3.279214859008789,
+      "structure": 1.2991420030593872,
+      "storage": 0.0,
+      "objective": 0.7953832745552063,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0243161916732788,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16929940693080425
+  },
+  {
+    "epoch": 112,
+    "train": {
+      "loss": 0.32880905270576477,
+      "contrast": 3.2716946601867676,
+      "structure": 1.296473741531372,
+      "storage": 0.0,
+      "objective": 0.7856259346008301,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0246037244796753,
+      "metric": 68.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16979442536830902
+  },
+  {
+    "epoch": 113,
+    "train": {
+      "loss": 0.37736260890960693,
+      "contrast": 3.2834854125976562,
+      "structure": 1.2984373569488525,
+      "storage": 0.0,
+      "objective": 0.835554838180542,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0303494930267334,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.161324892193079
+  },
+  {
+    "epoch": 114,
+    "train": {
+      "loss": 0.3207636773586273,
+      "contrast": 3.2806575298309326,
+      "structure": 1.295366644859314,
+      "storage": 0.0,
+      "objective": 0.7783661484718323,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0234742164611816,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16547098197042942
+  },
+  {
+    "epoch": 115,
+    "train": {
+      "loss": 0.36162349581718445,
+      "contrast": 3.2702436447143555,
+      "structure": 1.297035574913025,
+      "storage": 0.0,
+      "objective": 0.8183514475822449,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.026350498199463,
+      "metric": 66.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16174061596393585
+  },
+  {
+    "epoch": 116,
+    "train": {
+      "loss": 0.3579118847846985,
+      "contrast": 3.284834861755371,
+      "structure": 1.2958704233169556,
+      "storage": 0.0,
+      "objective": 0.815982460975647,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0218936204910278,
+      "metric": 66.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16940272226929665
+  },
+  {
+    "epoch": 117,
+    "train": {
+      "loss": 0.31245535612106323,
+      "contrast": 3.27608060836792,
+      "structure": 1.2974532842636108,
+      "storage": 0.0,
+      "objective": 0.7698087692260742,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0228445529937744,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16286946088075638
+  },
+  {
+    "epoch": 118,
+    "train": {
+      "loss": 0.28980380296707153,
+      "contrast": 3.277313232421875,
+      "structure": 1.2974002361297607,
+      "storage": 0.0,
+      "objective": 0.7472751140594482,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0232808589935303,
+      "metric": 68.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16640860587358475
+  },
+  {
+    "epoch": 119,
+    "train": {
+      "loss": 0.34870654344558716,
+      "contrast": 3.298739433288574,
+      "structure": 1.2960699796676636,
+      "storage": 0.0,
+      "objective": 0.8081875443458557,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.022347092628479,
+      "metric": 68.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16456190310418606
+  },
+  {
+    "epoch": 120,
+    "train": {
+      "loss": 0.3562849164009094,
+      "contrast": 3.2655067443847656,
+      "structure": 1.295353889465332,
+      "storage": 0.0,
+      "objective": 0.8123709559440613,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0245920419692993,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1686015035957098
+  },
+  {
+    "epoch": 121,
+    "train": {
+      "loss": 0.3063245713710785,
+      "contrast": 3.26192569732666,
+      "structure": 1.2927862405776978,
+      "storage": 0.0,
+      "objective": 0.7617957592010498,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0173753499984741,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16635951213538647
+  },
+  {
+    "epoch": 122,
+    "train": {
+      "loss": 0.3361632227897644,
+      "contrast": 3.287395477294922,
+      "structure": 1.2953358888626099,
+      "storage": 0.0,
+      "objective": 0.7944363951683044,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0085668563842773,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.23127363622188568
+  },
+  {
+    "epoch": 123,
+    "train": {
+      "loss": 0.3378961682319641,
+      "contrast": 3.2730085849761963,
+      "structure": 1.290861964225769,
+      "storage": 0.0,
+      "objective": 0.7942832112312317,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0074876546859741,
+      "metric": 68.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.2683960907161236
+  },
+  {
+    "epoch": 124,
+    "train": {
+      "loss": 0.29993772506713867,
+      "contrast": 3.2790093421936035,
+      "structure": 1.2913360595703125,
+      "storage": 0.0,
+      "objective": 0.7569723129272461,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0074735879898071,
+      "metric": 68.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.26139930076897144
+  },
+  {
+    "epoch": 125,
+    "train": {
+      "loss": 0.2889145612716675,
+      "contrast": 3.2710797786712646,
+      "structure": 1.2909109592437744,
+      "storage": 0.0,
+      "objective": 0.7451136708259583,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0125243663787842,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.255735507234931
+  },
+  {
+    "epoch": 126,
+    "train": {
+      "loss": 0.2929297983646393,
+      "contrast": 3.280762195587158,
+      "structure": 1.2919750213623047,
+      "storage": 0.0,
+      "objective": 0.7502034902572632,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0203207731246948,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.22917175479233265
+  },
+  {
+    "epoch": 127,
+    "train": {
+      "loss": 0.31311824917793274,
+      "contrast": 3.2657864093780518,
+      "structure": 1.292183756828308,
+      "storage": 0.0,
+      "objective": 0.7689152956008911,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0198593139648438,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16305886395275593
+  },
+  {
+    "epoch": 128,
+    "train": {
+      "loss": 0.2824398875236511,
+      "contrast": 3.2682652473449707,
+      "structure": 1.2918514013290405,
+      "storage": 0.0,
+      "objective": 0.7384515404701233,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0136210918426514,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17169107124209404
+  },
+  {
+    "epoch": 129,
+    "train": {
+      "loss": 0.2861578166484833,
+      "contrast": 3.2801475524902344,
+      "structure": 1.292343020439148,
+      "storage": 0.0,
+      "objective": 0.7434068918228149,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0053141117095947,
+      "metric": 68.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16758030280470848
+  },
+  {
+    "epoch": 130,
+    "train": {
+      "loss": 0.2880156338214874,
+      "contrast": 3.2767229080200195,
+      "structure": 1.2885185480117798,
+      "storage": 0.0,
+      "objective": 0.7445398569107056,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0091651678085327,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16812489554286003
+  },
+  {
+    "epoch": 131,
+    "train": {
+      "loss": 0.29244285821914673,
+      "contrast": 3.2701821327209473,
+      "structure": 1.287122368812561,
+      "storage": 0.0,
+      "objective": 0.7481732964515686,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0098119974136353,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16160862520337105
+  },
+  {
+    "epoch": 132,
+    "train": {
+      "loss": 0.29203593730926514,
+      "contrast": 3.270822286605835,
+      "structure": 1.2873867750167847,
+      "storage": 0.0,
+      "objective": 0.7478569149971008,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0171918869018555,
+      "metric": 68.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1706439834088087
+  },
+  {
+    "epoch": 133,
+    "train": {
+      "loss": 0.2766891121864319,
+      "contrast": 3.2430243492126465,
+      "structure": 1.2902776002883911,
+      "storage": 0.0,
+      "objective": 0.7300193309783936,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.015378713607788,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16384180448949337
+  },
+  {
+    "epoch": 134,
+    "train": {
+      "loss": 0.32332414388656616,
+      "contrast": 3.275573968887329,
+      "structure": 1.2900723218917847,
+      "storage": 0.0,
+      "objective": 0.7798887491226196,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0151463747024536,
+      "metric": 68.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16824760846793652
+  },
+  {
+    "epoch": 135,
+    "train": {
+      "loss": 0.3044814169406891,
+      "contrast": 3.2828564643859863,
+      "structure": 1.291729211807251,
+      "storage": 0.0,
+      "objective": 0.7619400024414062,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0130383968353271,
+      "metric": 68.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16216117702424526
+  },
+  {
+    "epoch": 136,
+    "train": {
+      "loss": 0.36557695269584656,
+      "contrast": 3.278718948364258,
+      "structure": 1.2934318780899048,
+      "storage": 0.0,
+      "objective": 0.8227920532226562,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.017690658569336,
+      "metric": 68.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1689477227628231
+  },
+  {
+    "epoch": 137,
+    "train": {
+      "loss": 0.3233865201473236,
+      "contrast": 3.277409553527832,
+      "structure": 1.2912989854812622,
+      "storage": 0.0,
+      "objective": 0.7802573442459106,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0080357789993286,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16220358200371265
+  },
+  {
+    "epoch": 138,
+    "train": {
+      "loss": 0.25763288140296936,
+      "contrast": 3.278500556945801,
+      "structure": 1.2915555238723755,
+      "storage": 0.0,
+      "objective": 0.7146385312080383,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0080171823501587,
+      "metric": 68.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16317247413098812
+  },
+  {
+    "epoch": 139,
+    "train": {
+      "loss": 0.32370683550834656,
+      "contrast": 3.2836251258850098,
+      "structure": 1.292901635169983,
+      "storage": 0.0,
+      "objective": 0.7813594937324524,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0185716152191162,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1673699114471674
+  },
+  {
+    "epoch": 140,
+    "train": {
+      "loss": 0.36204418540000916,
+      "contrast": 3.2912092208862305,
+      "structure": 1.2924221754074097,
+      "storage": 0.0,
+      "objective": 0.8204073309898376,
+      "metric": 95.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0163965225219727,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16179964318871498
+  },
+  {
+    "epoch": 141,
+    "train": {
+      "loss": 0.29948195815086365,
+      "contrast": 3.2816498279571533,
+      "structure": 1.2893251180648804,
+      "storage": 0.0,
+      "objective": 0.7565794587135315,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.006047010421753,
+      "metric": 68.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17478829063475132
+  },
+  {
+    "epoch": 142,
+    "train": {
+      "loss": 0.2947055995464325,
+      "contrast": 3.274099349975586,
+      "structure": 1.2870351076126099,
+      "storage": 0.0,
+      "objective": 0.7508190870285034,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0107301473617554,
+      "metric": 68.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16599430702626705
+  },
+  {
+    "epoch": 143,
+    "train": {
+      "loss": 0.28479182720184326,
+      "contrast": 3.271005392074585,
+      "structure": 1.2879306077957153,
+      "storage": 0.0,
+      "objective": 0.7406854033470154,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0107797384262085,
+      "metric": 68.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17705458775162697
+  },
+  {
+    "epoch": 144,
+    "train": {
+      "loss": 0.32728779315948486,
+      "contrast": 3.276262044906616,
+      "structure": 1.290812611579895,
+      "storage": 0.0,
+      "objective": 0.7839952707290649,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0189083814620972,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1620802078396082
+  },
+  {
+    "epoch": 145,
+    "train": {
+      "loss": 0.26583942770957947,
+      "contrast": 3.2651658058166504,
+      "structure": 1.28818678855896,
+      "storage": 0.0,
+      "objective": 0.7211747169494629,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0174928903579712,
+      "metric": 68.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17772246338427067
+  },
+  {
+    "epoch": 146,
+    "train": {
+      "loss": 0.317104309797287,
+      "contrast": 3.2686004638671875,
+      "structure": 1.2905794382095337,
+      "storage": 0.0,
+      "objective": 0.7730222940444946,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.016759991645813,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1623076293617487
+  },
+  {
+    "epoch": 147,
+    "train": {
+      "loss": 0.2898558974266052,
+      "contrast": 3.2767069339752197,
+      "structure": 1.289964199066162,
+      "storage": 0.0,
+      "objective": 0.7465230226516724,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0174280405044556,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17543994262814522
+  },
+  {
+    "epoch": 148,
+    "train": {
+      "loss": 0.34320294857025146,
+      "contrast": 3.2881882190704346,
+      "structure": 1.292832612991333,
+      "storage": 0.0,
+      "objective": 0.8013049960136414,
+      "metric": 94.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0152513980865479,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1634550504386425
+  },
+  {
+    "epoch": 149,
+    "train": {
+      "loss": 0.2948198616504669,
+      "contrast": 3.260178804397583,
+      "structure": 1.2904760837554932,
+      "storage": 0.0,
+      "objective": 0.7498853802680969,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0175472497940063,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17691059038043022
+  },
+  {
+    "epoch": 150,
+    "train": {
+      "loss": 0.30472707748413086,
+      "contrast": 3.2790417671203613,
+      "structure": 1.2881109714508057,
+      "storage": 0.0,
+      "objective": 0.7614424228668213,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0214312076568604,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.170878354460001
+  },
+  {
+    "epoch": 151,
+    "train": {
+      "loss": 0.2884971797466278,
+      "contrast": 3.2623493671417236,
+      "structure": 1.2911248207092285,
+      "storage": 0.0,
+      "objective": 0.7438446283340454,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0157274007797241,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1643628180027008
+  },
+  {
+    "epoch": 152,
+    "train": {
+      "loss": 0.3175927400588989,
+      "contrast": 3.2540855407714844,
+      "structure": 1.2903071641921997,
+      "storage": 0.0,
+      "objective": 0.7720320224761963,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0154708623886108,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1697915643453598
+  },
+  {
+    "epoch": 153,
+    "train": {
+      "loss": 0.32930275797843933,
+      "contrast": 3.266598701477051,
+      "structure": 1.2921327352523804,
+      "storage": 0.0,
+      "objective": 0.7851759195327759,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0106028318405151,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16445893049240112
+  },
+  {
+    "epoch": 154,
+    "train": {
+      "loss": 0.31992921233177185,
+      "contrast": 3.257873058319092,
+      "structure": 1.2908611297607422,
+      "storage": 0.0,
+      "objective": 0.7748026847839355,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0097413063049316,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17294675298035145
+  },
+  {
+    "epoch": 155,
+    "train": {
+      "loss": 0.31988292932510376,
+      "contrast": 3.255100727081299,
+      "structure": 1.2892929315567017,
+      "storage": 0.0,
+      "objective": 0.7743223309516907,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.023998498916626,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16397016309201717
+  },
+  {
+    "epoch": 156,
+    "train": {
+      "loss": 0.28139007091522217,
+      "contrast": 3.2586817741394043,
+      "structure": 1.2905998229980469,
+      "storage": 0.0,
+      "objective": 0.7363182306289673,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0197635889053345,
+      "metric": 68.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17588757909834385
+  },
+  {
+    "epoch": 157,
+    "train": {
+      "loss": 0.32757893204689026,
+      "contrast": 3.276149272918701,
+      "structure": 1.2897378206253052,
+      "storage": 0.0,
+      "objective": 0.7841676473617554,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0214091539382935,
+      "metric": 66.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16333390586078167
+  },
+  {
+    "epoch": 158,
+    "train": {
+      "loss": 0.31447193026542664,
+      "contrast": 3.2492313385009766,
+      "structure": 1.2879414558410645,
+      "storage": 0.0,
+      "objective": 0.7681891918182373,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0170634984970093,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16531553119421005
+  },
+  {
+    "epoch": 159,
+    "train": {
+      "loss": 0.308649480342865,
+      "contrast": 3.260937213897705,
+      "structure": 1.2921141386032104,
+      "storage": 0.0,
+      "objective": 0.7639546394348145,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.011438012123108,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1698912139981985
+  },
+  {
+    "epoch": 160,
+    "train": {
+      "loss": 0.29676342010498047,
+      "contrast": 3.254587173461914,
+      "structure": 1.2867108583450317,
+      "storage": 0.0,
+      "objective": 0.7508932948112488,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0118862390518188,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16338644362986088
+  },
+  {
+    "epoch": 161,
+    "train": {
+      "loss": 0.3263436555862427,
+      "contrast": 3.2414772510528564,
+      "structure": 1.2886285781860352,
+      "storage": 0.0,
+      "objective": 0.7793542146682739,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0150737762451172,
+      "metric": 66.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16267604380846024
+  },
+  {
+    "epoch": 162,
+    "train": {
+      "loss": 0.24612432718276978,
+      "contrast": 3.2326080799102783,
+      "structure": 1.286706805229187,
+      "storage": 0.0,
+      "objective": 0.6980558633804321,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.010961651802063,
+      "metric": 66.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16314359568059444
+  },
+  {
+    "epoch": 163,
+    "train": {
+      "loss": 0.26698532700538635,
+      "contrast": 3.230459213256836,
+      "structure": 1.2848910093307495,
+      "storage": 0.0,
+      "objective": 0.7185204029083252,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0109689235687256,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16305693611502647
+  },
+  {
+    "epoch": 164,
+    "train": {
+      "loss": 0.26942676305770874,
+      "contrast": 3.246993064880371,
+      "structure": 1.2858648300170898,
+      "storage": 0.0,
+      "objective": 0.7227125763893127,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0054080486297607,
+      "metric": 68.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1630681436508894
+  },
+  {
+    "epoch": 165,
+    "train": {
+      "loss": 0.29870063066482544,
+      "contrast": 3.2414989471435547,
+      "structure": 1.291412115097046,
+      "storage": 0.0,
+      "objective": 0.7519917488098145,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0062636137008667,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1738000474870205
+  },
+  {
+    "epoch": 166,
+    "train": {
+      "loss": 0.30211320519447327,
+      "contrast": 3.2428338527679443,
+      "structure": 1.287594199180603,
+      "storage": 0.0,
+      "objective": 0.7551560401916504,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0059438943862915,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16497116535902023
+  },
+  {
+    "epoch": 167,
+    "train": {
+      "loss": 0.2815101444721222,
+      "contrast": 3.2547640800476074,
+      "structure": 1.2886130809783936,
+      "storage": 0.0,
+      "objective": 0.7358478307723999,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0092614889144897,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17668793350458145
+  },
+  {
+    "epoch": 168,
+    "train": {
+      "loss": 0.2607909142971039,
+      "contrast": 3.244734764099121,
+      "structure": 1.2883721590042114,
+      "storage": 0.0,
+      "objective": 0.7141016125679016,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0072853565216064,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16489556804299355
+  },
+  {
+    "epoch": 169,
+    "train": {
+      "loss": 0.29489102959632874,
+      "contrast": 3.255383014678955,
+      "structure": 1.2906410694122314,
+      "storage": 0.0,
+      "objective": 0.7494934797286987,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0029739141464233,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1798402164131403
+  },
+  {
+    "epoch": 170,
+    "train": {
+      "loss": 0.2739983797073364,
+      "contrast": 3.2656235694885254,
+      "structure": 1.287885069847107,
+      "storage": 0.0,
+      "objective": 0.7293493151664734,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0075809955596924,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16288669779896736
+  },
+  {
+    "epoch": 171,
+    "train": {
+      "loss": 0.30470097064971924,
+      "contrast": 3.248293399810791,
+      "structure": 1.2879890203475952,
+      "storage": 0.0,
+      "objective": 0.7583292126655579,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.011497139930725,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16432340629398823
+  },
+  {
+    "epoch": 172,
+    "train": {
+      "loss": 0.27461475133895874,
+      "contrast": 3.2513062953948975,
+      "structure": 1.2877744436264038,
+      "storage": 0.0,
+      "objective": 0.7285228371620178,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0152348279953003,
+      "metric": 66.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16838988848030567
+  },
+  {
+    "epoch": 173,
+    "train": {
+      "loss": 0.2942303717136383,
+      "contrast": 3.2489542961120605,
+      "structure": 1.2861214876174927,
+      "storage": 0.0,
+      "objective": 0.7477380037307739,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.017462968826294,
+      "metric": 66.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16351904347538948
+  },
+  {
+    "epoch": 174,
+    "train": {
+      "loss": 0.2949059307575226,
+      "contrast": 3.269317865371704,
+      "structure": 1.2867268323898315,
+      "storage": 0.0,
+      "objective": 0.7505104541778564,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0177658796310425,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.171716945245862
+  },
+  {
+    "epoch": 175,
+    "train": {
+      "loss": 0.35612809658050537,
+      "contrast": 3.253760814666748,
+      "structure": 1.2879152297973633,
+      "storage": 0.0,
+      "objective": 0.8102957010269165,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.021887183189392,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16295879893004894
+  },
+  {
+    "epoch": 176,
+    "train": {
+      "loss": 0.27668270468711853,
+      "contrast": 3.2450923919677734,
+      "structure": 1.2853810787200928,
+      "storage": 0.0,
+      "objective": 0.7297300696372986,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0113186836242676,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17279120720922947
+  },
+  {
+    "epoch": 177,
+    "train": {
+      "loss": 0.2878406345844269,
+      "contrast": 3.258782386779785,
+      "structure": 1.2880703210830688,
+      "storage": 0.0,
+      "objective": 0.7425259351730347,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0124614238739014,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1647734735161066
+  },
+  {
+    "epoch": 178,
+    "train": {
+      "loss": 0.33229169249534607,
+      "contrast": 3.2520127296447754,
+      "structure": 1.2906209230422974,
+      "storage": 0.0,
+      "objective": 0.7865551114082336,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0067951679229736,
+      "metric": 68.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17221430502831936
+  },
+  {
+    "epoch": 179,
+    "train": {
+      "loss": 0.2958173453807831,
+      "contrast": 3.247260570526123,
+      "structure": 1.2865417003631592,
+      "storage": 0.0,
+      "objective": 0.7491976022720337,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0136078596115112,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17161468975245953
+  },
+  {
+    "epoch": 180,
+    "train": {
+      "loss": 0.26276281476020813,
+      "contrast": 3.257080078125,
+      "structure": 1.2853659391403198,
+      "storage": 0.0,
+      "objective": 0.7170073986053467,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.015025019645691,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17782413214445114
+  },
+  {
+    "epoch": 181,
+    "train": {
+      "loss": 0.2792517840862274,
+      "contrast": 3.2475953102111816,
+      "structure": 1.288198471069336,
+      "storage": 0.0,
+      "objective": 0.7328311204910278,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0092889070510864,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16160513646900654
+  },
+  {
+    "epoch": 182,
+    "train": {
+      "loss": 0.29971054196357727,
+      "contrast": 3.259495735168457,
+      "structure": 1.2845821380615234,
+      "storage": 0.0,
+      "objective": 0.7541183233261108,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0080488920211792,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1837571021169424
+  },
+  {
+    "epoch": 183,
+    "train": {
+      "loss": 0.27605846524238586,
+      "contrast": 3.2499947547912598,
+      "structure": 1.2856179475784302,
+      "storage": 0.0,
+      "objective": 0.7296197414398193,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0087367296218872,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16144082508981228
+  },
+  {
+    "epoch": 184,
+    "train": {
+      "loss": 0.26684463024139404,
+      "contrast": 3.2265172004699707,
+      "structure": 1.2864850759506226,
+      "storage": 0.0,
+      "objective": 0.7181448936462402,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0117707252502441,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17226099595427513
+  },
+  {
+    "epoch": 185,
+    "train": {
+      "loss": 0.284768283367157,
+      "contrast": 3.245457172393799,
+      "structure": 1.2867472171783447,
+      "storage": 0.0,
+      "objective": 0.7379887104034424,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0142602920532227,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1617598682641983
+  },
+  {
+    "epoch": 186,
+    "train": {
+      "loss": 0.30780619382858276,
+      "contrast": 3.2467198371887207,
+      "structure": 1.2845282554626465,
+      "storage": 0.0,
+      "objective": 0.7609310150146484,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0170737504959106,
+      "metric": 66.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16470547020435333
+  },
+  {
+    "epoch": 187,
+    "train": {
+      "loss": 0.2514880299568176,
+      "contrast": 3.2535581588745117,
+      "structure": 1.286285400390625,
+      "storage": 0.0,
+      "objective": 0.7054724097251892,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0148017406463623,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16655452735722065
+  },
+  {
+    "epoch": 188,
+    "train": {
+      "loss": 0.3091319501399994,
+      "contrast": 3.260599136352539,
+      "structure": 1.2844438552856445,
+      "storage": 0.0,
+      "objective": 0.7636362314224243,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.005279779434204,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16053100489079952
+  },
+  {
+    "epoch": 189,
+    "train": {
+      "loss": 0.2942262887954712,
+      "contrast": 3.2511003017425537,
+      "structure": 1.2867908477783203,
+      "storage": 0.0,
+      "objective": 0.7480154633522034,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0026893615722656,
+      "metric": 66.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1735690776258707
+  },
+  {
+    "epoch": 190,
+    "train": {
+      "loss": 0.3075900375843048,
+      "contrast": 3.2721638679504395,
+      "structure": 1.285638451576233,
+      "storage": 0.0,
+      "objective": 0.7633702754974365,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0067615509033203,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1635727845132351
+  },
+  {
+    "epoch": 191,
+    "train": {
+      "loss": 0.2508431375026703,
+      "contrast": 3.2388086318969727,
+      "structure": 1.2869595289230347,
+      "storage": 0.0,
+      "objective": 0.7034199833869934,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0032261610031128,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17672575451433659
+  },
+  {
+    "epoch": 192,
+    "train": {
+      "loss": 0.3213650584220886,
+      "contrast": 3.255723476409912,
+      "structure": 1.2888773679733276,
+      "storage": 0.0,
+      "objective": 0.7758251428604126,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0074927806854248,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16702073067426682
+  },
+  {
+    "epoch": 193,
+    "train": {
+      "loss": 0.28607216477394104,
+      "contrast": 3.2658793926239014,
+      "structure": 1.287055492401123,
+      "storage": 0.0,
+      "objective": 0.7413656711578369,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0034326314926147,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16091938689351082
+  },
+  {
+    "epoch": 194,
+    "train": {
+      "loss": 0.310014545917511,
+      "contrast": 3.2741713523864746,
+      "structure": 1.2869569063186646,
+      "storage": 0.0,
+      "objective": 0.766127347946167,
+      "metric": 95.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0035555362701416,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16781269572675228
+  },
+  {
+    "epoch": 195,
+    "train": {
+      "loss": 0.2917654812335968,
+      "contrast": 3.244722843170166,
+      "structure": 1.2852199077606201,
+      "storage": 0.0,
+      "objective": 0.744759738445282,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0064880847930908,
+      "metric": 66.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16272693499922752
+  },
+  {
+    "epoch": 196,
+    "train": {
+      "loss": 0.27953335642814636,
+      "contrast": 3.259165048599243,
+      "structure": 1.2842521667480469,
+      "storage": 0.0,
+      "objective": 0.7338750958442688,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0106234550476074,
+      "metric": 66.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17355669476091862
+  },
+  {
+    "epoch": 197,
+    "train": {
+      "loss": 0.34132078289985657,
+      "contrast": 3.2431554794311523,
+      "structure": 1.286381721496582,
+      "storage": 0.0,
+      "objective": 0.7942744493484497,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0101308822631836,
+      "metric": 66.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16157530061900616
+  },
+  {
+    "epoch": 198,
+    "train": {
+      "loss": 0.3213701546192169,
+      "contrast": 3.2596185207366943,
+      "structure": 1.2867809534072876,
+      "storage": 0.0,
+      "objective": 0.7760100960731506,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.006902813911438,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1738215647637844
+  },
+  {
+    "epoch": 199,
+    "train": {
+      "loss": 0.3011239171028137,
+      "contrast": 3.230825662612915,
+      "structure": 1.284839391708374,
+      "storage": 0.0,
+      "objective": 0.7526904344558716,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0060834884643555,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16332857497036457
+  },
+  {
+    "epoch": 200,
+    "train": {
+      "loss": 0.26540693640708923,
+      "contrast": 3.2563018798828125,
+      "structure": 1.283914566040039,
+      "storage": 0.0,
+      "objective": 0.7194285988807678,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0094000101089478,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17480199225246906
+  },
+  {
+    "epoch": 201,
+    "train": {
+      "loss": 0.28040310740470886,
+      "contrast": 3.227813720703125,
+      "structure": 1.2854689359664917,
+      "storage": 0.0,
+      "objective": 0.7317313551902771,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0081720352172852,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16102279722690582
+  },
+  {
+    "epoch": 202,
+    "train": {
+      "loss": 0.2897208631038666,
+      "contrast": 3.246896266937256,
+      "structure": 1.2886122465133667,
+      "storage": 0.0,
+      "objective": 0.7432717680931091,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0071418285369873,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1780528761446476
+  },
+  {
+    "epoch": 203,
+    "train": {
+      "loss": 0.29708147048950195,
+      "contrast": 3.2540314197540283,
+      "structure": 1.284738540649414,
+      "storage": 0.0,
+      "objective": 0.7509585022926331,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0044804811477661,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16308540664613247
+  },
+  {
+    "epoch": 204,
+    "train": {
+      "loss": 0.2670944035053253,
+      "contrast": 3.244685173034668,
+      "structure": 1.2823034524917603,
+      "storage": 0.0,
+      "objective": 0.7197932600975037,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.003468632698059,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16306917183101177
+  },
+  {
+    "epoch": 205,
+    "train": {
+      "loss": 0.2603052258491516,
+      "contrast": 3.23824143409729,
+      "structure": 1.284657597541809,
+      "storage": 0.0,
+      "objective": 0.7125951051712036,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0017271041870117,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16853657737374306
+  },
+  {
+    "epoch": 206,
+    "train": {
+      "loss": 0.30189141631126404,
+      "contrast": 3.2489962577819824,
+      "structure": 1.2854673862457275,
+      "storage": 0.0,
+      "objective": 0.7553378343582153,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0011039972305298,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1670068707317114
+  },
+  {
+    "epoch": 207,
+    "train": {
+      "loss": 0.31330668926239014,
+      "contrast": 3.257598400115967,
+      "structure": 1.284002661705017,
+      "storage": 0.0,
+      "objective": 0.7674668431282043,
+      "metric": 95.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0034523010253906,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17857676558196545
+  },
+  {
+    "epoch": 208,
+    "train": {
+      "loss": 0.25247353315353394,
+      "contrast": 3.2498273849487305,
+      "structure": 1.2805671691894531,
+      "storage": 0.0,
+      "objective": 0.7055129408836365,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0006098747253418,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16542711481451988
+  },
+  {
+    "epoch": 209,
+    "train": {
+      "loss": 0.2597748935222626,
+      "contrast": 3.2528607845306396,
+      "structure": 1.2856345176696777,
+      "storage": 0.0,
+      "objective": 0.7136244177818298,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0039520263671875,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17820019833743572
+  },
+  {
+    "epoch": 210,
+    "train": {
+      "loss": 0.305431991815567,
+      "contrast": 3.255561590194702,
+      "structure": 1.2860455513000488,
+      "storage": 0.0,
+      "objective": 0.7595926523208618,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0050513744354248,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16855445317924023
+  },
+  {
+    "epoch": 211,
+    "train": {
+      "loss": 0.2716020345687866,
+      "contrast": 3.231889009475708,
+      "structure": 1.2852824926376343,
+      "storage": 0.0,
+      "objective": 0.7233191728591919,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.002207636833191,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16821688413619995
+  },
+  {
+    "epoch": 212,
+    "train": {
+      "loss": 0.3104553520679474,
+      "contrast": 3.2625985145568848,
+      "structure": 1.2858290672302246,
+      "storage": 0.0,
+      "objective": 0.765298068523407,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0005173683166504,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1753221582621336
+  },
+  {
+    "epoch": 213,
+    "train": {
+      "loss": 0.261361300945282,
+      "contrast": 3.239903688430786,
+      "structure": 1.2836852073669434,
+      "storage": 0.0,
+      "objective": 0.7137202024459839,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0012046098709106,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16470558941364288
+  },
+  {
+    "epoch": 214,
+    "train": {
+      "loss": 0.24524569511413574,
+      "contrast": 3.2304329872131348,
+      "structure": 1.2837421894073486,
+      "storage": 0.0,
+      "objective": 0.6966632604598999,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.008193850517273,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.173436114564538
+  },
+  {
+    "epoch": 215,
+    "train": {
+      "loss": 0.30564600229263306,
+      "contrast": 3.2273240089416504,
+      "structure": 1.2834001779556274,
+      "storage": 0.0,
+      "objective": 0.7567183971405029,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0123227834701538,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16312837041914463
+  },
+  {
+    "epoch": 216,
+    "train": {
+      "loss": 0.26639509201049805,
+      "contrast": 3.2393603324890137,
+      "structure": 1.286628007888794,
+      "storage": 0.0,
+      "objective": 0.7189939618110657,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0084667205810547,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1756183635443449
+  },
+  {
+    "epoch": 217,
+    "train": {
+      "loss": 0.37652432918548584,
+      "contrast": 3.2515528202056885,
+      "structure": 1.2883180379867554,
+      "storage": 0.0,
+      "objective": 0.8305113911628723,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0085649490356445,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16235600411891937
+  },
+  {
+    "epoch": 218,
+    "train": {
+      "loss": 0.25709882378578186,
+      "contrast": 3.228459119796753,
+      "structure": 1.2866947650909424,
+      "storage": 0.0,
+      "objective": 0.7086142301559448,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0136222839355469,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1759332474321127
+  },
+  {
+    "epoch": 219,
+    "train": {
+      "loss": 0.2747386693954468,
+      "contrast": 3.2335736751556396,
+      "structure": 1.2857465744018555,
+      "storage": 0.0,
+      "objective": 0.7266706824302673,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.010358214378357,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16256671212613583
+  },
+  {
+    "epoch": 220,
+    "train": {
+      "loss": 0.24889712035655975,
+      "contrast": 3.2540640830993652,
+      "structure": 1.28561270236969,
+      "storage": 0.0,
+      "objective": 0.7028647661209106,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0058088302612305,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17537235282361507
+  },
+  {
+    "epoch": 221,
+    "train": {
+      "loss": 0.2775217890739441,
+      "contrast": 3.237607955932617,
+      "structure": 1.2831276655197144,
+      "storage": 0.0,
+      "objective": 0.7295953631401062,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0070726871490479,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16427834331989288
+  },
+  {
+    "epoch": 222,
+    "train": {
+      "loss": 0.31294646859169006,
+      "contrast": 3.2386093139648438,
+      "structure": 1.2858787775039673,
+      "storage": 0.0,
+      "objective": 0.7653953433036804,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.004860520362854,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17132955603301525
+  },
+  {
+    "epoch": 223,
+    "train": {
+      "loss": 0.3143163025379181,
+      "contrast": 3.2498602867126465,
+      "structure": 1.2828179597854614,
+      "storage": 0.0,
+      "objective": 0.7675842046737671,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0084320306777954,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17533227987587452
+  },
+  {
+    "epoch": 224,
+    "train": {
+      "loss": 0.2780928313732147,
+      "contrast": 3.2487120628356934,
+      "structure": 1.286350965499878,
+      "storage": 0.0,
+      "objective": 0.7315991520881653,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0074175596237183,
+      "metric": 67.2,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17003284022212029
+  },
+  {
+    "epoch": 225,
+    "train": {
+      "loss": 0.28505948185920715,
+      "contrast": 3.2537527084350586,
+      "structure": 1.2869967222213745,
+      "storage": 0.0,
+      "objective": 0.7391344308853149,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.00546395778656,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.18358678929507732
+  },
+  {
+    "epoch": 226,
+    "train": {
+      "loss": 0.2805168032646179,
+      "contrast": 3.2471821308135986,
+      "structure": 1.2850778102874756,
+      "storage": 0.0,
+      "objective": 0.7337427735328674,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0030688047409058,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.171330064535141
+  },
+  {
+    "epoch": 227,
+    "train": {
+      "loss": 0.3101416826248169,
+      "contrast": 3.2252819538116455,
+      "structure": 1.2864315509796143,
+      "storage": 0.0,
+      "objective": 0.7613130807876587,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0057928562164307,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1683681607246399
+  },
+  {
+    "epoch": 228,
+    "train": {
+      "loss": 0.2638123631477356,
+      "contrast": 3.2517895698547363,
+      "structure": 1.2858127355575562,
+      "storage": 0.0,
+      "objective": 0.7175725698471069,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0008286237716675,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17437670938670635
+  },
+  {
+    "epoch": 229,
+    "train": {
+      "loss": 0.2814446985721588,
+      "contrast": 3.2324318885803223,
+      "structure": 1.2838525772094727,
+      "storage": 0.0,
+      "objective": 0.7330731749534607,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0081837177276611,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17078986950218678
+  },
+  {
+    "epoch": 230,
+    "train": {
+      "loss": 0.2915835976600647,
+      "contrast": 3.2332286834716797,
+      "structure": 1.2855873107910156,
+      "storage": 0.0,
+      "objective": 0.7434651851654053,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.005126953125,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17467627301812172
+  },
+  {
+    "epoch": 231,
+    "train": {
+      "loss": 0.2824854552745819,
+      "contrast": 3.236696720123291,
+      "structure": 1.286985993385315,
+      "storage": 0.0,
+      "objective": 0.7348537445068359,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0082929134368896,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16381228901445866
+  },
+  {
+    "epoch": 232,
+    "train": {
+      "loss": 0.2730875313282013,
+      "contrast": 3.242802619934082,
+      "structure": 1.287764549255371,
+      "storage": 0.0,
+      "objective": 0.7261441946029663,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0059592723846436,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1776094865053892
+  },
+  {
+    "epoch": 233,
+    "train": {
+      "loss": 0.28770023584365845,
+      "contrast": 3.2468819618225098,
+      "structure": 1.2861888408660889,
+      "storage": 0.0,
+      "objective": 0.7410073280334473,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0098031759262085,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16224782913923264
+  },
+  {
+    "epoch": 234,
+    "train": {
+      "loss": 0.25048038363456726,
+      "contrast": 3.2249913215637207,
+      "structure": 1.2863620519638062,
+      "storage": 0.0,
+      "objective": 0.7016156911849976,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0101094245910645,
+      "metric": 68.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17399194091558456
+  },
+  {
+    "epoch": 235,
+    "train": {
+      "loss": 0.3191080391407013,
+      "contrast": 3.2561638355255127,
+      "structure": 1.2832698822021484,
+      "storage": 0.0,
+      "objective": 0.7730514407157898,
+      "metric": 95.83333333333334,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0062849521636963,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16525616496801376
+  },
+  {
+    "epoch": 236,
+    "train": {
+      "loss": 0.32866570353507996,
+      "contrast": 3.2496836185455322,
+      "structure": 1.285352349281311,
+      "storage": 0.0,
+      "objective": 0.7821693420410156,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.008630633354187,
+      "metric": 67.80000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17851672135293484
+  },
+  {
+    "epoch": 237,
+    "train": {
+      "loss": 0.28807926177978516,
+      "contrast": 3.24609637260437,
+      "structure": 1.2832696437835693,
+      "storage": 0.0,
+      "objective": 0.7410158514976501,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0055906772613525,
+      "metric": 68.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16374957375228405
+  },
+  {
+    "epoch": 238,
+    "train": {
+      "loss": 0.26968759298324585,
+      "contrast": 3.2360846996307373,
+      "structure": 1.2838252782821655,
+      "storage": 0.0,
+      "objective": 0.721678614616394,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.009199857711792,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1721098218113184
+  },
+  {
+    "epoch": 239,
+    "train": {
+      "loss": 0.31013450026512146,
+      "contrast": 3.2351839542388916,
+      "structure": 1.2856169939041138,
+      "storage": 0.0,
+      "objective": 0.7622146606445312,
+      "metric": 96.66666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0083726644515991,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16466262750327587
+  },
+  {
+    "epoch": 240,
+    "train": {
+      "loss": 0.2524891197681427,
+      "contrast": 3.2407047748565674,
+      "structure": 1.2824620008468628,
+      "storage": 0.0,
+      "objective": 0.7048057913780212,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0087641477584839,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17288899421691895
+  },
+  {
+    "epoch": 241,
+    "train": {
+      "loss": 0.2593633532524109,
+      "contrast": 3.224186658859253,
+      "structure": 1.2881194353103638,
+      "storage": 0.0,
+      "objective": 0.7105939388275146,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0028111934661865,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1645276453346014
+  },
+  {
+    "epoch": 242,
+    "train": {
+      "loss": 0.2873084843158722,
+      "contrast": 3.2415099143981934,
+      "structure": 1.284793734550476,
+      "storage": 0.0,
+      "objective": 0.7399388551712036,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0045421123504639,
+      "metric": 67.60000000000001,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17172510735690594
+  },
+  {
+    "epoch": 243,
+    "train": {
+      "loss": 0.2913859784603119,
+      "contrast": 3.218379020690918,
+      "structure": 1.284714937210083,
+      "storage": 0.0,
+      "objective": 0.7416954040527344,
+      "metric": 98.33333333333333,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0090909004211426,
+      "metric": 67.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17276773042976856
+  },
+  {
+    "epoch": 244,
+    "train": {
+      "loss": 0.2454240322113037,
+      "contrast": 3.2181413173675537,
+      "structure": 1.2857816219329834,
+      "storage": 0.0,
+      "objective": 0.6958163976669312,
+      "metric": 100.0,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0111809968948364,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.16347037255764008
+  },
+  {
+    "epoch": 245,
+    "train": {
+      "loss": 0.23408755660057068,
+      "contrast": 3.2281746864318848,
+      "structure": 1.2840335369110107,
+      "storage": 0.0,
+      "objective": 0.6853083968162537,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0133394002914429,
+      "metric": 67.0,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.1718950755894184
+  },
+  {
+    "epoch": 246,
+    "train": {
+      "loss": 0.31649717688560486,
+      "contrast": 3.2199161052703857,
+      "structure": 1.285272240638733,
+      "storage": 0.0,
+      "objective": 0.7670159935951233,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0130802392959595,
+      "metric": 66.4,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.17081900499761105
+  },
+  {
+    "epoch": 247,
+    "train": {
+      "loss": 0.24945299327373505,
+      "contrast": 3.223158359527588,
+      "structure": 1.2854400873184204,
+      "storage": 0.0,
+      "objective": 0.7003128528594971,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0155900716781616,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.2615032438188791
+  },
+  {
+    "epoch": 248,
+    "train": {
+      "loss": 0.3145913779735565,
+      "contrast": 3.2308483123779297,
+      "structure": 1.2872813940048218,
+      "storage": 0.0,
+      "objective": 0.766404390335083,
+      "metric": 97.5,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0102638006210327,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.2627364210784435
+  },
+  {
+    "epoch": 249,
+    "train": {
+      "loss": 0.21873566508293152,
+      "contrast": 3.2384791374206543,
+      "structure": 1.2827094793319702,
+      "storage": 0.0,
+      "objective": 0.6708545684814453,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0119541883468628,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.25873836502432823
+  },
+  {
+    "epoch": 250,
+    "train": {
+      "loss": 0.2671847939491272,
+      "contrast": 3.2301106452941895,
+      "structure": 1.285160779953003,
+      "storage": 0.0,
+      "objective": 0.7187119722366333,
+      "metric": 99.16666666666667,
+      "examples": 120
+    },
+    "validation": {
+      "loss": 1.0131014585494995,
+      "metric": 66.8,
+      "storage_proxy": 0.0,
+      "examples": 500
+    },
+    "seconds": 0.2672310508787632
+  }
+]

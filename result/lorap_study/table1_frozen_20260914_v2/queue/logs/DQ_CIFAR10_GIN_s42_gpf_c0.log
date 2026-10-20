@@ -1,0 +1,7 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:2", "--cells", "DQ_CIFAR10_GIN", "--seed", "42", "--methods", "gpf"]
+DQ_CIFAR10_GIN s42 gpf/c0 adapter 1/100 val=1.21928 metric=55.640
+DQ_CIFAR10_GIN s42 gpf/c0 adapter 25/100 val=1.21632 metric=55.520
+DQ_CIFAR10_GIN s42 gpf/c0 adapter 50/100 val=1.21989 metric=55.260
+DQ_CIFAR10_GIN s42 gpf/c0 adapter 75/100 val=1.20201 metric=56.080
+DQ_CIFAR10_GIN s42 gpf/c0 adapter 100/100 val=1.21437 metric=56.000

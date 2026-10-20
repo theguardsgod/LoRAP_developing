@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "mode": "fixed4",
+      "seed": 41,
+      "common_backbone_sha256": "bd6b0cdfeffb0b52b110e2ea6a4c9355870a8dfd0a1eb9cde35f019405159460",
+      "optimizer_matches": true,
+      "total_parameters": 138304,
+      "trainable_parameters": 125754,
+      "lora_parameters": 0,
+      "prompt_parameters": 0,
+      "lora_fp32_bytes": 0,
+      "prompt_fp32_bytes": 0,
+      "prompt_buffer_bytes": 0,
+      "lora_targets": []
+    },
+    {
+      "mode": "a2q",
+      "seed": 41,
+      "common_backbone_sha256": "84e7c8dbdab4cd07ad3bf64b2fd37b7732ec40a4da7dac43eef7779fb8780497",
+      "optimizer_matches": true,
+      "total_parameters": 138304,
+      "trainable_parameters": 136754,
+      "lora_parameters": 0,
+      "prompt_parameters": 0,
+      "lora_fp32_bytes": 0,
+      "prompt_fp32_bytes": 0,
+      "prompt_buffer_bytes": 0,
+      "lora_targets": []
+    }
+  ]
+}

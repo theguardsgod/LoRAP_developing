@@ -1,0 +1,39 @@
+{
+  "epochs": {
+    "reference": 200,
+    "control": 2
+  },
+  "seeds": {
+    "reference": [
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "control": [
+      41
+    ]
+  },
+  "subset_sizes": {
+    "reference": null,
+    "control": {
+      "train": 128,
+      "val": 64,
+      "test": 64
+    }
+  },
+  "variants": {
+    "reference": [
+      "lora"
+    ],
+    "control": [
+      "no_prompt"
+    ]
+  }
+}

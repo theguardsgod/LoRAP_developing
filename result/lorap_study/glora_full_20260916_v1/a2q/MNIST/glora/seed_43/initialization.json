@@ -1,0 +1,24 @@
+{
+  "common_backbone_sha256": "1b3894222940d854f972792669c9d19e1eed1b0cced7b3d31e7ed717c946caa7",
+  "initial_state_sha256": "02f4345e490a336159eba9434dd93cc85e6ca4a9cc2a328dd5c3b0de8ef21023",
+  "supernet_counts": {
+    "total_parameters": 151604,
+    "trainable_parameters": 150054,
+    "adapter_parameters": 13300,
+    "adapter_fp32_bytes": 53200,
+    "external_prompt_parameters": 0,
+    "targets": [
+      "embedding",
+      "convs.0.mlp.linear1",
+      "convs.0.mlp.linear2",
+      "convs.1.mlp.linear1",
+      "convs.1.mlp.linear2",
+      "convs.2.mlp.linear1",
+      "convs.2.mlp.linear2",
+      "convs.3.mlp.linear1",
+      "convs.3.mlp.linear2",
+      "lin1",
+      "lin2"
+    ]
+  }
+}

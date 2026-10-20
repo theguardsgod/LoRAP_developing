@@ -1,0 +1,11 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:0", "--cells", "DQ_Cora_GCN", "--seed", "41", "--methods", "task", "--candidate", "2"]
+DQ_Cora_GCN s41 task/c2 adapter 1/200 val=1.45420 metric=72.000
+DQ_Cora_GCN s41 task/c2 adapter 25/200 val=1.44912 metric=72.000
+DQ_Cora_GCN s41 task/c2 adapter 50/200 val=1.43990 metric=70.600
+DQ_Cora_GCN s41 task/c2 adapter 75/200 val=1.36911 metric=73.000
+DQ_Cora_GCN s41 task/c2 adapter 100/200 val=1.29815 metric=72.600
+DQ_Cora_GCN s41 task/c2 adapter 125/200 val=1.23033 metric=73.200
+DQ_Cora_GCN s41 task/c2 adapter 150/200 val=1.16978 metric=74.800
+DQ_Cora_GCN s41 task/c2 adapter 175/200 val=1.15335 metric=73.200
+DQ_Cora_GCN s41 task/c2 adapter 200/200 val=1.10896 metric=74.400

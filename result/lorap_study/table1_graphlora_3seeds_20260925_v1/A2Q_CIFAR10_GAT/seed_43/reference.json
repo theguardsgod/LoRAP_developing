@@ -1,0 +1,81 @@
+{
+  "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/A2Q_CIFAR10_GAT/seed_43/baseline",
+  "config": {
+    "cell": "A2Q_CIFAR10_GAT",
+    "dataset": "CIFAR10",
+    "architecture": "GAT",
+    "framework": "A2Q",
+    "data_root": "/data/cyliu/dataset/gnn-cifar10",
+    "node": false,
+    "regression": false,
+    "width": 19,
+    "heads": 8,
+    "layers": 4,
+    "bit": 4,
+    "num_deg": 1000,
+    "batch_size": 128,
+    "paper_none": 61.9,
+    "paper_none_sd": 1.2,
+    "paper_gpf_lorap": 62.9,
+    "metric": "accuracy_percent",
+    "baseline_epochs": 200,
+    "adapter_epochs": 100,
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "dropout": 0.0,
+    "init": "uniform",
+    "lr_feature": 0.01,
+    "lr_message": 0.01,
+    "lr_weight": 0.001,
+    "lr_bit": 0.0005,
+    "lr_attention": 0.001,
+    "lr_edge": 0.1,
+    "a_loss": 2e-05,
+    "a_storage": 0.1,
+    "bit_bounds": [
+      1.0,
+      16.0
+    ],
+    "stop_patience": 30,
+    "min_epochs": 20,
+    "aggregation_implementation": "stable_csr_v2",
+    "optimizer_recipe": "native_groups_v2",
+    "seed": 43,
+    "subset_limit": null,
+    "stage": "baseline"
+  },
+  "done": {
+    "cell": "A2Q_CIFAR10_GAT",
+    "seed": 43,
+    "config_hash": "cf43c615967179c41b536a2acef39a9451b40bfb849fde8f513b046645d307c8",
+    "initial_sha256": "d3f81d9baa30ffa37f4e5fe7a0de547c08f69cef1d00613a683f1db03a413fd2",
+    "selected_epoch": 1,
+    "validation": {
+      "loss": 1.776921088218689,
+      "metric": 33.78,
+      "storage_proxy": 143.74623003005982,
+      "examples": 5000
+    },
+    "backbone_sha256": "f9a329b19e18bcdcdbe0b72de8b040ac1cbe3f492350f367f7c952156f86bfb8",
+    "test_evaluations": 0,
+    "full_split": true,
+    "seconds": 4917.987668672577
+  },
+  "test": {
+    "cell": "A2Q_CIFAR10_GAT",
+    "seed": 43,
+    "method": "none",
+    "loss": 1.7797256050109864,
+    "metric": 34.29,
+    "examples": 10000,
+    "completed_test_evaluations": 1,
+    "checkpoint_file_sha256": "d1ad3d2b487af643bf19fa83cadb26d48bf8173ee1830e4e32f0a4078c5883eb",
+    "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+  },
+  "checkpoint_file_sha256": "d1ad3d2b487af643bf19fa83cadb26d48bf8173ee1830e4e32f0a4078c5883eb"
+}

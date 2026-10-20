@@ -1,0 +1,114 @@
+[
+  {
+    "mode": "fixed4",
+    "variant": "no_prompt",
+    "fits": 1,
+    "tests": 0,
+    "seeds": 1,
+    "validation_accuracy": {
+      "mean": 90.46,
+      "sample_std": null,
+      "n": 1
+    },
+    "test_accuracy": null,
+    "adapter_parameters": {
+      "mean": 0,
+      "sample_std": null,
+      "n": 1
+    },
+    "adapter_KiB": {
+      "mean": 0.0,
+      "sample_std": null,
+      "n": 1
+    },
+    "effective_bits": {
+      "mean": 4.0,
+      "sample_std": null,
+      "n": 1
+    }
+  },
+  {
+    "mode": "fixed4",
+    "variant": "graphlora",
+    "fits": 1,
+    "tests": 0,
+    "seeds": 1,
+    "validation_accuracy": {
+      "mean": 92.52,
+      "sample_std": null,
+      "n": 1
+    },
+    "test_accuracy": null,
+    "adapter_parameters": {
+      "mean": 4404,
+      "sample_std": null,
+      "n": 1
+    },
+    "adapter_KiB": {
+      "mean": 17.203125,
+      "sample_std": null,
+      "n": 1
+    },
+    "effective_bits": {
+      "mean": 4.0,
+      "sample_std": null,
+      "n": 1
+    }
+  },
+  {
+    "mode": "a2q",
+    "variant": "no_prompt",
+    "fits": 1,
+    "tests": 0,
+    "seeds": 1,
+    "validation_accuracy": {
+      "mean": 92.14,
+      "sample_std": null,
+      "n": 1
+    },
+    "test_accuracy": null,
+    "adapter_parameters": {
+      "mean": 0,
+      "sample_std": null,
+      "n": 1
+    },
+    "adapter_KiB": {
+      "mean": 0.0,
+      "sample_std": null,
+      "n": 1
+    },
+    "effective_bits": {
+      "mean": 3.9988734539851265,
+      "sample_std": null,
+      "n": 1
+    }
+  },
+  {
+    "mode": "a2q",
+    "variant": "graphlora",
+    "fits": 1,
+    "tests": 0,
+    "seeds": 1,
+    "validation_accuracy": {
+      "mean": 93.24,
+      "sample_std": null,
+      "n": 1
+    },
+    "test_accuracy": null,
+    "adapter_parameters": {
+      "mean": 4404,
+      "sample_std": null,
+      "n": 1
+    },
+    "adapter_KiB": {
+      "mean": 17.203125,
+      "sample_std": null,
+      "n": 1
+    },
+    "effective_bits": {
+      "mean": 3.998994214079317,
+      "sample_std": null,
+      "n": 1
+    }
+  }
+]

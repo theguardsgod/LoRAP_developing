@@ -1,0 +1,95 @@
+{
+  "complete": true,
+  "smoke": true,
+  "supernets_completed": 2,
+  "searches_completed": 2,
+  "fits_total": 2,
+  "tests_completed": 0,
+  "tests_expected": 0,
+  "rows": [
+    {
+      "mode": "fixed4",
+      "complete": false,
+      "fits": 1,
+      "tests": 0,
+      "no_prompt_accuracy": null,
+      "lora_accuracy": null,
+      "glora_accuracy": null,
+      "glora_minus_no_prompt_pp": null,
+      "glora_minus_lora_pp": null,
+      "active_adapter_parameters": {
+        "mean": 5431,
+        "sample_std": null,
+        "n": 1
+      },
+      "active_adapter_KiB": {
+        "mean": 21.21484375,
+        "sample_std": null,
+        "n": 1
+      },
+      "mean_activation_effective_bits": {
+        "mean": 4.0,
+        "sample_std": null,
+        "n": 1
+      }
+    },
+    {
+      "mode": "a2q",
+      "complete": false,
+      "fits": 1,
+      "tests": 0,
+      "no_prompt_accuracy": null,
+      "lora_accuracy": null,
+      "glora_accuracy": null,
+      "glora_minus_no_prompt_pp": null,
+      "glora_minus_lora_pp": null,
+      "active_adapter_parameters": {
+        "mean": 13300,
+        "sample_std": null,
+        "n": 1
+      },
+      "active_adapter_KiB": {
+        "mean": 51.953125,
+        "sample_std": null,
+        "n": 1
+      },
+      "mean_activation_effective_bits": {
+        "mean": 4.0,
+        "sample_std": null,
+        "n": 1
+      }
+    }
+  ],
+  "progress": [
+    {
+      "mode": "fixed4",
+      "seed": 41,
+      "phase": "supernet",
+      "epoch": 2,
+      "epochs": 2,
+      "best_epoch": 1,
+      "validation": {
+        "loss": 2.308119773864746,
+        "accuracy": 0.09375,
+        "examples": 64,
+        "legacy_budget_proxy": 114.904296875
+      },
+      "training_seconds": 0.6295298263430595
+    },
+    {
+      "mode": "a2q",
+      "seed": 41,
+      "phase": "supernet",
+      "epoch": 2,
+      "epochs": 2,
+      "best_epoch": 2,
+      "validation": {
+        "loss": 2.304417848587036,
+        "accuracy": 0.109375,
+        "examples": 64,
+        "legacy_budget_proxy": 56.66480255126953
+      },
+      "training_seconds": 0.2281444203108549
+    }
+  ]
+}

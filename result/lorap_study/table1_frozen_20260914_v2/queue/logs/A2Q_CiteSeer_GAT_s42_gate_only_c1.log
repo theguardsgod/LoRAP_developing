@@ -1,0 +1,8 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:3", "--cells", "A2Q_CiteSeer_GAT", "--seed", "42", "--methods", "gate_only"]
+A2Q_CiteSeer_GAT s42 gate_only/c1 predictor_warmup 1/50 val=0.94320 metric=70.200
+A2Q_CiteSeer_GAT s42 gate_only/c1 predictor_warmup 25/50 val=0.94198 metric=71.800
+A2Q_CiteSeer_GAT s42 gate_only/c1 predictor_warmup 50/50 val=0.95868 metric=71.200
+A2Q_CiteSeer_GAT s42 gate_only/c1 adapter 1/200 val=0.94648 metric=70.400
+A2Q_CiteSeer_GAT s42 gate_only/c1 adapter 25/200 val=0.94743 metric=70.200
+A2Q_CiteSeer_GAT s42 gate_only/c1 adapter 50/200 val=0.94775 metric=70.200

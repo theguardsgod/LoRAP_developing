@@ -1,0 +1,188 @@
+{
+  "complete": false,
+  "smoke": false,
+  "supernets_completed": 6,
+  "searches_completed": 6,
+  "fits_total": 20,
+  "tests_completed": 0,
+  "tests_expected": 20,
+  "rows": [
+    {
+      "mode": "fixed4",
+      "complete": false,
+      "fits": 3,
+      "tests": 0,
+      "no_prompt_accuracy": {
+        "mean": 94.02499999999999,
+        "sample_std": 0.31637706055345394,
+        "n": 10
+      },
+      "lora_accuracy": {
+        "mean": 93.605,
+        "sample_std": 0.7437031964731949,
+        "n": 10
+      },
+      "glora_accuracy": null,
+      "glora_minus_no_prompt_pp": null,
+      "glora_minus_lora_pp": null,
+      "active_adapter_parameters": {
+        "mean": 4269.333333333333,
+        "sample_std": 1316.5486444994478,
+        "n": 3
+      },
+      "active_adapter_KiB": {
+        "mean": 16.677083333333332,
+        "sample_std": 5.142768142575968,
+        "n": 3
+      },
+      "mean_activation_effective_bits": {
+        "mean": 4.0,
+        "sample_std": 0.0,
+        "n": 3
+      }
+    },
+    {
+      "mode": "a2q",
+      "complete": false,
+      "fits": 3,
+      "tests": 0,
+      "no_prompt_accuracy": {
+        "mean": 95.181,
+        "sample_std": 0.4477710228329738,
+        "n": 10
+      },
+      "lora_accuracy": {
+        "mean": 95.301,
+        "sample_std": 0.3343800233267543,
+        "n": 10
+      },
+      "glora_accuracy": null,
+      "glora_minus_no_prompt_pp": null,
+      "glora_minus_lora_pp": null,
+      "active_adapter_parameters": {
+        "mean": 4550.666666666667,
+        "sample_std": 1115.1494668130067,
+        "n": 3
+      },
+      "active_adapter_KiB": {
+        "mean": 17.776041666666668,
+        "sample_std": 4.3560526047383075,
+        "n": 3
+      },
+      "mean_activation_effective_bits": {
+        "mean": 4.0,
+        "sample_std": 0.0,
+        "n": 3
+      }
+    }
+  ],
+  "progress": [
+    {
+      "mode": "fixed4",
+      "seed": 41,
+      "phase": "supernet",
+      "epoch": 200,
+      "epochs": 200,
+      "best_epoch": 10,
+      "validation": {
+        "loss": 1.7672651000976562,
+        "accuracy": 0.3514,
+        "examples": 5000,
+        "legacy_budget_proxy": 53.23485107421875
+      },
+      "training_seconds": 6750.515823466703
+    },
+    {
+      "mode": "fixed4",
+      "seed": 42,
+      "phase": "supernet",
+      "epoch": 200,
+      "epochs": 200,
+      "best_epoch": 9,
+      "validation": {
+        "loss": 3.4330046325683594,
+        "accuracy": 0.1656,
+        "examples": 5000,
+        "legacy_budget_proxy": 29.418243408203125
+      },
+      "training_seconds": 6985.055717684329
+    },
+    {
+      "mode": "fixed4",
+      "seed": 43,
+      "phase": "supernet",
+      "epoch": 200,
+      "epochs": 200,
+      "best_epoch": 151,
+      "validation": {
+        "loss": 3.1568130359649658,
+        "accuracy": 0.1512,
+        "examples": 5000,
+        "legacy_budget_proxy": 55.287933349609375
+      },
+      "training_seconds": 8183.6615437828
+    },
+    {
+      "mode": "fixed4",
+      "seed": 44,
+      "phase": "supernet",
+      "epoch": 149,
+      "epochs": 200,
+      "best_epoch": 1,
+      "validation": {
+        "loss": 4.858382709503174,
+        "accuracy": 0.0962,
+        "examples": 5000,
+        "legacy_budget_proxy": 47.8080078125
+      },
+      "training_seconds": 4457.9707475584
+    },
+    {
+      "mode": "a2q",
+      "seed": 41,
+      "phase": "supernet",
+      "epoch": 200,
+      "epochs": 200,
+      "best_epoch": 70,
+      "validation": {
+        "loss": 1.7721199851989746,
+        "accuracy": 0.3664,
+        "examples": 5000,
+        "legacy_budget_proxy": 47.08413372039795
+      },
+      "training_seconds": 7102.250373739749
+    },
+    {
+      "mode": "a2q",
+      "seed": 42,
+      "phase": "supernet",
+      "epoch": 200,
+      "epochs": 200,
+      "best_epoch": 191,
+      "validation": {
+        "loss": 2.213465572357178,
+        "accuracy": 0.28,
+        "examples": 5000,
+        "legacy_budget_proxy": 43.88335838317871
+      },
+      "training_seconds": 8706.06566969119
+    },
+    {
+      "mode": "a2q",
+      "seed": 43,
+      "phase": "supernet",
+      "epoch": 200,
+      "epochs": 200,
+      "best_epoch": 11,
+      "validation": {
+        "loss": 2.3874111152648925,
+        "accuracy": 0.2014,
+        "examples": 5000,
+        "legacy_budget_proxy": 37.84887037277222
+      },
+      "training_seconds": 8205.372522747144
+    }
+  ],
+  "stopped": true,
+  "stop_reason": "User switched baseline to GraphLoRA"
+}

@@ -1,0 +1,12 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:2", "--cells", "A2Q_CiteSeer_GIN", "--seed", "41", "--methods", "gate_only", "--candidate", "2"]
+A2Q_CiteSeer_GIN s41 gate_only/c2 predictor_warmup 1/50 val=1.03116 metric=68.200
+A2Q_CiteSeer_GIN s41 gate_only/c2 predictor_warmup 25/50 val=1.02912 metric=68.600
+A2Q_CiteSeer_GIN s41 gate_only/c2 predictor_warmup 50/50 val=1.08103 metric=67.200
+A2Q_CiteSeer_GIN s41 gate_only/c2 adapter 1/200 val=1.07904 metric=67.200
+A2Q_CiteSeer_GIN s41 gate_only/c2 adapter 25/200 val=1.07207 metric=67.200
+A2Q_CiteSeer_GIN s41 gate_only/c2 adapter 50/200 val=1.05899 metric=67.600
+A2Q_CiteSeer_GIN s41 gate_only/c2 adapter 75/200 val=1.05674 metric=67.400
+A2Q_CiteSeer_GIN s41 gate_only/c2 adapter 100/200 val=1.04921 metric=68.200
+A2Q_CiteSeer_GIN s41 gate_only/c2 adapter 125/200 val=1.05059 metric=68.000
+A2Q_CiteSeer_GIN s41 gate_only/c2 adapter 150/200 val=1.04879 metric=68.000

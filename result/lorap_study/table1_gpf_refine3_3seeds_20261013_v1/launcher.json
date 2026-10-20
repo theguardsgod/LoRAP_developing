@@ -1,0 +1,53 @@
+{
+  "started_unix": 1791870583.1791854,
+  "workers": [
+    {
+      "pid": 815765,
+      "device": "cuda:0",
+      "command": [
+        "/home/cyliu/anaconda3/envs/ProG/bin/python",
+        "-B",
+        "-u",
+        "-m",
+        "runs.lorap_study.table1_gpf_search.run",
+        "worker",
+        "--root",
+        "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_refine3_3seeds_20261013_v1",
+        "--device",
+        "cuda:0"
+      ]
+    },
+    {
+      "pid": 815766,
+      "device": "cuda:1",
+      "command": [
+        "/home/cyliu/anaconda3/envs/ProG/bin/python",
+        "-B",
+        "-u",
+        "-m",
+        "runs.lorap_study.table1_gpf_search.run",
+        "worker",
+        "--root",
+        "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_refine3_3seeds_20261013_v1",
+        "--device",
+        "cuda:1"
+      ]
+    },
+    {
+      "pid": 815767,
+      "device": "cuda:2",
+      "command": [
+        "/home/cyliu/anaconda3/envs/ProG/bin/python",
+        "-B",
+        "-u",
+        "-m",
+        "runs.lorap_study.table1_gpf_search.run",
+        "worker",
+        "--root",
+        "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_refine3_3seeds_20261013_v1",
+        "--device",
+        "cuda:2"
+      ]
+    }
+  ]
+}

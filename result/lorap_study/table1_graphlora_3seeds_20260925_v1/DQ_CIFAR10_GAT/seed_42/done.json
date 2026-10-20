@@ -1,0 +1,53 @@
+{
+  "cell": "DQ_CIFAR10_GAT",
+  "seed": 42,
+  "config_hash": "05d2c5d5685e1f1ce0a32d8011c932bf18c153f11cc8c1a5306bc453a1900ca0",
+  "selected_epoch": 115,
+  "validation": {
+    "loss": 1.1508934593200684,
+    "metric": 58.86,
+    "storage_proxy": 0.0,
+    "examples": 5000
+  },
+  "test_evaluations": 0,
+  "full_split": true,
+  "common_backbone_sha256": "ddc3f7a7e9d91b345102b13b9de3a6f32891980840c1e515aed58fbef7e48d16",
+  "state_sha256": "cf3aa2e477d304fd652935d6c4129c6f0ab277390615e9d34151b54dc6937783",
+  "checkpoint_file_sha256": "331a67b3d530cceb7071127e7cb4c0b43e224cecd977418ee8e1dcb8e4ec5451",
+  "training_seconds": 67479.14751905389,
+  "peak_cuda_memory_bytes": 3062073344,
+  "device": "cuda:2",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "total_parameters": 124802,
+  "trainable_parameters": 124802,
+  "adapter_parameters": 3648,
+  "adapter_fp32_bytes": 14592,
+  "adapter_buffer_bytes": 0,
+  "prompt_parameters": 0,
+  "sites": [
+    {
+      "name": "convs.0",
+      "inputs": 152,
+      "outputs": 152,
+      "heads": 8
+    },
+    {
+      "name": "convs.1",
+      "inputs": 152,
+      "outputs": 152,
+      "heads": 8
+    },
+    {
+      "name": "convs.2",
+      "inputs": 152,
+      "outputs": 152,
+      "heads": 8
+    },
+    {
+      "name": "convs.3",
+      "inputs": 152,
+      "outputs": 152,
+      "heads": 1
+    }
+  ]
+}

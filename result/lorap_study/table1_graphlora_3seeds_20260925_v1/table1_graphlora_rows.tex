@@ -1,0 +1,12 @@
+% GraphLoRA-adapted; joint; seeds=41,42,43
+% Columns: framework, backbone, method, Cora, CiteSeer, MNIST, CIFAR10, ZINC.
+% Classification: accuracy (%); ZINC: MAE. Mean +/- sample standard deviation.
+QAT & GIN & GraphLoRA-adapted & $25.70 \pm 11.26$ & $25.73 \pm 4.52$ & $95.61 \pm 0.67$ & $51.75 \pm 4.18$ & $1.5362 \pm 0.0234$ \\
+QAT & GCN & GraphLoRA-adapted & $23.63 \pm 10.27$ & $23.63 \pm 13.31$ & $40.30 \pm 1.69$ & $43.62 \pm 0.92$ & $1.3207 \pm 0.1299$ \\
+QAT & GAT & GraphLoRA-adapted & $23.40 \pm 10.37$ & $20.37 \pm 7.58$ & $32.04 \pm 5.77$ & $22.44 \pm 1.16$ & $1.5094 \pm 0.0674$ \\
+DQ & GIN & GraphLoRA-adapted & $72.77 \pm 1.80$ & $58.50 \pm 3.38$ & $93.07 \pm 0.73$ & $51.70 \pm 0.80$ & $0.5385 \pm 0.0070$ \\
+DQ & GCN & GraphLoRA-adapted & $54.97 \pm 11.61$ & $52.10 \pm 4.68$ & $87.51 \pm 1.08$ & $44.90 \pm 0.96$ & $0.5676 \pm 0.0097$ \\
+DQ & GAT & GraphLoRA-adapted & $69.50 \pm 8.03$ & $63.17 \pm 3.33$ & $94.66 \pm 0.41$ & $58.64 \pm 1.00$ & $0.5830 \pm 0.0164$ \\
+A2Q & GIN & GraphLoRA-adapted & $66.80 \pm 1.65$ & $38.30 \pm 2.91$ & $95.44 \pm 0.11$ & $54.05 \pm 1.42$ & $0.4617 \pm 0.0092$ \\
+A2Q & GCN & GraphLoRA-adapted & $51.50 \pm 6.68$ & $38.50 \pm 7.51$ & $89.89 \pm 0.21$ & $49.93 \pm 0.45$ & $0.5208 \pm 0.0075$ \\
+A2Q & GAT & GraphLoRA-adapted & $79.33 \pm 2.38$ & $67.23 \pm 1.76$ & $62.80 \pm 22.72$ & $42.84 \pm 0.86$ & $0.5807 \pm 0.0225$ \\

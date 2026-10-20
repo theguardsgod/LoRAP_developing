@@ -1,0 +1,140 @@
+{
+  "complete": true,
+  "screened": 48,
+  "screens_expected": 48,
+  "completed_screen_attempts": 48,
+  "search_full_fits": 24,
+  "promoted_full_fits": 12,
+  "promoted_full_fits_expected": 12,
+  "completed_promoted_attempts": 12,
+  "confirmation_fits": 12,
+  "confirmation_fits_expected": 12,
+  "fits": 36,
+  "tests": 18,
+  "tests_expected": 18,
+  "all_test_records": 18,
+  "unexpected_test_records": 0,
+  "selected_cells": 6,
+  "cells_expected": 6,
+  "seeds": [
+    41,
+    42,
+    43
+  ],
+  "search_seed": 41,
+  "smoke": false,
+  "failures": [],
+  "blocking_failures": [],
+  "numerical_rejections": [],
+  "running": [],
+  "selections": [
+    {
+      "candidate": "c05",
+      "validation_loss": 0.8260601162910461,
+      "ranking": [
+        {
+          "candidate": "c05",
+          "validation_loss": 0.8260601162910461
+        },
+        {
+          "candidate": "c07",
+          "validation_loss": 0.8374115824699402
+        }
+      ],
+      "rejected": [],
+      "criterion": "validation_loss",
+      "seed": 41,
+      "cell": "DQ_Cora_GIN"
+    },
+    {
+      "candidate": "c02",
+      "validation_loss": 1.5276237768173218,
+      "ranking": [
+        {
+          "candidate": "c02",
+          "validation_loss": 1.5276237768173218
+        },
+        {
+          "candidate": "c00",
+          "validation_loss": 1.5321002220153808
+        }
+      ],
+      "rejected": [],
+      "criterion": "validation_loss",
+      "seed": 41,
+      "cell": "QAT_CIFAR10_GCN"
+    },
+    {
+      "candidate": "c02",
+      "validation_loss": 0.5493915758132935,
+      "ranking": [
+        {
+          "candidate": "c02",
+          "validation_loss": 0.5493915758132935
+        },
+        {
+          "candidate": "c00",
+          "validation_loss": 0.5592449865341187
+        }
+      ],
+      "rejected": [],
+      "criterion": "validation_loss",
+      "seed": 41,
+      "cell": "DQ_ZINC_GCN"
+    },
+    {
+      "candidate": "c05",
+      "validation_loss": 1.14542818069458,
+      "ranking": [
+        {
+          "candidate": "c05",
+          "validation_loss": 1.14542818069458
+        },
+        {
+          "candidate": "c04",
+          "validation_loss": 1.1536751985549927
+        }
+      ],
+      "rejected": [],
+      "criterion": "validation_loss",
+      "seed": 41,
+      "cell": "DQ_CiteSeer_GAT"
+    },
+    {
+      "candidate": "c04",
+      "validation_loss": 0.14221335632130502,
+      "ranking": [
+        {
+          "candidate": "c04",
+          "validation_loss": 0.14221335632130502
+        },
+        {
+          "candidate": "c05",
+          "validation_loss": 0.1508545732021332
+        }
+      ],
+      "rejected": [],
+      "criterion": "validation_loss",
+      "seed": 41,
+      "cell": "DQ_MNIST_GAT"
+    },
+    {
+      "candidate": "c07",
+      "validation_loss": 0.6128872537612915,
+      "ranking": [
+        {
+          "candidate": "c07",
+          "validation_loss": 0.6128872537612915
+        },
+        {
+          "candidate": "c02",
+          "validation_loss": 0.6162256555557251
+        }
+      ],
+      "rejected": [],
+      "criterion": "validation_loss",
+      "seed": 41,
+      "cell": "A2Q_ZINC_GAT"
+    }
+  ]
+}

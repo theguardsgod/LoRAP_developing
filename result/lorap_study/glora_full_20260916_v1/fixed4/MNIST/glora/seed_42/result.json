@@ -1,0 +1,91 @@
+{
+  "config_sha256": "02f216b3359cf8e5883205ddb191e905e31586edf1a3964d40d4ea708cef8b62",
+  "seed": 42,
+  "epochs": 200,
+  "best_epoch": 9,
+  "reference_validation_loss": 1.7433800498962402,
+  "reference_architecture": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "training_seconds": 6985.055717684329,
+  "peak_training_cuda_bytes": 373923840,
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "physical_gpu": null,
+  "common_backbone_sha256": "6b473f31c34485f366e653641b126ac6bd90a6fa0590b2bf9f9b53cbaa2f0a53",
+  "initial_state_sha256": "8fe350548a8c26f00263bdfe2270584fbc8e6e2133e8dc5ae3872cf7366cb5ce",
+  "supernet_counts": {
+    "total_parameters": 151604,
+    "trainable_parameters": 139054,
+    "adapter_parameters": 13300,
+    "adapter_fp32_bytes": 53200,
+    "external_prompt_parameters": 0,
+    "targets": [
+      "embedding",
+      "convs.0.mlp.linear1",
+      "convs.0.mlp.linear2",
+      "convs.1.mlp.linear1",
+      "convs.1.mlp.linear2",
+      "convs.2.mlp.linear1",
+      "convs.2.mlp.linear2",
+      "convs.3.mlp.linear1",
+      "convs.3.mlp.linear2",
+      "lin1",
+      "lin2"
+    ]
+  },
+  "mode": "fixed4",
+  "variant": "glora",
+  "validation": {
+    "loss": 0.7909660570144653,
+    "accuracy": 0.7466,
+    "examples": 5000,
+    "legacy_budget_proxy": 57.81143798828125
+  },
+  "validation_reproduction": {
+    "selected_loss": 0.7909660570144653,
+    "replay_loss": 0.7909660570144653,
+    "delta": 0.0,
+    "absolute_tolerance": 0.0005
+  },
+  "compact_counts": {
+    "total_parameters": 141981,
+    "trainable_parameters": 129431,
+    "adapter_parameters": 3677,
+    "adapter_fp32_bytes": 14708,
+    "external_prompt_parameters": 0,
+    "targets": [
+      "embedding",
+      "convs.0.mlp.linear1",
+      "convs.0.mlp.linear2",
+      "convs.1.mlp.linear1",
+      "convs.1.mlp.linear2",
+      "convs.2.mlp.linear1",
+      "convs.2.mlp.linear2",
+      "convs.3.mlp.linear1",
+      "convs.3.mlp.linear2",
+      "lin1",
+      "lin2"
+    ]
+  },
+  "active_adapter_parameters": 3677,
+  "active_adapter_fp32_bytes": 14708,
+  "search_evaluations": 1000,
+  "search_seconds_current_session": 2229.3239771462977,
+  "search_validation_seconds": 2220.2221727054566,
+  "search_validation_calls": 1000,
+  "peak_search_cuda_bytes": 117029888,
+  "mean_activation_effective_bits": 4.0,
+  "test": null,
+  "test_evaluations": 0
+}

@@ -1,0 +1,25 @@
+project: table1_frozen
+status: running
+scope: all_45_table_I_quantized_cells
+gpu_only: true
+seeds: [41, 42, 43]
+protocol: PROTOCOL.md
+test_gate: locked
+completed_cells: 0
+automatic_agent_scheduler: unavailable
+implementation_validated: true
+adapter_backend_combinations_audited: 450
+completed_seed41_node_baselines: 18
+training_jobs_planned: 2340
+additional_backbone_search_runs_completed: 10
+backbone_overrides:
+  A2Q_Cora_GIN: {lr: 0.01, weight_decay: 0.2}
+  A2Q_CiteSeer_GIN: {lr: 0.01, weight_decay: 0.2}
+synthetic_final_pipeline_validated: true
+results: /home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2
+live_status: /home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/STATUS.md
+selection_rule: minimum_validation_loss
+optional_preference_pending: classification_validation_accuracy_vs_loss
+gpu_workers: [0, 1, 2, 3]
+automatic_final_evaluation: local_pipeline_after_all_training
+next_action: monitor_full_graph_backbones_and_validation_only_tuning

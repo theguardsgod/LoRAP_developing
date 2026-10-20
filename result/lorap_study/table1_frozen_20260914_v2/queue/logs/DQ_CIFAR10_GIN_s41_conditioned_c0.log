@@ -1,0 +1,4 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:2", "--cells", "DQ_CIFAR10_GIN", "--seed", "41", "--methods", "conditioned", "--candidate", "0"]
+DQ_CIFAR10_GIN s41 conditioned/c0 adapter 1/100 val=1.30314 metric=51.880
+DQ_CIFAR10_GIN s41 conditioned/c0 adapter 25/100 val=1.30950 metric=52.340

@@ -1,0 +1,41 @@
+{
+  "cell": "A2Q_Cora_GCN",
+  "seed": 41,
+  "config_hash": "2d8d2a8ba4806500626e88925ee41c43a778ff7b9ee94e88da19680a6bbde40f",
+  "selected_epoch": 2,
+  "validation": {
+    "loss": 1.9412243366241455,
+    "metric": 13.0,
+    "storage_proxy": 20.09895896911621,
+    "examples": 500
+  },
+  "test_evaluations": 0,
+  "full_split": false,
+  "common_backbone_sha256": "10ae0c853c6e6c9898ad705f553312afc848d5ba7145ca53ead8bb5784b3112c",
+  "state_sha256": "b59de618c40673695a4b784c5d62156a11ed6b7a4752c1ab26d831d19a3cf196",
+  "checkpoint_file_sha256": "c2e1499808102c8485233c3e3a9b8db0a281c338c4a1d8208d135cc5924ebe2f",
+  "training_seconds": 0.05603495240211487,
+  "peak_cuda_memory_bytes": 192684032,
+  "device": "cuda:1",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "total_parameters": 28663,
+  "trainable_parameters": 28617,
+  "adapter_parameters": 92,
+  "adapter_fp32_bytes": 368,
+  "adapter_buffer_bytes": 0,
+  "prompt_parameters": 0,
+  "sites": [
+    {
+      "name": "conv1",
+      "inputs": 16,
+      "outputs": 16,
+      "heads": 1
+    },
+    {
+      "name": "conv2",
+      "inputs": 7,
+      "outputs": 7,
+      "heads": 1
+    }
+  ]
+}

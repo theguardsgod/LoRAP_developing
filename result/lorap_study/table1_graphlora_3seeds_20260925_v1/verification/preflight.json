@@ -1,0 +1,41 @@
+{
+  "checked_unix": 1790281595.9820273,
+  "passed": true,
+  "protocol": "joint",
+  "seeds": [
+    41,
+    42,
+    43
+  ],
+  "cells": 45,
+  "training_jobs": 135,
+  "reference_controls": 135,
+  "extra_hyperparameter_searches": 0,
+  "source_files_verified": 195,
+  "module_tests": {
+    "passed": 3,
+    "real_data_backend_combinations": 45,
+    "gpu": "cuda:1",
+    "seconds": 20.577
+  },
+  "workflow_tests": {
+    "passed": 2,
+    "gpu": "cuda:1",
+    "seconds": 0.876,
+    "resume_matches_continuous": true,
+    "heldout_labels_unused": true,
+    "test_gate_and_no_repeat": true
+  },
+  "graphlora_regression_tests": {
+    "passed": 6
+  },
+  "real_data_smoke": {
+    "passed": true,
+    "fits": 45,
+    "epochs_per_fit": 2,
+    "test_evaluations": 0,
+    "source": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_smoke_20260925_v1",
+    "model_code_identical": true
+  },
+  "smoke_vs_formal_runner_changes": "Report progress updates, report-file lock, final-evaluation lock, extra documentation snapshots; latest workflow tests passed."
+}

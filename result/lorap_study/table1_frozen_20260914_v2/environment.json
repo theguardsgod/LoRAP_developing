@@ -1,0 +1,37 @@
+{
+  "python": "3.12.0",
+  "executable": "/home/cyliu/anaconda3/envs/ProG/bin/python",
+  "torch": "2.7.0+cu118",
+  "torch_cuda": "11.8",
+  "pyg": "2.6.1",
+  "torch_scatter": "2.1.2+pt27cu118",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 4090",
+      "bytes": 25278087168
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA GeForce RTX 4090",
+      "bytes": 25278087168
+    },
+    {
+      "index": 2,
+      "name": "NVIDIA GeForce RTX 4090",
+      "bytes": 25278087168
+    },
+    {
+      "index": 3,
+      "name": "NVIDIA GeForce RTX 4090",
+      "bytes": 25278087168
+    }
+  ],
+  "training_gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "gpu_only": true
+}

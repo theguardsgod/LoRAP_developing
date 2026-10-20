@@ -1,0 +1,262 @@
+[
+  {
+    "cell": "QAT_CiteSeer_GIN",
+    "fits": 1,
+    "tests": 0,
+    "validation": {
+      "mean": 13.0,
+      "sd": null,
+      "n": 1
+    },
+    "test": null,
+    "paired_no_prompt": null,
+    "paired_graphlora": null,
+    "paired_gain_over_graphlora": null,
+    "historical": {
+      "gpf_lorap": {
+        "mean": 22.8,
+        "sd": 4.8,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 25.73,
+        "sd": 4.52,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "QAT_MNIST_GIN",
+    "fits": 1,
+    "tests": 0,
+    "validation": {
+      "mean": 25.0,
+      "sd": null,
+      "n": 1
+    },
+    "test": null,
+    "paired_no_prompt": null,
+    "paired_graphlora": null,
+    "paired_gain_over_graphlora": null,
+    "historical": {
+      "gpf_lorap": {
+        "mean": 91.8,
+        "sd": 0.4,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 95.61,
+        "sd": 0.67,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "DQ_Cora_GIN",
+    "fits": 1,
+    "tests": 0,
+    "validation": {
+      "mean": 18.2,
+      "sd": null,
+      "n": 1
+    },
+    "test": null,
+    "paired_no_prompt": null,
+    "paired_graphlora": null,
+    "paired_gain_over_graphlora": null,
+    "historical": {
+      "gpf_lorap": {
+        "mean": 68.8,
+        "sd": 4.3,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 72.77,
+        "sd": 1.8,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "DQ_MNIST_GIN",
+    "fits": 1,
+    "tests": 0,
+    "validation": {
+      "mean": 12.5,
+      "sd": null,
+      "n": 1
+    },
+    "test": null,
+    "paired_no_prompt": null,
+    "paired_graphlora": null,
+    "paired_gain_over_graphlora": null,
+    "historical": {
+      "gpf_lorap": {
+        "mean": 92.9,
+        "sd": 0.3,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 93.07,
+        "sd": 0.73,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "QAT_CIFAR10_GCN",
+    "fits": 1,
+    "tests": 0,
+    "validation": {
+      "mean": 0.0,
+      "sd": null,
+      "n": 1
+    },
+    "test": null,
+    "paired_no_prompt": null,
+    "paired_graphlora": null,
+    "paired_gain_over_graphlora": null,
+    "historical": {
+      "gpf_lorap": {
+        "mean": 43.6,
+        "sd": 1.3,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 43.62,
+        "sd": 0.92,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "DQ_ZINC_GCN",
+    "fits": 1,
+    "tests": 0,
+    "validation": {
+      "mean": 0.8707617521286011,
+      "sd": null,
+      "n": 1
+    },
+    "test": null,
+    "paired_no_prompt": null,
+    "paired_graphlora": null,
+    "paired_gain_over_graphlora": null,
+    "historical": {
+      "gpf_lorap": {
+        "mean": 0.57,
+        "sd": 0.012,
+        "decimals": 3
+      },
+      "graphlora": {
+        "mean": 0.5676,
+        "sd": 0.0097,
+        "decimals": 4
+      }
+    }
+  },
+  {
+    "cell": "DQ_CiteSeer_GAT",
+    "fits": 1,
+    "tests": 0,
+    "validation": {
+      "mean": 14.399999999999999,
+      "sd": null,
+      "n": 1
+    },
+    "test": null,
+    "paired_no_prompt": null,
+    "paired_graphlora": null,
+    "paired_gain_over_graphlora": null,
+    "historical": {
+      "gpf_lorap": {
+        "mean": 54.4,
+        "sd": 4.6,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 63.17,
+        "sd": 3.33,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "DQ_MNIST_GAT",
+    "fits": 1,
+    "tests": 0,
+    "validation": {
+      "mean": 25.0,
+      "sd": null,
+      "n": 1
+    },
+    "test": null,
+    "paired_no_prompt": null,
+    "paired_graphlora": null,
+    "paired_gain_over_graphlora": null,
+    "historical": {
+      "gpf_lorap": {
+        "mean": 94.0,
+        "sd": 0.6,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 94.66,
+        "sd": 0.41,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "DQ_CIFAR10_GAT",
+    "fits": 1,
+    "tests": 0,
+    "validation": {
+      "mean": 0.0,
+      "sd": null,
+      "n": 1
+    },
+    "test": null,
+    "paired_no_prompt": null,
+    "paired_graphlora": null,
+    "paired_gain_over_graphlora": null,
+    "historical": {
+      "gpf_lorap": {
+        "mean": 57.5,
+        "sd": 1.4,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 58.64,
+        "sd": 1.0,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "A2Q_ZINC_GAT",
+    "fits": 1,
+    "tests": 0,
+    "validation": {
+      "mean": 1.1492949724197388,
+      "sd": null,
+      "n": 1
+    },
+    "test": null,
+    "paired_no_prompt": null,
+    "paired_graphlora": null,
+    "paired_gain_over_graphlora": null,
+    "historical": {
+      "gpf_lorap": {
+        "mean": 0.628,
+        "sd": 0.01,
+        "decimals": 3
+      },
+      "graphlora": {
+        "mean": 0.5807,
+        "sd": 0.0225,
+        "decimals": 4
+      }
+    }
+  }
+]

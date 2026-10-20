@@ -1,0 +1,23 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.train", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:3", "--cells", "A2Q_MNIST_GIN", "--seeds", "42"]
+A2Q_MNIST_GIN seed=42 baseline 1/200 val_loss=3.03206 val_metric=28.780
+A2Q_MNIST_GIN seed=42 baseline 10/200 val_loss=0.86397 val_metric=71.400
+A2Q_MNIST_GIN seed=42 baseline 20/200 val_loss=0.42657 val_metric=86.580
+A2Q_MNIST_GIN seed=42 baseline 30/200 val_loss=0.29887 val_metric=90.680
+A2Q_MNIST_GIN seed=42 baseline 40/200 val_loss=0.32132 val_metric=89.560
+A2Q_MNIST_GIN seed=42 baseline 50/200 val_loss=0.17496 val_metric=94.680
+A2Q_MNIST_GIN seed=42 baseline 60/200 val_loss=0.14331 val_metric=95.780
+A2Q_MNIST_GIN seed=42 baseline 70/200 val_loss=0.15244 val_metric=95.660
+A2Q_MNIST_GIN seed=42 baseline 80/200 val_loss=0.14255 val_metric=95.740
+A2Q_MNIST_GIN seed=42 baseline 90/200 val_loss=0.13960 val_metric=96.000
+A2Q_MNIST_GIN seed=42 baseline 100/200 val_loss=0.13731 val_metric=95.820
+A2Q_MNIST_GIN seed=42 baseline 110/200 val_loss=0.14468 val_metric=95.700
+A2Q_MNIST_GIN seed=42 baseline 120/200 val_loss=0.13560 val_metric=95.940
+A2Q_MNIST_GIN seed=42 baseline 130/200 val_loss=0.13841 val_metric=95.920
+A2Q_MNIST_GIN seed=42 baseline 140/200 val_loss=0.14016 val_metric=96.060
+A2Q_MNIST_GIN seed=42 baseline 150/200 val_loss=0.14200 val_metric=95.900
+A2Q_MNIST_GIN seed=42 baseline 160/200 val_loss=0.13572 val_metric=96.120
+A2Q_MNIST_GIN seed=42 baseline 170/200 val_loss=0.13890 val_metric=95.840
+A2Q_MNIST_GIN seed=42 baseline 180/200 val_loss=0.14033 val_metric=95.660
+A2Q_MNIST_GIN seed=42 baseline 190/200 val_loss=0.14400 val_metric=95.840
+A2Q_MNIST_GIN seed=42 baseline 200/200 val_loss=0.14283 val_metric=95.980

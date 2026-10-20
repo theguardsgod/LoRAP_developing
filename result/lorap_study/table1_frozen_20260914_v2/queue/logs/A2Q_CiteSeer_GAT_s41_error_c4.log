@@ -1,0 +1,7 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:2", "--cells", "A2Q_CiteSeer_GAT", "--seed", "41", "--methods", "error", "--candidate", "4"]
+A2Q_CiteSeer_GAT s41 error/c4 adapter 1/200 val=0.92233 metric=69.600
+A2Q_CiteSeer_GAT s41 error/c4 adapter 25/200 val=0.91925 metric=69.600
+A2Q_CiteSeer_GAT s41 error/c4 adapter 50/200 val=0.91360 metric=70.200
+A2Q_CiteSeer_GAT s41 error/c4 adapter 75/200 val=0.91076 metric=69.600
+A2Q_CiteSeer_GAT s41 error/c4 adapter 100/200 val=0.91284 metric=69.400

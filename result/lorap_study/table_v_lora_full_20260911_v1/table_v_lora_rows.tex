@@ -1,0 +1,9 @@
+% Insert each row inside its named block in Table V.
+% Validation-selected checkpoints; mean +/- SAMPLE std across declared seeds.
+% Average bits: effective activation bits weighted by elements observed on validation.
+% Confirm the original table uses this bit metric before combining rows.
+% KiB = 1024 bytes. LoRA factors are FP32 and remain unmerged.
+% INT4 / QAT block
+$+\,\mathrm{LoRA}\;(r=2)$ & 4.00 & $17.29\,\mathrm{KiB}$ & $93.61 \pm 0.74$ \\
+% A2Q block
+$+\,\mathrm{LoRA}\;(r=2)$ & 3.9900 & $17.29\,\mathrm{KiB}$ & $95.30 \pm 0.33$ \\

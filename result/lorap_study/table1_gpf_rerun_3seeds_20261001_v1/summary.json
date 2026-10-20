@@ -1,0 +1,422 @@
+[
+  {
+    "cell": "QAT_CiteSeer_GIN",
+    "fits": 3,
+    "tests": 3,
+    "validation": {
+      "mean": 31.066666666666666,
+      "sd": 4.041451884327378,
+      "n": 3
+    },
+    "test": {
+      "mean": 28.566666666666666,
+      "sd": 2.3965252624024913,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 29.03333333333333,
+      "sd": 1.9553345834749947,
+      "n": 3
+    },
+    "paired_graphlora": {
+      "mean": 25.733333333333334,
+      "sd": 4.523641600893392,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": 2.8333333333333335,
+      "sd": 4.944019956809775,
+      "n": 3
+    },
+    "historical": {
+      "gpf_lorap": {
+        "mean": 22.8,
+        "sd": 4.8,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 25.73,
+        "sd": 4.52,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "QAT_MNIST_GIN",
+    "fits": 3,
+    "tests": 3,
+    "validation": {
+      "mean": 97.13333333333334,
+      "sd": 0.0986576572463298,
+      "n": 3
+    },
+    "test": {
+      "mean": 96.52666666666667,
+      "sd": 0.20256686138984784,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 96.64666666666668,
+      "sd": 0.0950438495292277,
+      "n": 3
+    },
+    "paired_graphlora": {
+      "mean": 95.61333333333334,
+      "sd": 0.6700248751601214,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": 0.9133333333333269,
+      "sd": 0.8277882176821173,
+      "n": 3
+    },
+    "historical": {
+      "gpf_lorap": {
+        "mean": 91.8,
+        "sd": 0.4,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 95.61,
+        "sd": 0.67,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "DQ_Cora_GIN",
+    "fits": 3,
+    "tests": 3,
+    "validation": {
+      "mean": 62.46666666666667,
+      "sd": 3.4428670223134317,
+      "n": 3
+    },
+    "test": {
+      "mean": 63.699999999999996,
+      "sd": 4.714870093650512,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 73.8,
+      "sd": 0.5291502622129203,
+      "n": 3
+    },
+    "paired_graphlora": {
+      "mean": 72.76666666666667,
+      "sd": 1.7953644012660335,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": -9.066666666666663,
+      "sd": 3.324655370611113,
+      "n": 3
+    },
+    "historical": {
+      "gpf_lorap": {
+        "mean": 68.8,
+        "sd": 4.3,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 72.77,
+        "sd": 1.8,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "DQ_MNIST_GIN",
+    "fits": 3,
+    "tests": 3,
+    "validation": {
+      "mean": 93.83333333333333,
+      "sd": 0.7217571151941167,
+      "n": 3
+    },
+    "test": {
+      "mean": 93.35333333333332,
+      "sd": 0.7742308010750647,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 91.53999999999999,
+      "sd": 1.1458184847522799,
+      "n": 3
+    },
+    "paired_graphlora": {
+      "mean": 93.06666666666666,
+      "sd": 0.7343250869562716,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": 0.28666666666666174,
+      "sd": 1.2700524923535017,
+      "n": 3
+    },
+    "historical": {
+      "gpf_lorap": {
+        "mean": 92.9,
+        "sd": 0.3,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 93.07,
+        "sd": 0.73,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "QAT_CIFAR10_GCN",
+    "fits": 3,
+    "tests": 3,
+    "validation": {
+      "mean": 39.29333333333333,
+      "sd": 0.5076744363598927,
+      "n": 3
+    },
+    "test": {
+      "mean": 38.95666666666667,
+      "sd": 0.3023794525647123,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 40.57333333333333,
+      "sd": 1.5076250639112245,
+      "n": 3
+    },
+    "paired_graphlora": {
+      "mean": 43.623333333333335,
+      "sd": 0.9154416056381371,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": -4.666666666666664,
+      "sd": 1.1303686714224397,
+      "n": 3
+    },
+    "historical": {
+      "gpf_lorap": {
+        "mean": 43.6,
+        "sd": 1.3,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 43.62,
+        "sd": 0.92,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "DQ_ZINC_GCN",
+    "fits": 3,
+    "tests": 3,
+    "validation": {
+      "mean": 0.5491008008321127,
+      "sd": 0.010993472674010548,
+      "n": 3
+    },
+    "test": {
+      "mean": 0.5863194847106933,
+      "sd": 0.004031841057973387,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 0.5994541409810384,
+      "sd": 0.0024911785836981204,
+      "n": 3
+    },
+    "paired_graphlora": {
+      "mean": 0.5676439221700033,
+      "sd": 0.009692356233306899,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": -0.018675562540690065,
+      "sd": 0.011041394909351597,
+      "n": 3
+    },
+    "historical": {
+      "gpf_lorap": {
+        "mean": 0.57,
+        "sd": 0.012,
+        "decimals": 3
+      },
+      "graphlora": {
+        "mean": 0.5676,
+        "sd": 0.0097,
+        "decimals": 4
+      }
+    }
+  },
+  {
+    "cell": "DQ_CiteSeer_GAT",
+    "fits": 3,
+    "tests": 3,
+    "validation": {
+      "mean": 61.0,
+      "sd": 1.7320508075688772,
+      "n": 3
+    },
+    "test": {
+      "mean": 59.666666666666664,
+      "sd": 1.861003313627716,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 64.03333333333333,
+      "sd": 1.1676186592091309,
+      "n": 3
+    },
+    "paired_graphlora": {
+      "mean": 63.16666666666667,
+      "sd": 3.3261589458913945,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": -3.500000000000005,
+      "sd": 3.666060555964677,
+      "n": 3
+    },
+    "historical": {
+      "gpf_lorap": {
+        "mean": 54.4,
+        "sd": 4.6,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 63.17,
+        "sd": 3.33,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "DQ_MNIST_GAT",
+    "fits": 3,
+    "tests": 3,
+    "validation": {
+      "mean": 94.79333333333334,
+      "sd": 0.07571877794399672,
+      "n": 3
+    },
+    "test": {
+      "mean": 94.4,
+      "sd": 0.23302360395462177,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 94.18666666666667,
+      "sd": 0.34428670223134133,
+      "n": 3
+    },
+    "paired_graphlora": {
+      "mean": 94.66000000000001,
+      "sd": 0.41073105555826006,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": -0.2600000000000051,
+      "sd": 0.3858756276314999,
+      "n": 3
+    },
+    "historical": {
+      "gpf_lorap": {
+        "mean": 94.0,
+        "sd": 0.6,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 94.66,
+        "sd": 0.41,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "DQ_CIFAR10_GAT",
+    "fits": 3,
+    "tests": 3,
+    "validation": {
+      "mean": 62.666666666666664,
+      "sd": 0.29280255007997297,
+      "n": 3
+    },
+    "test": {
+      "mean": 61.5,
+      "sd": 0.30805843601498234,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 58.550000000000004,
+      "sd": 1.2100826418059254,
+      "n": 3
+    },
+    "paired_graphlora": {
+      "mean": 58.64333333333333,
+      "sd": 1.0042078138181034,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": 2.856666666666667,
+      "sd": 1.2316384750945895,
+      "n": 3
+    },
+    "historical": {
+      "gpf_lorap": {
+        "mean": 57.5,
+        "sd": 1.4,
+        "decimals": 1
+      },
+      "graphlora": {
+        "mean": 58.64,
+        "sd": 1.0,
+        "decimals": 2
+      }
+    }
+  },
+  {
+    "cell": "A2Q_ZINC_GAT",
+    "fits": 3,
+    "tests": 3,
+    "validation": {
+      "mean": 0.6293846384684245,
+      "sd": 0.025498860856886962,
+      "n": 3
+    },
+    "test": {
+      "mean": 0.6664715067545572,
+      "sd": 0.02902283588288368,
+      "n": 3
+    },
+    "paired_no_prompt": {
+      "mean": 0.6808013966878255,
+      "sd": 0.020789184424859507,
+      "n": 3
+    },
+    "paired_graphlora": {
+      "mean": 0.5807082583109537,
+      "sd": 0.022518713029043517,
+      "n": 3
+    },
+    "paired_gain_over_graphlora": {
+      "mean": -0.0857632484436035,
+      "sd": 0.0512543212065229,
+      "n": 3
+    },
+    "historical": {
+      "gpf_lorap": {
+        "mean": 0.628,
+        "sd": 0.01,
+        "decimals": 3
+      },
+      "graphlora": {
+        "mean": 0.5807,
+        "sd": 0.0225,
+        "decimals": 4
+      }
+    }
+  }
+]

@@ -1,0 +1,92 @@
+{
+  "quantizers": [
+    {
+      "name": "conv1.lin.weight_quant",
+      "kind": "learned_symmetric",
+      "rounded_bit_mean": 4.0,
+      "parameter_entries": 64,
+      "histogram": {
+        "4": 64
+      }
+    },
+    {
+      "name": "conv1.q_gat_attn",
+      "kind": "learned_symmetric",
+      "rounded_bit_mean": 4.0,
+      "parameter_entries": 8,
+      "histogram": {
+        "4": 8
+      }
+    },
+    {
+      "name": "conv1.q_gat_fea",
+      "kind": "learned_symmetric",
+      "rounded_bit_mean": 4.0,
+      "parameter_entries": 2708,
+      "histogram": {
+        "4": 2708
+      }
+    },
+    {
+      "name": "conv1.q_gat_edge",
+      "kind": "learned_symmetric",
+      "rounded_bit_mean": 4.0,
+      "parameter_entries": 8,
+      "histogram": {
+        "4": 8
+      }
+    },
+    {
+      "name": "conv2.lin.weight_quant",
+      "kind": "learned_symmetric",
+      "rounded_bit_mean": 4.0,
+      "parameter_entries": 7,
+      "histogram": {
+        "4": 7
+      }
+    },
+    {
+      "name": "conv2.lin.fea_quant",
+      "kind": "learned_symmetric",
+      "rounded_bit_mean": 4.029911518096924,
+      "parameter_entries": 2708,
+      "histogram": {
+        "2": 9,
+        "3": 297,
+        "4": 2017,
+        "5": 374,
+        "6": 11
+      }
+    },
+    {
+      "name": "conv2.q_gat_attn",
+      "kind": "learned_symmetric",
+      "rounded_bit_mean": 4.0,
+      "parameter_entries": 1,
+      "histogram": {
+        "4": 1
+      }
+    },
+    {
+      "name": "conv2.q_gat_fea",
+      "kind": "learned_symmetric",
+      "rounded_bit_mean": 4.0,
+      "parameter_entries": 2708,
+      "histogram": {
+        "4": 2708
+      }
+    },
+    {
+      "name": "conv2.q_gat_edge",
+      "kind": "learned_symmetric",
+      "rounded_bit_mean": 4.0,
+      "parameter_entries": 1,
+      "histogram": {
+        "4": 1
+      }
+    }
+  ],
+  "statistic": "rounded codebook bits by quantizer parameter entry; unused graph clusters are not traffic weighted",
+  "storage_note": "fake quantization checkpoints contain FP32 tensors; no claim of packed INT4 artifact size",
+  "checkpoint_tensor_bytes": 804120
+}

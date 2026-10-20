@@ -1,0 +1,81 @@
+{
+  "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/A2Q_CIFAR10_GCN/seed_41/baseline",
+  "config": {
+    "cell": "A2Q_CIFAR10_GCN",
+    "dataset": "CIFAR10",
+    "architecture": "GCN",
+    "framework": "A2Q",
+    "data_root": "/data/cyliu/dataset/gnn-cifar10",
+    "node": false,
+    "regression": false,
+    "width": 146,
+    "heads": 8,
+    "layers": 4,
+    "bit": 4,
+    "num_deg": 1000,
+    "batch_size": 128,
+    "paper_none": 52.4,
+    "paper_none_sd": 0.8,
+    "paper_gpf_lorap": 53.5,
+    "metric": "accuracy_percent",
+    "baseline_epochs": 200,
+    "adapter_epochs": 100,
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "dropout": 0.0,
+    "init": "uniform",
+    "lr_feature": 0.01,
+    "lr_message": 0.01,
+    "lr_weight": 0.001,
+    "lr_bit": 0.0003,
+    "lr_attention": 0.001,
+    "lr_edge": 0.1,
+    "a_loss": 0.0002,
+    "a_storage": 0.1,
+    "bit_bounds": [
+      1.0,
+      16.0
+    ],
+    "stop_patience": 30,
+    "min_epochs": 20,
+    "aggregation_implementation": "stable_csr_v2",
+    "optimizer_recipe": "native_groups_v2",
+    "seed": 41,
+    "subset_limit": null,
+    "stage": "baseline"
+  },
+  "done": {
+    "cell": "A2Q_CIFAR10_GCN",
+    "seed": 41,
+    "config_hash": "2bb5f4ff18627c4a75bcfb0e2b48bed7baf444c31ee8a791d7ba56ca5975fc80",
+    "initial_sha256": "ea1a0f4d9af50883995b31142961da258d80c7d58f01e0d9987fec24cfba55b6",
+    "selected_epoch": 92,
+    "validation": {
+      "loss": 1.4085177423477173,
+      "metric": 49.86,
+      "storage_proxy": 26.65350761413574,
+      "examples": 5000
+    },
+    "backbone_sha256": "d868e5f14bc404a017692145377640a8e09354bd002040ec4572eb3cf8618c06",
+    "test_evaluations": 0,
+    "full_split": true,
+    "seconds": 2497.541754866019
+  },
+  "test": {
+    "cell": "A2Q_CIFAR10_GCN",
+    "seed": 41,
+    "method": "none",
+    "loss": 1.4284989255905152,
+    "metric": 48.14,
+    "examples": 10000,
+    "completed_test_evaluations": 1,
+    "checkpoint_file_sha256": "5dc571a903115e7677ad36fe34af92fc7df120957c52d2b87ff91a65f46157d1",
+    "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+  },
+  "checkpoint_file_sha256": "5dc571a903115e7677ad36fe34af92fc7df120957c52d2b87ff91a65f46157d1"
+}

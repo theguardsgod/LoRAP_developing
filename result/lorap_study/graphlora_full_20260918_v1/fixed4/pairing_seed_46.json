@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "common_backbone_sha256": "eccc1fc7723d24931b3c1dc84efd6f680ceec68f20818325c0e45344f3743323",
+  "base_optimizer_groups": [
+    {
+      "name": "backbone",
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "parameters": 113204
+    },
+    {
+      "name": "weight_scale",
+      "lr": 0.001,
+      "weight_decay": 0,
+      "parameters": 1110
+    },
+    {
+      "name": "feature_scale",
+      "lr": 0.001,
+      "weight_decay": 0,
+      "parameters": 11000
+    },
+    {
+      "name": "message_scale",
+      "lr": 0.01,
+      "weight_decay": 0,
+      "parameters": 440
+    }
+  ]
+}

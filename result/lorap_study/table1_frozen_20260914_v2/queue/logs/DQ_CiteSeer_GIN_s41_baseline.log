@@ -1,0 +1,23 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.train", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:2", "--cells", "DQ_CiteSeer_GIN", "--seeds", "41"]
+DQ_CiteSeer_GIN seed=41 baseline 1/200 val_loss=1.77112 val_metric=19.800
+DQ_CiteSeer_GIN seed=41 baseline 10/200 val_loss=1.42582 val_metric=54.400
+DQ_CiteSeer_GIN seed=41 baseline 20/200 val_loss=1.23125 val_metric=57.800
+DQ_CiteSeer_GIN seed=41 baseline 30/200 val_loss=1.21679 val_metric=56.800
+DQ_CiteSeer_GIN seed=41 baseline 40/200 val_loss=1.24223 val_metric=54.400
+DQ_CiteSeer_GIN seed=41 baseline 50/200 val_loss=1.30389 val_metric=54.400
+DQ_CiteSeer_GIN seed=41 baseline 60/200 val_loss=1.31848 val_metric=54.200
+DQ_CiteSeer_GIN seed=41 baseline 70/200 val_loss=1.38234 val_metric=52.000
+DQ_CiteSeer_GIN seed=41 baseline 80/200 val_loss=1.39170 val_metric=53.600
+DQ_CiteSeer_GIN seed=41 baseline 90/200 val_loss=1.36596 val_metric=53.600
+DQ_CiteSeer_GIN seed=41 baseline 100/200 val_loss=1.38041 val_metric=54.000
+DQ_CiteSeer_GIN seed=41 baseline 110/200 val_loss=1.39526 val_metric=54.000
+DQ_CiteSeer_GIN seed=41 baseline 120/200 val_loss=1.41176 val_metric=53.000
+DQ_CiteSeer_GIN seed=41 baseline 130/200 val_loss=1.41287 val_metric=54.200
+DQ_CiteSeer_GIN seed=41 baseline 140/200 val_loss=1.40977 val_metric=54.400
+DQ_CiteSeer_GIN seed=41 baseline 150/200 val_loss=1.40914 val_metric=54.600
+DQ_CiteSeer_GIN seed=41 baseline 160/200 val_loss=1.40378 val_metric=55.400
+DQ_CiteSeer_GIN seed=41 baseline 170/200 val_loss=1.42431 val_metric=55.200
+DQ_CiteSeer_GIN seed=41 baseline 180/200 val_loss=1.43843 val_metric=54.600
+DQ_CiteSeer_GIN seed=41 baseline 190/200 val_loss=1.44418 val_metric=54.600
+DQ_CiteSeer_GIN seed=41 baseline 200/200 val_loss=1.45587 val_metric=53.800

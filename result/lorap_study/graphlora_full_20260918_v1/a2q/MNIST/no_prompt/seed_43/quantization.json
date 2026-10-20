@@ -1,0 +1,295 @@
+{
+  "layers": {
+    "embedding.weight_quant": {
+      "kind": "weight",
+      "elements": 13200,
+      "signed_bit_sum": 52800.0,
+      "effective_bit_sum": 52800.0,
+      "histogram": {
+        "4": 13200
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "embedding.fea_quant": {
+      "kind": "activation",
+      "elements": 1059186,
+      "signed_bit_sum": 4236744.0,
+      "effective_bit_sum": 4236744.0,
+      "histogram": {
+        "4": 1059186
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.0.q_xw": {
+      "kind": "activation",
+      "elements": 38836820,
+      "signed_bit_sum": 155347280.0,
+      "effective_bit_sum": 155347280.0,
+      "histogram": {
+        "4": 38836820
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.0.mlp.linear1.weight_quant": {
+      "kind": "weight",
+      "elements": 484000,
+      "signed_bit_sum": 1936000.0,
+      "effective_bit_sum": 1936000.0,
+      "histogram": {
+        "4": 484000
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.0.mlp.linear1.fea_quant": {
+      "kind": "activation",
+      "elements": 38836820,
+      "signed_bit_sum": 155347280.0,
+      "effective_bit_sum": 155347280.0,
+      "histogram": {
+        "4": 38836820
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.0.mlp.linear2.weight_quant": {
+      "kind": "weight",
+      "elements": 484000,
+      "signed_bit_sum": 1936000.0,
+      "effective_bit_sum": 1936000.0,
+      "histogram": {
+        "4": 484000
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.0.mlp.linear2.fea_quant": {
+      "kind": "activation",
+      "elements": 38836820,
+      "signed_bit_sum": 194184100.0,
+      "effective_bit_sum": 155347280.0,
+      "histogram": {
+        "4": 38836820
+      },
+      "mean_quantizer_bits": 5.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.1.q_xw": {
+      "kind": "activation",
+      "elements": 38836820,
+      "signed_bit_sum": 155347280.0,
+      "effective_bit_sum": 155347280.0,
+      "histogram": {
+        "4": 38836820
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.1.mlp.linear1.weight_quant": {
+      "kind": "weight",
+      "elements": 484000,
+      "signed_bit_sum": 1936000.0,
+      "effective_bit_sum": 1936000.0,
+      "histogram": {
+        "4": 484000
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.1.mlp.linear1.fea_quant": {
+      "kind": "activation",
+      "elements": 38836820,
+      "signed_bit_sum": 155347280.0,
+      "effective_bit_sum": 155347280.0,
+      "histogram": {
+        "4": 38836820
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.1.mlp.linear2.weight_quant": {
+      "kind": "weight",
+      "elements": 484000,
+      "signed_bit_sum": 1936000.0,
+      "effective_bit_sum": 1936000.0,
+      "histogram": {
+        "4": 484000
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.1.mlp.linear2.fea_quant": {
+      "kind": "activation",
+      "elements": 38836820,
+      "signed_bit_sum": 194184100.0,
+      "effective_bit_sum": 155347280.0,
+      "histogram": {
+        "4": 38836820
+      },
+      "mean_quantizer_bits": 5.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.2.q_xw": {
+      "kind": "activation",
+      "elements": 38836820,
+      "signed_bit_sum": 155347280.0,
+      "effective_bit_sum": 155347280.0,
+      "histogram": {
+        "4": 38836820
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.2.mlp.linear1.weight_quant": {
+      "kind": "weight",
+      "elements": 484000,
+      "signed_bit_sum": 1936000.0,
+      "effective_bit_sum": 1936000.0,
+      "histogram": {
+        "4": 484000
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.2.mlp.linear1.fea_quant": {
+      "kind": "activation",
+      "elements": 38836820,
+      "signed_bit_sum": 155195150.0,
+      "effective_bit_sum": 155195150.0,
+      "histogram": {
+        "3": 152130,
+        "4": 38684690
+      },
+      "mean_quantizer_bits": 3.9960828409741067,
+      "mean_effective_bits": 3.9960828409741067
+    },
+    "convs.2.mlp.linear2.weight_quant": {
+      "kind": "weight",
+      "elements": 484000,
+      "signed_bit_sum": 1936000.0,
+      "effective_bit_sum": 1936000.0,
+      "histogram": {
+        "4": 484000
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.2.mlp.linear2.fea_quant": {
+      "kind": "activation",
+      "elements": 38836820,
+      "signed_bit_sum": 194184100.0,
+      "effective_bit_sum": 155347280.0,
+      "histogram": {
+        "4": 38836820
+      },
+      "mean_quantizer_bits": 5.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.3.q_xw": {
+      "kind": "activation",
+      "elements": 38836820,
+      "signed_bit_sum": 155347280.0,
+      "effective_bit_sum": 155347280.0,
+      "histogram": {
+        "4": 38836820
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.3.mlp.linear1.weight_quant": {
+      "kind": "weight",
+      "elements": 484000,
+      "signed_bit_sum": 1936000.0,
+      "effective_bit_sum": 1936000.0,
+      "histogram": {
+        "4": 484000
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.3.mlp.linear1.fea_quant": {
+      "kind": "activation",
+      "elements": 38836820,
+      "signed_bit_sum": 147221580.0,
+      "effective_bit_sum": 147221580.0,
+      "histogram": {
+        "3": 8125700,
+        "4": 30711120
+      },
+      "mean_quantizer_bits": 3.7907732919430583,
+      "mean_effective_bits": 3.7907732919430583
+    },
+    "convs.3.mlp.linear2.weight_quant": {
+      "kind": "weight",
+      "elements": 484000,
+      "signed_bit_sum": 1936000.0,
+      "effective_bit_sum": 1936000.0,
+      "histogram": {
+        "4": 484000
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "convs.3.mlp.linear2.fea_quant": {
+      "kind": "activation",
+      "elements": 38836820,
+      "signed_bit_sum": 194184100.0,
+      "effective_bit_sum": 155347280.0,
+      "histogram": {
+        "4": 38836820
+      },
+      "mean_quantizer_bits": 5.0,
+      "mean_effective_bits": 4.0
+    },
+    "lin1.weight_quant": {
+      "kind": "weight",
+      "elements": 484000,
+      "signed_bit_sum": 1936000.0,
+      "effective_bit_sum": 1936000.0,
+      "histogram": {
+        "4": 484000
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "lin1.fea_quant": {
+      "kind": "activation",
+      "elements": 550000,
+      "signed_bit_sum": 2200000.0,
+      "effective_bit_sum": 2200000.0,
+      "histogram": {
+        "4": 550000
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "lin2.weight_quant": {
+      "kind": "weight",
+      "elements": 44000,
+      "signed_bit_sum": 176000.0,
+      "effective_bit_sum": 176000.0,
+      "histogram": {
+        "4": 44000
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "lin2.fea_quant": {
+      "kind": "activation",
+      "elements": 550000,
+      "signed_bit_sum": 2750000.0,
+      "effective_bit_sum": 2200000.0,
+      "histogram": {
+        "4": 550000
+      },
+      "mean_quantizer_bits": 5.0,
+      "mean_effective_bits": 4.0
+    }
+  },
+  "mean_activation_effective_bits": 3.982319923408284,
+  "logical_activation_bytes_over_validation": 233065784.25,
+  "note": "Logical tensor traffic across observed quantizers; excludes indices/scales, is not peak memory or integer execution. CiteSeer propagation visits the full public graph."
+}

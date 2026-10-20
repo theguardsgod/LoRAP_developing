@@ -1,0 +1,5 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:1", "--cells", "A2Q_CiteSeer_GCN", "--seed", "43", "--methods", "gpf"]
+A2Q_CiteSeer_GCN s43 gpf/c1 adapter 1/200 val=1.06121 metric=67.800
+A2Q_CiteSeer_GCN s43 gpf/c1 adapter 25/200 val=1.32413 metric=62.400
+A2Q_CiteSeer_GCN s43 gpf/c1 adapter 50/200 val=1.73178 metric=58.000

@@ -1,0 +1,11 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:1", "--cells", "DQ_Cora_GAT", "--seed", "43", "--methods", "conditioned"]
+DQ_Cora_GAT s43 conditioned/c2 adapter 1/200 val=0.97794 metric=75.400
+DQ_Cora_GAT s43 conditioned/c2 adapter 25/200 val=0.97060 metric=76.600
+DQ_Cora_GAT s43 conditioned/c2 adapter 50/200 val=0.94706 metric=76.600
+DQ_Cora_GAT s43 conditioned/c2 adapter 75/200 val=0.88607 metric=77.000
+DQ_Cora_GAT s43 conditioned/c2 adapter 100/200 val=0.86830 metric=76.000
+DQ_Cora_GAT s43 conditioned/c2 adapter 125/200 val=0.84461 metric=75.000
+DQ_Cora_GAT s43 conditioned/c2 adapter 150/200 val=0.81856 metric=76.400
+DQ_Cora_GAT s43 conditioned/c2 adapter 175/200 val=0.81522 metric=75.800
+DQ_Cora_GAT s43 conditioned/c2 adapter 200/200 val=0.84009 metric=74.800

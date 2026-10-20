@@ -1,0 +1,28 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.train", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:2", "--cells", "DQ_Cora_GAT", "--seeds", "43"]
+DQ_Cora_GAT seed=43 baseline 1/250 val_loss=1.91866 val_metric=17.800
+DQ_Cora_GAT seed=43 baseline 10/250 val_loss=1.83455 val_metric=54.800
+DQ_Cora_GAT seed=43 baseline 20/250 val_loss=1.69401 val_metric=66.000
+DQ_Cora_GAT seed=43 baseline 30/250 val_loss=1.56202 val_metric=68.800
+DQ_Cora_GAT seed=43 baseline 40/250 val_loss=1.43554 val_metric=76.000
+DQ_Cora_GAT seed=43 baseline 50/250 val_loss=1.30269 val_metric=73.200
+DQ_Cora_GAT seed=43 baseline 60/250 val_loss=1.25438 val_metric=75.800
+DQ_Cora_GAT seed=43 baseline 70/250 val_loss=1.21881 val_metric=76.200
+DQ_Cora_GAT seed=43 baseline 80/250 val_loss=1.19455 val_metric=74.600
+DQ_Cora_GAT seed=43 baseline 90/250 val_loss=1.11765 val_metric=75.200
+DQ_Cora_GAT seed=43 baseline 100/250 val_loss=1.06712 val_metric=76.000
+DQ_Cora_GAT seed=43 baseline 110/250 val_loss=1.05766 val_metric=76.400
+DQ_Cora_GAT seed=43 baseline 120/250 val_loss=1.03905 val_metric=76.200
+DQ_Cora_GAT seed=43 baseline 130/250 val_loss=1.02926 val_metric=75.400
+DQ_Cora_GAT seed=43 baseline 140/250 val_loss=1.01790 val_metric=76.000
+DQ_Cora_GAT seed=43 baseline 150/250 val_loss=1.00627 val_metric=76.400
+DQ_Cora_GAT seed=43 baseline 160/250 val_loss=1.01042 val_metric=75.000
+DQ_Cora_GAT seed=43 baseline 170/250 val_loss=1.00634 val_metric=75.600
+DQ_Cora_GAT seed=43 baseline 180/250 val_loss=0.99632 val_metric=76.600
+DQ_Cora_GAT seed=43 baseline 190/250 val_loss=0.98655 val_metric=76.200
+DQ_Cora_GAT seed=43 baseline 200/250 val_loss=0.98911 val_metric=76.200
+DQ_Cora_GAT seed=43 baseline 210/250 val_loss=0.98394 val_metric=75.600
+DQ_Cora_GAT seed=43 baseline 220/250 val_loss=0.98528 val_metric=76.600
+DQ_Cora_GAT seed=43 baseline 230/250 val_loss=0.98655 val_metric=75.400
+DQ_Cora_GAT seed=43 baseline 240/250 val_loss=0.99172 val_metric=75.400
+DQ_Cora_GAT seed=43 baseline 250/250 val_loss=0.98251 val_metric=75.400

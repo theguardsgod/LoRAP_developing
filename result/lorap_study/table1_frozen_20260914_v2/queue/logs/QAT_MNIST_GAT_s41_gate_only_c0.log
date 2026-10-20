@@ -1,0 +1,5 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:2", "--cells", "QAT_MNIST_GAT", "--seed", "41", "--methods", "gate_only", "--candidate", "0"]
+QAT_MNIST_GAT s41 gate_only/c0 predictor_warmup 1/20 val=2.05612 metric=22.320
+QAT_MNIST_GAT s41 gate_only/c0 adapter 1/100 val=1.97253 metric=23.380
+QAT_MNIST_GAT s41 gate_only/c0 adapter 25/100 val=1.97253 metric=23.380

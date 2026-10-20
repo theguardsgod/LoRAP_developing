@@ -1,0 +1,23 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.train", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:1", "--cells", "QAT_ZINC_GIN", "--seeds", "43"]
+QAT_ZINC_GIN seed=43 baseline 1/200 val_loss=1.00888 val_metric=1.009
+QAT_ZINC_GIN seed=43 baseline 10/200 val_loss=1.03069 val_metric=1.031
+QAT_ZINC_GIN seed=43 baseline 20/200 val_loss=0.72543 val_metric=0.725
+QAT_ZINC_GIN seed=43 baseline 30/200 val_loss=1.17286 val_metric=1.173
+QAT_ZINC_GIN seed=43 baseline 40/200 val_loss=1.47816 val_metric=1.478
+QAT_ZINC_GIN seed=43 baseline 50/200 val_loss=0.93076 val_metric=0.931
+QAT_ZINC_GIN seed=43 baseline 60/200 val_loss=0.83177 val_metric=0.832
+QAT_ZINC_GIN seed=43 baseline 70/200 val_loss=0.71233 val_metric=0.712
+QAT_ZINC_GIN seed=43 baseline 80/200 val_loss=1.13144 val_metric=1.131
+QAT_ZINC_GIN seed=43 baseline 90/200 val_loss=0.66849 val_metric=0.668
+QAT_ZINC_GIN seed=43 baseline 100/200 val_loss=0.83515 val_metric=0.835
+QAT_ZINC_GIN seed=43 baseline 110/200 val_loss=0.65080 val_metric=0.651
+QAT_ZINC_GIN seed=43 baseline 120/200 val_loss=0.59512 val_metric=0.595
+QAT_ZINC_GIN seed=43 baseline 130/200 val_loss=0.63239 val_metric=0.632
+QAT_ZINC_GIN seed=43 baseline 140/200 val_loss=0.63024 val_metric=0.630
+QAT_ZINC_GIN seed=43 baseline 150/200 val_loss=0.64107 val_metric=0.641
+QAT_ZINC_GIN seed=43 baseline 160/200 val_loss=0.54037 val_metric=0.540
+QAT_ZINC_GIN seed=43 baseline 170/200 val_loss=0.58893 val_metric=0.589
+QAT_ZINC_GIN seed=43 baseline 180/200 val_loss=0.53935 val_metric=0.539
+QAT_ZINC_GIN seed=43 baseline 190/200 val_loss=0.55313 val_metric=0.553
+QAT_ZINC_GIN seed=43 baseline 200/200 val_loss=0.53321 val_metric=0.533

@@ -1,0 +1,68 @@
+[
+  {
+    "source": "/home/cyliu/code/PromptRepDQ/dq/quantization.py",
+    "target": "vendor/quantization.py",
+    "source_sha256": "defd0e3bcf9319965f893c718dd394c9ca72c716de08123d2053f5f0ccc1d800",
+    "change": "relative imports only"
+  },
+  {
+    "source": "/home/cyliu/code/PromptRepDQ/dq/linear_quantized.py",
+    "target": "vendor/linear_quantized.py",
+    "source_sha256": "c5afc2861478e93c8a542e454a7cc46b3b8110aa6b9137cab8d12a89ded1dfdb",
+    "change": "relative imports only"
+  },
+  {
+    "source": "/home/cyliu/code/PromptRepDQ/dq/baseline_quant.py",
+    "target": "vendor/baseline_quant.py",
+    "source_sha256": "7e143ca682f7c2d9d2e63beefce940511097ecbac1d506cead40b7a96558111f",
+    "change": "relative imports only"
+  },
+  {
+    "source": "/home/cyliu/code/PromptRepDQ/dq/multi_quant.py",
+    "target": "vendor/multi_quant.py",
+    "source_sha256": "f5bd7cb82a35eec6adc8bc631350b3e04cc6b1b9448a09c0c3578dc2c17524a4",
+    "change": "relative imports only"
+  },
+  {
+    "source": "/home/cyliu/code/A-2Q/node_level_1.py",
+    "target": "vendor/a2q_node.py",
+    "source_sha256": "e3cd53bb873e4a23b98b6b2f35cd9cde738a6ad557fece29482923a5afb346ff",
+    "change": "AST imports/classes only"
+  },
+  {
+    "source": "/home/cyliu/code/A-2Q/gat_nc_lsb.py",
+    "target": "vendor/a2q_node_gat.py",
+    "source_sha256": "3df72ff546908c54782d6f1677d1506286b8bc8f5745a09b1b49ebfee4860235",
+    "change": "AST imports/classes only"
+  },
+  {
+    "source": "/home/cyliu/code/A-2Q/lr_gin_mnist_bit.py",
+    "target": "vendor/a2q_graph_gin.py",
+    "source_sha256": "8cd93028254689743880b91a976eb978ae2f70bed460a035e2c593887aa26f68",
+    "change": "AST imports/classes only"
+  },
+  {
+    "source": "/home/cyliu/code/A-2Q/lr_gcn_mnist_bit.py",
+    "target": "vendor/a2q_graph_gcn.py",
+    "source_sha256": "2af419f14ab6cd1eddd9235a14c72af8809a0feddf0d58ae926fa8352a7e64eb",
+    "change": "AST imports/classes only"
+  },
+  {
+    "source": "/home/cyliu/code/A-2Q/lr_gat_mnist.py",
+    "target": "vendor/a2q_graph_gat.py",
+    "source_sha256": "c4740278a5cbee134fa63bbd1b720ddfa023a1846fedbf5a98af9561346f3d92",
+    "change": "AST imports/classes only"
+  },
+  {
+    "source": "/home/cyliu/code/A-2Q/runs/zinc/lr_gin_zinc_bit.py",
+    "target": "vendor/a2q_zinc_gin.py",
+    "source_sha256": "1420348d8a10a2505aa909a87c3daee179827a925fbbe424b9d4d51d2657f570",
+    "change": "AST imports/classes only"
+  },
+  {
+    "source": "/home/cyliu/code/A-2Q/lr_gcn_zinc_bit.py",
+    "target": "vendor/a2q_zinc_gcn.py",
+    "source_sha256": "c3ee05838bafb05219a5d38cd6504a058d309698bd3f0c020fffee23a2208980",
+    "change": "AST imports/classes only"
+  }
+]

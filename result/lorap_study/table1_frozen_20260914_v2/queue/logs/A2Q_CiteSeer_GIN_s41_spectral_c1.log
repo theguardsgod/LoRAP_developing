@@ -1,0 +1,5 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:0", "--cells", "A2Q_CiteSeer_GIN", "--seed", "41", "--methods", "spectral", "--candidate", "1"]
+A2Q_CiteSeer_GIN s41 spectral/c1 adapter 1/200 val=1.02932 metric=68.200
+A2Q_CiteSeer_GIN s41 spectral/c1 adapter 25/200 val=1.05189 metric=67.800
+A2Q_CiteSeer_GIN s41 spectral/c1 adapter 50/200 val=1.09438 metric=66.200

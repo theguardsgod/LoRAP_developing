@@ -1,0 +1,76 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:2", "--cells", "QAT_MNIST_GIN", "--seed", "41", "--methods", "conditioned", "--candidate", "1"]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/cyliu/code/A-2Q/runs/lorap_study/table1_frozen/adapt.py", line 174, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/cyliu/code/A-2Q/runs/lorap_study/table1_frozen/adapt.py", line 171, in main
+    for hp in hps:fit(a.root,c,a.seed,method,hp,a.device,a.smoke_limit)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/code/A-2Q/runs/lorap_study/table1_frozen/adapt.py", line 110, in fit
+    start=time.monotonic();train=epoch(model,c,b,seed,device,number,opt,hp,stage,limit)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/code/A-2Q/runs/lorap_study/table1_frozen/adapt.py", line 31, in epoch
+    opt.zero_grad(set_to_none=True);out,_=model(batch,teacher=teacher)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/anaconda3/envs/ProG/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/anaconda3/envs/ProG/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/code/A-2Q/runs/lorap_study/table1_frozen/adapters.py", line 187, in forward
+    out,budget=predict(self.backbone,self.c,data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/code/A-2Q/runs/lorap_study/table1_frozen/backends.py", line 182, in predict
+    out=model(data)
+        ^^^^^^^^^^^
+  File "/home/cyliu/anaconda3/envs/ProG/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/anaconda3/envs/ProG/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/code/A-2Q/runs/lorap_study/table1_frozen/backends.py", line 91, in forward
+    x=conv(x,data.edge_index,mask) if c['framework']=='DQ' else conv(x,data.edge_index)
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/anaconda3/envs/ProG/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/anaconda3/envs/ProG/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/code/A-2Q/runs/lorap_study/table1_frozen/vendor/baseline_quant.py", line 476, in forward
+    out = self.propagate(edge_index, x=x)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/code/A-2Q/runs/lorap_study/table1_frozen/instrument.py", line 79, in propagate
+    return native_prop(edge_index,*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/code/A-2Q/runs/lorap_study/table1_frozen/vendor/baseline_quant.py", line 184, in propagate
+    out = self.mp_quantizers["aggregate"](self.aggregate(out, **aggr_kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/anaconda3/envs/ProG/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/anaconda3/envs/ProG/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/home/cyliu/anaconda3/envs/ProG/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/code/A-2Q/runs/lorap_study/table1_frozen/instrument.py", line 165, in aggregate_hook
+    context=context_edges(state['q'],state['index'],state['n'],qm)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/anaconda3/envs/ProG/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyliu/code/A-2Q/runs/lorap_study/table1_frozen/instrument.py", line 44, in context_edges
+    code=(q.detach().flatten(1)/scale+zp).round()
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 32.00 MiB. GPU 2 has a total capacity of 23.54 GiB of which 21.44 MiB is free. Process 3138989 has 22.53 GiB memory in use. Including non-PyTorch memory, this process has 878.00 MiB memory in use. Of the allocated memory 270.47 MiB is allocated by PyTorch, and 141.53 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:3", "--cells", "QAT_MNIST_GIN", "--seed", "41", "--methods", "conditioned", "--candidate", "1"]
+QAT_MNIST_GIN s41 conditioned/c1 adapter 1/100 val=0.14455 metric=95.960
+QAT_MNIST_GIN s41 conditioned/c1 adapter 25/100 val=0.84810 metric=73.020

@@ -1,0 +1,21 @@
+{
+  "stage": "preflight",
+  "verified_unix": 1789462279.1574209,
+  "related_tests_passed": 68,
+  "paired_initializations_verified": 20,
+  "formal_config_difference_only": "variants: lora -> no_prompt",
+  "gpu_smoke": {
+    "fixed4": "passed",
+    "a2q": "passed",
+    "test_evaluations": 0
+  },
+  "source_snapshot_verified": true,
+  "reference_archive_verified": true,
+  "broader_test_discovery": {
+    "total": 116,
+    "errors": 3,
+    "location": "runs/lorap_study/table1_frozen",
+    "reason": "DQ kthvalue CUDA has no deterministic implementation; unrelated to this pinned training source"
+  },
+  "formal_training_complete_at_audit": false
+}

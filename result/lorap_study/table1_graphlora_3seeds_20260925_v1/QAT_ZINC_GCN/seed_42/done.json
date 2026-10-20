@@ -1,0 +1,53 @@
+{
+  "cell": "QAT_ZINC_GCN",
+  "seed": 42,
+  "config_hash": "14f4ffad89388a125e3b8337a09aa683cd7e42993124c9ec090cdc4eac700d22",
+  "selected_epoch": 1,
+  "validation": {
+    "loss": 1.1005797061920166,
+    "metric": 1.1005796966552734,
+    "storage_proxy": 0.0,
+    "examples": 1000
+  },
+  "test_evaluations": 0,
+  "full_split": true,
+  "common_backbone_sha256": "27caa55fbca66cec68cc712d79a4b47b39a7bf58301f156c74a97fb2880ab2db",
+  "state_sha256": "e1d60bee439fedec4e79aca5837b9967b7e49ae7ac5b1ffc816f62f342b0271d",
+  "checkpoint_file_sha256": "b43ecd168ba63657c7b2f5a0cf0424a5a217ed403374f536f71c14bb27cde77f",
+  "training_seconds": 380.08366047777236,
+  "peak_cuda_memory_bytes": 78418432,
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "total_parameters": 113536,
+  "trainable_parameters": 113536,
+  "adapter_parameters": 2320,
+  "adapter_fp32_bytes": 9280,
+  "adapter_buffer_bytes": 0,
+  "prompt_parameters": 0,
+  "sites": [
+    {
+      "name": "convs.0",
+      "inputs": 145,
+      "outputs": 145,
+      "heads": 1
+    },
+    {
+      "name": "convs.1",
+      "inputs": 145,
+      "outputs": 145,
+      "heads": 1
+    },
+    {
+      "name": "convs.2",
+      "inputs": 145,
+      "outputs": 145,
+      "heads": 1
+    },
+    {
+      "name": "convs.3",
+      "inputs": 145,
+      "outputs": 145,
+      "heads": 1
+    }
+  ]
+}

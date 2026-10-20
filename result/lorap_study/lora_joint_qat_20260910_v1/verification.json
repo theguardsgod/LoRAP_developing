@@ -1,0 +1,15 @@
+{
+  "test_count": 61,
+  "status": "passed",
+  "cuda_tests_executed": true,
+  "command": "python -B -m unittest runs.lorap_study.test_lora runs.lorap_study.test_study runs.lorap_study.test_mechanism runs.lorap_study.test_improved runs.lorap_study.test_uniform runs.lorap_study.test_uniform_context runs.lorap_study.test_full runs.lorap_study.test_full_validation -q",
+  "source_sha256": {
+    "runs/lorap_study/lora.py": "bd68a2940016a9825f01d3f4b2458585587621cd14d803c90db5818abf145ab1",
+    "runs/lorap_study/lora_run.py": "71ffabe13e9e22c341ddf448b982d6903936043126e624d7283baa0adff0aac2",
+    "runs/lorap_study/lora_report.py": "02e144042d3c68345a2d2f18a66809f65bb341f6a40e5a2f0a97d8d590d5fd87",
+    "runs/lorap_study/test_lora.py": "a3ee46f7c5b2a1b8597a93df67fc882651506c1dab8e1c7d228b42e031fef689"
+  },
+  "smoke_output": "../lora_smoke_20260910_v2",
+  "smoke_fits": 9,
+  "smoke_test_evaluations": 0
+}

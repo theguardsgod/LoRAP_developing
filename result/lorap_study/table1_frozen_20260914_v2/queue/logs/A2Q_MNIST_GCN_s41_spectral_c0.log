@@ -1,0 +1,5 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:1", "--cells", "A2Q_MNIST_GCN", "--seed", "41", "--methods", "spectral", "--candidate", "0"]
+A2Q_MNIST_GCN s41 spectral/c0 adapter 1/100 val=0.31486 metric=89.400
+A2Q_MNIST_GCN s41 spectral/c0 adapter 25/100 val=0.30590 metric=89.840
+A2Q_MNIST_GCN s41 spectral/c0 adapter 50/100 val=0.31156 metric=90.160

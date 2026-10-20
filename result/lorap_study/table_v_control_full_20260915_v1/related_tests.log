@@ -1,0 +1,47 @@
+......./home/cyliu/code/A-2Q/quantize_method/quant_method_red_uniform_bit_debug.py:138: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  fea0, feature, feature_q, fea_max, gama, gama_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_red_uniform_bit_debug.py:47: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  w0, weight, weight_q, w_max, alpha, alpha_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_red_uniform_bit_debug.py:90: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  w0, weight, weight_q, w_max, alpha, alpha_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_bit_debug.py:131: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  fea_0, feature, feature_q, fea_max, gama, gama_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_bit_debug.py:41: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  weight0, weight, weight_q, w_max, alpha, alpha_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_bit_debug.py:85: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  xw0, xw, xw_q, w_max, alpha, alpha_sign = ctx.saved_variables
+....CiteSeer original seed=41 epoch=1/2 train=1.0000 val=0.1000 val_acc=0.5000 seconds=0.00
+CiteSeer original seed=41 epoch=2/2 train=1.0000 val=0.2000 val_acc=0.5000 seconds=0.00
+COMPLETED CiteSeer original seed=41: test=0.5000, best_epoch=1
+.......fp32/none seed=41 epoch=1 val_loss=3.0000 val_acc=0.500
+DONE fp32/none seed=41 test=0.500 best=2
+....CiteSeer zero_init seed=41 epoch=1/3 val_CE=2.0000 val_acc=0.500
+CiteSeer zero_init seed=41 epoch=3/3 val_CE=1.0000 val_acc=0.500
+FIT DONE CiteSeer zero_init seed=41 best=2, val_CE=1.0000; test withheld
+TEST CiteSeer zero_init seed=41: 0.5000
+............./home/cyliu/code/A-2Q/quantize_method/quant_method_bit_debug.py:131: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  fea_0, feature, feature_q, fea_max, gama, gama_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_bit_debug.py:41: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  weight0, weight, weight_q, w_max, alpha, alpha_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_bit_debug.py:85: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  xw0, xw, xw_q, w_max, alpha, alpha_sign = ctx.saved_variables
+CiteSeer main seed=44 epoch=1/3 val_CE=2.0000 val_acc=0.500
+CiteSeer main seed=44 epoch=3/3 val_CE=1.0000 val_acc=0.500
+FIT DONE CiteSeer main seed=44 best=2; test withheld
+TEST CiteSeer main seed=44: 0.5000
+.../home/cyliu/code/A-2Q/quantize_method/quant_method_red_uniform_bit_debug.py:138: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  fea0, feature, feature_q, fea_max, gama, gama_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_red_uniform_bit_debug.py:47: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  w0, weight, weight_q, w_max, alpha, alpha_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_red_uniform_bit_debug.py:90: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  w0, weight, weight_q, w_max, alpha, alpha_sign = ctx.saved_variables
+.....MNIST main seed=41 epoch=1/3 val_CE=2.33185
+MNIST main seed=41 epoch=3/3 val_CE=2.30707
+MNIST main seed=41 epoch=1/3 val_CE=2.33185
+MNIST main seed=41 epoch=3/3 val_CE=2.30707
+...................TEST Cora lora seed=41: 0.5000
+......
+----------------------------------------------------------------------
+Ran 68 tests in 2.987s
+
+OK

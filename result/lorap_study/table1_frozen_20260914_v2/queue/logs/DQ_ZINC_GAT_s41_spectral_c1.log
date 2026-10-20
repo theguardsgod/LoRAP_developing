@@ -1,0 +1,4 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:0", "--cells", "DQ_ZINC_GAT", "--seed", "41", "--methods", "spectral", "--candidate", "1"]
+DQ_ZINC_GAT s41 spectral/c1 adapter 1/100 val=0.56527 metric=0.565
+DQ_ZINC_GAT s41 spectral/c1 adapter 25/100 val=0.56012 metric=0.560

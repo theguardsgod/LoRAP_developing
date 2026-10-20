@@ -1,0 +1,10 @@
+% Validation-tuned GPF-LoRAP versus fixed GraphLoRA-adapted; unequal tuning budgets.
+% Include only the selected candidate with every registered final seed evaluated.
+% Accuracy (%) is higher-is-better; ZINC MAE is lower-is-better; sample standard deviation.
+Config & No prompt & GraphLoRA-adapted & GPF-LoRAP (original) & GPF-LoRAP (tuned) \\
+DQ\_Cora\_GIN & $73.80 \pm 0.53$ & $72.77 \pm 1.80$ & $63.70 \pm 4.71$ & $75.20 \pm 0.61$ \\
+QAT\_CIFAR10\_GCN & $40.57 \pm 1.51$ & $43.62 \pm 0.92$ & $38.96 \pm 0.30$ & $40.29 \pm 1.70$ \\
+DQ\_ZINC\_GCN & $0.5995 \pm 0.0025$ & $0.5676 \pm 0.0097$ & $0.5863 \pm 0.0040$ & $0.5883 \pm 0.0136$ \\
+DQ\_CiteSeer\_GAT & $64.03 \pm 1.17$ & $63.17 \pm 3.33$ & $59.67 \pm 1.86$ & $61.60 \pm 0.75$ \\
+DQ\_MNIST\_GAT & $94.19 \pm 0.34$ & $94.66 \pm 0.41$ & $94.40 \pm 0.23$ & $94.88 \pm 0.17$ \\
+A2Q\_ZINC\_GAT & $0.6808 \pm 0.0208$ & $0.5807 \pm 0.0225$ & $0.6665 \pm 0.0290$ & $0.5948 \pm 0.0594$ \\

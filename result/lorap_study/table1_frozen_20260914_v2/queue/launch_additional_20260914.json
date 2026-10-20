@@ -1,0 +1,38 @@
+{
+  "started": 1789377492.8787162,
+  "reason": "GPU 0 and 1 became idle",
+  "workers": [
+    {
+      "device": "cuda:0",
+      "pid": 3047418,
+      "command": [
+        "/home/cyliu/anaconda3/envs/ProG/bin/python",
+        "-B",
+        "-m",
+        "runs.lorap_study.table1_frozen.suite",
+        "worker",
+        "--root",
+        "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2",
+        "--device",
+        "cuda:0"
+      ],
+      "log": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/queue/worker_cuda_0.log"
+    },
+    {
+      "device": "cuda:1",
+      "pid": 3047419,
+      "command": [
+        "/home/cyliu/anaconda3/envs/ProG/bin/python",
+        "-B",
+        "-m",
+        "runs.lorap_study.table1_frozen.suite",
+        "worker",
+        "--root",
+        "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2",
+        "--device",
+        "cuda:1"
+      ],
+      "log": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/queue/worker_cuda_1.log"
+    }
+  ]
+}

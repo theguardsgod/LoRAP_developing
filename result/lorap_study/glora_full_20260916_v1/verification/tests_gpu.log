@@ -1,0 +1,139 @@
+test_all_432_paths_noop_and_parameter_counts (runs.lorap_study.test_glora.GLoRATests.test_all_432_paths_noop_and_parameter_counts) ... ok
+test_compact_graph_independence_and_checkpoint_roundtrip (runs.lorap_study.test_glora.GLoRATests.test_compact_graph_independence_and_checkpoint_roundtrip) ... ok
+test_full_formula_and_single_quantizer_calls (runs.lorap_study.test_glora.GLoRATests.test_full_formula_and_single_quantizer_calls) ... ok
+test_no_bias_single_output_and_invalid_install (runs.lorap_study.test_glora.GLoRATests.test_no_bias_single_output_and_invalid_install) ... ok
+test_pairing_rng_and_observer_for_all_backends (runs.lorap_study.test_glora.GLoRATests.test_pairing_rng_and_observer_for_all_backends) ... /home/cyliu/code/A-2Q/quantize_method/quant_method_bit_debug.py:131: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  fea_0, feature, feature_q, fea_max, gama, gama_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_bit_debug.py:41: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  weight0, weight, weight_q, w_max, alpha, alpha_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_bit_debug.py:85: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  xw0, xw, xw_q, w_max, alpha, alpha_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_red_uniform_bit_debug.py:138: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  fea0, feature, feature_q, fea_max, gama, gama_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_red_uniform_bit_debug.py:47: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  w0, weight, weight_q, w_max, alpha, alpha_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_red_uniform_bit_debug.py:90: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  w0, weight, weight_q, w_max, alpha, alpha_sign = ctx.saved_variables
+ok
+test_sample_rng_resume_and_eval_determinism (runs.lorap_study.test_glora.GLoRATests.test_sample_rng_resume_and_eval_determinism) ... ok
+test_support_gradients_and_zero_up_first_step (runs.lorap_study.test_glora.GLoRATests.test_support_gradients_and_zero_up_first_step) ... ok
+test_all_official_paths_forward_and_backward (runs.lorap_study.test_glora.OfficialParityTests.test_all_official_paths_forward_and_backward) ... ok
+test_budget_and_earliest_tie (runs.lorap_study.test_glora.SearchTests.test_budget_and_earliest_tie) ... ok
+test_search_resume_matches_uninterrupted_and_never_uses_test (runs.lorap_study.test_glora.SearchTests.test_search_resume_matches_uninterrupted_and_never_uses_test) ... ok
+test_zero_mutation_random_fill_and_late_resume (runs.lorap_study.test_glora.SearchTests.test_zero_mutation_random_fill_and_late_resume) ... ok
+test_resume_export_audit_and_once_only_test (runs.lorap_study.test_glora_workflow.WorkflowTests.test_resume_export_audit_and_once_only_test) ... a2q GLoRA seed=41 epoch=1/3 val_CE=2.33110
+a2q GLoRA seed=41 epoch=3/3 val_CE=2.30172
+a2q GLoRA seed=41 epoch=1/3 val_CE=2.33110
+a2q GLoRA seed=41 epoch=3/3 val_CE=2.30172
+SEARCH DONE a2q seed=41 active_parameters=5327 val_CE=2.29397
+TEST a2q GLoRA seed=41: 0.5000
+ok
+test_node_and_graph_forward_backward (runs.lorap_study.test_lora.CUDAParityTests.test_node_and_graph_forward_backward) ... ok
+test_cuda_is_required (runs.lorap_study.test_lora.LoRATests.test_cuda_is_required) ... ok
+test_default_protocol (runs.lorap_study.test_lora.LoRATests.test_default_protocol) ... ok
+test_empty_edges_and_isolated_nodes (runs.lorap_study.test_lora.LoRATests.test_empty_edges_and_isolated_nodes) ... ok
+test_fixed4_protocol_rejects_incompatible_settings (runs.lorap_study.test_lora.LoRATests.test_fixed4_protocol_rejects_incompatible_settings) ... ok
+test_fixed4_qat_freezes_bits_but_trains_scales_and_lora (runs.lorap_study.test_lora.LoRATests.test_fixed4_qat_freezes_bits_but_trains_scales_and_lora) ... ok
+test_full_models_initialization_pairing_and_prompt_removal (runs.lorap_study.test_lora.LoRATests.test_full_models_initialization_pairing_and_prompt_removal) ... ok
+test_graph_batch_independence_and_checkpoint_roundtrip (runs.lorap_study.test_lora.LoRATests.test_graph_batch_independence_and_checkpoint_roundtrip) ... ok
+test_identity_feature_quantizer (runs.lorap_study.test_lora.LoRATests.test_identity_feature_quantizer) ... ok
+test_installation_does_not_advance_global_rng (runs.lorap_study.test_lora.LoRATests.test_installation_does_not_advance_global_rng) ... ok
+test_linear_formula_and_single_quantizer_calls (runs.lorap_study.test_lora.LoRATests.test_linear_formula_and_single_quantizer_calls) ... ok
+test_optimizer_and_actual_qat_updates (runs.lorap_study.test_lora.LoRATests.test_optimizer_and_actual_qat_updates) ... ok
+test_quantization_observer_visits_only_real_quantizers (runs.lorap_study.test_lora.LoRATests.test_quantization_observer_visits_only_real_quantizers) ... ok
+test_zero_output_and_two_stage_factor_learning (runs.lorap_study.test_lora.LoRATests.test_zero_output_and_two_stage_factor_learning) ... ok
+test_all_fits_required_and_earliest_checkpoint_checked (runs.lorap_study.test_lora.ReleaseTests.test_all_fits_required_and_earliest_checkpoint_checked) ... ok
+test_test_release_and_exactly_once (runs.lorap_study.test_lora.ReleaseTests.test_test_release_and_exactly_once) ... TEST Cora lora seed=41: 0.5000
+ok
+test_all_variants_train_on_gpu_for_new_datasets (runs.lorap_study.test_full.FullTests.test_all_variants_train_on_gpu_for_new_datasets) ... ok
+test_full_configs_require_official_splits_and_gpu (runs.lorap_study.test_full.FullTests.test_full_configs_require_official_splits_and_gpu) ... ok
+test_mnist_and_citeseer_backbones_match_previous_implementation (runs.lorap_study.test_full.FullTests.test_mnist_and_citeseer_backbones_match_previous_implementation) ... ok
+test_new_dataset_dimensions_and_paired_backbones (runs.lorap_study.test_full.FullTests.test_new_dataset_dimensions_and_paired_backbones) ... ok
+test_queue_keeps_both_task_types_running_and_withholds_tests (runs.lorap_study.test_full.FullTests.test_queue_keeps_both_task_types_running_and_withholds_tests) ... ok
+test_resume_restores_optimizer_rng_and_data_order_without_testing (runs.lorap_study.test_full.FullTests.test_resume_restores_optimizer_rng_and_data_order_without_testing) ... MNIST main seed=41 epoch=1/3 val_CE=2.33233
+MNIST main seed=41 epoch=3/3 val_CE=2.30906
+MNIST main seed=41 epoch=1/3 val_CE=2.33233
+MNIST main seed=41 epoch=3/3 val_CE=2.30906
+ok
+test_test_release_waits_for_every_fit (runs.lorap_study.test_full.FullTests.test_test_release_waits_for_every_fit) ... ok
+test_bounded_drift_and_nonfinite_rejection (runs.lorap_study.test_full_validation.ValidationTests.test_bounded_drift_and_nonfinite_rejection) ... ok
+test_exact_identity_and_earliest_minimum (runs.lorap_study.test_full_validation.ValidationTests.test_exact_identity_and_earliest_minimum) ... ok
+test_both_protocols_fit_before_any_test (runs.lorap_study.test_table_v.TableVTests.test_both_protocols_fit_before_any_test) ... ok
+test_unfinished_runs_never_generate_accuracy (runs.lorap_study.test_table_v.TableVTests.test_unfinished_runs_never_generate_accuracy) ... ok
+test_no_control_test_until_both_protocols_finish (runs.lorap_study.test_table_v_control.ControlTests.test_no_control_test_until_both_protocols_finish) ... ok
+test_only_variant_changes_in_formal_protocol (runs.lorap_study.test_table_v_control.ControlTests.test_only_variant_changes_in_formal_protocol) ... ok
+test_pair_direction_and_pairing_validation (runs.lorap_study.test_table_v_control.ControlTests.test_pair_direction_and_pairing_validation) ... ok
+test_best_checkpoint_keeps_earlier_tie (runs.lorap_study.test_study.StudyTests.test_best_checkpoint_keeps_earlier_tie) ... ok
+test_bit_observer_and_hook_cleanup (runs.lorap_study.test_study.StudyTests.test_bit_observer_and_hook_cleanup) ... ok
+test_conditioned_initialization_and_gradients (runs.lorap_study.test_study.StudyTests.test_conditioned_initialization_and_gradients) ... ok
+test_context_uses_actual_direction_and_handles_isolated_nodes (runs.lorap_study.test_study.StudyTests.test_context_uses_actual_direction_and_handles_isolated_nodes) ... ok
+test_diagnostic_math_sampling_and_mask (runs.lorap_study.test_study.StudyTests.test_diagnostic_math_sampling_and_mask) ... ok
+test_diagnostics_does_not_change_prediction_or_run_when_disabled (runs.lorap_study.test_study.StudyTests.test_diagnostics_does_not_change_prediction_or_run_when_disabled) ... ok
+test_fixed_stratified_subset (runs.lorap_study.test_study.StudyTests.test_fixed_stratified_subset) ... ok
+test_forward_backward_all_variants (runs.lorap_study.test_study.StudyTests.test_forward_backward_all_variants) ... /home/cyliu/code/A-2Q/quantize_method/quant_method_red_uniform_bit_debug.py:138: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  fea0, feature, feature_q, fea_max, gama, gama_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_red_uniform_bit_debug.py:47: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  w0, weight, weight_q, w_max, alpha, alpha_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_red_uniform_bit_debug.py:90: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  w0, weight, weight_q, w_max, alpha, alpha_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_bit_debug.py:131: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  fea_0, feature, feature_q, fea_max, gama, gama_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_bit_debug.py:41: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  weight0, weight, weight_q, w_max, alpha, alpha_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_bit_debug.py:85: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  xw0, xw, xw_q, w_max, alpha, alpha_sign = ctx.saved_variables
+ok
+test_legacy_forward_parity (runs.lorap_study.test_study.StudyTests.test_legacy_forward_parity) ... ok
+test_paired_backbones_and_prompt_bases (runs.lorap_study.test_study.StudyTests.test_paired_backbones_and_prompt_bases) ... ok
+test_parameter_matching (runs.lorap_study.test_study.StudyTests.test_parameter_matching) ... ok
+test_test_evaluated_once_after_loading_selected_checkpoint (runs.lorap_study.test_study.StudyTests.test_test_evaluated_once_after_loading_selected_checkpoint) ... CiteSeer original seed=41 epoch=1/2 train=1.0000 val=0.1000 val_acc=0.5000 seconds=0.00
+CiteSeer original seed=41 epoch=2/2 train=1.0000 val=0.2000 val_acc=0.5000 seconds=0.00
+COMPLETED CiteSeer original seed=41: test=0.5000, best_epoch=1
+ok
+test_capacity_initialization_and_gradients (runs.lorap_study.test_mechanism.MechanismTests.test_capacity_initialization_and_gradients) ... ok
+test_fp32_bypasses_quantizer_computation_and_restores (runs.lorap_study.test_mechanism.MechanismTests.test_fp32_bypasses_quantizer_computation_and_restores) ... ok
+test_full_fp32_equals_explicit_gin (runs.lorap_study.test_mechanism.MechanismTests.test_full_fp32_equals_explicit_gin) ... ok
+test_interaction_sign_and_pairing (runs.lorap_study.test_mechanism.MechanismTests.test_interaction_sign_and_pairing) ... ok
+test_interventions_baseline_restoration_and_self_error (runs.lorap_study.test_mechanism.MechanismTests.test_interventions_baseline_restoration_and_self_error) ... ok
+test_local_zero_error_and_off_equal_identity_quantizer (runs.lorap_study.test_mechanism.MechanismTests.test_local_zero_error_and_off_equal_identity_quantizer) ... ok
+test_new_runner_selects_validation_and_tests_once (runs.lorap_study.test_mechanism.MechanismTests.test_new_runner_selects_validation_and_tests_once) ... fp32/none seed=41 epoch=1 val_loss=3.0000 val_acc=0.500
+DONE fp32/none seed=41 test=0.500 best=2
+ok
+test_projection_and_error_metrics (runs.lorap_study.test_mechanism.MechanismTests.test_projection_and_error_metrics) ... ok
+test_calibration_is_training_only_bounded_and_nonmutating (runs.lorap_study.test_improved.ImprovedTests.test_calibration_is_training_only_bounded_and_nonmutating) ... ok
+test_candidate_selection_ignores_test_and_accuracy (runs.lorap_study.test_improved.ImprovedTests.test_candidate_selection_ignores_test_and_accuracy) ... ok
+test_fit_withholds_test_then_evaluates_selected_checkpoint_once (runs.lorap_study.test_improved.ImprovedTests.test_fit_withholds_test_then_evaluates_selected_checkpoint_once) ... CiteSeer zero_init seed=41 epoch=1/3 val_CE=2.0000 val_acc=0.500
+CiteSeer zero_init seed=41 epoch=3/3 val_CE=1.0000 val_acc=0.500
+FIT DONE CiteSeer zero_init seed=41 best=2, val_CE=1.0000; test withheld
+TEST CiteSeer zero_init seed=41: 0.5000
+ok
+test_mnist_legacy_layout_parity_and_train_calibration (runs.lorap_study.test_improved.ImprovedTests.test_mnist_legacy_layout_parity_and_train_calibration) ... ok
+test_multibatch_error_aggregation_uses_squared_norms (runs.lorap_study.test_improved.ImprovedTests.test_multibatch_error_aggregation_uses_squared_norms) ... ok
+test_no_reference_or_svd_in_normal_forward (runs.lorap_study.test_improved.ImprovedTests.test_no_reference_or_svd_in_normal_forward) ... ok
+test_rank_budget_and_equal_capacity (runs.lorap_study.test_improved.ImprovedTests.test_rank_budget_and_equal_capacity) ... ok
+test_zero_start_and_gradients (runs.lorap_study.test_improved.ImprovedTests.test_zero_start_and_gradients) ... ok
+test_zero_start_preserves_actual_models_and_backbone_gradients (runs.lorap_study.test_improved.ImprovedTests.test_zero_start_preserves_actual_models_and_backbone_gradients) ... ok
+test_backbones_ranks_capacity_and_paired_initialization (runs.lorap_study.test_uniform.UniformTests.test_backbones_ranks_capacity_and_paired_initialization) ... ok
+test_full_config_roundtrip (runs.lorap_study.test_uniform.UniformTests.test_full_config_roundtrip) ... ok
+test_main_matches_previous_random_bank_after_updates (runs.lorap_study.test_uniform.UniformTests.test_main_matches_previous_random_bank_after_updates) ... ok
+test_no_conditions_skips_context_and_diagnostics_are_optional (runs.lorap_study.test_uniform.UniformTests.test_no_conditions_skips_context_and_diagnostics_are_optional) ... ok
+test_reference_free_calibration_matches_spectral_statistics (runs.lorap_study.test_uniform.UniformTests.test_reference_free_calibration_matches_spectral_statistics) ... ok
+test_standardization_and_clipping_change_only_condition_path (runs.lorap_study.test_uniform.UniformTests.test_standardization_and_clipping_change_only_condition_path) ... ok
+test_training_withholds_test_and_selects_earliest_minimum (runs.lorap_study.test_uniform.UniformTests.test_training_withholds_test_and_selects_earliest_minimum) ... /home/cyliu/code/A-2Q/quantize_method/quant_method_bit_debug.py:131: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  fea_0, feature, feature_q, fea_max, gama, gama_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_bit_debug.py:41: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  weight0, weight, weight_q, w_max, alpha, alpha_sign = ctx.saved_variables
+/home/cyliu/code/A-2Q/quantize_method/quant_method_bit_debug.py:85: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  xw0, xw, xw_q, w_max, alpha, alpha_sign = ctx.saved_variables
+CiteSeer main seed=44 epoch=1/3 val_CE=2.0000 val_acc=0.500
+CiteSeer main seed=44 epoch=3/3 val_CE=1.0000 val_acc=0.500
+FIT DONE CiteSeer main seed=44 best=2; test withheld
+TEST CiteSeer main seed=44: 0.5000
+ok
+test_zero_start_finite_gradients_and_detached_context (runs.lorap_study.test_uniform.UniformTests.test_zero_start_finite_gradients_and_detached_context) ... ok
+test_passive_observer_preserves_model_and_validation_predictions (runs.lorap_study.test_uniform_context.ConditionAuditTests.test_passive_observer_preserves_model_and_validation_predictions) ... ok
+
+----------------------------------------------------------------------
+Ran 80 tests in 8.675s
+
+OK

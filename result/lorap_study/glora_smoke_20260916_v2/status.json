@@ -1,0 +1,95 @@
+{
+  "complete": true,
+  "smoke": true,
+  "supernets_completed": 2,
+  "searches_completed": 2,
+  "fits_total": 2,
+  "tests_completed": 0,
+  "tests_expected": 0,
+  "rows": [
+    {
+      "mode": "fixed4",
+      "complete": false,
+      "fits": 1,
+      "tests": 0,
+      "no_prompt_accuracy": null,
+      "lora_accuracy": null,
+      "glora_accuracy": null,
+      "glora_minus_no_prompt_pp": null,
+      "glora_minus_lora_pp": null,
+      "active_adapter_parameters": {
+        "mean": 2339,
+        "sample_std": null,
+        "n": 1
+      },
+      "active_adapter_KiB": {
+        "mean": 9.13671875,
+        "sample_std": null,
+        "n": 1
+      },
+      "mean_activation_effective_bits": {
+        "mean": 4.0,
+        "sample_std": null,
+        "n": 1
+      }
+    },
+    {
+      "mode": "a2q",
+      "complete": false,
+      "fits": 1,
+      "tests": 0,
+      "no_prompt_accuracy": null,
+      "lora_accuracy": null,
+      "glora_accuracy": null,
+      "glora_minus_no_prompt_pp": null,
+      "glora_minus_lora_pp": null,
+      "active_adapter_parameters": {
+        "mean": 0,
+        "sample_std": null,
+        "n": 1
+      },
+      "active_adapter_KiB": {
+        "mean": 0.0,
+        "sample_std": null,
+        "n": 1
+      },
+      "mean_activation_effective_bits": {
+        "mean": 4.0,
+        "sample_std": null,
+        "n": 1
+      }
+    }
+  ],
+  "progress": [
+    {
+      "mode": "fixed4",
+      "seed": 41,
+      "phase": "supernet",
+      "epoch": 2,
+      "epochs": 2,
+      "best_epoch": 2,
+      "validation": {
+        "loss": 2.3075718879699707,
+        "accuracy": 0.09375,
+        "examples": 64,
+        "legacy_budget_proxy": 115.4951171875
+      },
+      "training_seconds": 0.6273752506822348
+    },
+    {
+      "mode": "a2q",
+      "seed": 41,
+      "phase": "supernet",
+      "epoch": 2,
+      "epochs": 2,
+      "best_epoch": 2,
+      "validation": {
+        "loss": 2.305175304412842,
+        "accuracy": 0.109375,
+        "examples": 64,
+        "legacy_budget_proxy": 55.96656036376953
+      },
+      "training_seconds": 0.21960219368338585
+    }
+  ]
+}

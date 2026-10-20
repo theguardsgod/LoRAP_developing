@@ -1,0 +1,210 @@
+{
+  "passed": true,
+  "runs": 27,
+  "source_files": 61,
+  "checks": [
+    "source and workspace hashes",
+    "official split manifests",
+    "training-only calibration",
+    "paired initialization",
+    "exact earliest minimum-validation checkpoints",
+    "frozen parameters",
+    "zero prompt parameters in controls",
+    "FP32 LoRA factors",
+    "optimizer parameter counts",
+    "27 CUDA fits and exactly-once test records",
+    "validation replay tolerance"
+  ],
+  "test_evaluations_performed_by_audit": 0,
+  "rows": [
+    {
+      "dataset": "Cora",
+      "variant": "no_prompt",
+      "seed": 41,
+      "best_epoch": 35,
+      "passed": true
+    },
+    {
+      "dataset": "Cora",
+      "variant": "main",
+      "seed": 41,
+      "best_epoch": 25,
+      "passed": true
+    },
+    {
+      "dataset": "Cora",
+      "variant": "lora",
+      "seed": 41,
+      "best_epoch": 23,
+      "passed": true
+    },
+    {
+      "dataset": "Cora",
+      "variant": "no_prompt",
+      "seed": 42,
+      "best_epoch": 23,
+      "passed": true
+    },
+    {
+      "dataset": "Cora",
+      "variant": "main",
+      "seed": 42,
+      "best_epoch": 36,
+      "passed": true
+    },
+    {
+      "dataset": "Cora",
+      "variant": "lora",
+      "seed": 42,
+      "best_epoch": 41,
+      "passed": true
+    },
+    {
+      "dataset": "Cora",
+      "variant": "no_prompt",
+      "seed": 43,
+      "best_epoch": 50,
+      "passed": true
+    },
+    {
+      "dataset": "Cora",
+      "variant": "main",
+      "seed": 43,
+      "best_epoch": 40,
+      "passed": true
+    },
+    {
+      "dataset": "Cora",
+      "variant": "lora",
+      "seed": 43,
+      "best_epoch": 43,
+      "passed": true
+    },
+    {
+      "dataset": "CiteSeer",
+      "variant": "no_prompt",
+      "seed": 41,
+      "best_epoch": 20,
+      "passed": true
+    },
+    {
+      "dataset": "CiteSeer",
+      "variant": "main",
+      "seed": 41,
+      "best_epoch": 20,
+      "passed": true
+    },
+    {
+      "dataset": "CiteSeer",
+      "variant": "lora",
+      "seed": 41,
+      "best_epoch": 18,
+      "passed": true
+    },
+    {
+      "dataset": "CiteSeer",
+      "variant": "no_prompt",
+      "seed": 42,
+      "best_epoch": 31,
+      "passed": true
+    },
+    {
+      "dataset": "CiteSeer",
+      "variant": "main",
+      "seed": 42,
+      "best_epoch": 16,
+      "passed": true
+    },
+    {
+      "dataset": "CiteSeer",
+      "variant": "lora",
+      "seed": 42,
+      "best_epoch": 32,
+      "passed": true
+    },
+    {
+      "dataset": "CiteSeer",
+      "variant": "no_prompt",
+      "seed": 43,
+      "best_epoch": 25,
+      "passed": true
+    },
+    {
+      "dataset": "CiteSeer",
+      "variant": "main",
+      "seed": 43,
+      "best_epoch": 32,
+      "passed": true
+    },
+    {
+      "dataset": "CiteSeer",
+      "variant": "lora",
+      "seed": 43,
+      "best_epoch": 31,
+      "passed": true
+    },
+    {
+      "dataset": "MNIST",
+      "variant": "no_prompt",
+      "seed": 41,
+      "best_epoch": 30,
+      "passed": true
+    },
+    {
+      "dataset": "MNIST",
+      "variant": "main",
+      "seed": 41,
+      "best_epoch": 26,
+      "passed": true
+    },
+    {
+      "dataset": "MNIST",
+      "variant": "lora",
+      "seed": 41,
+      "best_epoch": 24,
+      "passed": true
+    },
+    {
+      "dataset": "MNIST",
+      "variant": "no_prompt",
+      "seed": 42,
+      "best_epoch": 20,
+      "passed": true
+    },
+    {
+      "dataset": "MNIST",
+      "variant": "main",
+      "seed": 42,
+      "best_epoch": 30,
+      "passed": true
+    },
+    {
+      "dataset": "MNIST",
+      "variant": "lora",
+      "seed": 42,
+      "best_epoch": 30,
+      "passed": true
+    },
+    {
+      "dataset": "MNIST",
+      "variant": "no_prompt",
+      "seed": 43,
+      "best_epoch": 25,
+      "passed": true
+    },
+    {
+      "dataset": "MNIST",
+      "variant": "main",
+      "seed": 43,
+      "best_epoch": 26,
+      "passed": true
+    },
+    {
+      "dataset": "MNIST",
+      "variant": "lora",
+      "seed": 43,
+      "best_epoch": 24,
+      "passed": true
+    }
+  ]
+}

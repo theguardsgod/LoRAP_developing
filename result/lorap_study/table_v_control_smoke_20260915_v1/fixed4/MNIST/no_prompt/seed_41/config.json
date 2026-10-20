@@ -1,0 +1,51 @@
+{
+  "data_root": "/data/cyliu/dataset/gnn-mnist",
+  "lr": 0.001,
+  "lr_feature_scale": 0.001,
+  "lr_message_scale": 0.01,
+  "lr_weight_scale": 0.001,
+  "lr_bit": 0.001,
+  "a_loss": 0.0,
+  "a_storage": 0.1,
+  "weight_decay": 0.0,
+  "hidden_units": 110,
+  "layers": 4,
+  "init": "norm",
+  "num_deg": 1000,
+  "dataset": "MNIST",
+  "profile": "table_v_lora_fixed4",
+  "bit": 4,
+  "num_prompts": 20,
+  "rank": 2,
+  "batch_size": 128,
+  "split_seed": 41,
+  "selection": "minimum validation loss; earliest epoch on ties",
+  "diagnostics": false,
+  "diagnostic_max_nodes": 4096,
+  "epochs": 2,
+  "seeds": [
+    41
+  ],
+  "subset_sizes": {
+    "train": 128,
+    "val": 64,
+    "test": 64
+  },
+  "family": "MNIST",
+  "task": "graph",
+  "variants": [
+    "no_prompt"
+  ],
+  "device": "cuda:0",
+  "calibration_max_nodes": 4096,
+  "calibration_max_graphs": 128,
+  "checkpoint_every": 1,
+  "method_note": "Fixed INT4 QAT; CE only; all bit parameters frozen; LoRA FP32",
+  "lora_rank": 2,
+  "lora_alpha": 2.0,
+  "lora_dropout": 0.0,
+  "quantization_mode": "fixed4",
+  "protocol_source": "result/GIN_normal_MNIST/GIN_110__on_MNIST_4bit-200.txt",
+  "variant": "no_prompt",
+  "seed": 41
+}

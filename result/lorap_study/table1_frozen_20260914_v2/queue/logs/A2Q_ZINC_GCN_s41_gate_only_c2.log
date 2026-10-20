@@ -1,0 +1,6 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:2", "--cells", "A2Q_ZINC_GCN", "--seed", "41", "--methods", "gate_only", "--candidate", "2"]
+A2Q_ZINC_GCN s41 gate_only/c2 predictor_warmup 1/20 val=0.93793 metric=0.938
+A2Q_ZINC_GCN s41 gate_only/c2 adapter 1/100 val=0.72134 metric=0.721
+A2Q_ZINC_GCN s41 gate_only/c2 adapter 25/100 val=0.49132 metric=0.491
+A2Q_ZINC_GCN s41 gate_only/c2 adapter 50/100 val=0.49063 metric=0.491

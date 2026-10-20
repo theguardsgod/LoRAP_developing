@@ -1,0 +1,162 @@
+{
+  "job": {
+    "cell": "A2Q_ZINC_GAT",
+    "seed": 43,
+    "config": {
+      "cell": "A2Q_ZINC_GAT",
+      "dataset": "ZINC",
+      "architecture": "GAT",
+      "framework": "A2Q",
+      "data_root": "/data/cyliu/dataset/zinc",
+      "node": false,
+      "regression": true,
+      "width": 18,
+      "heads": 8,
+      "layers": 4,
+      "bit": 4,
+      "num_deg": 1000,
+      "batch_size": 128,
+      "paper_none": 0.674,
+      "paper_none_sd": 0.007,
+      "paper_gpf_lorap": 0.628,
+      "metric": "mae",
+      "baseline_epochs": 200,
+      "adapter_epochs": 100,
+      "seeds": [
+        41,
+        42,
+        43
+      ],
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "dropout": 0.0,
+      "init": "uniform",
+      "lr_feature": 0.01,
+      "lr_message": 0.05,
+      "lr_weight": 0.001,
+      "lr_bit": 0.0005,
+      "lr_attention": 0.001,
+      "lr_edge": 0.1,
+      "a_loss": 2e-05,
+      "a_storage": 1e-05,
+      "bit_bounds": [
+        1.0,
+        16.0
+      ],
+      "stop_patience": 30,
+      "min_epochs": 20,
+      "aggregation_implementation": "stable_csr_v2",
+      "optimizer_recipe": "native_groups_v2"
+    },
+    "epochs": 200,
+    "directory": "A2Q_ZINC_GAT/seed_43",
+    "reference": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/A2Q_ZINC_GAT/seed_43/baseline",
+      "config": {
+        "cell": "A2Q_ZINC_GAT",
+        "dataset": "ZINC",
+        "architecture": "GAT",
+        "framework": "A2Q",
+        "data_root": "/data/cyliu/dataset/zinc",
+        "node": false,
+        "regression": true,
+        "width": 18,
+        "heads": 8,
+        "layers": 4,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 0.674,
+        "paper_none_sd": 0.007,
+        "paper_gpf_lorap": 0.628,
+        "metric": "mae",
+        "baseline_epochs": 200,
+        "adapter_epochs": 100,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "dropout": 0.0,
+        "init": "uniform",
+        "lr_feature": 0.01,
+        "lr_message": 0.05,
+        "lr_weight": 0.001,
+        "lr_bit": 0.0005,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 2e-05,
+        "a_storage": 1e-05,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 20,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2",
+        "seed": 43,
+        "subset_limit": null,
+        "stage": "baseline"
+      },
+      "done": {
+        "cell": "A2Q_ZINC_GAT",
+        "seed": 43,
+        "config_hash": "e2b666350e2ac898d363277ac73d3225079a6be0b59d15edb93ede5256a15744",
+        "initial_sha256": "a7841028ca3a4a10149e177ed50c5db6d601a840ff0e526fbc90ac089cc18b4b",
+        "selected_epoch": 4,
+        "validation": {
+          "loss": 0.617903935432434,
+          "metric": 0.6179039306640625,
+          "storage_proxy": 55.39935302734375,
+          "examples": 1000
+        },
+        "backbone_sha256": "4d14659326c359043999573cd1f26baf034dfb0e48e4a5bb930aed22ec756d58",
+        "test_evaluations": 0,
+        "full_split": true,
+        "seconds": 688.7021270655096
+      },
+      "test": {
+        "cell": "A2Q_ZINC_GAT",
+        "seed": 43,
+        "method": "none",
+        "loss": 0.6674158492088318,
+        "metric": 0.6674158477783203,
+        "examples": 1000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "299e14c70738f36923103026810cf83dffd9451c4923415c7ded3d068da93a71",
+        "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+      },
+      "checkpoint_file_sha256": "299e14c70738f36923103026810cf83dffd9451c4923415c7ded3d068da93a71"
+    },
+    "graphlora_reference": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/A2Q_ZINC_GAT/seed_43",
+      "test": {
+        "cell": "A2Q_ZINC_GAT",
+        "seed": 43,
+        "method": "graphlora",
+        "loss": 0.5596048345565796,
+        "metric": 0.5596048316955566,
+        "examples": 1000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "cedca6c121d0352e6412c11ca9dad081e08c5d6769a15b8be1f17491d10aaf2e",
+        "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+      },
+      "checkpoint_file_sha256": "cedca6c121d0352e6412c11ca9dad081e08c5d6769a15b8be1f17491d10aaf2e",
+      "test_file_sha256": "de05625bbdc21eedfd312f8417d0e2105bd8ab8c68fe087ee9976c3e717cf51e"
+    }
+  },
+  "protocol": "joint",
+  "hp": {
+    "rank": 2,
+    "num_prompts": 20,
+    "prompt_lr": "backbone_lr",
+    "prompt_weight_decay": 0.0,
+    "sharing": "score_per_width_factors_per_layer",
+    "insertion": "before_native_update",
+    "training_cuda_rng_offset": 930000
+  },
+  "subset_limit": null
+}

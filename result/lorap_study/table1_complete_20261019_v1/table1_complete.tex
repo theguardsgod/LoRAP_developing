@@ -1,0 +1,90 @@
+% Required packages: \usepackage{booktabs,multirow,graphicx}
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Results under QAT, Degree-Quant (DQ), and $A^2Q$, with FP32 references.
+Bold and italic indicate the best and second-best reported means within each framework--architecture--dataset block.
+This table combines historical results with new reruns and tuning results; see the source and protocol notes below.}
+\label{tab:results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllccccc}
+\toprule
+Quant. & Model & Adaptation & \multicolumn{2}{c}{Node classification (Acc. \%)} & \multicolumn{2}{c}{Graph classification (Acc. \%)} & Graph regression \\
+Frame. & Arch. & Method & Cora $\uparrow$ & CiteSeer $\uparrow$ & MNIST $\uparrow$ & CIFAR-10 $\uparrow$ & ZINC MAE $\downarrow$ \\
+\midrule
+\multirow{3}{*}{FP32} & GIN & None & $77.6\pm1.1$ & $66.1\pm0.9$ & $96.4\pm0.4$ & $53.3\pm3.7$ & $0.414\pm0.009$ \\
+ & GCN & None & $81.4\pm0.7$ & $71.1\pm0.7$ & $90.9\pm0.4$ & $54.5\pm0.1$ & $0.469\pm0.002$ \\
+ & GAT & None & $83.1\pm0.4$ & $72.5\pm0.7$ & $95.8\pm0.4$ & $65.4\pm0.4$ & $0.463\pm0.002$ \\
+\midrule
+\midrule
+% QAT + GIN
+\multirow{4}{*}{QAT} & \multirow{4}{*}{GIN} & None & $44.2\pm1.5$ & $18.7\pm3.7$ & $91.0\pm0.5$ & $48.7\pm1.7$ & $\mathit{0.555\pm0.024}$ \\
+& & GPF-plus & $\mathbf{45.6\pm3.0}$ & $21.6\pm2.9$ & $91.3\pm0.3$ & $\mathit{55.3\pm0.9}$ & $0.569\pm0.020$ \\
+& & GraphLoRA-adapted & $25.70\pm11.26$ & $\mathit{25.73\pm4.52}$ & $\mathit{95.61\pm0.67}$ & $51.75\pm4.18$ & $1.5362\pm0.0234$ \\
+& & GPF-LoRAP & $\mathit{45.1\pm2.8}$ & $\mathbf{28.57\pm2.40}^{\dagger}$ & $\mathbf{96.53\pm0.20}^{\dagger}$ & $\mathbf{55.8\pm0.5}$ & $\mathbf{0.528\pm0.017}$ \\
+\midrule
+% DQ + GIN
+\multirow{4}{*}{DQ} & \multirow{4}{*}{GIN} & None & $61.0\pm6.9$ & $58.4\pm2.1$ & $92.4\pm0.4$ & $50.7\pm1.6$ & $0.540\pm0.019$ \\
+& & GPF-plus & $64.3\pm5.0$ & $\mathit{63.1\pm3.5}$ & $91.9\pm0.3$ & $51.3\pm1.2$ & $0.555\pm0.018$ \\
+& & GraphLoRA-adapted & $\mathit{72.77\pm1.80}$ & $58.50\pm3.38$ & $\mathit{93.07\pm0.73}$ & $\mathit{51.70\pm0.80}$ & $\mathit{0.5385\pm0.0070}$ \\
+& & GPF-LoRAP & $\mathbf{75.20\pm0.61}^{\ddagger}$ & $\mathbf{64.6\pm2.3}$ & $\mathbf{93.35\pm0.77}^{\dagger}$ & $\mathbf{53.0\pm0.9}$ & $\mathbf{0.512\pm0.008}$ \\
+\midrule
+% A2Q + GIN
+\multirow{4}{*}{$A^2Q$} & \multirow{4}{*}{GIN} & None & $\mathit{77.4\pm0.9}$ & $\mathit{66.6\pm0.1}$ & $95.7\pm0.2$ & $54.9\pm0.9$ & $0.400\pm0.016$ \\
+& & GPF-plus & $72.7\pm0.8$ & $59.5\pm6.6$ & $\mathit{95.9\pm0.4}$ & $\mathit{56.8\pm1.4}$ & $\mathit{0.399\pm0.009}$ \\
+& & GraphLoRA-adapted & $66.80\pm1.65$ & $38.30\pm2.91$ & $95.44\pm0.11$ & $54.05\pm1.42$ & $0.4617\pm0.0092$ \\
+& & GPF-LoRAP & $\mathbf{78.5\pm1.0}$ & $\mathbf{70.7\pm0.6}$ & $\mathbf{96.4\pm0.2}$ & $\mathbf{57.4\pm1.4}$ & $\mathbf{0.361\pm0.010}$ \\
+\midrule
+\midrule
+% QAT + GCN
+\multirow{4}{*}{QAT} & \multirow{4}{*}{GCN} & None & $66.4\pm7.0$ & $\mathit{63.4\pm2.2}$ & $70.6\pm2.4$ & $38.5\pm1.3$ & $\mathit{0.707\pm0.056}$ \\
+& & GPF-plus & $\mathit{69.8\pm6.5}$ & $61.6\pm3.1$ & $\mathit{71.5\pm1.3}$ & $41.0\pm1.2$ & $0.733\pm0.018$ \\
+& & GraphLoRA-adapted & $23.63\pm10.27$ & $23.63\pm13.31$ & $40.30\pm1.69$ & $\mathit{43.62\pm0.92}$ & $1.3207\pm0.1299$ \\
+& & GPF-LoRAP & $\mathbf{71.3\pm8.3}$ & $\mathbf{63.9\pm2.2}$ & $\mathbf{73.6\pm1.2}$ & $\mathbf{47.21\pm2.24}^{\ddagger *}$ & $\mathbf{0.690\pm0.021}$ \\
+\midrule
+% DQ + GCN
+\multirow{4}{*}{DQ} & \multirow{4}{*}{GCN} & None & $\mathit{72.5\pm3.7}$ & $68.6\pm3.3$ & $87.0\pm1.2$ & $49.5\pm0.8$ & $0.657\pm0.032$ \\
+& & GPF-plus & $72.3\pm2.8$ & $\mathbf{71.4\pm3.1}$ & $\mathit{90.9\pm0.7}$ & $\mathit{51.1\pm0.5}$ & $\mathbf{0.534\pm0.017}$ \\
+& & GraphLoRA-adapted & $54.97\pm11.61$ & $52.10\pm4.68$ & $87.51\pm1.08$ & $44.90\pm0.96$ & $0.5676\pm0.0097$ \\
+& & GPF-LoRAP & $\mathbf{78.0\pm2.5}$ & $\mathit{71.0\pm2.9}$ & $\mathbf{92.4\pm0.5}$ & $\mathbf{53.4\pm0.5}$ & $\mathit{0.5670\pm0.0090}^{\ddagger}$ \\
+\midrule
+% A2Q + GCN
+\multirow{4}{*}{$A^2Q$} & \multirow{4}{*}{GCN} & None & $76.1\pm0.3$ & $69.7\pm1.6$ & $90.5\pm0.5$ & $52.4\pm0.8$ & $\mathit{0.504\pm0.009}$ \\
+& & GPF-plus & $\mathit{78.0\pm0.1}$ & $\mathit{70.0\pm2.3}$ & $\mathit{91.0\pm0.5}$ & $\mathit{53.2\pm1.0}$ & $0.506\pm0.008$ \\
+& & GraphLoRA-adapted & $51.50\pm6.68$ & $38.50\pm7.51$ & $89.89\pm0.21$ & $49.93\pm0.45$ & $0.5208\pm0.0075$ \\
+& & GPF-LoRAP & $\mathbf{79.1\pm0.1}$ & $\mathbf{71.8\pm0.7}$ & $\mathbf{91.8\pm0.6}$ & $\mathbf{53.5\pm1.2}$ & $\mathbf{0.482\pm0.011}$ \\
+\midrule
+\midrule
+% QAT + GAT
+\multirow{4}{*}{QAT} & \multirow{4}{*}{GAT} & None & $52.8\pm0.7$ & $\mathit{30.1\pm14.5}$ & $76.3\pm1.2$ & $41.9\pm1.1$ & $0.702\pm0.011$ \\
+& & GPF-plus & $\mathit{54.9\pm5.3}$ & $19.7\pm3.0$ & $\mathit{77.5\pm0.9}$ & $\mathit{43.1\pm1.2}$ & $\mathit{0.693\pm0.025}$ \\
+& & GraphLoRA-adapted & $23.40\pm10.37$ & $20.37\pm7.58$ & $32.04\pm5.77$ & $22.44\pm1.16$ & $1.5094\pm0.0674$ \\
+& & GPF-LoRAP & $\mathbf{66.8\pm1.6}$ & $\mathbf{40.6\pm7.3}$ & $\mathbf{78.2\pm1.1}$ & $\mathbf{43.8\pm0.7}$ & $\mathbf{0.685\pm0.016}$ \\
+\midrule
+% DQ + GAT
+\multirow{4}{*}{DQ} & \multirow{4}{*}{GAT} & None & $68.7\pm7.5$ & $41.9\pm5.9$ & $90.3\pm0.5$ & $54.2\pm0.5$ & $\mathit{0.556\pm0.022}$ \\
+& & GPF-plus & $58.3\pm5.4$ & $39.1\pm9.6$ & $93.1\pm0.6$ & $51.5\pm0.8$ & $0.589\pm0.018$ \\
+& & GraphLoRA-adapted & $\mathit{69.50\pm8.03}$ & $\mathit{63.17\pm3.33}$ & $\mathit{94.66\pm0.41}$ & $\mathit{58.64\pm1.00}$ & $0.5830\pm0.0164$ \\
+& & GPF-LoRAP & $\mathbf{72.5\pm2.3}$ & $\mathbf{63.20\pm0.95}^{\ddagger}$ & $\mathbf{94.88\pm0.17}^{\ddagger}$ & $\mathbf{61.50\pm0.31}^{\dagger}$ & $\mathbf{0.508\pm0.023}$ \\
+\midrule
+% A2Q + GAT
+\multirow{4}{*}{$A^2Q$} & \multirow{4}{*}{GAT} & None & $82.6\pm0.8$ & $71.2\pm0.9$ & $\mathit{92.5\pm0.6}$ & $61.9\pm1.2$ & $0.674\pm0.007$ \\
+& & GPF-plus & $\mathit{83.4\pm0.5}$ & $\mathit{71.8\pm0.2}$ & $92.4\pm0.8$ & $\mathit{62.3\pm1.4}$ & $0.685\pm0.008$ \\
+& & GraphLoRA-adapted & $79.33\pm2.38$ & $67.23\pm1.76$ & $62.80\pm22.72$ & $42.84\pm0.86$ & $\mathit{0.5807\pm0.0225}$ \\
+& & GPF-LoRAP & $\mathbf{83.6\pm0.6}$ & $\mathbf{72.5\pm0.8}$ & $\mathbf{93.1\pm0.7}$ & $\mathbf{62.9\pm1.0}$ & $\mathbf{0.5470\pm0.0075}^{\ddagger}$ \\
+\bottomrule
+\end{tabular}%
+}
+\par\vspace{3pt}
+\begin{minipage}{\textwidth}
+\scriptsize
+\textit{Notes.} FP32, None, GPF-plus, and unmarked GPF-LoRAP entries are retained from the original table.
+GraphLoRA-adapted and all marked GPF-LoRAP entries report means $\pm$ sample standard deviations over seeds 41, 42, and 43.
+$\dagger$: fixed-configuration rerun. $\ddagger$: validation-selected result after additional tuning.
+$*$: QAT--GCN--CIFAR-10 uses 300 training epochs and altered regularization; its fixed GraphLoRA-adapted reference uses 200 epochs.
+The new runs use the current implementation and are not exact reproductions of the historical training recipes.
+Tuning budgets differ, so numerical ranks across sources do not establish a matched-protocol comparison or statistical significance.
+Parenthesized gains are omitted because the historical None entries are not the paired controls of the new runs.
+\end{minipage}
+\end{table*}

@@ -1,0 +1,344 @@
+\begin{table*}[t]
+    \tablefontsize
+ 
+    \centering
+    \caption{ 
+    The results of 3 quantization frameworks with FP32 baselines at the top. 
+    We provide three quantization frameworks for INT4: standard QAT, Degree-Quant (DQ), and $A^2Q$.
+    They are validated on 3 model architectures with \revision{four adaptation settings: (1) no prompts, (2) GPF-plus, (3) GraphLoRA, and (4) GPF-LoRAP}.
+    For each quantization framework and model architecture, the best result among the \revision{four settings} is highlighted in bold, while the second-best result is shown in italic.
+    The values in parentheses indicate the improvement of GPF-LoRAP over the corresponding non-prompting baseline.
+    }
+    \begin{tabular}{p{0.7cm} c c c c c c c}
+        \toprule
+        Quant. & Model & \revision{Adaptation} &\multicolumn{2}{c}{\tablefontsizeXS Node Classification (Accuracy \%)} & \multicolumn{2}{c}{\tablefontsizeXS Graph Classification (Accuracy \%)} & \multicolumn{1}{c}{\tablefontsizeXS Graph Regression (Loss)} \\
+        
+        Frame. & Arch. & Method & Cora $\uparrow$ & Citeseer $\uparrow$ & MNIST $\uparrow$ & CIFAR-10 $\uparrow$ & ZINC $\downarrow$ \\
+        \midrule
+        
+        \multirow{3}{*}{\parbox{0.7cm}{FP32}} 
+        & GIN & \multirow{3}{*}{None} 
+        & $77.6\pm1.1$ 
+        & $66.1\pm0.9$ 
+        & $96.4\pm0.4$ 
+        & $53.3\pm3.7$ 
+        & $0.414\pm0.009$ \\
+        
+        & GCN & 
+        & $81.4\pm0.7$ 
+        & $71.1\pm0.7$ 
+        & $90.9\pm0.4$ 
+        & $54.5\pm0.1$ 
+        & $0.469\pm0.002$ \\
+        
+        & GAT & 
+        & $83.1\pm0.4$ 
+        & $72.5\pm0.7$ 
+        & $95.8\pm0.4$ 
+        & $65.4\pm0.4$ 
+        & $0.463\pm0.002$ \\
+        
+        \midrule
+        \midrule
+        
+        % QAT + GIN
+        \multirow{4}{*}{\parbox{0.7cm}{QAT}}
+        & \multirow{4}{*}{GIN}
+        & None 
+        & $44.2\pm1.5$ 
+        & $18.7\pm3.7$ 
+        & $91.0\pm0.5$ 
+        & $48.7\pm1.7$ 
+        & $\mathit{0.555\pm0.024}$ \\
+        
+        & & GPF-plus 
+        & $\bm{45.6\pm3.0}$ 
+        & $21.6\pm2.9$
+        & $91.3\pm0.3$
+        & $\mathit{55.3\pm0.9}$ 
+        & $0.569\pm0.020$ \\
+
+        & & \revision{GraphLoRA}
+        & \revision{$25.70\pm11.26$}
+        & \revision{$\bm{25.73\pm4.52}$}
+        & \revision{$\bm{95.61\pm0.67}$}
+        & \revision{$51.75\pm4.18$}
+        & \revision{$1.5362\pm0.0234$} \\
+        
+        & & GPF-LoRAP 
+        & $\mathit{45.1\pm2.8}\ (+0.9)$ 
+        & $\mathit{22.8\pm4.8}\ (+4.1)$
+        & $\mathit{91.8\pm0.4}\ (+0.8)$
+        & $\bm{55.8\pm0.5}\ (+7.1)$ 
+        & $\bm{0.528\pm0.017}\ (+2.7)$ \\
+        
+        \midrule
+        
+        % DQ + GIN
+        \multirow{4}{*}{\parbox{0.7cm}{DQ}}
+        & \multirow{4}{*}{GIN}
+        & None 
+        & $61.0\pm6.9$ 
+        & $58.4\pm2.1$ 
+        & $92.4\pm0.4$
+        & $50.7\pm1.6$ 
+        & $0.540\pm0.019$ \\
+        
+        & & GPF-plus 
+        & $64.3\pm5.0$
+        & $\mathit{63.1\pm3.5}$ 
+        & $91.9\pm0.3$ 
+        & $51.3\pm1.2$
+        & $0.555\pm0.018$ \\
+
+        & & \revision{GraphLoRA}
+        & \revision{$\bm{72.77\pm1.80}$}
+        & \revision{$58.50\pm3.38$}
+        & \revision{$\bm{93.07\pm0.73}$}
+        & \revision{$\mathit{51.70\pm0.80}$}
+        & \revision{$\mathit{0.5385\pm0.0070}$} \\
+        
+        & & GPF-LoRAP 
+        & $\mathit{68.8\pm4.3}\ (+7.8)$
+        & $\bm{64.6\pm2.3}\ (+6.2)$ 
+        & $\mathit{92.9\pm0.3}\ (+0.5)$
+        & $\bm{53.0\pm0.9}\ (+2.3)$ 
+        & $\bm{0.512\pm0.008}\ (+2.8)$ \\
+        
+        \midrule
+        
+        % A2Q + GIN
+        \multirow{4}{*}{\parbox{0.7cm}{$A^2Q$}}
+        & \multirow{4}{*}{GIN}
+        & None 
+        & $\mathit{77.4\pm0.9}$ 
+        & $\mathit{66.6\pm0.1}$ 
+        & $95.7\pm0.2$ 
+        & $54.9\pm0.9$ 
+        & $0.400\pm0.016$ \\
+        
+        & & GPF-plus 
+        & $72.7\pm0.8$ 
+        & $59.5\pm6.6$ 
+        & $\mathit{95.9\pm0.4}$ 
+        & $\mathit{56.8\pm1.4}$ 
+        & $\mathit{0.399\pm0.009}$ \\
+
+        & & \revision{GraphLoRA}
+        & \revision{$66.80\pm1.65$}
+        & \revision{$38.30\pm2.91$}
+        & \revision{$95.44\pm0.11$}
+        & \revision{$54.05\pm1.42$}
+        & \revision{$0.4617\pm0.0092$} \\
+        
+        & & GPF-LoRAP 
+        & $\bm{78.5\pm1.0}\ (+1.1)$ 
+        & $\bm{70.7\pm0.6}\ (+4.1)$ 
+        & $\bm{96.4\pm0.2}\ (+0.7)$ 
+        & $\bm{57.4\pm1.4}\ (+2.5)$ 
+        & $\bm{0.361\pm0.010}\ (+3.7)$ \\
+        
+        \midrule
+        \midrule
+        
+        % QAT + GCN
+        \multirow{4}{*}{\parbox{0.7cm}{QAT}}
+        & \multirow{4}{*}{GCN}
+        & None 
+        & $66.4\pm7.0$ 
+        & $\mathit{63.4\pm2.2}$ 
+        & $70.6\pm2.4$ 
+        & $38.5\pm1.3$ 
+        & $\mathit{0.707\pm0.056}$ \\
+        
+        & & GPF-plus 
+        & $\mathit{69.8\pm6.5}$ 
+        & $61.6\pm3.1$ 
+        & $\mathit{71.5\pm1.3}$ 
+        & $41.0\pm1.2$
+        & $0.733\pm0.018$ \\
+
+        & & \revision{GraphLoRA}
+        & \revision{$23.63\pm10.27$}
+        & \revision{$23.63\pm13.31$}
+        & \revision{$40.30\pm1.69$}
+        & \revision{$\bm{43.62\pm0.92}$}
+        & \revision{$1.3207\pm0.1299$} \\
+        
+        & & GPF-LoRAP 
+        & $\bm{71.3\pm8.3}\ (+4.9)$ 
+        & $\bm{63.9\pm2.2}\ (+0.5)$ 
+        & $\bm{73.6\pm1.2}\ (+2.6)$ 
+        & $\mathit{43.6\pm1.3}\ (+5.1)$
+        & $\bm{0.690\pm0.021}\ (+1.7)$ \\
+        
+        \midrule
+        
+        % DQ + GCN
+        \multirow{4}{*}{\parbox{0.7cm}{DQ}}
+        & \multirow{4}{*}{GCN}
+        & None 
+        & $\mathit{72.5\pm3.7}$ 
+        & $68.6\pm3.3$ 
+        & $87.0\pm1.2$ 
+        & $49.5\pm0.8$ 
+        & $0.657\pm0.032$ \\
+        
+        & & GPF-plus 
+        & $72.3\pm2.8$ 
+        & $\bm{71.4\pm3.1}$ 
+        & $\mathit{90.9\pm0.7}$ 
+        & $\mathit{51.1\pm0.5}$ 
+        & $\bm{0.534\pm0.017}$ \\
+
+        & & \revision{GraphLoRA}
+        & \revision{$54.97\pm11.61$}
+        & \revision{$52.10\pm4.68$}
+        & \revision{$87.51\pm1.08$}
+        & \revision{$44.90\pm0.96$}
+        & \revision{$\mathit{0.5676\pm0.0097}$} \\
+        
+        & & GPF-LoRAP 
+        & $\bm{78.0\pm2.5}\ (+5.5)$ 
+        & $\mathit{71.0\pm2.9}\ (+2.4)$ 
+        & $\bm{92.4\pm0.5}\ (+5.4)$ 
+        & $\bm{53.4\pm0.5}\ (+3.9)$ 
+        & $0.570\pm0.012\ (+8.7)$ \\
+        
+        \midrule
+        
+        % A2Q + GCN
+        \multirow{4}{*}{\parbox{0.7cm}{$A^2Q$}}
+        & \multirow{4}{*}{GCN}
+        & None 
+        & $76.1\pm0.3$ 
+        & $69.7\pm1.6$ 
+        & $90.5\pm0.5$ 
+        & $52.4\pm0.8$ 
+        & $\mathit{0.504\pm0.009}$ \\
+        
+        & & GPF-plus 
+        & $\mathit{78.0\pm0.1}$ 
+        & $\mathit{70.0\pm2.3}$ 
+        & $\mathit{91.0\pm0.5}$ 
+        & $\mathit{53.2\pm1.0}$ 
+        & $0.506\pm0.008$ \\
+
+        & & \revision{GraphLoRA}
+        & \revision{$51.50\pm6.68$}
+        & \revision{$38.50\pm7.51$}
+        & \revision{$89.89\pm0.21$}
+        & \revision{$49.93\pm0.45$}
+        & \revision{$0.5208\pm0.0075$} \\
+        
+        & & GPF-LoRAP 
+        & $\bm{79.1\pm0.1}\ (+3.0)$ 
+        & $\bm{71.8\pm0.7}\ (+2.1)$ 
+        & $\bm{91.8\pm0.6}\ (+1.3)$ 
+        & $\bm{53.5\pm1.2}\ (+1.1)$ 
+        & $\bm{0.482\pm0.011}\ (+2.2)$ \\
+        
+        \midrule
+        \midrule
+        
+        % QAT + GAT
+        \multirow{4}{*}{\parbox{0.7cm}{QAT}}
+        & \multirow{4}{*}{GAT}
+        & None 
+        & $52.8\pm0.7$ 
+        & $\mathit{30.1\pm14.5}$ 
+        & $76.3\pm1.2$ 
+        & $41.9\pm1.1$ 
+        & $0.702\pm0.011$ \\
+        
+        & & GPF-plus 
+        & $\mathit{54.9\pm5.3}$ 
+        & $19.7\pm3.0$ 
+        & $\mathit{77.5\pm0.9}$ 
+        & $\mathit{43.1\pm1.2}$ 
+        & $\mathit{0.693\pm0.025}$ \\
+
+        & & \revision{GraphLoRA}
+        & \revision{$23.40\pm10.37$}
+        & \revision{$20.37\pm7.58$}
+        & \revision{$32.04\pm5.77$}
+        & \revision{$22.44\pm1.16$}
+        & \revision{$1.5094\pm0.0674$} \\
+        
+        & & GPF-LoRAP 
+        & $\bm{66.8\pm1.6}\ (+14.0)$ 
+        & $\bm{40.6\pm7.3}\ (+10.5)$ 
+        & $\bm{78.2\pm1.1}\ (+1.9)$ 
+        & $\bm{43.8\pm0.7}\ (+1.9)$ 
+        & $\bm{0.685\pm0.016}\ (+1.7)$ \\
+        
+        \midrule
+        
+        % DQ + GAT
+        \multirow{4}{*}{\parbox{0.7cm}{DQ}}
+        & \multirow{4}{*}{GAT}
+        & None 
+        & $68.7\pm7.5$
+        & $41.9\pm5.9$
+        & $90.3\pm0.5$ 
+        & $54.2\pm0.5$
+        & $\mathit{0.556\pm0.022}$ \\
+        
+        & & GPF-plus 
+        & $58.3\pm5.4$ 
+        & $39.1\pm9.6$ 
+        & $93.1\pm0.6$
+        & $51.5\pm0.8$ 
+        & $0.589\pm0.018$ \\
+
+        & & \revision{GraphLoRA}
+        & \revision{$\mathit{69.50\pm8.03}$}
+        & \revision{$\bm{63.17\pm3.33}$}
+        & \revision{$\bm{94.66\pm0.41}$}
+        & \revision{$\bm{58.64\pm1.00}$}
+        & \revision{$0.5830\pm0.0164$} \\
+        
+        & & GPF-LoRAP 
+        & $\bm{72.5\pm2.3}\ (+3.8)$ 
+        & $\mathit{54.4\pm4.6}\ (+12.5)$
+        & $\mathit{94.0\pm0.6}\ (+3.7)$
+        & $\mathit{57.5\pm1.4}\ (+3.3)$
+        & $\bm{0.508\pm0.023}\ (+4.8)$ \\
+        
+        \midrule
+        
+        % A2Q + GAT
+        \multirow{4}{*}{\parbox{0.7cm}{$A^2Q$}}
+        & \multirow{4}{*}{GAT}
+        & None 
+        & $82.6\pm0.8$ 
+        & $71.2\pm0.9$ 
+        & $\mathit{92.5\pm0.6}$ 
+        & $61.9\pm1.2$ 
+        & $0.674\pm0.007$ \\
+        
+        & & GPF-plus 
+        & $\mathit{83.4\pm0.5}$ 
+        & $\mathit{71.8\pm0.2}$ 
+        & $92.4\pm0.8$ 
+        & $\mathit{62.3\pm1.4}$ 
+        & $0.685\pm0.008$ \\
+
+        & & \revision{GraphLoRA}
+        & \revision{$79.33\pm2.38$}
+        & \revision{$67.23\pm1.76$}
+        & \revision{$62.80\pm22.72$}
+        & \revision{$42.84\pm0.86$}
+        & \revision{$\bm{0.5807\pm0.0225}$} \\
+        
+        & & GPF-LoRAP 
+        & $\bm{83.6\pm0.6}\ (+1.0)$ 
+        & $\bm{72.5\pm0.8}\ (+1.3)$ 
+        & $\bm{93.1\pm0.7}\ (+0.6)$ 
+        & $\bm{62.9\pm1.0}\ (+1.0)$ 
+        & $\mathit{0.628\pm0.010}\ (+4.6)$ \\
+        
+        \bottomrule
+    \end{tabular}    
+    \label{tab:results}
+\end{table*}

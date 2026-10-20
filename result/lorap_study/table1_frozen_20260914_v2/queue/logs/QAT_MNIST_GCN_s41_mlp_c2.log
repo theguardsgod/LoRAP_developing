@@ -1,0 +1,4 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:2", "--cells", "QAT_MNIST_GCN", "--seed", "41", "--methods", "mlp", "--candidate", "2"]
+QAT_MNIST_GCN s41 mlp/c2 adapter 1/100 val=1.39500 metric=42.140
+QAT_MNIST_GCN s41 mlp/c2 adapter 25/100 val=2.50889 metric=9.580

@@ -1,0 +1,107 @@
+{
+  "cells": {
+    "DQ_Cora_GIN": {
+      "candidate": "c05",
+      "validation_loss": 0.8260601162910461,
+      "ranking": [
+        {
+          "candidate": "c05",
+          "validation_loss": 0.8260601162910461
+        },
+        {
+          "candidate": "c07",
+          "validation_loss": 0.8374115824699402
+        }
+      ],
+      "rejected": [],
+      "criterion": "validation_loss",
+      "seed": 41
+    },
+    "QAT_CIFAR10_GCN": {
+      "candidate": "c02",
+      "validation_loss": 1.5276237768173218,
+      "ranking": [
+        {
+          "candidate": "c02",
+          "validation_loss": 1.5276237768173218
+        },
+        {
+          "candidate": "c00",
+          "validation_loss": 1.5321002220153808
+        }
+      ],
+      "rejected": [],
+      "criterion": "validation_loss",
+      "seed": 41
+    },
+    "DQ_ZINC_GCN": {
+      "candidate": "c02",
+      "validation_loss": 0.5493915758132935,
+      "ranking": [
+        {
+          "candidate": "c02",
+          "validation_loss": 0.5493915758132935
+        },
+        {
+          "candidate": "c00",
+          "validation_loss": 0.5592449865341187
+        }
+      ],
+      "rejected": [],
+      "criterion": "validation_loss",
+      "seed": 41
+    },
+    "DQ_CiteSeer_GAT": {
+      "candidate": "c05",
+      "validation_loss": 1.14542818069458,
+      "ranking": [
+        {
+          "candidate": "c05",
+          "validation_loss": 1.14542818069458
+        },
+        {
+          "candidate": "c04",
+          "validation_loss": 1.1536751985549927
+        }
+      ],
+      "rejected": [],
+      "criterion": "validation_loss",
+      "seed": 41
+    },
+    "DQ_MNIST_GAT": {
+      "candidate": "c04",
+      "validation_loss": 0.14221335632130502,
+      "ranking": [
+        {
+          "candidate": "c04",
+          "validation_loss": 0.14221335632130502
+        },
+        {
+          "candidate": "c05",
+          "validation_loss": 0.1508545732021332
+        }
+      ],
+      "rejected": [],
+      "criterion": "validation_loss",
+      "seed": 41
+    },
+    "A2Q_ZINC_GAT": {
+      "candidate": "c07",
+      "validation_loss": 0.6128872537612915,
+      "ranking": [
+        {
+          "candidate": "c07",
+          "validation_loss": 0.6128872537612915
+        },
+        {
+          "candidate": "c02",
+          "validation_loss": 0.6162256555557251
+        }
+      ],
+      "rejected": [],
+      "criterion": "validation_loss",
+      "seed": 41
+    }
+  },
+  "sha256": "3005cc390efd56e42a884aa06c747b3800a49c7b2cdac2131385f4393d0706e2"
+}

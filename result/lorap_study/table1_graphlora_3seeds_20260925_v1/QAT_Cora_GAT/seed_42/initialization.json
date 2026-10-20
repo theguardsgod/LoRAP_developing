@@ -1,0 +1,24 @@
+{
+  "common_backbone_sha256": "60ca44e727fb5ebd733e5f697e7cbf52a3d0497beb6b6cc29ac40e8f5141eda4",
+  "starting_backbone_sha256": "60ca44e727fb5ebd733e5f697e7cbf52a3d0497beb6b6cc29ac40e8f5141eda4",
+  "total_parameters": 92799,
+  "trainable_parameters": 92799,
+  "adapter_parameters": 426,
+  "adapter_fp32_bytes": 1704,
+  "adapter_buffer_bytes": 0,
+  "prompt_parameters": 0,
+  "sites": [
+    {
+      "name": "convs.0",
+      "inputs": 64,
+      "outputs": 64,
+      "heads": 8
+    },
+    {
+      "name": "convs.1",
+      "inputs": 7,
+      "outputs": 7,
+      "heads": 1
+    }
+  ]
+}

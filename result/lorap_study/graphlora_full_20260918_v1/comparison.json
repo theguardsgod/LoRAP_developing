@@ -1,0 +1,130 @@
+[
+  {
+    "mode": "fixed4",
+    "variant": "no_prompt",
+    "fits": 10,
+    "tests": 10,
+    "seeds": 10,
+    "validation_accuracy": {
+      "mean": 94.576,
+      "sample_std": 0.3768642549601449,
+      "n": 10
+    },
+    "test_accuracy": {
+      "mean": 94.208,
+      "sample_std": 0.3032344161059407,
+      "n": 10
+    },
+    "adapter_parameters": {
+      "mean": 0,
+      "sample_std": 0.0,
+      "n": 10
+    },
+    "adapter_KiB": {
+      "mean": 0.0,
+      "sample_std": 0.0,
+      "n": 10
+    },
+    "effective_bits": {
+      "mean": 4.0,
+      "sample_std": 0.0,
+      "n": 10
+    }
+  },
+  {
+    "mode": "fixed4",
+    "variant": "graphlora",
+    "fits": 10,
+    "tests": 10,
+    "seeds": 10,
+    "validation_accuracy": {
+      "mean": 95.05,
+      "sample_std": 0.8907050889916108,
+      "n": 10
+    },
+    "test_accuracy": {
+      "mean": 94.559,
+      "sample_std": 0.8781476717120732,
+      "n": 10
+    },
+    "adapter_parameters": {
+      "mean": 4404,
+      "sample_std": 0.0,
+      "n": 10
+    },
+    "adapter_KiB": {
+      "mean": 17.203125,
+      "sample_std": 0.0,
+      "n": 10
+    },
+    "effective_bits": {
+      "mean": 4.0,
+      "sample_std": 0.0,
+      "n": 10
+    }
+  },
+  {
+    "mode": "a2q",
+    "variant": "no_prompt",
+    "fits": 10,
+    "tests": 10,
+    "seeds": 10,
+    "validation_accuracy": {
+      "mean": 95.96000000000001,
+      "sample_std": 0.20891252821323197,
+      "n": 10
+    },
+    "test_accuracy": {
+      "mean": 95.296,
+      "sample_std": 0.15861904047118625,
+      "n": 10
+    },
+    "adapter_parameters": {
+      "mean": 0,
+      "sample_std": 0.0,
+      "n": 10
+    },
+    "adapter_KiB": {
+      "mean": 0.0,
+      "sample_std": 0.0,
+      "n": 10
+    },
+    "effective_bits": {
+      "mean": 3.9915399565997536,
+      "sample_std": 0.004733930294678002,
+      "n": 10
+    }
+  },
+  {
+    "mode": "a2q",
+    "variant": "graphlora",
+    "fits": 10,
+    "tests": 10,
+    "seeds": 10,
+    "validation_accuracy": {
+      "mean": 96.06,
+      "sample_std": 0.2988868236194657,
+      "n": 10
+    },
+    "test_accuracy": {
+      "mean": 95.402,
+      "sample_std": 0.3352544638861,
+      "n": 10
+    },
+    "adapter_parameters": {
+      "mean": 4404,
+      "sample_std": 0.0,
+      "n": 10
+    },
+    "adapter_KiB": {
+      "mean": 17.203125,
+      "sample_std": 0.0,
+      "n": 10
+    },
+    "effective_bits": {
+      "mean": 3.995210899003882,
+      "sample_std": 0.0014062492408761275,
+      "n": 10
+    }
+  }
+]

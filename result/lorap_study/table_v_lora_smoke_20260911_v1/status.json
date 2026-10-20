@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "smoke": true,
+  "rows": [
+    {
+      "protocol": "fixed4",
+      "fits": 1,
+      "tests": 0,
+      "seeds": [
+        41
+      ],
+      "ready": false,
+      "additional_parameters": 4426,
+      "fp32_bytes": 17704,
+      "additional_KiB": 17.2890625,
+      "mean_accuracy_percent": null,
+      "sample_std_accuracy_percent": null,
+      "average_activation_effective_bits": 4.0
+    },
+    {
+      "protocol": "a2q",
+      "fits": 1,
+      "tests": 0,
+      "seeds": [
+        41
+      ],
+      "ready": false,
+      "additional_parameters": 4426,
+      "fp32_bytes": 17704,
+      "additional_KiB": 17.2890625,
+      "mean_accuracy_percent": null,
+      "sample_std_accuracy_percent": null,
+      "average_activation_effective_bits": 4.0
+    }
+  ],
+  "progress": [
+    {
+      "protocol": "fixed4",
+      "seed": 41,
+      "epoch": 2,
+      "epochs": 2,
+      "best_epoch": 1,
+      "validation": {
+        "loss": 2.3084359169006348,
+        "accuracy": 0.09375,
+        "examples": 64,
+        "legacy_budget_proxy": 116.578125
+      },
+      "training_seconds": 0.46031259931623936
+    },
+    {
+      "protocol": "a2q",
+      "seed": 41,
+      "epoch": 2,
+      "epochs": 2,
+      "best_epoch": 2,
+      "validation": {
+        "loss": 2.3043956756591797,
+        "accuracy": 0.09375,
+        "examples": 64,
+        "legacy_budget_proxy": 56.288902282714844
+      },
+      "training_seconds": 0.1482118908315897
+    }
+  ]
+}

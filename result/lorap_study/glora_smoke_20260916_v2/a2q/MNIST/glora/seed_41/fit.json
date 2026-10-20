@@ -1,0 +1,47 @@
+{
+  "config_sha256": "8aac5957d90819eb5ff3d4b162828dd5e14fdeb86347dd6bce9267b12531a367",
+  "seed": 41,
+  "epochs": 2,
+  "best_epoch": 2,
+  "reference_validation_loss": 2.305175304412842,
+  "reference_architecture": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "training_seconds": 0.21960219368338585,
+  "peak_training_cuda_bytes": 360070656,
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "physical_gpu": null,
+  "common_backbone_sha256": "84e7c8dbdab4cd07ad3bf64b2fd37b7732ec40a4da7dac43eef7779fb8780497",
+  "initial_state_sha256": "93b0bc939947fbd2a70bba6c7083548e51d9d0a900a19bfbbb277ade368492e2",
+  "supernet_counts": {
+    "total_parameters": 151604,
+    "trainable_parameters": 150054,
+    "adapter_parameters": 13300,
+    "adapter_fp32_bytes": 53200,
+    "external_prompt_parameters": 0,
+    "targets": [
+      "embedding",
+      "convs.0.mlp.linear1",
+      "convs.0.mlp.linear2",
+      "convs.1.mlp.linear1",
+      "convs.1.mlp.linear2",
+      "convs.2.mlp.linear1",
+      "convs.2.mlp.linear2",
+      "convs.3.mlp.linear1",
+      "convs.3.mlp.linear2",
+      "lin1",
+      "lin2"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+mode,variant,seed,total_parameters,trainable_parameters,prompt_parameters,lora_parameters,extra_fp32_bytes,activation_effective_bits,training_seconds,peak_cuda_memory_bytes,device
+fixed4,lora,41,142730,130180,0,4426,17704,4.0,4506.80446138978,375197696,cuda:0
+fixed4,no_prompt,41,138304,125754,0,0,0,4.0,0.45736441388726234,358750208,cuda:0
+a2q,lora,41,142730,141180,0,4426,17704,3.995935271615573,4687.687898499891,375885824,cuda:0
+a2q,no_prompt,41,138304,136754,0,0,0,4.0,0.14585756324231625,359426048,cuda:0

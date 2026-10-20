@@ -1,0 +1,62 @@
+{
+  "started_unix": 1790281626.470764,
+  "workers": [
+    {
+      "pid": 4043626,
+      "device": "cuda:0",
+      "command": [
+        "/home/cyliu/anaconda3/envs/ProG/bin/python",
+        "-B",
+        "-m",
+        "runs.lorap_study.table1_graphlora.run",
+        "worker",
+        "--root",
+        "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1",
+        "--device",
+        "cuda:0"
+      ],
+      "log": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/worker_cuda_0.log"
+    },
+    {
+      "pid": 4043627,
+      "device": "cuda:1",
+      "command": [
+        "/home/cyliu/anaconda3/envs/ProG/bin/python",
+        "-B",
+        "-m",
+        "runs.lorap_study.table1_graphlora.run",
+        "worker",
+        "--root",
+        "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1",
+        "--device",
+        "cuda:1"
+      ],
+      "log": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/worker_cuda_1.log"
+    },
+    {
+      "pid": 4128343,
+      "device": "cuda:2",
+      "command": [
+        "/home/cyliu/anaconda3/envs/ProG/bin/python",
+        "-B",
+        "-m",
+        "runs.lorap_study.table1_graphlora.run",
+        "worker",
+        "--root",
+        "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1",
+        "--device",
+        "cuda:2"
+      ],
+      "log": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/worker_cuda_2.log",
+      "started_unix": 1790535325.425284,
+      "reason": "An idle GPU became available; execute remaining registered jobs without changing protocol"
+    }
+  ],
+  "source_snapshot": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/source_snapshot",
+  "seeds": [
+    41,
+    42,
+    43
+  ],
+  "training_jobs": 135
+}

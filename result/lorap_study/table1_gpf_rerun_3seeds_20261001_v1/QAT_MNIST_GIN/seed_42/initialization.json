@@ -1,0 +1,38 @@
+{
+  "common_backbone_sha256": "46836dfb7fb18d64fd01e78543319a5688cfcd112c889007452453276e568aa3",
+  "starting_backbone_sha256": "46836dfb7fb18d64fd01e78543319a5688cfcd112c889007452453276e568aa3",
+  "total_parameters": 115724,
+  "trainable_parameters": 115724,
+  "adapter_parameters": 3400,
+  "prompt_parameters": 3400,
+  "input_prompt_parameters": 140,
+  "aggregation_prompt_parameters": 3260,
+  "adapter_fp32_bytes": 13600,
+  "adapter_buffer_bytes": 0,
+  "sites": [
+    {
+      "name": "convs.0",
+      "insertion": "before_native_update",
+      "width": 110
+    },
+    {
+      "name": "convs.1",
+      "insertion": "before_native_update",
+      "width": 110
+    },
+    {
+      "name": "convs.2",
+      "insertion": "before_native_update",
+      "width": 110
+    },
+    {
+      "name": "convs.3",
+      "insertion": "before_native_update",
+      "width": 110
+    }
+  ],
+  "input_site": {
+    "width": 3,
+    "insertion": "before_input_projection"
+  }
+}

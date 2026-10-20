@@ -1,0 +1,50 @@
+[
+  {
+    "protocol": "fixed4",
+    "fits": 10,
+    "tests": 10,
+    "seeds": [
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "ready": true,
+    "additional_parameters": 4426,
+    "fp32_bytes": 17704,
+    "additional_KiB": 17.2890625,
+    "mean_accuracy_percent": 93.605,
+    "sample_std_accuracy_percent": 0.7437031964731949,
+    "average_activation_effective_bits": 4.0
+  },
+  {
+    "protocol": "a2q",
+    "fits": 10,
+    "tests": 10,
+    "seeds": [
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "ready": true,
+    "additional_parameters": 4426,
+    "fp32_bytes": 17704,
+    "additional_KiB": 17.2890625,
+    "mean_accuracy_percent": 95.301,
+    "sample_std_accuracy_percent": 0.3343800233267543,
+    "average_activation_effective_bits": 3.9899699579043637
+  }
+]

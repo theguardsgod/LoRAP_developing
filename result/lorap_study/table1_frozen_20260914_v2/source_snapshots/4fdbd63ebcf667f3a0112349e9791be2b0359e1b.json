@@ -1,0 +1,272 @@
+{
+  "study_commit": "4fdbd63ebcf667f3a0112349e9791be2b0359e1b",
+  "previous_snapshot": "source_snapshots/84595132708fe97625e64fa0ab01bee4c05bce8e.json",
+  "files": [
+    {
+      "path": "prompt/GPF.py",
+      "sha256": "aa2d5fef4f2a2c2c3e084e638f83e6d2d7057a91781728e7053faebbfe64ae32"
+    },
+    {
+      "path": "prompt/__init__.py",
+      "sha256": "6236610af94e31561d476fbe034992a3ce992036c27160b442c5ded465615273"
+    },
+    {
+      "path": "quantize_function/MessagePassing.py",
+      "sha256": "565ef5f0dc0abfcd08ac7312981cc1173b192dd8428d572ab6c33046be224ab0"
+    },
+    {
+      "path": "quantize_function/MessagePassing_gc_bit.py",
+      "sha256": "7d16cce3b0c168bff155ee7ce1853c20880002ed9b600571474f2c6f5b137f9a"
+    },
+    {
+      "path": "quantize_function/MessagePassing_gc_bit_edge.py",
+      "sha256": "4da49ee13fdb76babe54b76db58e508b6d05b7aa4d2715c3d80d938351a39229"
+    },
+    {
+      "path": "quantize_function/MessagePassing_gc_bit_loss.py",
+      "sha256": "c2125a25a0a2c0742966c1330fecad4adff379698c8e75cc35599acfb881cf66"
+    },
+    {
+      "path": "quantize_function/MessagePassing_gc_bit_prompt.py",
+      "sha256": "d0f97b1197fe4ef72e9d1f4dc75377f762eb0e1dbee5c7333adcf22c823a1473"
+    },
+    {
+      "path": "quantize_function/MessagePassing_gc_bit_prompt_IDPG.py",
+      "sha256": "d0f97b1197fe4ef72e9d1f4dc75377f762eb0e1dbee5c7333adcf22c823a1473"
+    },
+    {
+      "path": "quantize_function/MessagePassing_gc_bit_prompt_loss.py",
+      "sha256": "92d99308c715662fa043c512bf2b4d6562e74afa9430d67cc9c26c7365d7a3b4"
+    },
+    {
+      "path": "quantize_function/MessagePassing_prompt.py",
+      "sha256": "9e1f3492e720b3c1eabf999d5dbe7a50cb3955203fc8f0df8f3d3dbb6873e792"
+    },
+    {
+      "path": "quantize_function/get_scale_index.py",
+      "sha256": "31eab4a4adc150fbdec9141274bf85ab71a569d22742594c49706448d70a135d"
+    },
+    {
+      "path": "quantize_function/qGINConv.py",
+      "sha256": "0de66a2e572dca830191c347820388fc18dc7022525241f622cb4b2f7711f7c0"
+    },
+    {
+      "path": "quantize_function/u_quant_func_bit_debug.py",
+      "sha256": "d6b3b2f1e4efed87a17e3581f31fde5f6b0402221d7527ad96538be8ea22a66b"
+    },
+    {
+      "path": "quantize_function/u_quant_func_normal.py",
+      "sha256": "d97be78d08f324141abc3ebf635dce5af8d3c9882a19f25920392580b6d21888"
+    },
+    {
+      "path": "quantize_function/u_quant_gc_bit_debug.py",
+      "sha256": "1fcaec26aaa217137965ec577473a4279ce30f77c7601cfc1b868abdbd4ef22d"
+    },
+    {
+      "path": "quantize_function/u_quant_normal_debug.py",
+      "sha256": "284163be390effece451534959eb570e7142197cc64516c31ba56752e597d652"
+    },
+    {
+      "path": "quantize_method/quant_method_bit_debug.py",
+      "sha256": "cb08d328c0dcdf631a49f87286567945a55ed26c87f27a2f3fcb8bade8f348cd"
+    },
+    {
+      "path": "quantize_method/quant_method_normal.py",
+      "sha256": "cb08d328c0dcdf631a49f87286567945a55ed26c87f27a2f3fcb8bade8f348cd"
+    },
+    {
+      "path": "quantize_method/quant_method_red_uniform_bit_debug.py",
+      "sha256": "c0a9e9a054144b26b910c4184974585a4f8c5c9a5b6fdf36f3f80b9758a2fd3f"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/BACKEND_NOTES.md",
+      "sha256": "12abfddcf70484980f5c3766ea8c3d0c8de4b7c3b1ecd0129e1a5792444bea4f"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/GIN_BASELINE_SEARCH.md",
+      "sha256": "745bbf90e63d244996bb2d6d8949eed463bab773d9266f5152077c54db68c9aa"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/PROTOCOL.md",
+      "sha256": "c8219ad5fbf363849f6e4835dd327f9f2e0d60b950a79180ee4502e5d3d777bf"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/README.md",
+      "sha256": "72c80e0eb2613c44e710f144e9187dbb960b447c37241a9bccf62b4623fdca6a"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/__init__.py",
+      "sha256": "a750263a29a029d6e8f5ee195bcc862178e54e532e450ba77203b8bd06bfb3e0"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/adapt.py",
+      "sha256": "bd464399e32da2f39f3946edb8ce4d0087cd6b016919aca6f118f1d07a7b1e8f"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/adapters.py",
+      "sha256": "afce3073a5b2a7f924db819b77f98463dc7c4eba1ffb9b79d1c9a42c4ef7a577"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/backends.py",
+      "sha256": "0ff8545b5ba09060f150b3a6c8e9c19b2cfc4240090ec9cfc168e3394db72ba4"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/baseline_audit.py",
+      "sha256": "6f9b82ad61629c2a577bf4ecae4a974143e1a51034a746b29a73a3ad78cc85ff"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/common.py",
+      "sha256": "62056278c8571e857d410df9be9a7ab75451178ee4ce57fb1882a71b7cc984ee"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/data.py",
+      "sha256": "e9b111954de4c5770cf2b0c3cb38c93c7c5d4c51c0563626d2b2973d78fb2687"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/deploy.py",
+      "sha256": "7d9e74e86222d7bdf865cb524441499af0b9d0c285bb14388e7b41f8826c7649"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/deterministic.py",
+      "sha256": "767035e54858bba3457292c5d2ccf770012d3bbf98a40de1e58cdc9fdfad750e"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/diagnostics.py",
+      "sha256": "089dbe582f4ed2fb39ca599caa94ad2ba72e9436de32aeb8c92f6947179cb5c7"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/findings.md",
+      "sha256": "d069ed907762ff180cac00ec092805dfcdeaf74f5c502aebae75b23a92772bb0"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/finish.py",
+      "sha256": "ec8348bb406e82d15957e10ff79c6d56a63c101d6a37cf29239cda9853daa087"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/instrument.py",
+      "sha256": "2d42f85891a3c9dab339878f380bfca805840ffe6a85a2286144af339961ecb9"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/pipeline.py",
+      "sha256": "b24650a0ae6fbceefb01a9dda7ca4b06e86e6527efca8fc80c6e2847d1d0bd05"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/profile.py",
+      "sha256": "9b8b82b2537bef6d2f97caa569db3814471765b6a1e1f51450f10e7086d9e736"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/registry.py",
+      "sha256": "a938717bbce3ae0215940c0982be1958cf3b85e32c5bc1d4826858508ba9462e"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/report.py",
+      "sha256": "83c889ad0cc1b77ad5dc04454cc41337dd3f72002a67e16191b2e97817619214"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/research-log.md",
+      "sha256": "cf1ada698b365216cb870975f0bc8926f00c3ca6f89f220cbd6f4104866fa1e7"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/research-state.yaml",
+      "sha256": "70bb04ef7af7da64133e485df3995efd35c29251f2574777a70dee7fecdf559b"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/smoke.py",
+      "sha256": "f50e0b1091a52685e6a2b257a80cad69df8eab392b3100b5e5c9c34089bbed46"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/snapshot_sources.py",
+      "sha256": "49b9dd9b29a16e179c3a46d672c53c496148fe9729ca088bdbbad39bd5ae8805"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/source_manifest.json",
+      "sha256": "c0f87340083b5193a13dbfda1cfef5e61f2ca25a1bc7fb7991bec9a8c867f191"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/suite.py",
+      "sha256": "aa8a82a3e10a18a1b086a562d6ef2ff8113204c31c5880e7637b0bd8ffab6704"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/test_audits.py",
+      "sha256": "aeb1241cb8f2ebd4116298c975b9b36793c67856ae45f4e50e94386324f53918"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/test_core.py",
+      "sha256": "02c19b29207abafa5335c3deb3707dbd1c50c73525c42d7d073c3e868afc35c2"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/test_final_flow.py",
+      "sha256": "12651145d8372d74bd42635b50e491cd351383eb930b3ff675f57693d979318b"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/train.py",
+      "sha256": "49ca3a887a261e42f1fb880135d8360a701d948a14dd60dddc0b327572c7cb91"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/tune_gin_baseline.py",
+      "sha256": "ff44828ffef76d6cb93652811650f4729bfac1680c0dbcbe95bd924707b073db"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/vendor/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/vendor/a2q_graph_gat.py",
+      "sha256": "c3b2a3547c1370c6738f3ec11151c7cd30ccba72bac7e3a8e464f28b31320f41"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/vendor/a2q_graph_gcn.py",
+      "sha256": "e310d8a7f357f4c99d16edefb6eedc704427dc394e5a5714a34a790478d172dc"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/vendor/a2q_graph_gin.py",
+      "sha256": "968251ee049a89de7dd381520a7d2175deeac3af31c38e1baf96a9f0e0238fc5"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/vendor/a2q_node.py",
+      "sha256": "8ff0853c1158cb2ec01a95bce16aa61059e69160924d41b17d402946ca8b2828"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/vendor/a2q_node_gat.py",
+      "sha256": "ef4d6267b3e1328315e7af6bff289c58dc68cb0fb9f91661da5e56a85f121996"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/vendor/a2q_zinc_gcn.py",
+      "sha256": "b8f30511362dbb670baa3af5861e171188c30dc2086532204a1760d626f7a6fe"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/vendor/a2q_zinc_gin.py",
+      "sha256": "292ff4bd07445316fe31e50e47c738268c9a50614c0c1d0e0d148a43700a6611"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/vendor/baseline_quant.py",
+      "sha256": "7e143ca682f7c2d9d2e63beefce940511097ecbac1d506cead40b7a96558111f"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/vendor/linear_quantized.py",
+      "sha256": "c5afc2861478e93c8a542e454a7cc46b3b8110aa6b9137cab8d12a89ded1dfdb"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/vendor/multi_quant.py",
+      "sha256": "70875f01430a7d8467cce93e9eae06e00261cc717ce82bd52fd6fd2188d6c8cc"
+    },
+    {
+      "path": "runs/lorap_study/table1_frozen/vendor/quantization.py",
+      "sha256": "7a9812332def8fac53a68c2b0e2583da58b328f09d52deee1da693bb64215563"
+    },
+    {
+      "path": "utils/gcn_norm.py",
+      "sha256": "e924b1f9984a18b78f1c6bf564a9d3b828fa586de4d4001c5a8a8e8c6c4d38bc"
+    },
+    {
+      "path": "utils/logger.py",
+      "sha256": "54a4ddabc0abcbf8beaeae4fefe0f055eb12b171d9774173586f50cfdf59e0c6"
+    },
+    {
+      "path": "utils/quant_utils.py",
+      "sha256": "53cefc235e7d3889eacd5fa3cca63a4646f42dab2a0ddfc2e83d87b695dbd9a9"
+    }
+  ],
+  "source_archive": "4fdbd63ebcf667f3a0112349e9791be2b0359e1b.zip",
+  "scope": "Four-GPU launch documentation; code unchanged from commit 8459513"
+}

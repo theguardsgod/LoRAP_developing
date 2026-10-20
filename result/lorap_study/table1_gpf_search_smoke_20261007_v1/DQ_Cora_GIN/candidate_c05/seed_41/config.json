@@ -1,0 +1,237 @@
+{
+  "job": {
+    "cell": "DQ_Cora_GIN",
+    "candidate": "c05",
+    "seed": 41,
+    "config": {
+      "cell": "DQ_Cora_GIN",
+      "dataset": "Cora",
+      "architecture": "GIN",
+      "framework": "DQ",
+      "data_root": "/data/cyliu/dataset/Cora",
+      "node": true,
+      "regression": false,
+      "width": 16,
+      "heads": 8,
+      "layers": 2,
+      "bit": 4,
+      "num_deg": 1000,
+      "batch_size": 128,
+      "paper_none": 61.0,
+      "paper_none_sd": 6.9,
+      "paper_gpf_lorap": 68.8,
+      "metric": "accuracy_percent",
+      "baseline_epochs": 200,
+      "adapter_epochs": 200,
+      "seeds": [
+        41,
+        42,
+        43
+      ],
+      "lr": 0.001,
+      "weight_decay": 4e-05,
+      "dropout": 0.5,
+      "init": "norm",
+      "lr_feature": 0.01,
+      "lr_message": 0.01,
+      "lr_weight": 0.001,
+      "lr_bit": 0.001,
+      "lr_attention": 0.001,
+      "lr_edge": 0.1,
+      "a_loss": 0.0,
+      "a_storage": 5.0,
+      "bit_bounds": [
+        1.0,
+        16.0
+      ],
+      "stop_patience": 30,
+      "min_epochs": 50,
+      "aggregation_implementation": "stable_csr_v2",
+      "optimizer_recipe": "native_groups_v2",
+      "dq_low": 0.1,
+      "dq_change": 0.1,
+      "percentile": 0.01,
+      "use_ste": false,
+      "use_momentum": false
+    },
+    "hyperparameters": {
+      "rank": 8,
+      "num_prompts": 20,
+      "prompt_lr": 0.003,
+      "prompt_weight_decay": 0.0,
+      "sharing": "score_per_width_factors_per_layer",
+      "insertion": "before_native_update",
+      "training_cuda_rng_offset": 930000,
+      "prompt_lr_multiplier": 3.0,
+      "input_scale": 0.1,
+      "aggregation_scale": 1.0,
+      "zero_init": true
+    },
+    "epochs": 2,
+    "screen_epochs": 1,
+    "directory": "DQ_Cora_GIN/candidate_c05/seed_41",
+    "reference": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/DQ_Cora_GIN/seed_41/baseline",
+      "config": {
+        "cell": "DQ_Cora_GIN",
+        "dataset": "Cora",
+        "architecture": "GIN",
+        "framework": "DQ",
+        "data_root": "/data/cyliu/dataset/Cora",
+        "node": true,
+        "regression": false,
+        "width": 16,
+        "heads": 8,
+        "layers": 2,
+        "bit": 4,
+        "num_deg": 1000,
+        "batch_size": 128,
+        "paper_none": 61.0,
+        "paper_none_sd": 6.9,
+        "paper_gpf_lorap": 68.8,
+        "metric": "accuracy_percent",
+        "baseline_epochs": 200,
+        "adapter_epochs": 200,
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "lr": 0.001,
+        "weight_decay": 4e-05,
+        "dropout": 0.5,
+        "init": "norm",
+        "lr_feature": 0.01,
+        "lr_message": 0.01,
+        "lr_weight": 0.001,
+        "lr_bit": 0.001,
+        "lr_attention": 0.001,
+        "lr_edge": 0.1,
+        "a_loss": 0.0,
+        "a_storage": 5.0,
+        "bit_bounds": [
+          1.0,
+          16.0
+        ],
+        "stop_patience": 30,
+        "min_epochs": 50,
+        "aggregation_implementation": "stable_csr_v2",
+        "optimizer_recipe": "native_groups_v2",
+        "dq_low": 0.1,
+        "dq_change": 0.1,
+        "percentile": 0.01,
+        "use_ste": false,
+        "use_momentum": false,
+        "seed": 41,
+        "subset_limit": null,
+        "stage": "baseline"
+      },
+      "done": {
+        "cell": "DQ_Cora_GIN",
+        "seed": 41,
+        "config_hash": "2ca7ec50bda916c3498f6a7a41034c4f6d1b10064d44dd9e335b349680ab177d",
+        "initial_sha256": "3d3669c3a1f0e396ab5572814ded39b0e5204485cbf9aad9a3cfc69f3dcd7be9",
+        "selected_epoch": 125,
+        "validation": {
+          "loss": 0.8566258549690247,
+          "metric": 72.39999999999999,
+          "storage_proxy": 0.0,
+          "examples": 500
+        },
+        "backbone_sha256": "9095aceff957b916de62ac07958242606734cd526b86f852cebbaab0585c42c6",
+        "test_evaluations": 0,
+        "full_split": true,
+        "seconds": 36.48588368855417
+      },
+      "test": {
+        "cell": "DQ_Cora_GIN",
+        "seed": 41,
+        "method": "none",
+        "loss": 0.783779501914978,
+        "metric": 74.4,
+        "examples": 1000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "f1441f1dc9edea431262efc5116908ea34acab65e976fe32e3d94f45763b82b6",
+        "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+      },
+      "checkpoint_file_sha256": "f1441f1dc9edea431262efc5116908ea34acab65e976fe32e3d94f45763b82b6"
+    },
+    "graphlora_reference": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_graphlora_3seeds_20260925_v1/DQ_Cora_GIN/seed_41",
+      "test": {
+        "cell": "DQ_Cora_GIN",
+        "seed": 41,
+        "method": "graphlora",
+        "loss": 0.9100005030632019,
+        "metric": 71.39999999999999,
+        "examples": 1000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "644b53d80d2b5afad1f7052d841fe15a86aa3a04f641ec8ce8457d9c7820e679",
+        "test_lock_sha256": "4f3ac6004e2964ed98d72262ca383eb8104a19c79a5eb0ca0c0e4cbd6373a57a"
+      },
+      "checkpoint_file_sha256": "644b53d80d2b5afad1f7052d841fe15a86aa3a04f641ec8ce8457d9c7820e679",
+      "test_file_sha256": "4257f9744c889c57aa8f4df8792d03adf036e78bbe56b3920bd369a9f36df2fa"
+    },
+    "previous_gpf": {
+      "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_rerun_3seeds_20261001_v1/DQ_Cora_GIN/seed_41",
+      "done": {
+        "cell": "DQ_Cora_GIN",
+        "seed": 41,
+        "config_hash": "05f6bbaf55fef61835be8fe55f7072da774163404ccf8170df6e3876be35343c",
+        "selected_epoch": 199,
+        "validation": {
+          "loss": 1.1207568645477295,
+          "metric": 61.0,
+          "storage_proxy": 0.0,
+          "examples": 500
+        },
+        "test_evaluations": 0,
+        "full_split": true,
+        "common_backbone_sha256": "3d3669c3a1f0e396ab5572814ded39b0e5204485cbf9aad9a3cfc69f3dcd7be9",
+        "state_sha256": "e801441a38a6a1fcd10bfbae737d62fa58b99ed6cfcc27a429746ef4e1e3d7ce",
+        "checkpoint_file_sha256": "1aa38072103c8b49afdf1651036bfb6ab2e8cf58878cde54e807bf56e20c4d7a",
+        "training_seconds": 36.80133559554815,
+        "peak_cuda_memory_bytes": 349168640,
+        "device": "cuda:0",
+        "gpu_name": "NVIDIA GeForce RTX 4090",
+        "total_parameters": 112403,
+        "trainable_parameters": 112403,
+        "adapter_parameters": 89338,
+        "prompt_parameters": 89338,
+        "input_prompt_parameters": 57340,
+        "aggregation_prompt_parameters": 31998,
+        "adapter_fp32_bytes": 357352,
+        "adapter_buffer_bytes": 0,
+        "sites": [
+          {
+            "name": "convs.0",
+            "insertion": "before_native_update",
+            "width": 1433
+          },
+          {
+            "name": "convs.1",
+            "insertion": "before_native_update",
+            "width": 16
+          }
+        ],
+        "input_site": {
+          "width": 1433,
+          "insertion": "before_input_projection"
+        }
+      },
+      "test": {
+        "cell": "DQ_Cora_GIN",
+        "seed": 41,
+        "method": "gpf_lorap",
+        "loss": 1.1011748313903809,
+        "metric": 62.8,
+        "examples": 1000,
+        "completed_test_evaluations": 1,
+        "checkpoint_file_sha256": "1aa38072103c8b49afdf1651036bfb6ab2e8cf58878cde54e807bf56e20c4d7a",
+        "test_lock_sha256": "5fe7738304bcbc2f64f9b7c745e363c7fdc94033a3a16b4b9a1040d7a86336fb"
+      }
+    }
+  },
+  "subset_limit": 8,
+  "protocol": "joint"
+}

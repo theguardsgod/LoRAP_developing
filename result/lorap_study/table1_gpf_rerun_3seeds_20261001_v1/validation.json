@@ -1,0 +1,24 @@
+{
+  "smoke_directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_rerun_smoke_20261001_v1",
+  "smoke_audit": {
+    "passed": true,
+    "fits": 10,
+    "tests": 0,
+    "smoke": true
+  },
+  "new_test_methods_passed": 7,
+  "real_data_backend_subcases_passed": 10,
+  "existing_graphlora_workflow_test_methods_passed": 2,
+  "checks": [
+    "zero-prompt output/budget equivalence",
+    "unchanged quantizer call counts",
+    "backbone and prompt gradients and updates",
+    "optimizer coverage and uniqueness",
+    "checkpoint prediction roundtrip",
+    "resumed training equals uninterrupted training",
+    "one-shot test gate and repeated finalization",
+    "paired CPU/CUDA training-start RNG",
+    "DQ prompts cover high/low precision nodes",
+    "selection direction for accuracy and MAE"
+  ]
+}

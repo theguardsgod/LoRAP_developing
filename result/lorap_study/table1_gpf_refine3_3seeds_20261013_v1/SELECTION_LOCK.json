@@ -1,0 +1,203 @@
+{
+  "cells": {
+    "QAT_CIFAR10_GCN": {
+      "candidate": "r12",
+      "validation_loss": 1.5245332009633383,
+      "per_seed_validation": [
+        {
+          "seed": 41,
+          "loss": 1.5218245609283447
+        },
+        {
+          "seed": 42,
+          "loss": 1.5331277717590333
+        },
+        {
+          "seed": 43,
+          "loss": 1.5186472702026368
+        }
+      ],
+      "ranking": [
+        {
+          "candidate": "r12",
+          "validation_loss": 1.5245332009633383,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 1.5218245609283447
+            },
+            {
+              "seed": 42,
+              "loss": 1.5331277717590333
+            },
+            {
+              "seed": 43,
+              "loss": 1.5186472702026368
+            }
+          ]
+        },
+        {
+          "candidate": "r00",
+          "validation_loss": 1.5268228004455566,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 1.5473249765396118
+            },
+            {
+              "seed": 42,
+              "loss": 1.5053604881286622
+            },
+            {
+              "seed": 43,
+              "loss": 1.527782936668396
+            }
+          ]
+        },
+        {
+          "candidate": "r11",
+          "validation_loss": 1.5309765567143758,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 1.4929390865325927
+            },
+            {
+              "seed": 42,
+              "loss": 1.53534504737854
+            },
+            {
+              "seed": 43,
+              "loss": 1.5646455362319946
+            }
+          ]
+        },
+        {
+          "candidate": "r09",
+          "validation_loss": 1.5326549584706624,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 1.5342418535232545
+            },
+            {
+              "seed": 42,
+              "loss": 1.5419081861495971
+            },
+            {
+              "seed": 43,
+              "loss": 1.5218148357391357
+            }
+          ]
+        }
+      ],
+      "rejected": [],
+      "selection_seeds": [
+        41,
+        42,
+        43
+      ],
+      "criterion": "mean three-seed validation loss"
+    },
+    "DQ_ZINC_GCN": {
+      "candidate": "r08",
+      "validation_loss": 0.5356222110589345,
+      "per_seed_validation": [
+        {
+          "seed": 41,
+          "loss": 0.5354083647727966
+        },
+        {
+          "seed": 42,
+          "loss": 0.5422729742527008
+        },
+        {
+          "seed": 43,
+          "loss": 0.5291852941513061
+        }
+      ],
+      "ranking": [
+        {
+          "candidate": "r08",
+          "validation_loss": 0.5356222110589345,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 0.5354083647727966
+            },
+            {
+              "seed": 42,
+              "loss": 0.5422729742527008
+            },
+            {
+              "seed": 43,
+              "loss": 0.5291852941513061
+            }
+          ]
+        },
+        {
+          "candidate": "r07",
+          "validation_loss": 0.5367957723140717,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 0.5317625896930694
+            },
+            {
+              "seed": 42,
+              "loss": 0.5454688386917115
+            },
+            {
+              "seed": 43,
+              "loss": 0.5331558885574341
+            }
+          ]
+        },
+        {
+          "candidate": "r06",
+          "validation_loss": 0.5440608361562093,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 0.5479053196907043
+            },
+            {
+              "seed": 42,
+              "loss": 0.5468896708488464
+            },
+            {
+              "seed": 43,
+              "loss": 0.5373875179290771
+            }
+          ]
+        },
+        {
+          "candidate": "r00",
+          "validation_loss": 0.5443420926729838,
+          "per_seed_validation": [
+            {
+              "seed": 41,
+              "loss": 0.5372305116653442
+            },
+            {
+              "seed": 42,
+              "loss": 0.5552588534355164
+            },
+            {
+              "seed": 43,
+              "loss": 0.5405369129180908
+            }
+          ]
+        }
+      ],
+      "rejected": [],
+      "selection_seeds": [
+        41,
+        42,
+        43
+      ],
+      "criterion": "mean three-seed validation loss"
+    }
+  },
+  "sha256": "c095dd90308931dfb25a4695d1473d29894bb2bf20eda0563e697fab6d557f46"
+}

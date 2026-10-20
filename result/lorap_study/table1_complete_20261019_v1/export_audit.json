@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "data_rows": 39,
+  "metric_cells": 195,
+  "graphlora_cells": 45,
+  "updated_gpf_cells": 10,
+  "verified_final_test_records": 165,
+  "update_policy": "latest completed validation-selected round per targeted cell; not maximum test score",
+  "original_table_sha256": "32c4810ee1777fa26eb216a14b74fdd44cfac6e863866206a9704b9afe7f5288",
+  "latex_compiled": false,
+  "latex_note": "No TeX engine is installed; numeric and structural checks passed.",
+  "updated_gpf": {
+    "QAT_CiteSeer_GIN": {
+      "mean": 28.566666666666666,
+      "sd": 2.3965252624024913,
+      "source": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_rerun_3seeds_20261001_v1",
+      "candidate": null
+    },
+    "QAT_MNIST_GIN": {
+      "mean": 96.52666666666667,
+      "sd": 0.20256686138984784,
+      "source": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_rerun_3seeds_20261001_v1",
+      "candidate": null
+    },
+    "DQ_Cora_GIN": {
+      "mean": 75.2,
+      "sd": 0.6082762530298248,
+      "source": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_search_3seeds_20261007_v1",
+      "candidate": "c05"
+    },
+    "DQ_MNIST_GIN": {
+      "mean": 93.35333333333332,
+      "sd": 0.7742308010750647,
+      "source": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_rerun_3seeds_20261001_v1",
+      "candidate": null
+    },
+    "QAT_CIFAR10_GCN": {
+      "mean": 47.21333333333333,
+      "sd": 2.2414578589242633,
+      "source": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_refine4_3seeds_20261013_v1",
+      "candidate": "r21"
+    },
+    "DQ_ZINC_GCN": {
+      "mean": 0.5669770240783691,
+      "sd": 0.009047335957104122,
+      "source": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_refine3_3seeds_20261013_v1",
+      "candidate": "r08"
+    },
+    "DQ_CiteSeer_GAT": {
+      "mean": 63.2,
+      "sd": 0.9539392014169428,
+      "source": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_refine_3seeds_20261011_v1",
+      "candidate": "r10"
+    },
+    "DQ_MNIST_GAT": {
+      "mean": 94.87666666666667,
+      "sd": 0.17243356208503696,
+      "source": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_search_3seeds_20261007_v1",
+      "candidate": "c04"
+    },
+    "DQ_CIFAR10_GAT": {
+      "mean": 61.5,
+      "sd": 0.30805843601498234,
+      "source": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_rerun_3seeds_20261001_v1",
+      "candidate": null
+    },
+    "A2Q_ZINC_GAT": {
+      "mean": 0.5469538065592447,
+      "sd": 0.0074865580645345434,
+      "source": "/home/cyliu/code/A-2Q/result/lorap_study/table1_gpf_refine_3seeds_20261011_v1",
+      "candidate": "r11"
+    }
+  }
+}

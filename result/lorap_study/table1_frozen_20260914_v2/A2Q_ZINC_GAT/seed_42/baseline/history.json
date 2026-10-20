@@ -1,0 +1,4802 @@
+[
+  {
+    "epoch": 1,
+    "train": {
+      "loss": 0.7929086184501648,
+      "metric": 0.7929086184501648,
+      "objective": 0.8909783663749695,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.8332378706932068,
+      "metric": 0.8332378692626953,
+      "storage_proxy": 65.357497215271,
+      "examples": 1000
+    },
+    "seconds": 13.475969929248095,
+    "learning_rates": {
+      "backbone": 0.001,
+      "weight_scale": 0.001,
+      "feature_scale": 0.01,
+      "bits": 0.0005,
+      "attention_scale": 0.001,
+      "message_scale": 0.05
+    }
+  },
+  {
+    "epoch": 2,
+    "train": {
+      "loss": 0.6626520719528198,
+      "metric": 0.6626520719528198,
+      "objective": 0.7484079853057861,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6669664816856384,
+      "metric": 0.6669664764404297,
+      "storage_proxy": 62.37695837020874,
+      "examples": 1000
+    },
+    "seconds": 12.402082927525043,
+    "learning_rates": {
+      "backbone": 0.001,
+      "weight_scale": 0.001,
+      "feature_scale": 0.01,
+      "bits": 0.0005,
+      "attention_scale": 0.001,
+      "message_scale": 0.05
+    }
+  },
+  {
+    "epoch": 3,
+    "train": {
+      "loss": 0.6404836647987365,
+      "metric": 0.6404836647987365,
+      "objective": 0.7103685713768005,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6535273337364197,
+      "metric": 0.653527328491211,
+      "storage_proxy": 57.89387226104736,
+      "examples": 1000
+    },
+    "seconds": 12.286054603755474,
+    "learning_rates": {
+      "backbone": 0.001,
+      "weight_scale": 0.001,
+      "feature_scale": 0.01,
+      "bits": 0.0005,
+      "attention_scale": 0.001,
+      "message_scale": 0.05
+    }
+  },
+  {
+    "epoch": 4,
+    "train": {
+      "loss": 0.662974143409729,
+      "metric": 0.662974143409729,
+      "objective": 0.7200301730155945,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7133338437080383,
+      "metric": 0.7133338394165039,
+      "storage_proxy": 61.87627935409546,
+      "examples": 1000
+    },
+    "seconds": 12.570974266156554,
+    "learning_rates": {
+      "backbone": 0.001,
+      "weight_scale": 0.001,
+      "feature_scale": 0.01,
+      "bits": 0.0005,
+      "attention_scale": 0.001,
+      "message_scale": 0.05
+    }
+  },
+  {
+    "epoch": 5,
+    "train": {
+      "loss": 0.699208044052124,
+      "metric": 0.699208044052124,
+      "objective": 0.751164920425415,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 1.239396011352539,
+      "metric": 1.239396011352539,
+      "storage_proxy": 54.75358963012695,
+      "examples": 1000
+    },
+    "seconds": 12.725755104795098,
+    "learning_rates": {
+      "backbone": 0.001,
+      "weight_scale": 0.001,
+      "feature_scale": 0.01,
+      "bits": 0.0005,
+      "attention_scale": 0.001,
+      "message_scale": 0.05
+    }
+  },
+  {
+    "epoch": 6,
+    "train": {
+      "loss": 0.6972562826156616,
+      "metric": 0.6972562826156616,
+      "objective": 0.7451092165946961,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 1.3978384037017821,
+      "metric": 1.397838394165039,
+      "storage_proxy": 49.17829990386963,
+      "examples": 1000
+    },
+    "seconds": 12.529319440945983,
+    "learning_rates": {
+      "backbone": 0.001,
+      "weight_scale": 0.001,
+      "feature_scale": 0.01,
+      "bits": 0.0005,
+      "attention_scale": 0.001,
+      "message_scale": 0.05
+    }
+  },
+  {
+    "epoch": 7,
+    "train": {
+      "loss": 0.7086925012111663,
+      "metric": 0.7086925012111663,
+      "objective": 0.7447514752864838,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7936111574172974,
+      "metric": 0.7936111526489258,
+      "storage_proxy": 40.18841218948364,
+      "examples": 1000
+    },
+    "seconds": 12.568395789712667,
+    "learning_rates": {
+      "backbone": 0.001,
+      "weight_scale": 0.001,
+      "feature_scale": 0.01,
+      "bits": 0.0005,
+      "attention_scale": 0.001,
+      "message_scale": 0.05
+    }
+  },
+  {
+    "epoch": 8,
+    "train": {
+      "loss": 0.753399201965332,
+      "metric": 0.753399201965332,
+      "objective": 0.7839899998664855,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.9758598737716675,
+      "metric": 0.9758598709106445,
+      "storage_proxy": 41.9028639793396,
+      "examples": 1000
+    },
+    "seconds": 12.781021868810058,
+    "learning_rates": {
+      "backbone": 0.001,
+      "weight_scale": 0.001,
+      "feature_scale": 0.01,
+      "bits": 0.0005,
+      "attention_scale": 0.001,
+      "message_scale": 0.05
+    }
+  },
+  {
+    "epoch": 9,
+    "train": {
+      "loss": 0.7364286514282227,
+      "metric": 0.7364286514282227,
+      "objective": 0.7668895574569702,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 1.2724670495986938,
+      "metric": 1.2724670486450196,
+      "storage_proxy": 42.94749975204468,
+      "examples": 1000
+    },
+    "seconds": 11.867695404216647,
+    "learning_rates": {
+      "backbone": 0.0005,
+      "weight_scale": 0.0005,
+      "feature_scale": 0.005,
+      "bits": 0.00025,
+      "attention_scale": 0.0005,
+      "message_scale": 0.025
+    }
+  },
+  {
+    "epoch": 10,
+    "train": {
+      "loss": 0.7531815628051758,
+      "metric": 0.7531815628051758,
+      "objective": 0.7799691258430481,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.9043693280220032,
+      "metric": 0.9043693237304687,
+      "storage_proxy": 38.031583309173584,
+      "examples": 1000
+    },
+    "seconds": 12.19979851320386,
+    "learning_rates": {
+      "backbone": 0.0005,
+      "weight_scale": 0.0005,
+      "feature_scale": 0.005,
+      "bits": 0.00025,
+      "attention_scale": 0.0005,
+      "message_scale": 0.025
+    }
+  },
+  {
+    "epoch": 11,
+    "train": {
+      "loss": 0.7350699573516846,
+      "metric": 0.7350699573516846,
+      "objective": 0.7625491346359253,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7239745745658874,
+      "metric": 0.7239745712280273,
+      "storage_proxy": 41.63086557388306,
+      "examples": 1000
+    },
+    "seconds": 12.095223344862461,
+    "learning_rates": {
+      "backbone": 0.0005,
+      "weight_scale": 0.0005,
+      "feature_scale": 0.005,
+      "bits": 0.00025,
+      "attention_scale": 0.0005,
+      "message_scale": 0.025
+    }
+  },
+  {
+    "epoch": 12,
+    "train": {
+      "loss": 0.7598408402442932,
+      "metric": 0.7598408402442932,
+      "objective": 0.7871002851009369,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7063580741882324,
+      "metric": 0.7063580703735352,
+      "storage_proxy": 38.016891956329346,
+      "examples": 1000
+    },
+    "seconds": 13.079050721600652,
+    "learning_rates": {
+      "backbone": 0.0005,
+      "weight_scale": 0.0005,
+      "feature_scale": 0.005,
+      "bits": 0.00025,
+      "attention_scale": 0.0005,
+      "message_scale": 0.025
+    }
+  },
+  {
+    "epoch": 13,
+    "train": {
+      "loss": 0.723865526008606,
+      "metric": 0.723865526008606,
+      "objective": 0.7510381984710693,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.726194405078888,
+      "metric": 0.7261944046020508,
+      "storage_proxy": 39.63967561721802,
+      "examples": 1000
+    },
+    "seconds": 12.312278650701046,
+    "learning_rates": {
+      "backbone": 0.0005,
+      "weight_scale": 0.0005,
+      "feature_scale": 0.005,
+      "bits": 0.00025,
+      "attention_scale": 0.0005,
+      "message_scale": 0.025
+    }
+  },
+  {
+    "epoch": 14,
+    "train": {
+      "loss": 0.7264214894294739,
+      "metric": 0.7264214894294739,
+      "objective": 0.7545290650367736,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7691717085838318,
+      "metric": 0.7691717071533203,
+      "storage_proxy": 37.621816635131836,
+      "examples": 1000
+    },
+    "seconds": 12.956816978752613,
+    "learning_rates": {
+      "backbone": 0.0005,
+      "weight_scale": 0.0005,
+      "feature_scale": 0.005,
+      "bits": 0.00025,
+      "attention_scale": 0.0005,
+      "message_scale": 0.025
+    }
+  },
+  {
+    "epoch": 15,
+    "train": {
+      "loss": 0.7254442070960998,
+      "metric": 0.7254442070960998,
+      "objective": 0.7552663723945617,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.8013153738975525,
+      "metric": 0.8013153686523438,
+      "storage_proxy": 40.19549894332886,
+      "examples": 1000
+    },
+    "seconds": 12.573979852721095,
+    "learning_rates": {
+      "backbone": 0.00025,
+      "weight_scale": 0.00025,
+      "feature_scale": 0.0025,
+      "bits": 0.000125,
+      "attention_scale": 0.00025,
+      "message_scale": 0.0125
+    }
+  },
+  {
+    "epoch": 16,
+    "train": {
+      "loss": 0.7327625358581543,
+      "metric": 0.7327625358581543,
+      "objective": 0.7614041690826416,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.738846830368042,
+      "metric": 0.738846824645996,
+      "storage_proxy": 38.05487394332886,
+      "examples": 1000
+    },
+    "seconds": 12.614842077717185,
+    "learning_rates": {
+      "backbone": 0.00025,
+      "weight_scale": 0.00025,
+      "feature_scale": 0.0025,
+      "bits": 0.000125,
+      "attention_scale": 0.00025,
+      "message_scale": 0.0125
+    }
+  },
+  {
+    "epoch": 17,
+    "train": {
+      "loss": 0.7350890535354614,
+      "metric": 0.7350890535354614,
+      "objective": 0.7633693151473999,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7018621063232422,
+      "metric": 0.7018621063232422,
+      "storage_proxy": 36.41477060317993,
+      "examples": 1000
+    },
+    "seconds": 12.01062024757266,
+    "learning_rates": {
+      "backbone": 0.00025,
+      "weight_scale": 0.00025,
+      "feature_scale": 0.0025,
+      "bits": 0.000125,
+      "attention_scale": 0.00025,
+      "message_scale": 0.0125
+    }
+  },
+  {
+    "epoch": 18,
+    "train": {
+      "loss": 0.7179219595909119,
+      "metric": 0.7179219595909119,
+      "objective": 0.7458595726013184,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7112459802627563,
+      "metric": 0.7112459793090821,
+      "storage_proxy": 37.10334300994873,
+      "examples": 1000
+    },
+    "seconds": 12.304740341380239,
+    "learning_rates": {
+      "backbone": 0.00025,
+      "weight_scale": 0.00025,
+      "feature_scale": 0.0025,
+      "bits": 0.000125,
+      "attention_scale": 0.00025,
+      "message_scale": 0.0125
+    }
+  },
+  {
+    "epoch": 19,
+    "train": {
+      "loss": 0.7204233993530273,
+      "metric": 0.7204233993530273,
+      "objective": 0.7481420825004578,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7139558458328247,
+      "metric": 0.7139558410644531,
+      "storage_proxy": 36.198899269104004,
+      "examples": 1000
+    },
+    "seconds": 12.603314539417624,
+    "learning_rates": {
+      "backbone": 0.00025,
+      "weight_scale": 0.00025,
+      "feature_scale": 0.0025,
+      "bits": 0.000125,
+      "attention_scale": 0.00025,
+      "message_scale": 0.0125
+    }
+  },
+  {
+    "epoch": 20,
+    "train": {
+      "loss": 0.7175582286834716,
+      "metric": 0.7175582286834716,
+      "objective": 0.7437441068649292,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6998413848876953,
+      "metric": 0.6998413848876953,
+      "storage_proxy": 36.490811586380005,
+      "examples": 1000
+    },
+    "seconds": 12.399308068677783,
+    "learning_rates": {
+      "backbone": 0.00025,
+      "weight_scale": 0.00025,
+      "feature_scale": 0.0025,
+      "bits": 0.000125,
+      "attention_scale": 0.00025,
+      "message_scale": 0.0125
+    }
+  },
+  {
+    "epoch": 21,
+    "train": {
+      "loss": 0.7110193899154663,
+      "metric": 0.7110193899154663,
+      "objective": 0.7375965114593506,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7121760001182557,
+      "metric": 0.7121759948730468,
+      "storage_proxy": 34.986135482788086,
+      "examples": 1000
+    },
+    "seconds": 12.918561488389969,
+    "learning_rates": {
+      "backbone": 0.000125,
+      "weight_scale": 0.000125,
+      "feature_scale": 0.00125,
+      "bits": 6.25e-05,
+      "attention_scale": 0.000125,
+      "message_scale": 0.00625
+    }
+  },
+  {
+    "epoch": 22,
+    "train": {
+      "loss": 0.7130845066070557,
+      "metric": 0.7130845066070557,
+      "objective": 0.7384314630508423,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6920472259521484,
+      "metric": 0.6920472259521484,
+      "storage_proxy": 35.27078628540039,
+      "examples": 1000
+    },
+    "seconds": 12.704122038558125,
+    "learning_rates": {
+      "backbone": 0.000125,
+      "weight_scale": 0.000125,
+      "feature_scale": 0.00125,
+      "bits": 6.25e-05,
+      "attention_scale": 0.000125,
+      "message_scale": 0.00625
+    }
+  },
+  {
+    "epoch": 23,
+    "train": {
+      "loss": 0.7129387706756591,
+      "metric": 0.7129387706756591,
+      "objective": 0.737758512878418,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6993811798095703,
+      "metric": 0.6993811798095703,
+      "storage_proxy": 34.53547406196594,
+      "examples": 1000
+    },
+    "seconds": 13.121569722890854,
+    "learning_rates": {
+      "backbone": 0.000125,
+      "weight_scale": 0.000125,
+      "feature_scale": 0.00125,
+      "bits": 6.25e-05,
+      "attention_scale": 0.000125,
+      "message_scale": 0.00625
+    }
+  },
+  {
+    "epoch": 24,
+    "train": {
+      "loss": 0.7136951941490174,
+      "metric": 0.7136951941490174,
+      "objective": 0.7370085210800171,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7519945168495178,
+      "metric": 0.751994514465332,
+      "storage_proxy": 34.08935499191284,
+      "examples": 1000
+    },
+    "seconds": 12.657476583495736,
+    "learning_rates": {
+      "backbone": 0.000125,
+      "weight_scale": 0.000125,
+      "feature_scale": 0.00125,
+      "bits": 6.25e-05,
+      "attention_scale": 0.000125,
+      "message_scale": 0.00625
+    }
+  },
+  {
+    "epoch": 25,
+    "train": {
+      "loss": 0.7124382904052734,
+      "metric": 0.7124382904052734,
+      "objective": 0.7369418825149536,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7070082726478577,
+      "metric": 0.7070082702636719,
+      "storage_proxy": 34.07144021987915,
+      "examples": 1000
+    },
+    "seconds": 12.70033193193376,
+    "learning_rates": {
+      "backbone": 0.000125,
+      "weight_scale": 0.000125,
+      "feature_scale": 0.00125,
+      "bits": 6.25e-05,
+      "attention_scale": 0.000125,
+      "message_scale": 0.00625
+    }
+  },
+  {
+    "epoch": 26,
+    "train": {
+      "loss": 0.7069330076217651,
+      "metric": 0.7069330076217651,
+      "objective": 0.7310901028633118,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7251894850730896,
+      "metric": 0.7251894836425781,
+      "storage_proxy": 34.919849157333374,
+      "examples": 1000
+    },
+    "seconds": 12.712678879499435,
+    "learning_rates": {
+      "backbone": 0.000125,
+      "weight_scale": 0.000125,
+      "feature_scale": 0.00125,
+      "bits": 6.25e-05,
+      "attention_scale": 0.000125,
+      "message_scale": 0.00625
+    }
+  },
+  {
+    "epoch": 27,
+    "train": {
+      "loss": 0.708746496963501,
+      "metric": 0.708746496963501,
+      "objective": 0.7327907495975494,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7129414238929749,
+      "metric": 0.712941421508789,
+      "storage_proxy": 34.61050748825073,
+      "examples": 1000
+    },
+    "seconds": 12.727950083091855,
+    "learning_rates": {
+      "backbone": 6.25e-05,
+      "weight_scale": 6.25e-05,
+      "feature_scale": 0.000625,
+      "bits": 3.125e-05,
+      "attention_scale": 6.25e-05,
+      "message_scale": 0.003125
+    }
+  },
+  {
+    "epoch": 28,
+    "train": {
+      "loss": 0.7034146507263184,
+      "metric": 0.7034146507263184,
+      "objective": 0.727144707775116,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6919928460121155,
+      "metric": 0.6919928436279297,
+      "storage_proxy": 34.23547554016113,
+      "examples": 1000
+    },
+    "seconds": 12.399492055177689,
+    "learning_rates": {
+      "backbone": 6.25e-05,
+      "weight_scale": 6.25e-05,
+      "feature_scale": 0.000625,
+      "bits": 3.125e-05,
+      "attention_scale": 6.25e-05,
+      "message_scale": 0.003125
+    }
+  },
+  {
+    "epoch": 29,
+    "train": {
+      "loss": 0.7135846242904663,
+      "metric": 0.7135846242904663,
+      "objective": 0.7356289849281311,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7064321093559265,
+      "metric": 0.7064321060180664,
+      "storage_proxy": 31.637179374694824,
+      "examples": 1000
+    },
+    "seconds": 12.626334888860583,
+    "learning_rates": {
+      "backbone": 6.25e-05,
+      "weight_scale": 6.25e-05,
+      "feature_scale": 0.000625,
+      "bits": 3.125e-05,
+      "attention_scale": 6.25e-05,
+      "message_scale": 0.003125
+    }
+  },
+  {
+    "epoch": 30,
+    "train": {
+      "loss": 0.7065097865104675,
+      "metric": 0.7065097865104675,
+      "objective": 0.7279314370155334,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6941264986991882,
+      "metric": 0.6941264953613281,
+      "storage_proxy": 32.487274169921875,
+      "examples": 1000
+    },
+    "seconds": 12.81445350125432,
+    "learning_rates": {
+      "backbone": 6.25e-05,
+      "weight_scale": 6.25e-05,
+      "feature_scale": 0.000625,
+      "bits": 3.125e-05,
+      "attention_scale": 6.25e-05,
+      "message_scale": 0.003125
+    }
+  },
+  {
+    "epoch": 31,
+    "train": {
+      "loss": 0.7084148956298828,
+      "metric": 0.7084148956298828,
+      "objective": 0.7298743853569031,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7044525389671326,
+      "metric": 0.7044525375366211,
+      "storage_proxy": 30.918424606323242,
+      "examples": 1000
+    },
+    "seconds": 12.587893595919013,
+    "learning_rates": {
+      "backbone": 6.25e-05,
+      "weight_scale": 6.25e-05,
+      "feature_scale": 0.000625,
+      "bits": 3.125e-05,
+      "attention_scale": 6.25e-05,
+      "message_scale": 0.003125
+    }
+  },
+  {
+    "epoch": 32,
+    "train": {
+      "loss": 0.7064513090133667,
+      "metric": 0.7064513090133667,
+      "objective": 0.7299149435997009,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.701946876525879,
+      "metric": 0.701946876525879,
+      "storage_proxy": 34.576703786849976,
+      "examples": 1000
+    },
+    "seconds": 12.18363694474101,
+    "learning_rates": {
+      "backbone": 6.25e-05,
+      "weight_scale": 6.25e-05,
+      "feature_scale": 0.000625,
+      "bits": 3.125e-05,
+      "attention_scale": 6.25e-05,
+      "message_scale": 0.003125
+    }
+  },
+  {
+    "epoch": 33,
+    "train": {
+      "loss": 0.7118534225463867,
+      "metric": 0.7118534225463867,
+      "objective": 0.7339911147117615,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7679887132644654,
+      "metric": 0.7679887084960938,
+      "storage_proxy": 34.20461082458496,
+      "examples": 1000
+    },
+    "seconds": 12.460254339501262,
+    "learning_rates": {
+      "backbone": 3.125e-05,
+      "weight_scale": 3.125e-05,
+      "feature_scale": 0.0003125,
+      "bits": 1.5625e-05,
+      "attention_scale": 3.125e-05,
+      "message_scale": 0.0015625
+    }
+  },
+  {
+    "epoch": 34,
+    "train": {
+      "loss": 0.7077030101776123,
+      "metric": 0.7077030101776123,
+      "objective": 0.7294048631668091,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6917849993705749,
+      "metric": 0.6917849960327148,
+      "storage_proxy": 31.9998722076416,
+      "examples": 1000
+    },
+    "seconds": 12.852337323129177,
+    "learning_rates": {
+      "backbone": 3.125e-05,
+      "weight_scale": 3.125e-05,
+      "feature_scale": 0.0003125,
+      "bits": 1.5625e-05,
+      "attention_scale": 3.125e-05,
+      "message_scale": 0.0015625
+    }
+  },
+  {
+    "epoch": 35,
+    "train": {
+      "loss": 0.7057107513427734,
+      "metric": 0.7057107513427734,
+      "objective": 0.7268429032325745,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7056660804748535,
+      "metric": 0.7056660766601562,
+      "storage_proxy": 31.410050868988037,
+      "examples": 1000
+    },
+    "seconds": 12.47299293614924,
+    "learning_rates": {
+      "backbone": 3.125e-05,
+      "weight_scale": 3.125e-05,
+      "feature_scale": 0.0003125,
+      "bits": 1.5625e-05,
+      "attention_scale": 3.125e-05,
+      "message_scale": 0.0015625
+    }
+  },
+  {
+    "epoch": 36,
+    "train": {
+      "loss": 0.7061382479190826,
+      "metric": 0.7061382479190826,
+      "objective": 0.7267735805988311,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7146378493309021,
+      "metric": 0.7146378479003906,
+      "storage_proxy": 31.58065629005432,
+      "examples": 1000
+    },
+    "seconds": 12.659136015921831,
+    "learning_rates": {
+      "backbone": 3.125e-05,
+      "weight_scale": 3.125e-05,
+      "feature_scale": 0.0003125,
+      "bits": 1.5625e-05,
+      "attention_scale": 3.125e-05,
+      "message_scale": 0.0015625
+    }
+  },
+  {
+    "epoch": 37,
+    "train": {
+      "loss": 0.7071240026473999,
+      "metric": 0.7071240026473999,
+      "objective": 0.7280522274017334,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6938301067352295,
+      "metric": 0.6938301010131835,
+      "storage_proxy": 31.16676139831543,
+      "examples": 1000
+    },
+    "seconds": 12.770201506093144,
+    "learning_rates": {
+      "backbone": 3.125e-05,
+      "weight_scale": 3.125e-05,
+      "feature_scale": 0.0003125,
+      "bits": 1.5625e-05,
+      "attention_scale": 3.125e-05,
+      "message_scale": 0.0015625
+    }
+  },
+  {
+    "epoch": 38,
+    "train": {
+      "loss": 0.7104268319129944,
+      "metric": 0.7104268319129944,
+      "objective": 0.7303943041801453,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7139945878982544,
+      "metric": 0.7139945831298828,
+      "storage_proxy": 30.501423835754395,
+      "examples": 1000
+    },
+    "seconds": 12.59995442442596,
+    "learning_rates": {
+      "backbone": 3.125e-05,
+      "weight_scale": 3.125e-05,
+      "feature_scale": 0.0003125,
+      "bits": 1.5625e-05,
+      "attention_scale": 3.125e-05,
+      "message_scale": 0.0015625
+    }
+  },
+  {
+    "epoch": 39,
+    "train": {
+      "loss": 0.7042205811500549,
+      "metric": 0.7042205811500549,
+      "objective": 0.7235607031822204,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7057220993041993,
+      "metric": 0.7057220993041993,
+      "storage_proxy": 30.827956199645996,
+      "examples": 1000
+    },
+    "seconds": 12.28951565362513,
+    "learning_rates": {
+      "backbone": 1.5625e-05,
+      "weight_scale": 1.5625e-05,
+      "feature_scale": 0.00015625,
+      "bits": 7.8125e-06,
+      "attention_scale": 1.5625e-05,
+      "message_scale": 0.00078125
+    }
+  },
+  {
+    "epoch": 40,
+    "train": {
+      "loss": 0.710081616306305,
+      "metric": 0.710081616306305,
+      "objective": 0.7290825971603394,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7104531440734864,
+      "metric": 0.710453140258789,
+      "storage_proxy": 30.567118883132935,
+      "examples": 1000
+    },
+    "seconds": 12.751686599105597,
+    "learning_rates": {
+      "backbone": 1.5625e-05,
+      "weight_scale": 1.5625e-05,
+      "feature_scale": 0.00015625,
+      "bits": 7.8125e-06,
+      "attention_scale": 1.5625e-05,
+      "message_scale": 0.00078125
+    }
+  },
+  {
+    "epoch": 41,
+    "train": {
+      "loss": 0.7102945672988892,
+      "metric": 0.7102945672988892,
+      "objective": 0.728774261379242,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7043083930015563,
+      "metric": 0.7043083877563476,
+      "storage_proxy": 30.016921520233154,
+      "examples": 1000
+    },
+    "seconds": 12.776046250015497,
+    "learning_rates": {
+      "backbone": 1.5625e-05,
+      "weight_scale": 1.5625e-05,
+      "feature_scale": 0.00015625,
+      "bits": 7.8125e-06,
+      "attention_scale": 1.5625e-05,
+      "message_scale": 0.00078125
+    }
+  },
+  {
+    "epoch": 42,
+    "train": {
+      "loss": 0.7158730905532837,
+      "metric": 0.7158730905532837,
+      "objective": 0.7346905037879944,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7081078071594238,
+      "metric": 0.7081078033447266,
+      "storage_proxy": 30.658813953399658,
+      "examples": 1000
+    },
+    "seconds": 12.310681669041514,
+    "learning_rates": {
+      "backbone": 1.5625e-05,
+      "weight_scale": 1.5625e-05,
+      "feature_scale": 0.00015625,
+      "bits": 7.8125e-06,
+      "attention_scale": 1.5625e-05,
+      "message_scale": 0.00078125
+    }
+  },
+  {
+    "epoch": 43,
+    "train": {
+      "loss": 0.7076845602989197,
+      "metric": 0.7076845602989197,
+      "objective": 0.7268187950134277,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7150103645324707,
+      "metric": 0.7150103607177735,
+      "storage_proxy": 29.904404640197754,
+      "examples": 1000
+    },
+    "seconds": 12.78008484467864,
+    "learning_rates": {
+      "backbone": 1.5625e-05,
+      "weight_scale": 1.5625e-05,
+      "feature_scale": 0.00015625,
+      "bits": 7.8125e-06,
+      "attention_scale": 1.5625e-05,
+      "message_scale": 0.00078125
+    }
+  },
+  {
+    "epoch": 44,
+    "train": {
+      "loss": 0.7073635524749756,
+      "metric": 0.7073635524749756,
+      "objective": 0.7264122602462768,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7079022417068481,
+      "metric": 0.7079022369384765,
+      "storage_proxy": 30.330026149749756,
+      "examples": 1000
+    },
+    "seconds": 12.202967615798116,
+    "learning_rates": {
+      "backbone": 1.5625e-05,
+      "weight_scale": 1.5625e-05,
+      "feature_scale": 0.00015625,
+      "bits": 7.8125e-06,
+      "attention_scale": 1.5625e-05,
+      "message_scale": 0.00078125
+    }
+  },
+  {
+    "epoch": 45,
+    "train": {
+      "loss": 0.7132075309753418,
+      "metric": 0.7132075309753418,
+      "objective": 0.7312622520446778,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7103817086219788,
+      "metric": 0.710381706237793,
+      "storage_proxy": 28.543872833251953,
+      "examples": 1000
+    },
+    "seconds": 11.715738620609045,
+    "learning_rates": {
+      "backbone": 7.8125e-06,
+      "weight_scale": 7.8125e-06,
+      "feature_scale": 7.8125e-05,
+      "bits": 3.90625e-06,
+      "attention_scale": 7.8125e-06,
+      "message_scale": 0.000390625
+    }
+  },
+  {
+    "epoch": 46,
+    "train": {
+      "loss": 0.7118194498062134,
+      "metric": 0.7118194498062134,
+      "objective": 0.7300777442932129,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7021272158622742,
+      "metric": 0.702127212524414,
+      "storage_proxy": 29.629281282424927,
+      "examples": 1000
+    },
+    "seconds": 13.045552188530564,
+    "learning_rates": {
+      "backbone": 7.8125e-06,
+      "weight_scale": 7.8125e-06,
+      "feature_scale": 7.8125e-05,
+      "bits": 3.90625e-06,
+      "attention_scale": 7.8125e-06,
+      "message_scale": 0.000390625
+    }
+  },
+  {
+    "epoch": 47,
+    "train": {
+      "loss": 0.715453429889679,
+      "metric": 0.715453429889679,
+      "objective": 0.73368179063797,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7133896894454956,
+      "metric": 0.7133896865844727,
+      "storage_proxy": 29.4355206489563,
+      "examples": 1000
+    },
+    "seconds": 12.29196935147047,
+    "learning_rates": {
+      "backbone": 7.8125e-06,
+      "weight_scale": 7.8125e-06,
+      "feature_scale": 7.8125e-05,
+      "bits": 3.90625e-06,
+      "attention_scale": 7.8125e-06,
+      "message_scale": 0.000390625
+    }
+  },
+  {
+    "epoch": 48,
+    "train": {
+      "loss": 0.7096448566436767,
+      "metric": 0.7096448566436767,
+      "objective": 0.7284694182395935,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.693405650138855,
+      "metric": 0.693405647277832,
+      "storage_proxy": 30.981420040130615,
+      "examples": 1000
+    },
+    "seconds": 12.183120278641582,
+    "learning_rates": {
+      "backbone": 7.8125e-06,
+      "weight_scale": 7.8125e-06,
+      "feature_scale": 7.8125e-05,
+      "bits": 3.90625e-06,
+      "attention_scale": 7.8125e-06,
+      "message_scale": 0.000390625
+    }
+  },
+  {
+    "epoch": 49,
+    "train": {
+      "loss": 0.7133503040313721,
+      "metric": 0.7133503040313721,
+      "objective": 0.7320469055175781,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.702556167602539,
+      "metric": 0.702556167602539,
+      "storage_proxy": 30.47318124771118,
+      "examples": 1000
+    },
+    "seconds": 12.882043549790978,
+    "learning_rates": {
+      "backbone": 7.8125e-06,
+      "weight_scale": 7.8125e-06,
+      "feature_scale": 7.8125e-05,
+      "bits": 3.90625e-06,
+      "attention_scale": 7.8125e-06,
+      "message_scale": 0.000390625
+    }
+  },
+  {
+    "epoch": 50,
+    "train": {
+      "loss": 0.706790576171875,
+      "metric": 0.706790576171875,
+      "objective": 0.7255171218872071,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7032484927177429,
+      "metric": 0.7032484893798828,
+      "storage_proxy": 30.43364405632019,
+      "examples": 1000
+    },
+    "seconds": 12.415949564427137,
+    "learning_rates": {
+      "backbone": 7.8125e-06,
+      "weight_scale": 7.8125e-06,
+      "feature_scale": 7.8125e-05,
+      "bits": 3.90625e-06,
+      "attention_scale": 7.8125e-06,
+      "message_scale": 0.000390625
+    }
+  },
+  {
+    "epoch": 51,
+    "train": {
+      "loss": 0.7055691834449768,
+      "metric": 0.7055691834449768,
+      "objective": 0.7245977312088012,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6986078271865844,
+      "metric": 0.6986078262329102,
+      "storage_proxy": 30.347901344299316,
+      "examples": 1000
+    },
+    "seconds": 12.518173648044467,
+    "learning_rates": {
+      "backbone": 3.90625e-06,
+      "weight_scale": 3.90625e-06,
+      "feature_scale": 3.90625e-05,
+      "bits": 1.953125e-06,
+      "attention_scale": 3.90625e-06,
+      "message_scale": 0.0001953125
+    }
+  },
+  {
+    "epoch": 52,
+    "train": {
+      "loss": 0.7052576181411743,
+      "metric": 0.7052576181411743,
+      "objective": 0.7242859833717347,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7049138693809509,
+      "metric": 0.7049138641357422,
+      "storage_proxy": 29.58993124961853,
+      "examples": 1000
+    },
+    "seconds": 12.280530527234077,
+    "learning_rates": {
+      "backbone": 3.90625e-06,
+      "weight_scale": 3.90625e-06,
+      "feature_scale": 3.90625e-05,
+      "bits": 1.953125e-06,
+      "attention_scale": 3.90625e-06,
+      "message_scale": 0.0001953125
+    }
+  },
+  {
+    "epoch": 53,
+    "train": {
+      "loss": 0.7044476295471191,
+      "metric": 0.7044476295471191,
+      "objective": 0.7234327860832215,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6959358458518982,
+      "metric": 0.6959358444213867,
+      "storage_proxy": 30.026024103164673,
+      "examples": 1000
+    },
+    "seconds": 12.31520034559071,
+    "learning_rates": {
+      "backbone": 3.90625e-06,
+      "weight_scale": 3.90625e-06,
+      "feature_scale": 3.90625e-05,
+      "bits": 1.953125e-06,
+      "attention_scale": 3.90625e-06,
+      "message_scale": 0.0001953125
+    }
+  },
+  {
+    "epoch": 54,
+    "train": {
+      "loss": 0.7068065732955933,
+      "metric": 0.7068065732955933,
+      "objective": 0.7255927759170532,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7037319107055664,
+      "metric": 0.7037319107055664,
+      "storage_proxy": 31.51907753944397,
+      "examples": 1000
+    },
+    "seconds": 12.362251529470086,
+    "learning_rates": {
+      "backbone": 3.90625e-06,
+      "weight_scale": 3.90625e-06,
+      "feature_scale": 3.90625e-05,
+      "bits": 1.953125e-06,
+      "attention_scale": 3.90625e-06,
+      "message_scale": 0.0001953125
+    }
+  },
+  {
+    "epoch": 55,
+    "train": {
+      "loss": 0.7091318883895874,
+      "metric": 0.7091318883895874,
+      "objective": 0.7281179012298584,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6994193215370178,
+      "metric": 0.6994193191528321,
+      "storage_proxy": 30.824002265930176,
+      "examples": 1000
+    },
+    "seconds": 12.6070916056633,
+    "learning_rates": {
+      "backbone": 3.90625e-06,
+      "weight_scale": 3.90625e-06,
+      "feature_scale": 3.90625e-05,
+      "bits": 1.953125e-06,
+      "attention_scale": 3.90625e-06,
+      "message_scale": 0.0001953125
+    }
+  },
+  {
+    "epoch": 56,
+    "train": {
+      "loss": 0.7069387645721436,
+      "metric": 0.7069387645721436,
+      "objective": 0.7256706345558166,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.703288378238678,
+      "metric": 0.7032883758544922,
+      "storage_proxy": 29.36539101600647,
+      "examples": 1000
+    },
+    "seconds": 12.679019024595618,
+    "learning_rates": {
+      "backbone": 3.90625e-06,
+      "weight_scale": 3.90625e-06,
+      "feature_scale": 3.90625e-05,
+      "bits": 1.953125e-06,
+      "attention_scale": 3.90625e-06,
+      "message_scale": 0.0001953125
+    }
+  },
+  {
+    "epoch": 57,
+    "train": {
+      "loss": 0.704836050415039,
+      "metric": 0.704836050415039,
+      "objective": 0.7234578009605408,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7027515959739685,
+      "metric": 0.702751594543457,
+      "storage_proxy": 29.4505774974823,
+      "examples": 1000
+    },
+    "seconds": 12.437942022457719,
+    "learning_rates": {
+      "backbone": 1.953125e-06,
+      "weight_scale": 1.953125e-06,
+      "feature_scale": 1.953125e-05,
+      "bits": 9.765625e-07,
+      "attention_scale": 1.953125e-06,
+      "message_scale": 9.765625e-05
+    }
+  },
+  {
+    "epoch": 58,
+    "train": {
+      "loss": 0.7026922646522522,
+      "metric": 0.7026922646522522,
+      "objective": 0.7213098313331604,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6942585244178772,
+      "metric": 0.6942585220336914,
+      "storage_proxy": 29.50510573387146,
+      "examples": 1000
+    },
+    "seconds": 12.687547337263823,
+    "learning_rates": {
+      "backbone": 1.953125e-06,
+      "weight_scale": 1.953125e-06,
+      "feature_scale": 1.953125e-05,
+      "bits": 9.765625e-07,
+      "attention_scale": 1.953125e-06,
+      "message_scale": 9.765625e-05
+    }
+  },
+  {
+    "epoch": 59,
+    "train": {
+      "loss": 0.7048308441162109,
+      "metric": 0.7048308441162109,
+      "objective": 0.7231133489608764,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6906181902885437,
+      "metric": 0.6906181869506836,
+      "storage_proxy": 29.633241176605225,
+      "examples": 1000
+    },
+    "seconds": 12.755958823487163,
+    "learning_rates": {
+      "backbone": 1.953125e-06,
+      "weight_scale": 1.953125e-06,
+      "feature_scale": 1.953125e-05,
+      "bits": 9.765625e-07,
+      "attention_scale": 1.953125e-06,
+      "message_scale": 9.765625e-05
+    }
+  },
+  {
+    "epoch": 60,
+    "train": {
+      "loss": 0.7103509199142456,
+      "metric": 0.7103509199142456,
+      "objective": 0.7288918293952942,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7048927774429321,
+      "metric": 0.7048927764892579,
+      "storage_proxy": 29.605852365493774,
+      "examples": 1000
+    },
+    "seconds": 12.573709102347493,
+    "learning_rates": {
+      "backbone": 1.953125e-06,
+      "weight_scale": 1.953125e-06,
+      "feature_scale": 1.953125e-05,
+      "bits": 9.765625e-07,
+      "attention_scale": 1.953125e-06,
+      "message_scale": 9.765625e-05
+    }
+  },
+  {
+    "epoch": 61,
+    "train": {
+      "loss": 0.7044228227615357,
+      "metric": 0.7044228227615357,
+      "objective": 0.7226324796676635,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6954857225418091,
+      "metric": 0.6954857177734375,
+      "storage_proxy": 30.430916786193848,
+      "examples": 1000
+    },
+    "seconds": 12.293053656816483,
+    "learning_rates": {
+      "backbone": 1.953125e-06,
+      "weight_scale": 1.953125e-06,
+      "feature_scale": 1.953125e-05,
+      "bits": 9.765625e-07,
+      "attention_scale": 1.953125e-06,
+      "message_scale": 9.765625e-05
+    }
+  },
+  {
+    "epoch": 62,
+    "train": {
+      "loss": 0.7064067420959472,
+      "metric": 0.7064067420959472,
+      "objective": 0.7251607667922974,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7049605765342712,
+      "metric": 0.7049605712890625,
+      "storage_proxy": 29.964449167251587,
+      "examples": 1000
+    },
+    "seconds": 12.417360888794065,
+    "learning_rates": {
+      "backbone": 1.953125e-06,
+      "weight_scale": 1.953125e-06,
+      "feature_scale": 1.953125e-05,
+      "bits": 9.765625e-07,
+      "attention_scale": 1.953125e-06,
+      "message_scale": 9.765625e-05
+    }
+  },
+  {
+    "epoch": 63,
+    "train": {
+      "loss": 0.7025510667800904,
+      "metric": 0.7025510667800904,
+      "objective": 0.7214082435131073,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7017217783927917,
+      "metric": 0.7017217788696289,
+      "storage_proxy": 30.374449729919434,
+      "examples": 1000
+    },
+    "seconds": 13.19020288810134,
+    "learning_rates": {
+      "backbone": 9.765625e-07,
+      "weight_scale": 9.765625e-07,
+      "feature_scale": 9.765625e-06,
+      "bits": 4.8828125e-07,
+      "attention_scale": 9.765625e-07,
+      "message_scale": 4.8828125e-05
+    }
+  },
+  {
+    "epoch": 64,
+    "train": {
+      "loss": 0.7063590566635132,
+      "metric": 0.7063590566635132,
+      "objective": 0.7251982941627503,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7126061339378357,
+      "metric": 0.7126061325073242,
+      "storage_proxy": 30.643093824386597,
+      "examples": 1000
+    },
+    "seconds": 12.81110829114914,
+    "learning_rates": {
+      "backbone": 9.765625e-07,
+      "weight_scale": 9.765625e-07,
+      "feature_scale": 9.765625e-06,
+      "bits": 4.8828125e-07,
+      "attention_scale": 9.765625e-07,
+      "message_scale": 4.8828125e-05
+    }
+  },
+  {
+    "epoch": 65,
+    "train": {
+      "loss": 0.7049042049407959,
+      "metric": 0.7049042049407959,
+      "objective": 0.7236694911003113,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7022808742523193,
+      "metric": 0.7022808685302734,
+      "storage_proxy": 28.693198680877686,
+      "examples": 1000
+    },
+    "seconds": 12.57119357213378,
+    "learning_rates": {
+      "backbone": 9.765625e-07,
+      "weight_scale": 9.765625e-07,
+      "feature_scale": 9.765625e-06,
+      "bits": 4.8828125e-07,
+      "attention_scale": 9.765625e-07,
+      "message_scale": 4.8828125e-05
+    }
+  },
+  {
+    "epoch": 66,
+    "train": {
+      "loss": 0.7052081153869629,
+      "metric": 0.7052081153869629,
+      "objective": 0.7241187004089356,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7076108288764954,
+      "metric": 0.7076108245849609,
+      "storage_proxy": 29.24364399909973,
+      "examples": 1000
+    },
+    "seconds": 13.017697436735034,
+    "learning_rates": {
+      "backbone": 9.765625e-07,
+      "weight_scale": 9.765625e-07,
+      "feature_scale": 9.765625e-06,
+      "bits": 4.8828125e-07,
+      "attention_scale": 9.765625e-07,
+      "message_scale": 4.8828125e-05
+    }
+  },
+  {
+    "epoch": 67,
+    "train": {
+      "loss": 0.7046191534042359,
+      "metric": 0.7046191534042359,
+      "objective": 0.7234705463409424,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7175017323493957,
+      "metric": 0.7175017318725586,
+      "storage_proxy": 30.46147918701172,
+      "examples": 1000
+    },
+    "seconds": 13.020660674199462,
+    "learning_rates": {
+      "backbone": 9.765625e-07,
+      "weight_scale": 9.765625e-07,
+      "feature_scale": 9.765625e-06,
+      "bits": 4.8828125e-07,
+      "attention_scale": 9.765625e-07,
+      "message_scale": 4.8828125e-05
+    }
+  },
+  {
+    "epoch": 68,
+    "train": {
+      "loss": 0.7085972356796265,
+      "metric": 0.7085972356796265,
+      "objective": 0.7280436557769775,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7080637407302857,
+      "metric": 0.7080637359619141,
+      "storage_proxy": 30.583051204681396,
+      "examples": 1000
+    },
+    "seconds": 12.863135278224945,
+    "learning_rates": {
+      "backbone": 9.765625e-07,
+      "weight_scale": 9.765625e-07,
+      "feature_scale": 9.765625e-06,
+      "bits": 4.8828125e-07,
+      "attention_scale": 9.765625e-07,
+      "message_scale": 4.8828125e-05
+    }
+  },
+  {
+    "epoch": 69,
+    "train": {
+      "loss": 0.7129588975906372,
+      "metric": 0.7129588975906372,
+      "objective": 0.7322308746814727,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.713043698310852,
+      "metric": 0.7130436935424804,
+      "storage_proxy": 30.245563983917236,
+      "examples": 1000
+    },
+    "seconds": 12.6377795599401,
+    "learning_rates": {
+      "backbone": 4.8828125e-07,
+      "weight_scale": 4.8828125e-07,
+      "feature_scale": 4.8828125e-06,
+      "bits": 2.44140625e-07,
+      "attention_scale": 4.8828125e-07,
+      "message_scale": 2.44140625e-05
+    }
+  },
+  {
+    "epoch": 70,
+    "train": {
+      "loss": 0.7065833646774292,
+      "metric": 0.7065833646774292,
+      "objective": 0.7260669172286988,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7000166826248169,
+      "metric": 0.7000166778564453,
+      "storage_proxy": 30.88729429244995,
+      "examples": 1000
+    },
+    "seconds": 12.559089524671435,
+    "learning_rates": {
+      "backbone": 4.8828125e-07,
+      "weight_scale": 4.8828125e-07,
+      "feature_scale": 4.8828125e-06,
+      "bits": 2.44140625e-07,
+      "attention_scale": 4.8828125e-07,
+      "message_scale": 2.44140625e-05
+    }
+  },
+  {
+    "epoch": 71,
+    "train": {
+      "loss": 0.7076715168952942,
+      "metric": 0.7076715168952942,
+      "objective": 0.7270739186286926,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7098997006416321,
+      "metric": 0.7098996963500976,
+      "storage_proxy": 30.913163423538208,
+      "examples": 1000
+    },
+    "seconds": 12.926465656608343,
+    "learning_rates": {
+      "backbone": 4.8828125e-07,
+      "weight_scale": 4.8828125e-07,
+      "feature_scale": 4.8828125e-06,
+      "bits": 2.44140625e-07,
+      "attention_scale": 4.8828125e-07,
+      "message_scale": 2.44140625e-05
+    }
+  },
+  {
+    "epoch": 72,
+    "train": {
+      "loss": 0.7110763463973999,
+      "metric": 0.7110763463973999,
+      "objective": 0.7306400798797608,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7099316654205322,
+      "metric": 0.7099316635131836,
+      "storage_proxy": 30.43644118309021,
+      "examples": 1000
+    },
+    "seconds": 12.434853792190552,
+    "learning_rates": {
+      "backbone": 4.8828125e-07,
+      "weight_scale": 4.8828125e-07,
+      "feature_scale": 4.8828125e-06,
+      "bits": 2.44140625e-07,
+      "attention_scale": 4.8828125e-07,
+      "message_scale": 2.44140625e-05
+    }
+  },
+  {
+    "epoch": 73,
+    "train": {
+      "loss": 0.7081175235748292,
+      "metric": 0.7081175235748292,
+      "objective": 0.7273126810073852,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7086311039924622,
+      "metric": 0.708631103515625,
+      "storage_proxy": 29.7789945602417,
+      "examples": 1000
+    },
+    "seconds": 12.524436185136437,
+    "learning_rates": {
+      "backbone": 4.8828125e-07,
+      "weight_scale": 4.8828125e-07,
+      "feature_scale": 4.8828125e-06,
+      "bits": 2.44140625e-07,
+      "attention_scale": 4.8828125e-07,
+      "message_scale": 2.44140625e-05
+    }
+  },
+  {
+    "epoch": 74,
+    "train": {
+      "loss": 0.7085332193374634,
+      "metric": 0.7085332193374634,
+      "objective": 0.7274475876808166,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6947389559745789,
+      "metric": 0.6947389526367187,
+      "storage_proxy": 29.967118501663208,
+      "examples": 1000
+    },
+    "seconds": 12.624891897663474,
+    "learning_rates": {
+      "backbone": 4.8828125e-07,
+      "weight_scale": 4.8828125e-07,
+      "feature_scale": 4.8828125e-06,
+      "bits": 2.44140625e-07,
+      "attention_scale": 4.8828125e-07,
+      "message_scale": 2.44140625e-05
+    }
+  },
+  {
+    "epoch": 75,
+    "train": {
+      "loss": 0.7034430320739746,
+      "metric": 0.7034430320739746,
+      "objective": 0.7222413566589355,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7201893734931946,
+      "metric": 0.7201893692016601,
+      "storage_proxy": 31.006151914596558,
+      "examples": 1000
+    },
+    "seconds": 12.278786581009626,
+    "learning_rates": {
+      "backbone": 2.44140625e-07,
+      "weight_scale": 2.44140625e-07,
+      "feature_scale": 2.44140625e-06,
+      "bits": 1.220703125e-07,
+      "attention_scale": 2.44140625e-07,
+      "message_scale": 1.220703125e-05
+    }
+  },
+  {
+    "epoch": 76,
+    "train": {
+      "loss": 0.7019209848403931,
+      "metric": 0.7019209848403931,
+      "objective": 0.7209515460968018,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7053337178230286,
+      "metric": 0.7053337173461914,
+      "storage_proxy": 30.303478240966797,
+      "examples": 1000
+    },
+    "seconds": 12.923138393089175,
+    "learning_rates": {
+      "backbone": 2.44140625e-07,
+      "weight_scale": 2.44140625e-07,
+      "feature_scale": 2.44140625e-06,
+      "bits": 1.220703125e-07,
+      "attention_scale": 2.44140625e-07,
+      "message_scale": 1.220703125e-05
+    }
+  },
+  {
+    "epoch": 77,
+    "train": {
+      "loss": 0.7079736392974854,
+      "metric": 0.7079736392974854,
+      "objective": 0.7271758848190307,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7126482162475586,
+      "metric": 0.7126482162475586,
+      "storage_proxy": 31.035650968551636,
+      "examples": 1000
+    },
+    "seconds": 12.256583468988538,
+    "learning_rates": {
+      "backbone": 2.44140625e-07,
+      "weight_scale": 2.44140625e-07,
+      "feature_scale": 2.44140625e-06,
+      "bits": 1.220703125e-07,
+      "attention_scale": 2.44140625e-07,
+      "message_scale": 1.220703125e-05
+    }
+  },
+  {
+    "epoch": 78,
+    "train": {
+      "loss": 0.7064733990669251,
+      "metric": 0.7064733990669251,
+      "objective": 0.7251812892913818,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7072557377815246,
+      "metric": 0.7072557373046875,
+      "storage_proxy": 30.151975631713867,
+      "examples": 1000
+    },
+    "seconds": 13.017946192994714,
+    "learning_rates": {
+      "backbone": 2.44140625e-07,
+      "weight_scale": 2.44140625e-07,
+      "feature_scale": 2.44140625e-06,
+      "bits": 1.220703125e-07,
+      "attention_scale": 2.44140625e-07,
+      "message_scale": 1.220703125e-05
+    }
+  },
+  {
+    "epoch": 79,
+    "train": {
+      "loss": 0.7056887218475342,
+      "metric": 0.7056887218475342,
+      "objective": 0.7245246505737305,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7031485524177551,
+      "metric": 0.703148551940918,
+      "storage_proxy": 30.192961931228638,
+      "examples": 1000
+    },
+    "seconds": 12.721432723104954,
+    "learning_rates": {
+      "backbone": 2.44140625e-07,
+      "weight_scale": 2.44140625e-07,
+      "feature_scale": 2.44140625e-06,
+      "bits": 1.220703125e-07,
+      "attention_scale": 2.44140625e-07,
+      "message_scale": 1.220703125e-05
+    }
+  },
+  {
+    "epoch": 80,
+    "train": {
+      "loss": 0.7067249217033387,
+      "metric": 0.7067249217033387,
+      "objective": 0.7258196826934814,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7145645451545716,
+      "metric": 0.7145645446777343,
+      "storage_proxy": 30.233202695846558,
+      "examples": 1000
+    },
+    "seconds": 12.66848761215806,
+    "learning_rates": {
+      "backbone": 2.44140625e-07,
+      "weight_scale": 2.44140625e-07,
+      "feature_scale": 2.44140625e-06,
+      "bits": 1.220703125e-07,
+      "attention_scale": 2.44140625e-07,
+      "message_scale": 1.220703125e-05
+    }
+  },
+  {
+    "epoch": 81,
+    "train": {
+      "loss": 0.704846815109253,
+      "metric": 0.704846815109253,
+      "objective": 0.7237446281433105,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6962400870323181,
+      "metric": 0.6962400817871094,
+      "storage_proxy": 30.09229063987732,
+      "examples": 1000
+    },
+    "seconds": 12.65238194912672,
+    "learning_rates": {
+      "backbone": 1.220703125e-07,
+      "weight_scale": 1.220703125e-07,
+      "feature_scale": 1.220703125e-06,
+      "bits": 6.103515625e-08,
+      "attention_scale": 1.220703125e-07,
+      "message_scale": 6.103515625e-06
+    }
+  },
+  {
+    "epoch": 82,
+    "train": {
+      "loss": 0.706235089302063,
+      "metric": 0.706235089302063,
+      "objective": 0.7248691469192505,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7050147590637207,
+      "metric": 0.7050147552490235,
+      "storage_proxy": 31.13325786590576,
+      "examples": 1000
+    },
+    "seconds": 11.76677519083023,
+    "learning_rates": {
+      "backbone": 1.220703125e-07,
+      "weight_scale": 1.220703125e-07,
+      "feature_scale": 1.220703125e-06,
+      "bits": 6.103515625e-08,
+      "attention_scale": 1.220703125e-07,
+      "message_scale": 6.103515625e-06
+    }
+  },
+  {
+    "epoch": 83,
+    "train": {
+      "loss": 0.7036972980499268,
+      "metric": 0.7036972980499268,
+      "objective": 0.7227188706874847,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7070311532020569,
+      "metric": 0.707031150817871,
+      "storage_proxy": 30.776049852371216,
+      "examples": 1000
+    },
+    "seconds": 12.348754655569792,
+    "learning_rates": {
+      "backbone": 1.220703125e-07,
+      "weight_scale": 1.220703125e-07,
+      "feature_scale": 1.220703125e-06,
+      "bits": 6.103515625e-08,
+      "attention_scale": 1.220703125e-07,
+      "message_scale": 6.103515625e-06
+    }
+  },
+  {
+    "epoch": 84,
+    "train": {
+      "loss": 0.7057121326446533,
+      "metric": 0.7057121326446533,
+      "objective": 0.7246298689842224,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7113228497505188,
+      "metric": 0.7113228454589844,
+      "storage_proxy": 30.913061380386353,
+      "examples": 1000
+    },
+    "seconds": 12.714060785248876,
+    "learning_rates": {
+      "backbone": 1.220703125e-07,
+      "weight_scale": 1.220703125e-07,
+      "feature_scale": 1.220703125e-06,
+      "bits": 6.103515625e-08,
+      "attention_scale": 1.220703125e-07,
+      "message_scale": 6.103515625e-06
+    }
+  },
+  {
+    "epoch": 85,
+    "train": {
+      "loss": 0.7014149370193481,
+      "metric": 0.7014149370193481,
+      "objective": 0.7203878213882446,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6992004208564758,
+      "metric": 0.6992004165649414,
+      "storage_proxy": 30.27005362510681,
+      "examples": 1000
+    },
+    "seconds": 12.928762936964631,
+    "learning_rates": {
+      "backbone": 1.220703125e-07,
+      "weight_scale": 1.220703125e-07,
+      "feature_scale": 1.220703125e-06,
+      "bits": 6.103515625e-08,
+      "attention_scale": 1.220703125e-07,
+      "message_scale": 6.103515625e-06
+    }
+  },
+  {
+    "epoch": 86,
+    "train": {
+      "loss": 0.7054687010765076,
+      "metric": 0.7054687010765076,
+      "objective": 0.7244839207649231,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7103430109024048,
+      "metric": 0.7103430099487305,
+      "storage_proxy": 30.208518266677856,
+      "examples": 1000
+    },
+    "seconds": 12.30788197927177,
+    "learning_rates": {
+      "backbone": 1.220703125e-07,
+      "weight_scale": 1.220703125e-07,
+      "feature_scale": 1.220703125e-06,
+      "bits": 6.103515625e-08,
+      "attention_scale": 1.220703125e-07,
+      "message_scale": 6.103515625e-06
+    }
+  },
+  {
+    "epoch": 87,
+    "train": {
+      "loss": 0.7071285429954529,
+      "metric": 0.7071285429954529,
+      "objective": 0.7259606907844544,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7048577837944031,
+      "metric": 0.704857780456543,
+      "storage_proxy": 30.14992117881775,
+      "examples": 1000
+    },
+    "seconds": 12.561951151117682,
+    "learning_rates": {
+      "backbone": 6.103515625e-08,
+      "weight_scale": 6.103515625e-08,
+      "feature_scale": 6.103515625e-07,
+      "bits": 3.0517578125e-08,
+      "attention_scale": 6.103515625e-08,
+      "message_scale": 3.0517578125e-06
+    }
+  },
+  {
+    "epoch": 88,
+    "train": {
+      "loss": 0.7027628797531128,
+      "metric": 0.7027628797531128,
+      "objective": 0.7218706731796265,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.713923059463501,
+      "metric": 0.7139230575561524,
+      "storage_proxy": 31.06892991065979,
+      "examples": 1000
+    },
+    "seconds": 12.553213275969028,
+    "learning_rates": {
+      "backbone": 6.103515625e-08,
+      "weight_scale": 6.103515625e-08,
+      "feature_scale": 6.103515625e-07,
+      "bits": 3.0517578125e-08,
+      "attention_scale": 6.103515625e-08,
+      "message_scale": 3.0517578125e-06
+    }
+  },
+  {
+    "epoch": 89,
+    "train": {
+      "loss": 0.704947902393341,
+      "metric": 0.704947902393341,
+      "objective": 0.7238242488861084,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7039141082763671,
+      "metric": 0.7039141082763671,
+      "storage_proxy": 29.586494207382202,
+      "examples": 1000
+    },
+    "seconds": 12.230603655800223,
+    "learning_rates": {
+      "backbone": 6.103515625e-08,
+      "weight_scale": 6.103515625e-08,
+      "feature_scale": 6.103515625e-07,
+      "bits": 3.0517578125e-08,
+      "attention_scale": 6.103515625e-08,
+      "message_scale": 3.0517578125e-06
+    }
+  },
+  {
+    "epoch": 90,
+    "train": {
+      "loss": 0.7022057384490967,
+      "metric": 0.7022057384490967,
+      "objective": 0.7212047026634216,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7021804060935974,
+      "metric": 0.702180404663086,
+      "storage_proxy": 30.019670248031616,
+      "examples": 1000
+    },
+    "seconds": 12.461917795240879,
+    "learning_rates": {
+      "backbone": 6.103515625e-08,
+      "weight_scale": 6.103515625e-08,
+      "feature_scale": 6.103515625e-07,
+      "bits": 3.0517578125e-08,
+      "attention_scale": 6.103515625e-08,
+      "message_scale": 3.0517578125e-06
+    }
+  },
+  {
+    "epoch": 91,
+    "train": {
+      "loss": 0.7051927130699158,
+      "metric": 0.7051927130699158,
+      "objective": 0.7240731994628906,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7050816593170166,
+      "metric": 0.705081657409668,
+      "storage_proxy": 31.217246532440186,
+      "examples": 1000
+    },
+    "seconds": 12.440559402108192,
+    "learning_rates": {
+      "backbone": 6.103515625e-08,
+      "weight_scale": 6.103515625e-08,
+      "feature_scale": 6.103515625e-07,
+      "bits": 3.0517578125e-08,
+      "attention_scale": 6.103515625e-08,
+      "message_scale": 3.0517578125e-06
+    }
+  },
+  {
+    "epoch": 92,
+    "train": {
+      "loss": 0.7052928438186645,
+      "metric": 0.7052928438186645,
+      "objective": 0.7242485422134399,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7070655598640442,
+      "metric": 0.707065559387207,
+      "storage_proxy": 29.834834098815918,
+      "examples": 1000
+    },
+    "seconds": 12.700725009664893,
+    "learning_rates": {
+      "backbone": 6.103515625e-08,
+      "weight_scale": 6.103515625e-08,
+      "feature_scale": 6.103515625e-07,
+      "bits": 3.0517578125e-08,
+      "attention_scale": 6.103515625e-08,
+      "message_scale": 3.0517578125e-06
+    }
+  },
+  {
+    "epoch": 93,
+    "train": {
+      "loss": 0.7063212837219238,
+      "metric": 0.7063212837219238,
+      "objective": 0.7252741943359375,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7036892366409302,
+      "metric": 0.7036892318725586,
+      "storage_proxy": 30.02068305015564,
+      "examples": 1000
+    },
+    "seconds": 12.349304873496294,
+    "learning_rates": {
+      "backbone": 3.0517578125e-08,
+      "weight_scale": 3.0517578125e-08,
+      "feature_scale": 3.0517578125e-07,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 3.0517578125e-08,
+      "message_scale": 1.52587890625e-06
+    }
+  },
+  {
+    "epoch": 94,
+    "train": {
+      "loss": 0.703392300605774,
+      "metric": 0.703392300605774,
+      "objective": 0.7223147608757019,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.705502206325531,
+      "metric": 0.7055022048950196,
+      "storage_proxy": 30.0829758644104,
+      "examples": 1000
+    },
+    "seconds": 12.096686903387308,
+    "learning_rates": {
+      "backbone": 3.0517578125e-08,
+      "weight_scale": 3.0517578125e-08,
+      "feature_scale": 3.0517578125e-07,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 3.0517578125e-08,
+      "message_scale": 1.52587890625e-06
+    }
+  },
+  {
+    "epoch": 95,
+    "train": {
+      "loss": 0.7047284614562989,
+      "metric": 0.7047284614562989,
+      "objective": 0.7233484239578247,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6962278304100037,
+      "metric": 0.6962278289794922,
+      "storage_proxy": 29.972264528274536,
+      "examples": 1000
+    },
+    "seconds": 13.207342648878694,
+    "learning_rates": {
+      "backbone": 3.0517578125e-08,
+      "weight_scale": 3.0517578125e-08,
+      "feature_scale": 3.0517578125e-07,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 3.0517578125e-08,
+      "message_scale": 1.52587890625e-06
+    }
+  },
+  {
+    "epoch": 96,
+    "train": {
+      "loss": 0.7031964720726013,
+      "metric": 0.7031964720726013,
+      "objective": 0.7223255434036255,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7044373755455017,
+      "metric": 0.704437370300293,
+      "storage_proxy": 30.279207706451416,
+      "examples": 1000
+    },
+    "seconds": 12.568903915584087,
+    "learning_rates": {
+      "backbone": 3.0517578125e-08,
+      "weight_scale": 3.0517578125e-08,
+      "feature_scale": 3.0517578125e-07,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 3.0517578125e-08,
+      "message_scale": 1.52587890625e-06
+    }
+  },
+  {
+    "epoch": 97,
+    "train": {
+      "loss": 0.7035084069252014,
+      "metric": 0.7035084069252014,
+      "objective": 0.7226963820457458,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7093459272384643,
+      "metric": 0.7093459243774414,
+      "storage_proxy": 30.230964183807373,
+      "examples": 1000
+    },
+    "seconds": 12.310204962268472,
+    "learning_rates": {
+      "backbone": 3.0517578125e-08,
+      "weight_scale": 3.0517578125e-08,
+      "feature_scale": 3.0517578125e-07,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 3.0517578125e-08,
+      "message_scale": 1.52587890625e-06
+    }
+  },
+  {
+    "epoch": 98,
+    "train": {
+      "loss": 0.7055379888534546,
+      "metric": 0.7055379888534546,
+      "objective": 0.724732800769806,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7125433855056763,
+      "metric": 0.7125433807373047,
+      "storage_proxy": 29.608333110809326,
+      "examples": 1000
+    },
+    "seconds": 12.529369128867984,
+    "learning_rates": {
+      "backbone": 3.0517578125e-08,
+      "weight_scale": 3.0517578125e-08,
+      "feature_scale": 3.0517578125e-07,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 3.0517578125e-08,
+      "message_scale": 1.52587890625e-06
+    }
+  },
+  {
+    "epoch": 99,
+    "train": {
+      "loss": 0.7014454120635987,
+      "metric": 0.7014454120635987,
+      "objective": 0.7202045866966248,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7019638996124268,
+      "metric": 0.7019638977050782,
+      "storage_proxy": 29.84552574157715,
+      "examples": 1000
+    },
+    "seconds": 12.82943875901401,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.52587890625e-07,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 7.62939453125e-07
+    }
+  },
+  {
+    "epoch": 100,
+    "train": {
+      "loss": 0.7050553814888001,
+      "metric": 0.7050553814888001,
+      "objective": 0.7239274961471558,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6996361169815063,
+      "metric": 0.699636116027832,
+      "storage_proxy": 29.65493130683899,
+      "examples": 1000
+    },
+    "seconds": 12.450841015204787,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.52587890625e-07,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 7.62939453125e-07
+    }
+  },
+  {
+    "epoch": 101,
+    "train": {
+      "loss": 0.7027321426391602,
+      "metric": 0.7027321426391602,
+      "objective": 0.7216665157318115,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7022932329177857,
+      "metric": 0.7022932281494141,
+      "storage_proxy": 30.058964729309082,
+      "examples": 1000
+    },
+    "seconds": 12.406758675351739,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.52587890625e-07,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 7.62939453125e-07
+    }
+  },
+  {
+    "epoch": 102,
+    "train": {
+      "loss": 0.7035784509658813,
+      "metric": 0.7035784509658813,
+      "objective": 0.7224321058273315,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7036809196472168,
+      "metric": 0.7036809158325196,
+      "storage_proxy": 30.099931240081787,
+      "examples": 1000
+    },
+    "seconds": 12.698918264359236,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.52587890625e-07,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 7.62939453125e-07
+    }
+  },
+  {
+    "epoch": 103,
+    "train": {
+      "loss": 0.7045896913528442,
+      "metric": 0.7045896913528442,
+      "objective": 0.7234004351615906,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6982775144577026,
+      "metric": 0.6982775115966797,
+      "storage_proxy": 30.096774101257324,
+      "examples": 1000
+    },
+    "seconds": 12.392361564561725,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.52587890625e-07,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 7.62939453125e-07
+    }
+  },
+  {
+    "epoch": 104,
+    "train": {
+      "loss": 0.7056486995697021,
+      "metric": 0.7056486995697021,
+      "objective": 0.7246340974807739,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7145214715003967,
+      "metric": 0.714521469116211,
+      "storage_proxy": 30.69473433494568,
+      "examples": 1000
+    },
+    "seconds": 12.823322206735611,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.52587890625e-07,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 7.62939453125e-07
+    }
+  },
+  {
+    "epoch": 105,
+    "train": {
+      "loss": 0.6988003889083862,
+      "metric": 0.6988003889083862,
+      "objective": 0.7176042911529541,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6945111660957336,
+      "metric": 0.6945111618041993,
+      "storage_proxy": 30.087814331054688,
+      "examples": 1000
+    },
+    "seconds": 12.400237545371056,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 7.62939453125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 3.814697265625e-07
+    }
+  },
+  {
+    "epoch": 106,
+    "train": {
+      "loss": 0.7020670637130737,
+      "metric": 0.7020670637130737,
+      "objective": 0.7207975992202759,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6982856879234314,
+      "metric": 0.6982856826782227,
+      "storage_proxy": 29.238335609436035,
+      "examples": 1000
+    },
+    "seconds": 12.63386140204966,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 7.62939453125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 3.814697265625e-07
+    }
+  },
+  {
+    "epoch": 107,
+    "train": {
+      "loss": 0.703613526725769,
+      "metric": 0.703613526725769,
+      "objective": 0.7224715434074401,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7065033826828003,
+      "metric": 0.7065033798217774,
+      "storage_proxy": 30.627121925354004,
+      "examples": 1000
+    },
+    "seconds": 12.708117235451937,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 7.62939453125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 3.814697265625e-07
+    }
+  },
+  {
+    "epoch": 108,
+    "train": {
+      "loss": 0.7035800098419189,
+      "metric": 0.7035800098419189,
+      "objective": 0.7220644351959229,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7038285555839539,
+      "metric": 0.7038285522460938,
+      "storage_proxy": 30.502686738967896,
+      "examples": 1000
+    },
+    "seconds": 12.94720072299242,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 7.62939453125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 3.814697265625e-07
+    }
+  },
+  {
+    "epoch": 109,
+    "train": {
+      "loss": 0.7033240005493164,
+      "metric": 0.7033240005493164,
+      "objective": 0.721875175666809,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7063314108848572,
+      "metric": 0.7063314056396485,
+      "storage_proxy": 30.371293544769287,
+      "examples": 1000
+    },
+    "seconds": 12.2434945050627,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 7.62939453125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 3.814697265625e-07
+    }
+  },
+  {
+    "epoch": 110,
+    "train": {
+      "loss": 0.7081907197952271,
+      "metric": 0.7081907197952271,
+      "objective": 0.7270127177238465,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7030980186462402,
+      "metric": 0.703098014831543,
+      "storage_proxy": 29.273676872253418,
+      "examples": 1000
+    },
+    "seconds": 12.966073727235198,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 7.62939453125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 3.814697265625e-07
+    }
+  },
+  {
+    "epoch": 111,
+    "train": {
+      "loss": 0.7051658569335938,
+      "metric": 0.7051658569335938,
+      "objective": 0.7241782861709595,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7183947772979736,
+      "metric": 0.718394775390625,
+      "storage_proxy": 29.353286027908325,
+      "examples": 1000
+    },
+    "seconds": 12.89658440835774,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 3.814697265625e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.9073486328125e-07
+    }
+  },
+  {
+    "epoch": 112,
+    "train": {
+      "loss": 0.7011950914382935,
+      "metric": 0.7011950914382935,
+      "objective": 0.7199267011642456,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7015940685272217,
+      "metric": 0.7015940628051758,
+      "storage_proxy": 29.67967653274536,
+      "examples": 1000
+    },
+    "seconds": 12.170461405068636,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 3.814697265625e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.9073486328125e-07
+    }
+  },
+  {
+    "epoch": 113,
+    "train": {
+      "loss": 0.7050859022140503,
+      "metric": 0.7050859022140503,
+      "objective": 0.7238228603363037,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7087245941162109,
+      "metric": 0.7087245941162109,
+      "storage_proxy": 29.411930561065674,
+      "examples": 1000
+    },
+    "seconds": 12.767340822145343,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 3.814697265625e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.9073486328125e-07
+    }
+  },
+  {
+    "epoch": 114,
+    "train": {
+      "loss": 0.7011047525405883,
+      "metric": 0.7011047525405883,
+      "objective": 0.7198508348941803,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7090237312316895,
+      "metric": 0.7090237274169922,
+      "storage_proxy": 29.96499538421631,
+      "examples": 1000
+    },
+    "seconds": 12.26801716722548,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 3.814697265625e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.9073486328125e-07
+    }
+  },
+  {
+    "epoch": 115,
+    "train": {
+      "loss": 0.7070096289157868,
+      "metric": 0.7070096289157868,
+      "objective": 0.7256326553821564,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.697005352973938,
+      "metric": 0.6970053482055664,
+      "storage_proxy": 30.211100339889526,
+      "examples": 1000
+    },
+    "seconds": 12.8895756714046,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 3.814697265625e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.9073486328125e-07
+    }
+  },
+  {
+    "epoch": 116,
+    "train": {
+      "loss": 0.6998617489337922,
+      "metric": 0.6998617489337922,
+      "objective": 0.7186034972190857,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7099523468017578,
+      "metric": 0.7099523468017578,
+      "storage_proxy": 28.98524785041809,
+      "examples": 1000
+    },
+    "seconds": 12.696033401414752,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 3.814697265625e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.9073486328125e-07
+    }
+  },
+  {
+    "epoch": 117,
+    "train": {
+      "loss": 0.7045247859954834,
+      "metric": 0.7045247859954834,
+      "objective": 0.7233847200393677,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7101471185684204,
+      "metric": 0.7101471176147461,
+      "storage_proxy": 30.667861461639404,
+      "examples": 1000
+    },
+    "seconds": 12.6768220346421,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 9.5367431640625e-08
+    }
+  },
+  {
+    "epoch": 118,
+    "train": {
+      "loss": 0.7066231196403503,
+      "metric": 0.7066231196403503,
+      "objective": 0.7255830200195312,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.708060579776764,
+      "metric": 0.7080605773925781,
+      "storage_proxy": 30.38201403617859,
+      "examples": 1000
+    },
+    "seconds": 11.786508992314339,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 9.5367431640625e-08
+    }
+  },
+  {
+    "epoch": 119,
+    "train": {
+      "loss": 0.701300078010559,
+      "metric": 0.701300078010559,
+      "objective": 0.7203080208778382,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7165124297142029,
+      "metric": 0.7165124282836914,
+      "storage_proxy": 29.896796464920044,
+      "examples": 1000
+    },
+    "seconds": 12.774320160970092,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 9.5367431640625e-08
+    }
+  },
+  {
+    "epoch": 120,
+    "train": {
+      "loss": 0.7051305458068847,
+      "metric": 0.7051305458068847,
+      "objective": 0.7237027735710144,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.695990523815155,
+      "metric": 0.6959905242919922,
+      "storage_proxy": 29.78593635559082,
+      "examples": 1000
+    },
+    "seconds": 12.628626741468906,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 9.5367431640625e-08
+    }
+  },
+  {
+    "epoch": 121,
+    "train": {
+      "loss": 0.7032215782642365,
+      "metric": 0.7032215782642365,
+      "objective": 0.721907151222229,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7007758660316468,
+      "metric": 0.7007758636474609,
+      "storage_proxy": 30.17454171180725,
+      "examples": 1000
+    },
+    "seconds": 12.036760406568646,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 9.5367431640625e-08
+    }
+  },
+  {
+    "epoch": 122,
+    "train": {
+      "loss": 0.7014237985610962,
+      "metric": 0.7014237985610962,
+      "objective": 0.7199502653121949,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7045381126403809,
+      "metric": 0.7045381088256836,
+      "storage_proxy": 30.80010199546814,
+      "examples": 1000
+    },
+    "seconds": 12.602386010810733,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 9.5367431640625e-08
+    }
+  },
+  {
+    "epoch": 123,
+    "train": {
+      "loss": 0.7053470651626587,
+      "metric": 0.7053470651626587,
+      "objective": 0.7240207681655884,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7071674666404724,
+      "metric": 0.707167465209961,
+      "storage_proxy": 30.25151014328003,
+      "examples": 1000
+    },
+    "seconds": 12.602150779217482,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 4.76837158203125e-08
+    }
+  },
+  {
+    "epoch": 124,
+    "train": {
+      "loss": 0.7022024765014648,
+      "metric": 0.7022024765014648,
+      "objective": 0.7207930217742919,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7001724543571473,
+      "metric": 0.7001724548339844,
+      "storage_proxy": 30.03892707824707,
+      "examples": 1000
+    },
+    "seconds": 12.666688868775964,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 4.76837158203125e-08
+    }
+  },
+  {
+    "epoch": 125,
+    "train": {
+      "loss": 0.7036805633544921,
+      "metric": 0.7036805633544921,
+      "objective": 0.722288001537323,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7119269137382507,
+      "metric": 0.7119269104003906,
+      "storage_proxy": 29.31813931465149,
+      "examples": 1000
+    },
+    "seconds": 13.059095527976751,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 4.76837158203125e-08
+    }
+  },
+  {
+    "epoch": 126,
+    "train": {
+      "loss": 0.6968713726043702,
+      "metric": 0.6968713726043702,
+      "objective": 0.7156048280715942,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7169604001045227,
+      "metric": 0.7169603958129883,
+      "storage_proxy": 29.79222321510315,
+      "examples": 1000
+    },
+    "seconds": 12.4527222905308,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 4.76837158203125e-08
+    }
+  },
+  {
+    "epoch": 127,
+    "train": {
+      "loss": 0.7031932483673096,
+      "metric": 0.7031932483673096,
+      "objective": 0.7220250314712524,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7081983451843261,
+      "metric": 0.7081983413696289,
+      "storage_proxy": 30.84893226623535,
+      "examples": 1000
+    },
+    "seconds": 12.722338199615479,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 4.76837158203125e-08
+    }
+  },
+  {
+    "epoch": 128,
+    "train": {
+      "loss": 0.7041341255187988,
+      "metric": 0.7041341255187988,
+      "objective": 0.7228630947113037,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6997888565063477,
+      "metric": 0.6997888565063477,
+      "storage_proxy": 29.34130573272705,
+      "examples": 1000
+    },
+    "seconds": 12.187530782073736,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 4.76837158203125e-08
+    }
+  },
+  {
+    "epoch": 129,
+    "train": {
+      "loss": 0.7038882227897644,
+      "metric": 0.7038882227897644,
+      "objective": 0.7225200658798218,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7134384326934814,
+      "metric": 0.7134384307861328,
+      "storage_proxy": 29.206774950027466,
+      "examples": 1000
+    },
+    "seconds": 12.843174148350954,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 2.384185791015625e-08
+    }
+  },
+  {
+    "epoch": 130,
+    "train": {
+      "loss": 0.7039176148414612,
+      "metric": 0.7039176148414612,
+      "objective": 0.7224921236515045,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7031044716835022,
+      "metric": 0.7031044692993164,
+      "storage_proxy": 28.910970449447632,
+      "examples": 1000
+    },
+    "seconds": 12.928962571546435,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 2.384185791015625e-08
+    }
+  },
+  {
+    "epoch": 131,
+    "train": {
+      "loss": 0.7045596433639526,
+      "metric": 0.7045596433639526,
+      "objective": 0.7231385137557983,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6980481572151184,
+      "metric": 0.6980481567382812,
+      "storage_proxy": 30.469884872436523,
+      "examples": 1000
+    },
+    "seconds": 12.56819606386125,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 2.384185791015625e-08
+    }
+  },
+  {
+    "epoch": 132,
+    "train": {
+      "loss": 0.705026471710205,
+      "metric": 0.705026471710205,
+      "objective": 0.7238283294677734,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6984837493896484,
+      "metric": 0.6984837493896484,
+      "storage_proxy": 29.273690223693848,
+      "examples": 1000
+    },
+    "seconds": 12.590618941932917,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 2.384185791015625e-08
+    }
+  },
+  {
+    "epoch": 133,
+    "train": {
+      "loss": 0.7008244464874268,
+      "metric": 0.7008244464874268,
+      "objective": 0.7195117332458496,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7058385515213013,
+      "metric": 0.7058385467529297,
+      "storage_proxy": 30.24589467048645,
+      "examples": 1000
+    },
+    "seconds": 12.804385498166084,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 2.384185791015625e-08
+    }
+  },
+  {
+    "epoch": 134,
+    "train": {
+      "loss": 0.6999848798751831,
+      "metric": 0.6999848798751831,
+      "objective": 0.7187420244216919,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6992923631668091,
+      "metric": 0.6992923583984375,
+      "storage_proxy": 30.40942621231079,
+      "examples": 1000
+    },
+    "seconds": 12.791350424289703,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 2.384185791015625e-08
+    }
+  },
+  {
+    "epoch": 135,
+    "train": {
+      "loss": 0.7015704578399659,
+      "metric": 0.7015704578399659,
+      "objective": 0.7199048731803894,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7015731625556946,
+      "metric": 0.7015731582641601,
+      "storage_proxy": 30.76064372062683,
+      "examples": 1000
+    },
+    "seconds": 12.831074360758066,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 136,
+    "train": {
+      "loss": 0.7033715658187866,
+      "metric": 0.7033715658187866,
+      "objective": 0.7219337718963623,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6989599862098694,
+      "metric": 0.6989599838256836,
+      "storage_proxy": 29.38642978668213,
+      "examples": 1000
+    },
+    "seconds": 12.685903774574399,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 137,
+    "train": {
+      "loss": 0.7040027073860169,
+      "metric": 0.7040027073860169,
+      "objective": 0.7224129539012909,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7095459542274475,
+      "metric": 0.7095459518432617,
+      "storage_proxy": 30.637857675552368,
+      "examples": 1000
+    },
+    "seconds": 12.491469666361809,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 138,
+    "train": {
+      "loss": 0.7110388523101807,
+      "metric": 0.7110388523101807,
+      "objective": 0.7296717289447785,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7101733565330506,
+      "metric": 0.7101733551025391,
+      "storage_proxy": 29.860546588897705,
+      "examples": 1000
+    },
+    "seconds": 12.727692868560553,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 139,
+    "train": {
+      "loss": 0.6990711508750915,
+      "metric": 0.6990711508750915,
+      "objective": 0.7177397209167481,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7038807525634766,
+      "metric": 0.7038807525634766,
+      "storage_proxy": 29.94570541381836,
+      "examples": 1000
+    },
+    "seconds": 12.966240305453539,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 140,
+    "train": {
+      "loss": 0.7037529410362243,
+      "metric": 0.7037529410362243,
+      "objective": 0.7224636933326721,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6955554213523865,
+      "metric": 0.695555419921875,
+      "storage_proxy": 29.45480704307556,
+      "examples": 1000
+    },
+    "seconds": 12.756087431684136,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 141,
+    "train": {
+      "loss": 0.7052726224899292,
+      "metric": 0.7052726224899292,
+      "objective": 0.7237869526863098,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6988365588188171,
+      "metric": 0.698836555480957,
+      "storage_proxy": 29.310288429260254,
+      "examples": 1000
+    },
+    "seconds": 12.865402853116393,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 142,
+    "train": {
+      "loss": 0.7011932601928711,
+      "metric": 0.7011932601928711,
+      "objective": 0.71974879322052,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6975560779571534,
+      "metric": 0.6975560760498047,
+      "storage_proxy": 30.370531797409058,
+      "examples": 1000
+    },
+    "seconds": 12.657519610598683,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 143,
+    "train": {
+      "loss": 0.707305731010437,
+      "metric": 0.707305731010437,
+      "objective": 0.7260105230331421,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7028780035972595,
+      "metric": 0.7028779983520508,
+      "storage_proxy": 29.899073362350464,
+      "examples": 1000
+    },
+    "seconds": 12.730878004804254,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 144,
+    "train": {
+      "loss": 0.7054216897964477,
+      "metric": 0.7054216897964477,
+      "objective": 0.7242776986122131,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7027555460929871,
+      "metric": 0.7027555465698242,
+      "storage_proxy": 30.16229248046875,
+      "examples": 1000
+    },
+    "seconds": 12.001128194853663,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 145,
+    "train": {
+      "loss": 0.7063702230453491,
+      "metric": 0.7063702230453491,
+      "objective": 0.7251579449653626,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.703003812789917,
+      "metric": 0.7030038070678711,
+      "storage_proxy": 29.059845685958862,
+      "examples": 1000
+    },
+    "seconds": 12.880504705011845,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 146,
+    "train": {
+      "loss": 0.7034313467025757,
+      "metric": 0.7034313467025757,
+      "objective": 0.7222978508949279,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7010311584472656,
+      "metric": 0.7010311584472656,
+      "storage_proxy": 29.321598529815674,
+      "examples": 1000
+    },
+    "seconds": 12.638482755050063,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 147,
+    "train": {
+      "loss": 0.7071344157218933,
+      "metric": 0.7071344157218933,
+      "objective": 0.7258355268478394,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7036825890541076,
+      "metric": 0.7036825866699219,
+      "storage_proxy": 30.098157167434692,
+      "examples": 1000
+    },
+    "seconds": 12.861038448289037,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 148,
+    "train": {
+      "loss": 0.7016330531120301,
+      "metric": 0.7016330531120301,
+      "objective": 0.7199989444732666,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7029544067382812,
+      "metric": 0.7029544067382812,
+      "storage_proxy": 29.6120707988739,
+      "examples": 1000
+    },
+    "seconds": 12.721977228298783,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 149,
+    "train": {
+      "loss": 0.7019240650177002,
+      "metric": 0.7019240650177002,
+      "objective": 0.7202904566764832,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7024332208633423,
+      "metric": 0.702433219909668,
+      "storage_proxy": 29.61076855659485,
+      "examples": 1000
+    },
+    "seconds": 12.637452816590667,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 150,
+    "train": {
+      "loss": 0.7039600203514099,
+      "metric": 0.7039600203514099,
+      "objective": 0.7227359021186829,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7039380288124084,
+      "metric": 0.7039380264282227,
+      "storage_proxy": 29.63442587852478,
+      "examples": 1000
+    },
+    "seconds": 12.454640062525868,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 151,
+    "train": {
+      "loss": 0.7036277285575867,
+      "metric": 0.7036277285575867,
+      "objective": 0.7223617516517639,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7048270134925843,
+      "metric": 0.7048270111083984,
+      "storage_proxy": 29.897727727890015,
+      "examples": 1000
+    },
+    "seconds": 12.596352713182569,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 152,
+    "train": {
+      "loss": 0.6994597466468812,
+      "metric": 0.6994597466468812,
+      "objective": 0.7181547926902772,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6982495551109313,
+      "metric": 0.6982495498657226,
+      "storage_proxy": 30.043148040771484,
+      "examples": 1000
+    },
+    "seconds": 12.890984119847417,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 153,
+    "train": {
+      "loss": 0.7039753192901611,
+      "metric": 0.7039753192901611,
+      "objective": 0.7227671487808227,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6991211566925049,
+      "metric": 0.6991211547851562,
+      "storage_proxy": 29.697954416275024,
+      "examples": 1000
+    },
+    "seconds": 12.545332979410887,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 154,
+    "train": {
+      "loss": 0.7070419555664063,
+      "metric": 0.7070419555664063,
+      "objective": 0.7256852737426758,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6936748576164246,
+      "metric": 0.6936748580932617,
+      "storage_proxy": 31.426856517791748,
+      "examples": 1000
+    },
+    "seconds": 12.772046495229006,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 155,
+    "train": {
+      "loss": 0.7040911308288574,
+      "metric": 0.7040911308288574,
+      "objective": 0.7225112356185913,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7029716649055481,
+      "metric": 0.702971664428711,
+      "storage_proxy": 29.458821773529053,
+      "examples": 1000
+    },
+    "seconds": 11.909030044451356,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 156,
+    "train": {
+      "loss": 0.7053904891967774,
+      "metric": 0.7053904891967774,
+      "objective": 0.7241142653465271,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6939381589889526,
+      "metric": 0.6939381561279296,
+      "storage_proxy": 30.33683490753174,
+      "examples": 1000
+    },
+    "seconds": 12.200593328103423,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 157,
+    "train": {
+      "loss": 0.7038977694511414,
+      "metric": 0.7038977694511414,
+      "objective": 0.7224508444786072,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7108472790718079,
+      "metric": 0.7108472747802734,
+      "storage_proxy": 30.15455722808838,
+      "examples": 1000
+    },
+    "seconds": 13.007700219750404,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 158,
+    "train": {
+      "loss": 0.7053600017547608,
+      "metric": 0.7053600017547608,
+      "objective": 0.7240082908630371,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6981558961868286,
+      "metric": 0.698155891418457,
+      "storage_proxy": 30.197386980056763,
+      "examples": 1000
+    },
+    "seconds": 12.867177261039615,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 159,
+    "train": {
+      "loss": 0.7024702991485595,
+      "metric": 0.7024702991485595,
+      "objective": 0.7209934774398804,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.706288836479187,
+      "metric": 0.7062888336181641,
+      "storage_proxy": 29.51779341697693,
+      "examples": 1000
+    },
+    "seconds": 13.114383285865188,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 160,
+    "train": {
+      "loss": 0.7024881097793579,
+      "metric": 0.7024881097793579,
+      "objective": 0.7211455230712891,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6986222729682923,
+      "metric": 0.6986222686767578,
+      "storage_proxy": 29.829561233520508,
+      "examples": 1000
+    },
+    "seconds": 12.905278729274869,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 161,
+    "train": {
+      "loss": 0.705034886932373,
+      "metric": 0.705034886932373,
+      "objective": 0.7236262088775635,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7093691868782044,
+      "metric": 0.7093691864013671,
+      "storage_proxy": 29.128328561782837,
+      "examples": 1000
+    },
+    "seconds": 11.943364916369319,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 162,
+    "train": {
+      "loss": 0.7014608397483826,
+      "metric": 0.7014608397483826,
+      "objective": 0.7199950853347779,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6966569905281067,
+      "metric": 0.6966569900512696,
+      "storage_proxy": 30.022546768188477,
+      "examples": 1000
+    },
+    "seconds": 12.500817412510514,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 163,
+    "train": {
+      "loss": 0.7049995494842529,
+      "metric": 0.7049995494842529,
+      "objective": 0.7236315330505371,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7057740130424499,
+      "metric": 0.7057740097045898,
+      "storage_proxy": 29.08418345451355,
+      "examples": 1000
+    },
+    "seconds": 12.355474220588803,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 164,
+    "train": {
+      "loss": 0.706367839050293,
+      "metric": 0.706367839050293,
+      "objective": 0.7251088004112244,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6978162574768066,
+      "metric": 0.6978162536621094,
+      "storage_proxy": 30.221057653427124,
+      "examples": 1000
+    },
+    "seconds": 12.284571701660752,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 165,
+    "train": {
+      "loss": 0.7016087832450867,
+      "metric": 0.7016087832450867,
+      "objective": 0.7201247755050659,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7062397623062133,
+      "metric": 0.7062397613525391,
+      "storage_proxy": 29.532212018966675,
+      "examples": 1000
+    },
+    "seconds": 12.87830045260489,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 166,
+    "train": {
+      "loss": 0.6999047174930573,
+      "metric": 0.6999047174930573,
+      "objective": 0.7185978221893311,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6981226153373719,
+      "metric": 0.6981226119995118,
+      "storage_proxy": 29.939416646957397,
+      "examples": 1000
+    },
+    "seconds": 12.695788649842143,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 167,
+    "train": {
+      "loss": 0.7042359879493714,
+      "metric": 0.7042359879493714,
+      "objective": 0.7231310232162476,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7109329495429992,
+      "metric": 0.7109329452514649,
+      "storage_proxy": 30.308809518814087,
+      "examples": 1000
+    },
+    "seconds": 12.772357219830155,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 168,
+    "train": {
+      "loss": 0.7010000568389892,
+      "metric": 0.7010000568389892,
+      "objective": 0.7196622261047363,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7042902812957764,
+      "metric": 0.7042902755737305,
+      "storage_proxy": 30.50605344772339,
+      "examples": 1000
+    },
+    "seconds": 12.508556259796023,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 169,
+    "train": {
+      "loss": 0.70059333152771,
+      "metric": 0.70059333152771,
+      "objective": 0.7190242854118347,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6999249377250671,
+      "metric": 0.699924934387207,
+      "storage_proxy": 29.3641095161438,
+      "examples": 1000
+    },
+    "seconds": 12.769300159066916,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 170,
+    "train": {
+      "loss": 0.7067457550048828,
+      "metric": 0.7067457550048828,
+      "objective": 0.7252342584609985,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7086327838897705,
+      "metric": 0.7086327819824219,
+      "storage_proxy": 30.26535677909851,
+      "examples": 1000
+    },
+    "seconds": 12.129192715510726,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 171,
+    "train": {
+      "loss": 0.7035155805587768,
+      "metric": 0.7035155805587768,
+      "objective": 0.7222969553947449,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7102612428665162,
+      "metric": 0.7102612380981446,
+      "storage_proxy": 29.09446096420288,
+      "examples": 1000
+    },
+    "seconds": 12.09988852776587,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 172,
+    "train": {
+      "loss": 0.702816141319275,
+      "metric": 0.702816141319275,
+      "objective": 0.7213883373260498,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7068212704658509,
+      "metric": 0.7068212661743164,
+      "storage_proxy": 29.848029613494873,
+      "examples": 1000
+    },
+    "seconds": 12.92326107621193,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 173,
+    "train": {
+      "loss": 0.7021630868911743,
+      "metric": 0.7021630868911743,
+      "objective": 0.7207838370323181,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6926073188781738,
+      "metric": 0.6926073150634766,
+      "storage_proxy": 29.492997884750366,
+      "examples": 1000
+    },
+    "seconds": 12.750797478482127,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 174,
+    "train": {
+      "loss": 0.7022384021282196,
+      "metric": 0.7022384021282196,
+      "objective": 0.7207512507915497,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.705861249923706,
+      "metric": 0.7058612442016602,
+      "storage_proxy": 29.621708393096924,
+      "examples": 1000
+    },
+    "seconds": 11.951204502955079,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 175,
+    "train": {
+      "loss": 0.6999291874885559,
+      "metric": 0.6999291874885559,
+      "objective": 0.7183319483757019,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7053334579467774,
+      "metric": 0.7053334579467774,
+      "storage_proxy": 30.530587673187256,
+      "examples": 1000
+    },
+    "seconds": 12.24258473701775,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 176,
+    "train": {
+      "loss": 0.7045255470275879,
+      "metric": 0.7045255470275879,
+      "objective": 0.7229525630950928,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7148579201698303,
+      "metric": 0.7148579177856446,
+      "storage_proxy": 30.76207709312439,
+      "examples": 1000
+    },
+    "seconds": 12.572555646300316,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 177,
+    "train": {
+      "loss": 0.7036665859222412,
+      "metric": 0.7036665859222412,
+      "objective": 0.7223642518997192,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6985268349647522,
+      "metric": 0.6985268325805664,
+      "storage_proxy": 30.286734580993652,
+      "examples": 1000
+    },
+    "seconds": 12.376621508970857,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 178,
+    "train": {
+      "loss": 0.7076698715209961,
+      "metric": 0.7076698715209961,
+      "objective": 0.7262732478141785,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6971795520782471,
+      "metric": 0.6971795501708984,
+      "storage_proxy": 29.67300772666931,
+      "examples": 1000
+    },
+    "seconds": 13.00010627694428,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 179,
+    "train": {
+      "loss": 0.7034515111923217,
+      "metric": 0.7034515111923217,
+      "objective": 0.7222569187164307,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7041720967292786,
+      "metric": 0.7041720962524414,
+      "storage_proxy": 29.98882222175598,
+      "examples": 1000
+    },
+    "seconds": 12.926401061937213,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 180,
+    "train": {
+      "loss": 0.7055250675201415,
+      "metric": 0.7055250675201415,
+      "objective": 0.7243969289779663,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7109162554740905,
+      "metric": 0.7109162521362304,
+      "storage_proxy": 30.056336164474487,
+      "examples": 1000
+    },
+    "seconds": 12.518731927499175,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 181,
+    "train": {
+      "loss": 0.7057359993934631,
+      "metric": 0.7057359993934631,
+      "objective": 0.7245657277107239,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7053596744537354,
+      "metric": 0.7053596725463868,
+      "storage_proxy": 30.243164539337158,
+      "examples": 1000
+    },
+    "seconds": 12.641568476334214,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 182,
+    "train": {
+      "loss": 0.7086740367889405,
+      "metric": 0.7086740367889405,
+      "objective": 0.7273089188575744,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6989655251502991,
+      "metric": 0.6989655227661132,
+      "storage_proxy": 29.343246936798096,
+      "examples": 1000
+    },
+    "seconds": 12.93290476873517,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 183,
+    "train": {
+      "loss": 0.7047058053970336,
+      "metric": 0.7047058053970336,
+      "objective": 0.7233832594871521,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7023290815353394,
+      "metric": 0.7023290786743164,
+      "storage_proxy": 29.62171459197998,
+      "examples": 1000
+    },
+    "seconds": 12.251015238463879,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 184,
+    "train": {
+      "loss": 0.6993080699920654,
+      "metric": 0.6993080699920654,
+      "objective": 0.7181531045913696,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.698529559135437,
+      "metric": 0.698529556274414,
+      "storage_proxy": 29.04677677154541,
+      "examples": 1000
+    },
+    "seconds": 12.99171071127057,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 185,
+    "train": {
+      "loss": 0.7011120750427247,
+      "metric": 0.7011120750427247,
+      "objective": 0.7197679224014282,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7048227624893189,
+      "metric": 0.7048227615356445,
+      "storage_proxy": 28.835670709609985,
+      "examples": 1000
+    },
+    "seconds": 13.05368966422975,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 186,
+    "train": {
+      "loss": 0.7018999535083771,
+      "metric": 0.7018999535083771,
+      "objective": 0.7205666776180267,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7011992044448853,
+      "metric": 0.7011992034912109,
+      "storage_proxy": 29.80932378768921,
+      "examples": 1000
+    },
+    "seconds": 12.84990418329835,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 187,
+    "train": {
+      "loss": 0.7014632856369019,
+      "metric": 0.7014632856369019,
+      "objective": 0.7199021823883056,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6978051991462707,
+      "metric": 0.6978051986694336,
+      "storage_proxy": 29.93369746208191,
+      "examples": 1000
+    },
+    "seconds": 12.689730072394013,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 188,
+    "train": {
+      "loss": 0.7021943994522095,
+      "metric": 0.7021943994522095,
+      "objective": 0.7207840795516968,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6930892133712768,
+      "metric": 0.693089210510254,
+      "storage_proxy": 30.888264656066895,
+      "examples": 1000
+    },
+    "seconds": 12.732228960841894,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 189,
+    "train": {
+      "loss": 0.7005231611251831,
+      "metric": 0.7005231611251831,
+      "objective": 0.7191988911628723,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7030662026405334,
+      "metric": 0.7030662002563477,
+      "storage_proxy": 29.4610698223114,
+      "examples": 1000
+    },
+    "seconds": 12.697800740599632,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 190,
+    "train": {
+      "loss": 0.7029304527282715,
+      "metric": 0.7029304527282715,
+      "objective": 0.7216503485679626,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7015899443626403,
+      "metric": 0.701589942932129,
+      "storage_proxy": 30.031233072280884,
+      "examples": 1000
+    },
+    "seconds": 11.893725885078311,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 191,
+    "train": {
+      "loss": 0.7048021118164063,
+      "metric": 0.7048021118164063,
+      "objective": 0.7232249572753906,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7089751453399659,
+      "metric": 0.7089751434326171,
+      "storage_proxy": 29.411903858184814,
+      "examples": 1000
+    },
+    "seconds": 11.614070557057858,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 192,
+    "train": {
+      "loss": 0.7074027851104736,
+      "metric": 0.7074027851104736,
+      "objective": 0.7261265169143677,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7025930995941162,
+      "metric": 0.7025930938720704,
+      "storage_proxy": 30.940539836883545,
+      "examples": 1000
+    },
+    "seconds": 12.841705759987235,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 193,
+    "train": {
+      "loss": 0.7077580020904541,
+      "metric": 0.7077580020904541,
+      "objective": 0.7261882062911987,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7025734963417053,
+      "metric": 0.7025734939575196,
+      "storage_proxy": 29.83162546157837,
+      "examples": 1000
+    },
+    "seconds": 12.538462962955236,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 194,
+    "train": {
+      "loss": 0.6986442123413086,
+      "metric": 0.6986442123413086,
+      "objective": 0.7173699646949768,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7063362779617309,
+      "metric": 0.7063362731933593,
+      "storage_proxy": 30.17169713973999,
+      "examples": 1000
+    },
+    "seconds": 12.414493151009083,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 195,
+    "train": {
+      "loss": 0.7048289360046387,
+      "metric": 0.7048289360046387,
+      "objective": 0.723562724018097,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7078211569786071,
+      "metric": 0.7078211517333984,
+      "storage_proxy": 30.30314540863037,
+      "examples": 1000
+    },
+    "seconds": 12.757478954270482,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 196,
+    "train": {
+      "loss": 0.6976148149490357,
+      "metric": 0.6976148149490357,
+      "objective": 0.7161037141799926,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.6904517440795899,
+      "metric": 0.6904517440795899,
+      "storage_proxy": 29.568952083587646,
+      "examples": 1000
+    },
+    "seconds": 12.691764574497938,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 197,
+    "train": {
+      "loss": 0.7016039587020874,
+      "metric": 0.7016039587020874,
+      "objective": 0.7200868379592895,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7110981297492981,
+      "metric": 0.711098129272461,
+      "storage_proxy": 30.52498459815979,
+      "examples": 1000
+    },
+    "seconds": 12.723350064828992,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 198,
+    "train": {
+      "loss": 0.7069165218353272,
+      "metric": 0.7069165218353272,
+      "objective": 0.725890395641327,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.706209379196167,
+      "metric": 0.706209373474121,
+      "storage_proxy": 30.452528476715088,
+      "examples": 1000
+    },
+    "seconds": 12.783301830291748,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 199,
+    "train": {
+      "loss": 0.7102802209854125,
+      "metric": 0.7102802209854125,
+      "objective": 0.7287477483749389,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7046107249259949,
+      "metric": 0.704610725402832,
+      "storage_proxy": 31.255653381347656,
+      "examples": 1000
+    },
+    "seconds": 12.008289700374007,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  },
+  {
+    "epoch": 200,
+    "train": {
+      "loss": 0.7077109912872315,
+      "metric": 0.7077109912872315,
+      "objective": 0.7262666273117065,
+      "examples": 10000
+    },
+    "val": {
+      "loss": 0.7169896740913391,
+      "metric": 0.7169896697998047,
+      "storage_proxy": 30.28145146369934,
+      "examples": 1000
+    },
+    "seconds": 12.77796370536089,
+    "learning_rates": {
+      "backbone": 1.52587890625e-08,
+      "weight_scale": 1.52587890625e-08,
+      "feature_scale": 1.9073486328125e-08,
+      "bits": 1.52587890625e-08,
+      "attention_scale": 1.52587890625e-08,
+      "message_scale": 1.1920928955078126e-08
+    }
+  }
+]

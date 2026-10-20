@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-20",
+  "passed": true,
+  "gpu_regression": {
+    "tests": 21,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 23.224,
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "torch": "2.7.0+cu118",
+    "log": "docs/publication_gpu_tests.log"
+  },
+  "archive_validation": {
+    "original_files_checked": 14360,
+    "table_rows": 39,
+    "metric_cells": 195,
+    "final_test_records_and_best_checkpoints_checked": 165,
+    "original_source_manifest_entries_checked": 1260,
+    "test_inferences_executed": 0
+  },
+  "packaging": {
+    "datasets_included": false,
+    "last_pt_included": false,
+    "best_checkpoints_included": true,
+    "files_over_90MiB": 0,
+    "credential_pattern_scan_matches": 0
+  },
+  "latex_compiled": false
+}

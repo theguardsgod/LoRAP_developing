@@ -1,0 +1,5 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:1", "--cells", "A2Q_Cora_GCN", "--seed", "43", "--methods", "conditioned"]
+A2Q_Cora_GCN s43 conditioned/c1 adapter 1/200 val=0.76717 metric=76.800
+A2Q_Cora_GCN s43 conditioned/c1 adapter 25/200 val=0.77531 metric=76.200
+A2Q_Cora_GCN s43 conditioned/c1 adapter 50/200 val=0.94007 metric=74.000

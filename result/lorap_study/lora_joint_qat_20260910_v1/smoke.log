@@ -1,0 +1,28 @@
+OUTPUT_DIRECTORY=/home/cyliu/code/A-2Q/result/lorap_study/lora_smoke_20260910_v2
+Cora no_prompt seed=41 epoch=1/2 val_CE=1.91833 val_acc=0.2000
+Cora no_prompt seed=41 epoch=2/2 val_CE=1.90222 val_acc=0.2500
+FIT DONE Cora no_prompt seed=41; test withheld
+Cora main seed=41 epoch=1/2 val_CE=1.91840 val_acc=0.2000
+Cora main seed=41 epoch=2/2 val_CE=1.90185 val_acc=0.2540
+FIT DONE Cora main seed=41; test withheld
+Cora lora seed=41 epoch=1/2 val_CE=1.91872 val_acc=0.2020
+Cora lora seed=41 epoch=2/2 val_CE=1.89395 val_acc=0.2640
+FIT DONE Cora lora seed=41; test withheld
+CiteSeer no_prompt seed=41 epoch=1/2 val_CE=1.76009 val_acc=0.2320
+CiteSeer no_prompt seed=41 epoch=2/2 val_CE=1.71032 val_acc=0.3200
+FIT DONE CiteSeer no_prompt seed=41; test withheld
+CiteSeer main seed=41 epoch=1/2 val_CE=1.76004 val_acc=0.2320
+CiteSeer main seed=41 epoch=2/2 val_CE=1.70948 val_acc=0.3200
+FIT DONE CiteSeer main seed=41; test withheld
+CiteSeer lora seed=41 epoch=1/2 val_CE=1.76030 val_acc=0.2360
+CiteSeer lora seed=41 epoch=2/2 val_CE=1.70837 val_acc=0.3220
+FIT DONE CiteSeer lora seed=41; test withheld
+MNIST no_prompt seed=41 epoch=1/2 val_CE=2.30522 val_acc=0.1094
+MNIST no_prompt seed=41 epoch=2/2 val_CE=2.30566 val_acc=0.0625
+FIT DONE MNIST no_prompt seed=41; test withheld
+MNIST main seed=41 epoch=1/2 val_CE=2.30626 val_acc=0.0938
+MNIST main seed=41 epoch=2/2 val_CE=2.30355 val_acc=0.1094
+FIT DONE MNIST main seed=41; test withheld
+MNIST lora seed=41 epoch=1/2 val_CE=2.30467 val_acc=0.1094
+MNIST lora seed=41 epoch=2/2 val_CE=2.30464 val_acc=0.1094
+FIT DONE MNIST lora seed=41; test withheld

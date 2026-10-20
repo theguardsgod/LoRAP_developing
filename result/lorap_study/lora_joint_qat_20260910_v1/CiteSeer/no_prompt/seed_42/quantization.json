@@ -1,0 +1,65 @@
+{
+  "layers": {
+    "conv1.mlp.0.weight_quant": {
+      "kind": "weight",
+      "elements": 59248,
+      "signed_bit_sum": 236992.0,
+      "effective_bit_sum": 236992.0,
+      "histogram": {
+        "4": 59248
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "conv1.mlp.0.fea_quant": {
+      "kind": "activation",
+      "elements": 12319881,
+      "signed_bit_sum": 49283227.0,
+      "effective_bit_sum": 36963346.0,
+      "histogram": {
+        "3": 12316178,
+        "4": 3703
+      },
+      "mean_quantizer_bits": 4.000300571085061,
+      "mean_effective_bits": 3.0003005710850617
+    },
+    "conv2.q_xw": {
+      "kind": "activation",
+      "elements": 53232,
+      "signed_bit_sum": 212928.0,
+      "effective_bit_sum": 212928.0,
+      "histogram": {
+        "4": 53232
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "conv2.mlp.0.weight_quant": {
+      "kind": "weight",
+      "elements": 96,
+      "signed_bit_sum": 384.0,
+      "effective_bit_sum": 384.0,
+      "histogram": {
+        "4": 96
+      },
+      "mean_quantizer_bits": 4.0,
+      "mean_effective_bits": 4.0
+    },
+    "conv2.mlp.0.fea_quant": {
+      "kind": "activation",
+      "elements": 53232,
+      "signed_bit_sum": 230304.0,
+      "effective_bit_sum": 177072.0,
+      "histogram": {
+        "3": 35888,
+        "4": 17312,
+        "5": 32
+      },
+      "mean_quantizer_bits": 4.326420198376916,
+      "mean_effective_bits": 3.326420198376916
+    }
+  },
+  "mean_activation_effective_bits": 3.0059801172428418,
+  "logical_activation_bytes_over_validation": 4669168.25,
+  "note": "Logical tensor traffic across observed quantizers; excludes indices/scales, is not peak memory or integer execution. CiteSeer propagation visits the full public graph."
+}

@@ -1,0 +1,46 @@
+test_adamw_graph_resume_matches_continuous (runs.lorap_study.table1_gpf_search.test_expanded.ExpandedSearchTests.test_adamw_graph_resume_matches_continuous) ... QAT_Cora_GIN c00 s41 1/1 val=33.33333
+QAT_Cora_GIN c00 s41 1/2 val=33.33333
+ok
+test_adamw_uses_decoupled_decay_and_preserves_groups (runs.lorap_study.table1_gpf_search.test_expanded.ExpandedSearchTests.test_adamw_uses_decoupled_decay_and_preserves_groups) ... ok
+test_defaults_match_archived_backend_in_training_and_eval (runs.lorap_study.table1_gpf_search.test_expanded.ExpandedSearchTests.test_defaults_match_archived_backend_in_training_and_eval) ... ok
+test_graph_dropout_and_batchnorm_settings_take_effect (runs.lorap_study.table1_gpf_search.test_expanded.ExpandedSearchTests.test_graph_dropout_and_batchnorm_settings_take_effect) ... ok
+test_round_four_registration_and_initialization (runs.lorap_study.table1_gpf_search.test_expanded.ExpandedSearchTests.test_round_four_registration_and_initialization) ... ok
+test_cached_incumbent_test_is_not_executed_again (runs.lorap_study.table1_gpf_search.test_refine.RefinementTests.test_cached_incumbent_test_is_not_executed_again) ... ok
+test_cosine_and_plateau_resume (runs.lorap_study.table1_gpf_search.test_refine.RefinementTests.test_cosine_and_plateau_resume) ... QAT_Cora_GIN c00 s41 1/1 val=50.00000
+QAT_Cora_GIN c00 s41 1/2 val=50.00000
+QAT_Cora_GIN c00 s41 1/1 val=50.00000
+QAT_Cora_GIN c00 s41 1/2 val=50.00000
+ok
+test_round_three_preparation_reuses_exact_incumbents (runs.lorap_study.table1_gpf_search.test_refine.RefinementTests.test_round_three_preparation_reuses_exact_incumbents) ... ok
+test_round_three_space_preserves_scheduler_and_budget (runs.lorap_study.table1_gpf_search.test_refine.RefinementTests.test_round_three_space_preserves_scheduler_and_budget) ... ok
+test_selection_uses_all_three_seeds_and_retains_incumbent (runs.lorap_study.table1_gpf_search.test_refine.RefinementTests.test_selection_uses_all_three_seeds_and_retains_incumbent) ... ok
+test_space_preserves_architecture_and_quantization_budget (runs.lorap_study.table1_gpf_search.test_refine.RefinementTests.test_space_preserves_architecture_and_quantization_budget) ... ok
+test_numerical_rejections_keep_confirmation_seeds_mandatory (runs.lorap_study.table1_gpf_search.test_pipeline.PipelineTests.test_numerical_rejections_keep_confirmation_seeds_mandatory) ... ok
+test_registration_saved_config_source_and_unknown_selection (runs.lorap_study.table1_gpf_search.test_pipeline.PipelineTests.test_registration_saved_config_source_and_unknown_selection) ... ok
+test_resume_matches_continuous_model_optimizer_scheduler_and_rng (runs.lorap_study.table1_gpf_search.test_pipeline.PipelineTests.test_resume_matches_continuous_model_optimizer_scheduler_and_rng) ... QAT_Cora_GIN c00 s41 1/1 val=50.00000
+QAT_Cora_GIN c00 s41 1/2 val=50.00000
+ok
+test_resume_repairs_missing_screen_metadata (runs.lorap_study.table1_gpf_search.test_pipeline.PipelineTests.test_resume_repairs_missing_screen_metadata) ... QAT_Cora_GIN c00 s41 1/1 val=50.00000
+ok
+test_three_seed_gate_once_only_and_lock_contention (runs.lorap_study.table1_gpf_search.test_pipeline.PipelineTests.test_three_seed_gate_once_only_and_lock_contention) ... QAT_Cora_GIN c00 s41 1/1 val=50.00000
+QAT_Cora_GIN c01 s41 1/1 val=50.00000
+QAT_Cora_GIN c02 s41 1/1 val=50.00000
+QAT_Cora_GIN c00 s42 1/2 val=50.00000
+QAT_Cora_GIN c00 s43 1/2 val=50.00000
+ok
+test_validation_promotion_ties_and_immutable_decisions (runs.lorap_study.table1_gpf_search.test_pipeline.PipelineTests.test_validation_promotion_ties_and_immutable_decisions) ... ok
+test_worker_repairs_node_full_screen_without_done (runs.lorap_study.table1_gpf_search.test_pipeline.PipelineTests.test_worker_repairs_node_full_screen_without_done) ... QAT_Cora_GIN c00 s41 1/2 val=50.00000
+QAT_Cora_GIN c00 s42 1/2 val=50.00000
+QAT_Cora_GIN c00 s43 1/2 val=50.00000
+ok
+test_all_backends_and_methods (runs.lorap_study.table1_frozen.test_core.CoreTests.test_all_backends_and_methods) ... adapter audit passed: QAT_CIFAR10_GCN
+adapter audit passed: DQ_CIFAR10_GCN
+ok
+test_no_neighbors (runs.lorap_study.table1_frozen.test_core.CoreTests.test_no_neighbors) ... ok
+test_registry_and_ties (runs.lorap_study.table1_frozen.test_core.CoreTests.test_registry_and_ties) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 23.224s
+
+OK
+

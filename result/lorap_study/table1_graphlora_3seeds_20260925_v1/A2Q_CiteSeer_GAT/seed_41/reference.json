@@ -1,0 +1,81 @@
+{
+  "directory": "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2/A2Q_CiteSeer_GAT/seed_41/baseline",
+  "config": {
+    "cell": "A2Q_CiteSeer_GAT",
+    "dataset": "CiteSeer",
+    "architecture": "GAT",
+    "framework": "A2Q",
+    "data_root": "/data/cyliu/dataset/CiteSeer",
+    "node": true,
+    "regression": false,
+    "width": 8,
+    "heads": 8,
+    "layers": 2,
+    "bit": 4,
+    "num_deg": 1000,
+    "batch_size": 128,
+    "paper_none": 71.2,
+    "paper_none_sd": 0.9,
+    "paper_gpf_lorap": 72.5,
+    "metric": "accuracy_percent",
+    "baseline_epochs": 250,
+    "adapter_epochs": 200,
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "lr": 0.005,
+    "weight_decay": 0.001,
+    "dropout": 0.6,
+    "init": "uniform",
+    "lr_feature": 0.05,
+    "lr_message": 0.05,
+    "lr_weight": 0.01,
+    "lr_bit": 0.1,
+    "lr_attention": 0.005,
+    "lr_edge": 0.005,
+    "a_loss": 0.25,
+    "a_storage": 10.0,
+    "bit_bounds": [
+      1.0,
+      16.0
+    ],
+    "stop_patience": 30,
+    "min_epochs": 50,
+    "aggregation_implementation": "stable_csr_v2",
+    "optimizer_recipe": "native_groups_v2",
+    "seed": 41,
+    "subset_limit": null,
+    "stage": "baseline"
+  },
+  "done": {
+    "cell": "A2Q_CiteSeer_GAT",
+    "seed": 41,
+    "config_hash": "cdea2da04b01f8d48e7410a31b73adab69f2c2c0f52bd3a269b4b8930995beb6",
+    "initial_sha256": "bf2abdfb9275f7014caa91109eceba7f07a744721af2564fea918d27ba96cd20",
+    "selected_epoch": 32,
+    "validation": {
+      "loss": 0.9222114682197571,
+      "metric": 69.6,
+      "storage_proxy": 217.15811157226562,
+      "examples": 500
+    },
+    "backbone_sha256": "4c245e3c000876083ca3909b11c7180ed748bb0279c6f7c77d2416b5473aeaf5",
+    "test_evaluations": 0,
+    "full_split": true,
+    "seconds": 12.543233478441834
+  },
+  "test": {
+    "cell": "A2Q_CiteSeer_GAT",
+    "seed": 41,
+    "method": "none",
+    "loss": 0.9395601749420166,
+    "metric": 69.6,
+    "examples": 1000,
+    "completed_test_evaluations": 1,
+    "checkpoint_file_sha256": "84dc81f177c297c38b2e110cec0c734e03bcdf95da9fa10006d7ad0945edef4f",
+    "test_lock_sha256": "1d8c5a4b34f827b61f4e6649ca6651d72519389200de54463b8154b151790041"
+  },
+  "checkpoint_file_sha256": "84dc81f177c297c38b2e110cec0c734e03bcdf95da9fa10006d7ad0945edef4f"
+}

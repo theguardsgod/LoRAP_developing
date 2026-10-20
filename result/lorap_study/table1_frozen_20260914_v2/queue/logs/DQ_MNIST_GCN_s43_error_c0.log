@@ -1,0 +1,7 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:2", "--cells", "DQ_MNIST_GCN", "--seed", "43", "--methods", "error"]
+DQ_MNIST_GCN s43 error/c0 adapter 1/100 val=0.27466 metric=90.560
+DQ_MNIST_GCN s43 error/c0 adapter 25/100 val=0.27472 metric=90.560
+DQ_MNIST_GCN s43 error/c0 adapter 50/100 val=0.27248 metric=90.880
+DQ_MNIST_GCN s43 error/c0 adapter 75/100 val=0.27034 metric=90.820
+DQ_MNIST_GCN s43 error/c0 adapter 100/100 val=0.26488 metric=90.960

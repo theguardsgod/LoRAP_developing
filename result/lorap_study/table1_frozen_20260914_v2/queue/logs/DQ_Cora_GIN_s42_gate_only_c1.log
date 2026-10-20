@@ -1,0 +1,8 @@
+
+RUN ["/home/cyliu/anaconda3/envs/ProG/bin/python", "-B", "-m", "runs.lorap_study.table1_frozen.adapt", "--root", "/home/cyliu/code/A-2Q/result/lorap_study/table1_frozen_20260914_v2", "--device", "cuda:3", "--cells", "DQ_Cora_GIN", "--seed", "42", "--methods", "gate_only"]
+DQ_Cora_GIN s42 gate_only/c1 predictor_warmup 1/50 val=0.88067 metric=73.600
+DQ_Cora_GIN s42 gate_only/c1 predictor_warmup 25/50 val=0.88526 metric=74.200
+DQ_Cora_GIN s42 gate_only/c1 predictor_warmup 50/50 val=0.88166 metric=73.200
+DQ_Cora_GIN s42 gate_only/c1 adapter 1/200 val=0.88114 metric=74.400
+DQ_Cora_GIN s42 gate_only/c1 adapter 25/200 val=0.88609 metric=74.000
+DQ_Cora_GIN s42 gate_only/c1 adapter 50/200 val=0.88112 metric=73.600
