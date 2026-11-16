@@ -42,6 +42,7 @@ class WorkflowTests(unittest.TestCase):
             (root / job['directory']).mkdir(parents=True)
             jobs.append(job)
         study = dict(jobs=jobs, protocol='joint', hyperparameters=run.HP, subset_limit=None,
+                     objective_version=run.OBJECTIVE_VERSION,
                      smoke=False, training_jobs=len(jobs), cells=[c['cell']], seeds=list(seeds))
         write_json(root / 'study.json', study)
         return study

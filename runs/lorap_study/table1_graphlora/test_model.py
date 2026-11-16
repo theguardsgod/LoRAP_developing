@@ -1,5 +1,6 @@
 """Real-data GPU compatibility checks; no benchmark test set is read."""
 import os
+import json
 import unittest
 
 import torch
@@ -31,6 +32,7 @@ class ModelTests(unittest.TestCase):
             with self.subTest(cell=name):
                 print('checking', name, flush=True)
                 c = dict(CELLS[name], batch_size=2)
+                c['data_root'] = json.loads(os.environ.get('TABLE1_DATA_ROOTS', '{}')).get(c['dataset'], c['data_root'])
                 b = Bundle(c)
                 seed_all(41)
                 base = build(c, b, 41).to(self.device)

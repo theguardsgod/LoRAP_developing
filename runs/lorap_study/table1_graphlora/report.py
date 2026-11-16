@@ -89,13 +89,17 @@ def _generate_locked(root):
         writer.writeheader()
         writer.writerows(paired_rows)
         (root / 'paired_differences.csv').write_text(stream.getvalue())
-    lines = ['# TABLE1 GraphLoRA-adapted（三种子）', '',
+    hp = study['hyperparameters']
+    lines = [f"# TABLE1 GraphLoRA-adapted（{len(study['seeds'])} 个种子）", '',
              f"训练 {completed}/{study['training_jobs']}；测试 {tested}/{status['tests_expected']}；"
              f"状态：{'完成' if status['complete'] else '需检查失败' if failures else '进行中'}。", '',
-             f"种子 {study['seeds']}；训练方式 {study['protocol']}；rank=2；"
+             f"种子 {study['seeds']}；训练方式 {study['protocol']}；rank={hp['rank']}；"
              '复用已完成的同种子无提示对照，不重训、不重测对照。', '',
-             '完整范围：5 数据集 × 3 骨干 × QAT/DQ/A2Q，共 45 cell、135 次新增训练。'
-             '固定一个超参数配置，无新增搜索；旧 Table V 的 10 种子结果保留。', '',
+             f"本次注册 {len(study['cells'])} 个 cell、{study['training_jobs']} 次新增训练。"
+             '固定一个超参数配置，无新增搜索；旧结果保留。', '',
+             f"辅助目标版本 {study.get('objective_version', 1)}；归一化范数下限 "
+             f"{hp.get('normalization_floor', 1e-12):g}；梯度范数拒绝阈值 "
+             f"{hp.get('gradient_norm_limit', float('inf')):g}。这些值为训练配置的一部分。", '',
              '**这是同域 GraphLoRA 移植**。GIN 使用两层低秩 MLP，GCN 使用低秩消息映射，'
              'GAT 使用独立低秩注意力分支。无源域、无 SMMD。'
              '节点对比监督仅使用训练节点标签；ZINC 无类别正样本，结构约束使用归一化节点表示。', '',
@@ -116,6 +120,7 @@ def _generate_locked(root):
               '各模型实际量化器位宽保存于 quantization.json；不冒称其为原表相同位宽定义。']
     (root / 'REPORT.md').write_text('\n'.join(lines) + '\n')
     tex = ['% GraphLoRA-adapted; ' + study['protocol'] + '; seeds=' + ','.join(map(str, study['seeds'])),
+           f"% objective_version={study.get('objective_version', 1)}; normalization_floor={hp.get('normalization_floor', 1e-12):g}",
            '% Columns: framework, backbone, method, Cora, CiteSeer, MNIST, CIFAR10, ZINC.',
            '% Classification: accuracy (%); ZINC: MAE. Mean +/- sample standard deviation.']
     lookup = {row['cell']: row for row in rows}

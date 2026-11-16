@@ -31,6 +31,8 @@ rank=2、宽度 110、四层时，旁路有 4,404 个训练参数，FP32 参数�
 
 ## 损失与评估
 
+2026-11-15 起新实验使用 `objective_version=2`：对比表示以 `x/max(norm(x), normalization_floor)` 归一化，默认下限 0.1，避免量化零向量在默认 1e-12 下产生异常梯度。半精度输入提升到 FP32 计算辅助目标；关闭的辅助损失不计算。下限写入训练配置，低范数区域的目标是明确的数值修订。优化器更新前拒绝总范数超过 1e6 的梯度并记录梯度范数。旧 Adam 状态必须留在原源码快照中复现，修复后的训练从新初始化开始。
+
 ```text
 objective = graph_cross_entropy + existing_storage_penalty
             + 0.1 * supervised_graph_contrast + 0.1 * within_graph_structure_loss

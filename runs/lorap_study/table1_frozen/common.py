@@ -50,11 +50,13 @@ def seed_all(seed):
 
 
 def rng_state(device):
-    return dict(python=random.getstate(),numpy=np.random.get_state(),torch=torch.get_rng_state(),cuda=torch.cuda.get_rng_state(device))
+    cuda=torch.cuda.get_rng_state(device) if torch.device(device).type=='cuda' else None
+    return dict(python=random.getstate(),numpy=np.random.get_state(),torch=torch.get_rng_state(),cuda=cuda)
 
 
 def restore_rng(state,device):
-    random.setstate(state['python']);np.random.set_state(state['numpy']);torch.set_rng_state(state['torch']);torch.cuda.set_rng_state(state['cuda'],device)
+    random.setstate(state['python']);np.random.set_state(state['numpy']);torch.set_rng_state(state['torch'])
+    if state['cuda'] is not None:torch.cuda.set_rng_state(state['cuda'],device)
 
 
 def finite_gradients(model):

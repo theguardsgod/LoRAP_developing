@@ -6,6 +6,7 @@ graph, pretrained frozen encoder, feature projector, or SMMD alignment.
 Official reference: AllminerLab/GraphLoRA@aa9ab3dec32cee143c27fdbf07806d33356690db.
 """
 import hashlib
+import math
 
 import torch
 from torch import nn
@@ -15,6 +16,40 @@ from torch_geometric.utils import remove_self_loops, to_dense_adj, to_dense_batc
 
 from .lora import build_baseline
 from .models import optimizer_for, sum_messages
+
+
+OBJECTIVE_VERSION = 2
+DEFAULT_NORM_FLOOR = .1
+DEFAULT_GRADIENT_LIMIT = 1e6
+
+
+def normalize_embeddings(x, norm_floor=DEFAULT_NORM_FLOOR):
+    """Bound the normalization Jacobian for zero/near-zero quantized rows.
+
+    The cosine direction of rows above the floor is unchanged. Smaller rows
+    use x / norm_floor, so their Jacobian is bounded by 1 / norm_floor rather
+    than 1e12. Keep double precision for oracles and use at least FP32 under
+    mixed precision. The floor is a recorded part of the adapted objective.
+    """
+    if not math.isfinite(norm_floor) or norm_floor <= 0:
+        raise ValueError('Embedding normalization floor must be finite and positive')
+    if x.dtype in (torch.float16, torch.bfloat16):
+        x = x.float()
+    return F.normalize(x, dim=-1, eps=norm_floor)
+
+
+def checked_gradient_norm(model, limit=DEFAULT_GRADIENT_LIMIT):
+    """Reject finite explosions before they enter Adam's running moments."""
+    if not math.isfinite(limit) or limit <= 0:
+        raise ValueError('Gradient norm limit must be finite and positive')
+    norms = [p.grad.detach().double().norm() for p in model.parameters() if p.grad is not None]
+    if not norms:
+        raise FloatingPointError('No GraphLoRA gradients')
+    norm = torch.stack(norms).norm()
+    if not torch.isfinite(norm) or norm > limit:
+        raise FloatingPointError(f'GraphLoRA gradient norm {norm.item():.6g} exceeds limit {limit:g}; '
+                                 'optimizer was not stepped')
+    return norm
 
 
 def is_adapter(name):
@@ -147,31 +182,34 @@ def model_counts(model):
         prompt_parameters=sum(p.numel() for n, p in named if n.startswith('prompt_')))
 
 
-def contrastive_loss(left, right, labels=None, train_mask=None, tau=.5, supervised_weight=.2):
-    """Stable symmetric official batched_gct_loss, with labels only where allowed.
+def contrastive_loss(left, right, labels=None, train_mask=None, tau=.5, supervised_weight=.2,
+                     norm_floor=DEFAULT_NORM_FLOOR):
+    """Symmetric GraphLoRA objective with bounded embedding normalization.
 
     The Table V extension contrasts pooled backbone and combined embeddings,
     rather than normalizing an initially all-zero residual branch.
     """
-    if tau <= 0 or not 0 <= supervised_weight <= 1:
+    if not math.isfinite(tau) or tau <= 0 or not 0 <= supervised_weight <= 1:
         raise ValueError('Invalid contrastive temperature or supervised weight')
     if left.shape != right.shape or left.ndim != 2 or left.size(0) < 1:
         raise ValueError('Contrastive views must have the same nonempty [N,D] shape')
+    a, b = normalize_embeddings(left, norm_floor), normalize_embeddings(right, norm_floor)
     n = left.size(0)
     eye = torch.eye(n, device=left.device, dtype=torch.bool)
-    weights = eye.to(left.dtype)
+    weights = eye.to(a.dtype)
     if labels is not None and supervised_weight:
         known = torch.ones(n, device=left.device, dtype=torch.bool) if train_mask is None else train_mask.bool()
         positive = (labels[:, None] == labels[None, :]) & known[:, None] & known[None, :] & ~eye
-        weights = weights + supervised_weight * positive.to(left.dtype)
-    log_weights = torch.where(weights > 0, weights.clamp_min(torch.finfo(left.dtype).tiny).log(), -torch.inf)
-    a, b = F.normalize(left, dim=1), F.normalize(right, dim=1)
-    def one_way(x, y):
-        cross, within = (x @ y.T) / tau, (x @ x.T) / tau
-        numerator = torch.logsumexp(cross + log_weights, dim=1)
-        denominator = torch.logsumexp(torch.cat((cross, within.masked_fill(eye, -torch.inf)), dim=1), dim=1)
-        return (denominator - numerator).mean()
-    return .5 * (one_way(a, b) + one_way(b, a))
+        weights = weights + supervised_weight * positive.to(a.dtype)
+    log_weights = torch.where(weights > 0, weights.clamp_min(torch.finfo(a.dtype).tiny).log(), -torch.inf)
+    # An outer autocast context must not round similarities/logsumexp to FP16.
+    with torch.autocast(device_type=left.device.type, enabled=False):
+        def one_way(x, y):
+            cross, within = (x @ y.T) / tau, (x @ x.T) / tau
+            numerator = torch.logsumexp(cross + log_weights, dim=1)
+            denominator = torch.logsumexp(torch.cat((cross, within.masked_fill(eye, -torch.inf)), dim=1), dim=1)
+            return (denominator - numerator).mean()
+        return .5 * (one_way(a, b) + one_way(b, a))
 
 
 def structure_loss(node_logits, edges, batch, include_self=False):
@@ -181,6 +219,8 @@ def structure_loss(node_logits, edges, batch, include_self=False):
     structural target. Default excludes self pairs; include_self permits an
     exact numerical comparison with the official self-loop implementation.
     """
+    if node_logits.dtype in (torch.float16, torch.bfloat16):
+        node_logits = node_logits.float()
     probability, valid = to_dense_batch(node_logits.softmax(-1), batch)
     size = probability.size(1)
     adjacency = to_dense_adj(edges, batch, max_num_nodes=size).clamp_max(1)
@@ -191,8 +231,9 @@ def structure_loss(node_logits, edges, batch, include_self=False):
     positive = (adjacency * eligible).sum((1, 2))
     positive_weight = torch.where(positive > 0, (count - positive) / positive.clamp_min(1), 1.)
     weights = torch.where(adjacency.bool(), positive_weight[:, None, None], 1.)
-    scores = probability @ probability.transpose(1, 2)
-    losses = F.binary_cross_entropy_with_logits(scores, adjacency, reduction='none') * weights * eligible
+    with torch.autocast(device_type=node_logits.device.type, enabled=False):
+        scores = probability @ probability.transpose(1, 2)
+        losses = F.binary_cross_entropy_with_logits(scores, adjacency, reduction='none') * weights * eligible
     per_graph = losses.sum((1, 2)) / count.clamp_min(1)
     return per_graph.mean()
 
@@ -200,9 +241,12 @@ def structure_loss(node_logits, edges, batch, include_self=False):
 def training_objective(model, batch, config):
     if isinstance(model, GraphLoRAAdaptedGIN):
         logits, budget, aux = model(batch, return_aux=True)
-        contrast = contrastive_loss(aux['base_graph'], aux['adapted_graph'], batch.y.reshape(-1),
-            tau=config['contrast_tau'], supervised_weight=config['contrast_supervised_weight'])
-        structural = structure_loss(aux['node_logits'], batch.edge_index, batch.batch)
+        contrast = (contrastive_loss(aux['base_graph'], aux['adapted_graph'], batch.y.reshape(-1),
+            tau=config['contrast_tau'], supervised_weight=config['contrast_supervised_weight'],
+            norm_floor=config.get('normalization_floor', DEFAULT_NORM_FLOOR))
+            if config['contrast_weight'] else logits.new_zeros(()))
+        structural = (structure_loss(aux['node_logits'], batch.edge_index, batch.batch)
+                      if config['structure_weight'] else logits.new_zeros(()))
     else:
         logits, budget = model(batch)
         contrast = structural = logits.new_zeros(())

@@ -3,6 +3,7 @@ import argparse
 import fcntl
 import hashlib
 import json
+import math
 import os
 from pathlib import Path
 import shutil
@@ -18,9 +19,12 @@ from ..table1_frozen.diagnostics import quantization_record
 from ..table1_frozen.registry import CELLS
 from ..table1_frozen.train import evaluate
 from .model import GraphLoRA, counts, make_optimizer, objective
+from ..graphlora import (DEFAULT_NORM_FLOOR, DEFAULT_GRADIENT_LIMIT, OBJECTIVE_VERSION,
+                        checked_gradient_norm)
 
 DEFAULT_SEEDS = [41, 42, 43]
-HP = dict(rank=2, contrast_weight=.1, structure_weight=.1, tau=.5, supervised_weight=.2)
+HP = dict(rank=2, contrast_weight=.1, structure_weight=.1, tau=.5, supervised_weight=.2,
+          normalization_floor=DEFAULT_NORM_FLOOR, gradient_norm_limit=DEFAULT_GRADIENT_LIMIT)
 REPO = Path(__file__).resolve().parents[3]
 
 
@@ -53,9 +57,25 @@ def verify_sources(root):
     for name, expected in read(root / 'source_manifest.json').items():
         if sha(root / 'source_snapshot' / name) != expected:
             raise ValueError(f'Archived source changed: {name}')
+        if name.endswith('.py') and sha(REPO / name) != expected:
+            raise ValueError(f'Active source differs from the registered snapshot: {name}. '
+                             'Run its archived source_snapshot or prepare a new study.')
 
 
-def prepare(root, reference, cells=None, seeds=None, protocol='joint', smoke=False):
+def require_current_objective(study):
+    if study.get('objective_version') != OBJECTIVE_VERSION:
+        raise ValueError('GraphLoRA objective changed: prepare a new study and train from fresh '
+                         'initialization; old Adam states must not be resumed with the repaired loss.')
+    floor = study['hyperparameters'].get('normalization_floor', 0.)
+    if not math.isfinite(floor) or floor <= 0:
+        raise ValueError('A finite positive normalization_floor must be registered')
+    limit = study['hyperparameters'].get('gradient_norm_limit', 0.)
+    if not math.isfinite(limit) or limit <= 0:
+        raise ValueError('A finite positive gradient_norm_limit must be registered')
+
+
+def prepare(root, reference, cells=None, seeds=None, protocol='joint', smoke=False,
+            normalization_floor=DEFAULT_NORM_FLOOR, data_roots=None):
     root, reference = Path(root).resolve(), Path(reference).resolve()
     if root.exists():
         raise FileExistsError('Choose a new output directory, or use worker/finish to resume')
@@ -66,6 +86,11 @@ def prepare(root, reference, cells=None, seeds=None, protocol='joint', smoke=Fal
         raise ValueError('Choose unique registered Table I cells')
     if protocol not in ('joint', 'frozen'):
         raise ValueError('Unknown training protocol')
+    if not math.isfinite(normalization_floor) or normalization_floor <= 0:
+        raise ValueError('normalization_floor must be finite and positive')
+    data_roots = {} if data_roots is None else data_roots
+    if set(data_roots) - {c['dataset'] for c in CELLS.values()}:
+        raise ValueError('Unknown dataset in data_roots')
     jobs = []
     # Check every reference before creating an experiment. Existing baseline
     # tests are copied for reporting only, never used to choose hyperparameters.
@@ -80,13 +105,16 @@ def prepare(root, reference, cells=None, seeds=None, protocol='joint', smoke=Fal
             if config_hash(config) != done['config_hash']:
                 raise ValueError(f'Reference config changed: {path}')
             c = {k: v for k, v in config.items() if k not in ('seed', 'subset_limit', 'stage')}
+            if c['dataset'] in data_roots:
+                c['data_root'] = str(Path(data_roots[c['dataset']]).resolve())
             epochs = 2 if smoke else c['baseline_epochs'] if protocol == 'joint' else c['adapter_epochs']
             jobs.append(dict(cell=name, seed=seed, config=c, epochs=epochs,
                              directory=f'{name}/seed_{seed}',
                              reference=dict(directory=str(path), config=config, done=done, test=test,
                                             checkpoint_file_sha256=sha(path / 'best.pt'))))
-    study = dict(version=1, method='GraphLoRA-adapted', protocol=protocol, seeds=seeds, cells=cells,
-                 hyperparameters=HP, jobs=jobs, training_jobs=len(jobs),
+    study = dict(version=2, objective_version=OBJECTIVE_VERSION,
+                 method='GraphLoRA-adapted', protocol=protocol, seeds=seeds, cells=cells,
+                 hyperparameters=dict(HP, normalization_floor=normalization_floor), jobs=jobs, training_jobs=len(jobs),
                  smoke=smoke, subset_limit=8 if smoke else None,
                  test_policy='all registered fits complete before one test per selected model',
                  controls_reused=True, tuning_candidates_per_cell=1,
@@ -124,6 +152,7 @@ def create_model(study, job, bundle, device):
 def train_epoch(model, job, study, bundle, device, epoch, opt):
     model.train()
     totals = torch.zeros(6, device=device, dtype=torch.float64)
+    peak_gradient_norm = 0.
     count = 0
     for batch in bundle.batches('train', job['seed'], epoch, device, limit=study['subset_limit']):
         opt.zero_grad(set_to_none=True)
@@ -132,6 +161,8 @@ def train_epoch(model, job, study, bundle, device, epoch, opt):
             raise FloatingPointError('Nonfinite training objective')
         loss.backward()
         finite_gradients(model)
+        grad_norm = checked_gradient_norm(model, study['hyperparameters']['gradient_norm_limit'])
+        peak_gradient_norm = max(peak_gradient_norm, grad_norm.item())
         opt.step()
         project(model, job['config'])
         metric = (logits.flatten() - y).abs().sum() if job['config']['regression'] else (logits.argmax(1) == y).sum()
@@ -141,10 +172,12 @@ def train_epoch(model, job, study, bundle, device, epoch, opt):
     values = (totals / count).cpu().tolist()
     if not job['config']['regression']:
         values[-1] *= 100
-    return dict(zip(('loss', 'contrast', 'structure', 'storage', 'objective', 'metric'), values)) | dict(examples=count)
+    return dict(zip(('loss', 'contrast', 'structure', 'storage', 'objective', 'metric'), values)) | dict(
+        examples=count, gradient_norm_max=peak_gradient_norm)
 
 
 def fit(root, study, job, device):
+    require_current_objective(study)
     path = root / job['directory']
     config = dict(job=job, protocol=study['protocol'], hp=study['hyperparameters'], subset_limit=study['subset_limit'])
     key = config_hash(config)
@@ -231,6 +264,7 @@ def fit(root, study, job, device):
 
 
 def lock_tests(root, study):
+    require_current_objective(study)
     if study['smoke']:
         raise RuntimeError('Smoke checks never access benchmark test sets')
     cases = []
@@ -297,6 +331,7 @@ def worker(root, device):
     torch.set_num_threads(4)
     verify_sources(root)
     study = read(root / 'study.json')
+    require_current_objective(study)
     from .report import generate
     for job in study['jobs']:
         if (root / 'STOP').exists():
@@ -341,10 +376,21 @@ def main():
     p.add_argument('--protocol', choices=('joint', 'frozen'), default='joint')
     p.add_argument('--smoke', action='store_true')
     p.add_argument('--device', default='cuda:0')
+    p.add_argument('--normalization-floor', type=float, default=DEFAULT_NORM_FLOOR)
+    p.add_argument('--data-root', action='append', default=[], metavar='DATASET=PATH')
     args = p.parse_args()
     root = Path(args.root).resolve()
     if args.action == 'prepare':
-        prepare(root, args.reference, args.cells, args.seeds, args.protocol, args.smoke)
+        roots = {}
+        for value in args.data_root:
+            if '=' not in value:
+                p.error('--data-root requires DATASET=PATH')
+            name, path = value.split('=', 1)
+            if not path or name in roots:
+                p.error('--data-root requires a nonempty, unique dataset path')
+            roots[name] = path
+        prepare(root, args.reference, args.cells, args.seeds, args.protocol, args.smoke,
+                args.normalization_floor, roots)
     elif args.action == 'worker':
         worker(root, args.device)
     elif args.action == 'finish':

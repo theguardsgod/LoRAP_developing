@@ -11,7 +11,7 @@ from torch import nn
 from torch.nn import functional as F
 from torch_geometric.utils import to_dense_adj, to_dense_batch
 
-from ..graphlora import contrastive_loss, structure_loss
+from ..graphlora import contrastive_loss, structure_loss, normalize_embeddings, DEFAULT_NORM_FLOOR
 from ..table1_frozen.backends import load_state, optimizer, predict
 from ..table1_frozen.common import cpu_tree, rng_state, restore_rng
 from ..table1_frozen.data import labels_and_output
@@ -184,10 +184,10 @@ def counts(model):
                 prompt_parameters=0, sites=model.dimensions)
 
 
-def regression_structure(nodes, edges, batch):
+def regression_structure(nodes, edges, batch, norm_floor=DEFAULT_NORM_FLOOR):
     # A one-dimensional regression head has constant softmax. Reconstruct
     # adjacency from normalized latent embeddings instead; no extra classifier.
-    dense, valid = to_dense_batch(F.normalize(nodes, dim=-1), batch)
+    dense, valid = to_dense_batch(normalize_embeddings(nodes, norm_floor), batch)
     n = dense.size(1)
     adjacency = to_dense_adj(edges, batch, max_num_nodes=n).clamp_max(1)
     eligible = valid[:, :, None] & valid[:, None, :] & ~torch.eye(n, device=nodes.device, dtype=torch.bool)[None]
@@ -195,7 +195,8 @@ def regression_structure(nodes, edges, batch):
     positive = (adjacency * eligible).sum((1, 2))
     pos_weight = torch.where(positive > 0, (count - positive) / positive.clamp_min(1), 1.)
     weights = torch.where(adjacency.bool(), pos_weight[:, None, None], 1.)
-    loss = F.binary_cross_entropy_with_logits(dense @ dense.transpose(1, 2), adjacency, reduction='none')
+    with torch.autocast(device_type=nodes.device.type, enabled=False):
+        loss = F.binary_cross_entropy_with_logits(dense @ dense.transpose(1, 2), adjacency, reduction='none')
     return ((loss * weights * eligible).sum((1, 2)) / count.clamp_min(1)).mean()
 
 
@@ -204,17 +205,21 @@ def objective(model, c, batch, hp):
     logits, y = labels_and_output(c, batch, out, 'train')
     task = task_loss(c, logits, y)
     left, right = model.last_views
-    if c['node']:
+    contrast = structural = task.new_zeros(())
+    floor = hp.get('normalization_floor', DEFAULT_NORM_FLOOR)
+    if c['node'] and hp['contrast_weight']:
         mask = batch.train_mask
         contrast = contrastive_loss(left[mask], right[mask], batch.y[mask], tau=hp['tau'],
-                                    supervised_weight=hp['supervised_weight'])
-        structural = structure_loss(out, batch.edge_index, torch.zeros(len(out), dtype=torch.long, device=out.device))
-    else:
+                                    supervised_weight=hp['supervised_weight'], norm_floor=floor)
+    elif not c['node'] and hp['contrast_weight']:
         contrast = contrastive_loss(mean_pool(left, batch.batch), mean_pool(right, batch.batch),
                                     None if c['regression'] else batch.y.reshape(-1), tau=hp['tau'],
-                                    supervised_weight=hp['supervised_weight'])
+                                    supervised_weight=hp['supervised_weight'], norm_floor=floor)
+    if c['node'] and hp['structure_weight']:
+        structural = structure_loss(out, batch.edge_index, torch.zeros(len(out), dtype=torch.long, device=out.device))
+    elif not c['node'] and hp['structure_weight']:
         if c['regression']:
-            structural = regression_structure(right, batch.edge_index, batch.batch)
+            structural = regression_structure(right, batch.edge_index, batch.batch, floor)
         else:
             head1, head2 = model.backbone.lin1, model.backbone.lin2
             node_logits = F.linear(F.relu(F.linear(right, head1.weight, head1.bias)), head2.weight, head2.bias)

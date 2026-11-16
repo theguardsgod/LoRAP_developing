@@ -1,8 +1,26 @@
 # TABLE1：GraphLoRA-adapted，3 个种子
 
+**另一台服务器直接运行：见 [PORTABLE.md](PORTABLE.md)。** 独立入口会重新训练 None/GraphLoRA 配对，不依赖旧结果路径。
+
 用户要求 TABLE1 新增 GraphLoRA 并将重复种子减为 3。本入口默认固定种子 **41、42、43**；覆盖 Cora、CiteSeer、MNIST、CIFAR10、ZINC × GIN/GCN/GAT × QAT/DQ/A2Q，即 **45 个 cell、135 次新增训练**，相对于 10 种子减少 70%。不更改或挑选已经完成的 Table V 十种子结果。
 
 默认延续此前 GraphLoRA 实验的 **joint** 联合训练：从与 TABLE1 已归档无提示骨干相同的随机初始化训练，复用对应 seed 的已完成无提示对照与测试指标，不重训对照。现有 `table1_frozen` 的无提示阶段本身就是骨干联合训练；其适配阶段为冻结训练，不能混称同一协议。可显式指定 `--protocol frozen`，从同一已训练骨干只训练新增分支；报告会保留训练方式。
+
+## 2026-11-15 数值修复：objective_version=2
+
+量化后的零向量经原 `F.normalize` 的 `eps=1e-12` 会产生巨量的有限梯度，污染 Adam 二阶矩。新对比目标和 ZINC 结构目标统一使用 `x / max(norm(x), normalization_floor)`，默认范数下限为 **0.1**，对应归一化 Jacobian 范数上限 10；可用 `prepare --normalization-floor` 显式指定，并写入配置、报告和源码快照。低于该范数的表示不再强行映射到单位球面，因此须注明这是数值修复后的 adapted 目标，不能声称该区域与官方原目标完全一致。下限仍需在正式方法比较中公开并按验证集评估。
+
+辅助目标至少用 FP32，关闭的损失不计算。每次 Adam 更新前检查总梯度范数，超过配置中的 `gradient_norm_limit=1e6` 就报错并保留故障记录，不通过梯度裁剪掩盖问题；逐轮保存最大梯度范数。此阈值是拒绝更新的数值保护，不是达到阈值后继续训练的裁剪规则。
+
+修复后必须选择**新的结果目录，从初始参数重新训练**。新 worker 拒绝使用未注册 v2 目标的旧 study；旧配置与优化器状态不能混入修复后的实验。要复现旧实验，请进入其旧 `source_snapshot`。worker 同时检查归档文件与实际执行源码的哈希。
+
+可以用 `--data-root Cora=/path/to/root --data-root MNIST=/path/to/root` 重定位数据；参考实验的原配置保持归档，重定位只作用于新作业。本次修复不改变分类任务的验证 CE 选模规则，不自动替换旧论文数值；报告始终列出实际同种子 None 对照。
+
+CPU 回归检查：
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -B -m unittest runs.lorap_study.test_graphlora_stability runs.lorap_study.test_graphlora -v
+```
 
 ## 模型与损失
 

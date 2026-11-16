@@ -34,15 +34,20 @@ class StopRequested(Exception):
     pass
 
 
-def study_config(mode, seeds, epochs, profile, rank=2, contrast_weight=.1, structure_weight=.1):
+def study_config(mode, seeds, epochs, profile, rank=2, contrast_weight=.1, structure_weight=.1,
+                 normalization_floor=.1):
+    from .graphlora import OBJECTIVE_VERSION, DEFAULT_GRADIENT_LIMIT
     config = table_config(mode, seeds, epochs, smoke=profile == 'smoke')
     config.update(variants=['no_prompt', 'graphlora'], profile='graphlora_adapted_' + profile,
         graphlora_rank=rank, contrast_weight=contrast_weight, structure_weight=structure_weight,
-        contrast_tau=.5, contrast_supervised_weight=.2, smmd_weight=0., cross_graph_source=None)
+        contrast_tau=.5, contrast_supervised_weight=.2, smmd_weight=0., cross_graph_source=None,
+        objective_version=OBJECTIVE_VERSION, normalization_floor=normalization_floor,
+        gradient_norm_limit=DEFAULT_GRADIENT_LIMIT)
     return config
 
 
 def train_graph_epoch(model, training, optimizer, config, device):
+    from .graphlora import checked_gradient_norm
     if not isinstance(model, GraphLoRAAdaptedGIN):
         return train_gpu_epoch(model, training, optimizer, config, device)
     if device.type != 'cuda':
@@ -50,6 +55,7 @@ def train_graph_epoch(model, training, optimizer, config, device):
     model.train()
     totals = torch.zeros(6, device=device, dtype=torch.float64)
     examples = batches = 0
+    peak_gradient_norm = 0.
     for batch in training:
         batch = batch.to(device)
         optimizer.zero_grad(set_to_none=True)
@@ -60,6 +66,8 @@ def train_graph_epoch(model, training, optimizer, config, device):
         finite = torch.stack([torch.isfinite(p.grad).all() for p in model.parameters() if p.grad is not None])
         if not bool(finite.all()):
             raise FloatingPointError('Non-finite GraphLoRA gradient')
+        gradient_norm = checked_gradient_norm(model, config['gradient_norm_limit'])
+        peak_gradient_norm = max(peak_gradient_norm, gradient_norm.item())
         optimizer.step()
         size = batch.y.numel()
         totals += torch.stack((metrics['loss'].detach().double() * size,
@@ -70,7 +78,7 @@ def train_graph_epoch(model, training, optimizer, config, device):
     values = totals.cpu().tolist()
     return dict(loss=values[0]/examples, accuracy=values[1]/examples, legacy_budget_proxy=values[2]/batches,
         contrast_loss=values[3]/examples, structure_loss=values[4]/examples, storage_loss=values[5]/examples,
-        examples=examples)
+        examples=examples, gradient_norm_max=peak_gradient_norm)
 
 
 # The fit/checkpoint implementation below preserves lora_run's established
@@ -78,6 +86,9 @@ def train_graph_epoch(model, training, optimizer, config, device):
 
 
 def fit(root, config, variant, seed, data, calibration, device):
+    from .graphlora import OBJECTIVE_VERSION
+    if config.get('objective_version') != OBJECTIVE_VERSION:
+        raise ValueError('GraphLoRA objective changed; create a new study and train from fresh initialization')
     directory = root / config["dataset"] / variant / f"seed_{seed}"
     directory.mkdir(parents=True, exist_ok=True)
     config_hash = sha_config(config)
@@ -261,6 +272,7 @@ def main(argv=None):
     parser.add_argument('--rank', type=int, default=2)
     parser.add_argument('--contrast-weight', type=float, default=.1)
     parser.add_argument('--structure-weight', type=float, default=.1)
+    parser.add_argument('--normalization-floor', type=float, default=.1)
     parser.add_argument('--device', default='cuda:0')
     parser.add_argument('--threads', type=int, default=4)
     parser.add_argument('--resume', action='store_true')
@@ -278,11 +290,14 @@ def main(argv=None):
         if len(set(seeds)) != len(seeds) or len(set(args.modes)) != len(args.modes):parser.error('Duplicate seeds or modes')
         if any(not math.isfinite(w) or w < 0 for w in (args.contrast_weight, args.structure_weight)):
             parser.error('Auxiliary weights must be finite and nonnegative')
+        if not math.isfinite(args.normalization_floor) or args.normalization_floor <= 0:
+            parser.error('Normalization floor must be finite and positive')
         require_device(args.device); torch.set_num_threads(args.threads)
         root.mkdir(parents=True, exist_ok=False)
-        configs = [study_config(m, seeds, epochs, args.profile, args.rank, args.contrast_weight, args.structure_weight) for m in args.modes]
+        configs = [study_config(m, seeds, epochs, args.profile, args.rank, args.contrast_weight, args.structure_weight,
+                               args.normalization_floor) for m in args.modes]
         write_json(root/'study.json', dict(configs=configs, profile=args.profile, device=args.device,
-            threads=args.threads, method='GraphLoRA-adapted joint-QAT', protocol_version=1))
+            threads=args.threads, method='GraphLoRA-adapted joint-QAT', protocol_version=2))
         for config in configs:write_json(root/config['quantization_mode']/'MNIST/config.json', config)
         provenance(root)
         recorded = read(root/'provenance.json')
