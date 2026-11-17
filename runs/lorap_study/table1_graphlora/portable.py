@@ -8,6 +8,7 @@ import csv
 import fcntl
 import io
 import json
+import math
 import os
 from pathlib import Path
 import statistics
@@ -33,32 +34,66 @@ PROFILES = {
 VARIANTS = ('none', 'graphlora')
 
 
-def prepare(root, data_root, cells=None, seeds=None, smoke=False, normalization_floor=.1):
+def validate_study(study):
+    if study.get('adaptation', 'graphlora') == 'graphlora':
+        require_current_objective(study)
+    elif study.get('adaptation') == 'gpf_lorap':
+        hp = study['hyperparameters']
+        if study.get('objective_version') != 1 or study['protocol'] != 'joint':
+            raise ValueError('Unsupported GPF-LoRAP experiment protocol')
+        if any(isinstance(hp[k], bool) or not isinstance(hp[k], int) or hp[k] < 1 for k in ('rank', 'num_prompts')):
+            raise ValueError('Positive integer GPF-LoRAP rank and prompt count required')
+        if not math.isfinite(hp['gradient_norm_limit']) or hp['gradient_norm_limit'] <= 0:
+            raise ValueError('Finite positive gradient limit required')
+    else:
+        raise ValueError('Unknown adaptation')
+
+
+def adapter_api(variant):
+    if variant == 'graphlora':
+        from . import model
+    elif variant == 'gpf_lorap':
+        from ..table1_gpf_rerun import model
+    else:
+        raise ValueError('Unknown adaptation variant')
+    return model
+
+
+def prepare(root, data_root, cells=None, seeds=None, smoke=False, normalization_floor=.1,
+            adaptation='graphlora', cell_configs=None):
     from ..table1_frozen.registry import CELLS
+    registry = CELLS if cell_configs is None else cell_configs
     root, data_root = Path(root).resolve(), Path(data_root).resolve()
     if root.exists():
         raise FileExistsError('Use a new output directory or resume with worker')
     cells = PROFILES['cora'] if cells is None else cells
     seeds = ([41] if smoke else [41, 42, 43]) if seeds is None else seeds
-    if not cells or len(set(cells)) != len(cells) or set(cells) - set(CELLS):
+    if not cells or len(set(cells)) != len(cells) or set(cells) - set(registry):
         raise ValueError('Choose unique registered cells')
     if not seeds or len(set(seeds)) != len(seeds):
         raise ValueError('Choose unique seeds')
-    hp = dict(HP, normalization_floor=normalization_floor)
-    study = dict(portable_version=1, objective_version=OBJECTIVE_VERSION,
-                 method='GraphLoRA-adapted', protocol='joint', hyperparameters=hp,
-                 seeds=seeds, cells=cells, variants=list(VARIANTS), smoke=smoke,
+    if adaptation == 'gpf_lorap':
+        hp = dict(rank=2, num_prompts=20, gradient_norm_limit=1e6,
+                  prompt_lr='backbone_lr', prompt_weight_decay=0.,
+                  sharing='score_per_width_factors_per_layer', insertion='before_native_update')
+    else:
+        hp = dict(HP, normalization_floor=normalization_floor)
+    variants = ('none', adaptation)
+    study = dict(portable_version=1, objective_version=1 if adaptation == 'gpf_lorap' else OBJECTIVE_VERSION,
+                 adaptation=adaptation, method='GPF-LoRAP' if adaptation == 'gpf_lorap' else 'GraphLoRA-adapted',
+                 protocol='joint', hyperparameters=hp,
+                 seeds=seeds, cells=cells, variants=list(variants), smoke=smoke,
                  subset_limit=8 if smoke else None, controls_reused=False,
                  selection='minimum validation task loss, earliest epoch on ties',
                  test_policy='all paired fits complete before one test per selected model',
                  created_unix=time.time(), torch_version=torch.__version__)
-    require_current_objective(study)
+    validate_study(study)
     jobs = []
     for cell in cells:
-        c = dict(CELLS[cell])
+        c = dict(registry[cell])
         c['data_root'] = str(data_root / c['dataset'].lower())
         for seed in seeds:
-            for variant in VARIANTS:
+            for variant in variants:
                 jobs.append(dict(cell=cell, config=c, seed=seed, variant=variant,
                                  epochs=2 if smoke else c['baseline_epochs'],
                                  directory=f'{cell}/seed_{seed}/{variant}'))
@@ -80,19 +115,27 @@ def job_key(study, job):
 def model_for(study, job, bundle, device):
     seed_all(job['seed'])
     base = build(job['config'], bundle, job['seed']).to(device)
+    if 'attention_dropout' in job['config']:
+        for layer in base.modules():
+            if hasattr(layer, 'propagate') and hasattr(layer, 'dropout'):
+                layer.dropout = job['config']['attention_dropout']
     initial = digest(base)
     # Consume the same loader setup RNG for both members of a pair.
     example = next(bundle.batches('train', job['seed'], 0, device, limit=2))
     if job['variant'] == 'none':
         return base, initial
-    model = GraphLoRA(base, job['config'], job['seed'], example, study['hyperparameters']['rank'])
+    if job['variant'] == 'gpf_lorap':
+        model = adapter_api(job['variant']).GPFLoRAP(base, job['config'], job['seed'], example,
+                    study['hyperparameters']['rank'], study['hyperparameters']['num_prompts'])
+    else:
+        model = GraphLoRA(base, job['config'], job['seed'], example, study['hyperparameters']['rank'])
     if digest(base) != initial:
         raise AssertionError('Adapter construction changed the initial backbone')
     return model, initial
 
 
 def close(model):
-    if isinstance(model, GraphLoRA):
+    if callable(getattr(model, 'close', None)):
         model.close()
 
 
@@ -119,8 +162,8 @@ def train_epoch(model, job, study, bundle, device, epoch, opt):
     count, peak = 0, 0.
     for batch in bundle.batches('train', job['seed'], epoch, device, limit=study['subset_limit']):
         opt.zero_grad(set_to_none=True)
-        if job['variant'] == 'graphlora':
-            loss, logits, y, parts = objective(model, job['config'], batch, study['hyperparameters'])
+        if job['variant'] != 'none':
+            loss, logits, y, parts = adapter_api(job['variant']).objective(model, job['config'], batch, study['hyperparameters'])
         else:
             logits, budget = predict(model, job['config'], batch)
             logits, y = labels_and_output(job['config'], batch, logits, 'train')
@@ -149,7 +192,7 @@ def train_epoch(model, job, study, bundle, device, epoch, opt):
 
 
 def fit(root, study, job, device):
-    require_current_objective(study)
+    validate_study(study)
     path, key = root / job['directory'], job_key(study, job)
     if (path / 'done.json').exists():
         if read(path / 'done.json')['config_hash'] != key:
@@ -163,7 +206,8 @@ def fit(root, study, job, device):
     write_json(path / 'split.json', bundle.manifest())
     model, initial = model_for(study, job, bundle, device)
     try:
-        opt = make_optimizer(model, job['config']) if job['variant'] == 'graphlora' else optimizer(model, job['config'])
+        opt = (adapter_api(job['variant']).make_optimizer(model, job['config'])
+               if job['variant'] != 'none' else optimizer(model, job['config']))
         c = job['config']
         scheduler = (torch.optim.lr_scheduler.ReduceLROnPlateau(opt, factor=.5, patience=5)
                      if c['framework'] == 'A2Q' and not c['node'] else
@@ -210,7 +254,9 @@ def fit(root, study, job, device):
         validation = evaluate(model, job, study, bundle, device)
         if abs(validation['loss'] - best['validation_loss']) > 1e-5:
             raise AssertionError('Selected validation loss did not replay')
-        extra = counts(model) if job['variant'] == 'graphlora' else dict(adapter_parameters=0)
+        extra = adapter_api(job['variant']).counts(model) if job['variant'] != 'none' else dict(adapter_parameters=0)
+        from ..table1_frozen.diagnostics import quantization_record
+        write_json(path / 'quantization.json', quantization_record(model.backbone if job['variant'] != 'none' else model))
         write_json(path / 'done.json', dict(config_hash=key, selected_epoch=best['epoch'], validation=validation,
                    initial_backbone_sha256=initial, state_sha256=digest(model),
                    checkpoint_file_sha256=sha(path / 'best.pt'), full_split=not study['smoke'],
@@ -221,7 +267,7 @@ def fit(root, study, job, device):
 
 
 def test_manifest(root, study):
-    require_current_objective(study)
+    validate_study(study)
     if study['smoke']:
         raise RuntimeError('Smoke never evaluates test metrics')
     cases, pairs = [], {}
@@ -241,7 +287,8 @@ def test_manifest(root, study):
         cases.append(dict(cell=job['cell'], seed=job['seed'], method=job['variant'], directory=job['directory'],
                           checkpoint_file_sha256=done['checkpoint_file_sha256'], state_sha256=done['state_sha256']))
     for pair in pairs.values():
-        if set(pair) != set(VARIANTS) or pair['none'] != pair['graphlora']:
+        adaptation = study.get('adaptation', 'graphlora')
+        if set(pair) != set(study['variants']) or pair['none'] != pair[adaptation]:
             raise ValueError('Paired backbone initialization or data split differs')
     return dict(cases=cases, sha256=config_hash(cases))
 
@@ -286,7 +333,7 @@ def generate(root, study):
         complete=(root / 'completion_audit.json').exists()))
     rows = []
     for cell in study['cells']:
-        for variant in VARIANTS:
+        for variant in study['variants']:
             selected = [j for j in study['jobs'] if j['cell'] == cell and j['variant'] == variant]
             scores = [read(root / j['directory'] / 'test.json')['metric'] for j in selected
                       if (root / j['directory'] / 'test.json').exists()]
@@ -308,7 +355,7 @@ def worker(root, device):
         raise RuntimeError('Official paired experiments and real-data smoke require CUDA')
     torch.cuda.set_device(device); torch.set_num_threads(4)
     verify_sources(root)
-    study = read(root / 'study.json'); require_current_objective(study)
+    study = read(root / 'study.json'); validate_study(study)
     for job in study['jobs']:
         if (root / 'STOP').exists():
             return

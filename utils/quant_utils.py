@@ -15,7 +15,6 @@ from torch_geometric.utils import (
 import torch_scatter
 from torch_scatter import scatter_add
 from torch_geometric.nn.inits import glorot, zeros
-from torch_sparse import SparseTensor, matmul, fill_diag, sum as sparsesum, mul
 
 
 def scatter_(name, src, index, dim=0, dim_size=None):
@@ -36,6 +35,7 @@ def scatter_(name, src, index, dim=0, dim_size=None):
 def analysis_bit(data, state_dict,all_positive=True,name='plat'):
     mean_all = []
     if(name=='ogbn-arxiv'):
+        from torch_sparse import sum as sparsesum
         adj_t = data.adj_t
         adj_t = adj_t.fill_value(1.,)
         deg = sparsesum(adj_t, dim=1)
