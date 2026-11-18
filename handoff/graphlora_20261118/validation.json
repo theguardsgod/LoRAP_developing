@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "created_unix": 1794974172.4932046,
+  "cpu_tests": 16,
+  "gpu_regression_tests": 2,
+  "full_dataset_prepare_passed": true,
+  "archive_sha256": "270d1ac7c909d15e9fa426fc58fb8c602c043b42810761f77df467a9b9864232",
+  "paused_epochs": {
+    "41": 119,
+    "42": 99,
+    "43": 30
+  },
+  "dataset_fingerprints": {
+    "train": {
+      "graphs": 45000,
+      "sha256": "3073476e6540ee22e8c85d0fa1517d5b7434ef0561e9aece1d191be678447383"
+    },
+    "val": {
+      "graphs": 5000,
+      "sha256": "1b5ccea34fca632601501c23dbf9ec9a33f2c7fd0ee6930d136fcca3d52e298c"
+    },
+    "test": {
+      "graphs": 10000,
+      "sha256": "42f6a8405f4b36beda4121b0957fd34957257ccd52524f6cf9bb7cd4a977da60"
+    }
+  },
+  "source_snapshot_files": 229,
+  "resumed_formal_training": false,
+  "original_study_stop_preserved": true,
+  "note": "Verified unpacked checkpoints, configuration/source/file hashes, Adam/CUDA RNG and full dataset content. GPU tests use synthetic graphs; no formal training resumed."
+}

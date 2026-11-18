@@ -74,6 +74,34 @@ class PortableTests(unittest.TestCase):
         torch.testing.assert_close(torch.rand(8), expected, rtol=0, atol=0)
         self.assertIsNone(state['cuda'])
 
+    def test_graphlora_only_registration_and_test_gate(self):
+        with tempfile.TemporaryDirectory() as temp, patch.object(p, 'Bundle', Bundle), \
+             patch.object(p, 'predict', cpu_predict), patch.object(gm, 'predict', cpu_predict), \
+             patch.object(final_evaluation, 'predict', cpu_predict), patch.object(p, 'snapshot'):
+            root = Path(temp) / 'single'
+            study = p.prepare(root, root/'data', ['QAT_Cora_GCN'], [41], variants=['graphlora'])
+            self.assertEqual(len(study['jobs']), 1)
+            self.assertFalse(list(root.glob('*/seed_*/none')))
+            study['jobs'][0]['epochs'] = 2
+            write_json(root/'study.json', study)
+            with self.assertRaisesRegex(RuntimeError, 'All paired'):
+                p.test_manifest(root, study)
+            p.fit(root, study, study['jobs'][0], 'cpu')
+            changed = copy.deepcopy(study); changed['variants'] = ['none', 'graphlora']
+            with self.assertRaisesRegex(ValueError, 'coverage'):
+                p.test_manifest(root, changed)
+            p.finish(root, study, 'cpu')
+            with patch.object(p, 'model_for', side_effect=AssertionError('Repeated test inference')):
+                p.finish(root, study, 'cpu')
+            audit = p.read(root/'completion_audit.json')
+            self.assertEqual(audit['tests'], 1)
+            self.assertFalse(audit['paired_initializations_and_splits'])
+            p.generate(root, study)
+            self.assertEqual(len(p.read(root/'summary.json')), 1)
+            for variants in [[], ['graphlora', 'graphlora'], ['unknown']]:
+                with self.assertRaisesRegex(ValueError, 'variants'):
+                    p.prepare(Path(temp)/'bad', root/'data', variants=variants)
+
     def test_focal_mnist_backends_train_paired_on_synthetic_graphs(self):
         with tempfile.TemporaryDirectory() as temp, patch.object(p, 'Bundle', GraphBundle), \
              patch.object(p, 'predict', cpu_predict), patch.object(gm, 'predict', cpu_predict), \
